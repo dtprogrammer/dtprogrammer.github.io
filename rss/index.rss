@@ -1,4 +1,103 @@
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" version="2.0"><channel><title>Programming For Interviews</title><description>Algorithms, Data Structures and System Design for Interviews</description><link>http://localhost:2368/</link><image><url>http://localhost:2368/favicon.png</url><title>Programming For Interviews</title><link>http://localhost:2368/</link></image><generator>Ghost 1.8</generator><lastBuildDate>Tue, 12 Sep 2017 03:42:17 GMT</lastBuildDate><atom:link href="http://localhost:2368/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title>28. Implement strStr()</title><description>&lt;div class="kg-card-markdown"&gt;&lt;h3 id="question"&gt;&lt;a href="https://leetcode.com/problems/implement-strstr/description/"&gt;Question&lt;/a&gt;&lt;/h3&gt;
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" version="2.0"><channel><title>Programming For Interviews</title><description>Algorithms, Data Structures and System Design for Interviews</description><link>http://localhost:2368/</link><image><url>http://localhost:2368/favicon.png</url><title>Programming For Interviews</title><link>http://localhost:2368/</link></image><generator>Ghost 1.8</generator><lastBuildDate>Tue, 12 Sep 2017 05:45:25 GMT</lastBuildDate><atom:link href="http://localhost:2368/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title>48. Rotate Image</title><description>&lt;div class="kg-card-markdown"&gt;&lt;h3 id="question"&gt;&lt;a href="https://leetcode.com/problems/rotate-image/description/"&gt;Question&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;You are given an n x n 2D matrix representing an image.&lt;/p&gt;
+&lt;p&gt;Rotate the image by 90 degrees (clockwise).&lt;/p&gt;
+&lt;p&gt;Note:&lt;br&gt;
+You have to rotate the image in-place, which means you have to modify the input 2D matrix directly. DO NOT allocate another 2D matrix and do the rotation.&lt;/p&gt;
+&lt;p&gt;Example&lt;/p&gt;&lt;/div&gt;</description><link>http://localhost:2368/48-rotate-image/</link><guid isPermaLink="false">59b76e0d301d231e36fc8fde</guid><category>leetcode</category><dc:creator>Duct Tape Programmer</dc:creator><pubDate>Tue, 12 Sep 2017 05:44:35 GMT</pubDate><content:encoded>&lt;div class="kg-card-markdown"&gt;&lt;h3 id="question"&gt;&lt;a href="https://leetcode.com/problems/rotate-image/description/"&gt;Question&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;You are given an n x n 2D matrix representing an image.&lt;/p&gt;
+&lt;p&gt;Rotate the image by 90 degrees (clockwise).&lt;/p&gt;
+&lt;p&gt;Note:&lt;br&gt;
+You have to rotate the image in-place, which means you have to modify the input 2D matrix directly. DO NOT allocate another 2D matrix and do the rotation.&lt;/p&gt;
+&lt;p&gt;Example 1:&lt;/p&gt;
+&lt;p&gt;Given input matrix =&lt;br&gt;
+[&lt;br&gt;
+[1,2,3],&lt;br&gt;
+[4,5,6],&lt;br&gt;
+[7,8,9]&lt;br&gt;
+],&lt;/p&gt;
+&lt;p&gt;rotate the input matrix in-place such that it becomes:&lt;br&gt;
+[&lt;br&gt;
+[7,4,1],&lt;br&gt;
+[8,5,2],&lt;br&gt;
+[9,6,3]&lt;br&gt;
+]&lt;br&gt;
+Example 2:&lt;/p&gt;
+&lt;p&gt;Given input matrix =&lt;br&gt;
+[&lt;br&gt;
+[ 5, 1, 9,11],&lt;br&gt;
+[ 2, 4, 8,10],&lt;br&gt;
+[13, 3, 6, 7],&lt;br&gt;
+[15,14,12,16]&lt;br&gt;
+],&lt;/p&gt;
+&lt;p&gt;rotate the input matrix in-place such that it becomes:&lt;br&gt;
+[&lt;br&gt;
+[15,13, 2, 5],&lt;br&gt;
+[14, 3, 4, 1],&lt;br&gt;
+[12, 6, 8, 9],&lt;br&gt;
+[16, 7,10,11]&lt;br&gt;
+]&lt;/p&gt;
+&lt;h3 id="solution"&gt;Solution&lt;/h3&gt;
+&lt;p&gt;The problem can be solved easily if we remember a trick.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Clockwise rotation: Swap up-down and then swap elements zig-zag&lt;/li&gt;
+&lt;li&gt;Anticlockwise rotation: Swap left right and then swap elements zig-zag&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;For example for the given matrix&lt;br&gt;
+[&lt;br&gt;
+[1,2,3],&lt;br&gt;
+[4,5,6],&lt;br&gt;
+[7,8,9]&lt;br&gt;
+]&lt;/p&gt;
+&lt;p&gt;After swapping up-down we get&lt;br&gt;
+[&lt;br&gt;
+[7,8,9],&lt;br&gt;
+[4,5,6],&lt;br&gt;
+[1,2,3]&lt;br&gt;
+]&lt;br&gt;
+After swapping zig-zag we get&lt;br&gt;
+[&lt;br&gt;
+[7,4,1],&lt;br&gt;
+[8,5,2],&lt;br&gt;
+[9,6,3]&lt;br&gt;
+]&lt;/p&gt;
+&lt;p&gt;Swapping up-down is pretty easy and can easily be achieved by&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;for (int i = 0; i &amp;lt; matrix.length / 2; i++) {
+    for (int j = 0; j &amp;lt; matrix[0].length; j++) {
+        int temp = matrix[i][j];
+        matrix[i][j] = matrix[matrix.length - i - 1][j];
+        matrix[matrix.length - i - 1][j] = temp;
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Although, I had some trouble in doing zig-zag swap it required you to limit the swap. That is once we swap &lt;code&gt;matrix[0][1]&lt;/code&gt; with &lt;code&gt;matrix[1][0]&lt;/code&gt; we should not swap it again whent the value of i becomes 1 from 0. My initial approach was to limit this with a simple if check as shown below&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;for (int i = 0; i &amp;lt; matrix.length; i++) {
+    for (int j = 0; j &amp;lt; matrix[0].length; j++) {
+        if (i &amp;lt; j) {
+            int temp = matrix[i][j];
+            matrix[i][j] = matrix[j][i];
+            matrix[j][i] = temp;
+        }
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This made my solution pass the test but it did poorly in &lt;em&gt;Accepted Solutions Runtime Distribution&lt;/em&gt;. After seeing some solutions in the &lt;em&gt;Discussion&lt;/em&gt; I found out that &lt;code&gt;j&lt;/code&gt; can start from &lt;code&gt;i+1&lt;/code&gt; since we alwasy skip swaps where &lt;code&gt;i == j&lt;/code&gt;. I thought this will improve the performance in the &lt;em&gt;Accepted Solutions Runtime Distribution&lt;/em&gt; since we are skipping one column although the time distribution was still the same.&lt;/p&gt;
+&lt;p&gt;Here is my final solution&lt;/p&gt;
+&lt;script src="https://gist-it.appspot.com/github/dtprogrammer/leetcode-solutions/blob/master/src/main/java/dtprogrammer/github/io/p48/Solution.java"&gt;&lt;/script&gt;
+&lt;h4 id="timecomplexity"&gt;Time complexity&lt;/h4&gt;
+&lt;p&gt;The time complexity O(n * n) since we traverse the matrix.&lt;/p&gt;
+&lt;h3 id="spacecomplexity"&gt;Space complexity&lt;/h3&gt;
+&lt;p&gt;Constant&lt;/p&gt;
+&lt;h3 id="notes"&gt;Notes&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;As mentioned earlir the trick is:
+&lt;ul&gt;
+&lt;li&gt;Clockwise rotation: Swap up-down and then swap elements zig-zag&lt;/li&gt;
+&lt;li&gt;Anticlockwise rotation: Swap left right and then swap elements zig-zag&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;For zig-zag conversion &lt;code&gt;j&lt;/code&gt; should start from &lt;code&gt;i + 1&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;</content:encoded></item><item><title>28. Implement strStr()</title><description>&lt;div class="kg-card-markdown"&gt;&lt;h3 id="question"&gt;&lt;a href="https://leetcode.com/problems/implement-strstr/description/"&gt;Question&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;Implement strStr().&lt;/p&gt;
 &lt;p&gt;Returns the index of the first occurrence of needle in haystack, or -1 if needle is not part of haystack.&lt;/p&gt;
 &lt;h3 id="solution"&gt;Solution&lt;/h3&gt;

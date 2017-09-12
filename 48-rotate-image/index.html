@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>20. Valid Parentheses</title>
+    <title>48. Rotate Image</title>
     <meta name="HandheldFriendly" content="True">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -17,17 +17,17 @@
     
     <meta property="og:site_name" content="Programming For Interviews">
     <meta property="og:type" content="article">
-    <meta property="og:title" content="20. Valid Parentheses">
-    <meta property="og:description" content="Given a string containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid. The brackets must close in the correct order, &amp;quot;()&amp;quot; and &amp;quot;()[]{}&amp;quot; are all valid but &amp;quot;(]&amp;quot; and &amp;quot;([)]&amp;quot; are">
-    <meta property="og:url" content="http://localhost:2368/20-valid-parentheses/">
-    <meta property="article:published_time" content="2017-09-10T18:46:33.000Z">
-    <meta property="article:modified_time" content="2017-09-10T18:46:33.000Z">
+    <meta property="og:title" content="48. Rotate Image">
+    <meta property="og:description" content="Question You are given an n x n 2D matrix representing an image. Rotate the image by 90 degrees (clockwise). Note: You have to rotate the image in-place, which means you have to modify the input 2D matrix directly. DO NOT allocate another 2D matrix and do the rotation. Example">
+    <meta property="og:url" content="http://localhost:2368/48-rotate-image/">
+    <meta property="article:published_time" content="2017-09-12T05:44:35.000Z">
+    <meta property="article:modified_time" content="2017-09-12T05:44:35.000Z">
     <meta property="article:tag" content="leetcode">
     
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="20. Valid Parentheses">
-    <meta name="twitter:description" content="Given a string containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid. The brackets must close in the correct order, &amp;quot;()&amp;quot; and &amp;quot;()[]{}&amp;quot; are all valid but &amp;quot;(]&amp;quot; and &amp;quot;([)]&amp;quot; are">
-    <meta name="twitter:url" content="http://localhost:2368/20-valid-parentheses/">
+    <meta name="twitter:title" content="48. Rotate Image">
+    <meta name="twitter:description" content="Question You are given an n x n 2D matrix representing an image. Rotate the image by 90 degrees (clockwise). Note: You have to rotate the image in-place, which means you have to modify the input 2D matrix directly. DO NOT allocate another 2D matrix and do the rotation. Example">
+    <meta name="twitter:url" content="http://localhost:2368/48-rotate-image/">
     <meta name="twitter:label1" content="Written by">
     <meta name="twitter:data1" content="Duct Tape Programmer">
     <meta name="twitter:label2" content="Filed under">
@@ -48,12 +48,12 @@
         "url": "http://localhost:2368/author/duct/",
         "sameAs": []
     },
-    "headline": "20. Valid Parentheses",
-    "url": "http://localhost:2368/20-valid-parentheses/",
-    "datePublished": "2017-09-10T18:46:33.000Z",
-    "dateModified": "2017-09-10T18:46:33.000Z",
+    "headline": "48. Rotate Image",
+    "url": "http://localhost:2368/48-rotate-image/",
+    "datePublished": "2017-09-12T05:44:35.000Z",
+    "dateModified": "2017-09-12T05:44:35.000Z",
     "keywords": "leetcode",
-    "description": "Given a string containing just the characters &#x27;(&#x27;, &#x27;)&#x27;, &#x27;{&#x27;, &#x27;}&#x27;, &#x27;[&#x27; and &#x27;]&#x27;, determine if the input string is valid. The brackets must close in the correct order, &amp;quot;()&amp;quot; and &amp;quot;()[]{}&amp;quot; are all valid but &amp;quot;(]&amp;quot; and &amp;quot;([)]&amp;quot; are",
+    "description": "Question You are given an n x n 2D matrix representing an image. Rotate the image by 90 degrees (clockwise). Note: You have to rotate the image in-place, which means you have to modify the input 2D matrix directly. DO NOT allocate another 2D matrix and do the rotation. Example",
     "mainEntityOfPage": {
         "@type": "WebPage",
         "@id": "http://localhost:2368/"
@@ -105,18 +105,109 @@ ghost.init({
 
             <header class="post-full-header">
                 <section class="post-full-meta">
-                    <time class="post-full-meta-date" datetime="2017-09-10">10 September 2017</time>
+                    <time class="post-full-meta-date" datetime="2017-09-11">11 September 2017</time>
                         <span class="date-divider">/</span> <a href="../tag/leetcode/">leetcode</a>
                 </section>
-                <h1 class="post-full-title">20. Valid Parentheses</h1>
+                <h1 class="post-full-title">48. Rotate Image</h1>
             </header>
 
 
             <section class="post-full-content">
-                <div class="kg-card-markdown"><p>Given a string containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.</p>
-<p>The brackets must close in the correct order, "()" and "()[]{}" are all valid but "(]" and "([)]" are not.</p>
-<p><a href="https://leetcode.com/problems/valid-parentheses/description/">Question on Leetcode</a></p>
-<script src="https://gist-it.appspot.com/github/dtprogrammer/leetcode-solutions/blob/master/src/main/java/dtprogrammer/github/io/p20/Solution.java"></script></div>
+                <div class="kg-card-markdown"><h3 id="question"><a href="https://leetcode.com/problems/rotate-image/description/">Question</a></h3>
+<p>You are given an n x n 2D matrix representing an image.</p>
+<p>Rotate the image by 90 degrees (clockwise).</p>
+<p>Note:<br>
+You have to rotate the image in-place, which means you have to modify the input 2D matrix directly. DO NOT allocate another 2D matrix and do the rotation.</p>
+<p>Example 1:</p>
+<p>Given input matrix =<br>
+[<br>
+[1,2,3],<br>
+[4,5,6],<br>
+[7,8,9]<br>
+],</p>
+<p>rotate the input matrix in-place such that it becomes:<br>
+[<br>
+[7,4,1],<br>
+[8,5,2],<br>
+[9,6,3]<br>
+]<br>
+Example 2:</p>
+<p>Given input matrix =<br>
+[<br>
+[ 5, 1, 9,11],<br>
+[ 2, 4, 8,10],<br>
+[13, 3, 6, 7],<br>
+[15,14,12,16]<br>
+],</p>
+<p>rotate the input matrix in-place such that it becomes:<br>
+[<br>
+[15,13, 2, 5],<br>
+[14, 3, 4, 1],<br>
+[12, 6, 8, 9],<br>
+[16, 7,10,11]<br>
+]</p>
+<h3 id="solution">Solution</h3>
+<p>The problem can be solved easily if we remember a trick.</p>
+<ul>
+<li>Clockwise rotation: Swap up-down and then swap elements zig-zag</li>
+<li>Anticlockwise rotation: Swap left right and then swap elements zig-zag</li>
+</ul>
+<p>For example for the given matrix<br>
+[<br>
+[1,2,3],<br>
+[4,5,6],<br>
+[7,8,9]<br>
+]</p>
+<p>After swapping up-down we get<br>
+[<br>
+[7,8,9],<br>
+[4,5,6],<br>
+[1,2,3]<br>
+]<br>
+After swapping zig-zag we get<br>
+[<br>
+[7,4,1],<br>
+[8,5,2],<br>
+[9,6,3]<br>
+]</p>
+<p>Swapping up-down is pretty easy and can easily be achieved by</p>
+<pre><code>for (int i = 0; i &lt; matrix.length / 2; i++) {
+    for (int j = 0; j &lt; matrix[0].length; j++) {
+        int temp = matrix[i][j];
+        matrix[i][j] = matrix[matrix.length - i - 1][j];
+        matrix[matrix.length - i - 1][j] = temp;
+    }
+}
+</code></pre>
+<p>Although, I had some trouble in doing zig-zag swap it required you to limit the swap. That is once we swap <code>matrix[0][1]</code> with <code>matrix[1][0]</code> we should not swap it again whent the value of i becomes 1 from 0. My initial approach was to limit this with a simple if check as shown below</p>
+<pre><code>for (int i = 0; i &lt; matrix.length; i++) {
+    for (int j = 0; j &lt; matrix[0].length; j++) {
+        if (i &lt; j) {
+            int temp = matrix[i][j];
+            matrix[i][j] = matrix[j][i];
+            matrix[j][i] = temp;
+        }
+    }
+}
+</code></pre>
+<p>This made my solution pass the test but it did poorly in <em>Accepted Solutions Runtime Distribution</em>. After seeing some solutions in the <em>Discussion</em> I found out that <code>j</code> can start from <code>i+1</code> since we alwasy skip swaps where <code>i == j</code>. I thought this will improve the performance in the <em>Accepted Solutions Runtime Distribution</em> since we are skipping one column although the time distribution was still the same.</p>
+<p>Here is my final solution</p>
+<script src="https://gist-it.appspot.com/github/dtprogrammer/leetcode-solutions/blob/master/src/main/java/dtprogrammer/github/io/p48/Solution.java"></script>
+<h4 id="timecomplexity">Time complexity</h4>
+<p>The time complexity O(n * n) since we traverse the matrix.</p>
+<h3 id="spacecomplexity">Space complexity</h3>
+<p>Constant</p>
+<h3 id="notes">Notes</h3>
+<ol>
+<li>As mentioned earlir the trick is:
+<ul>
+<li>Clockwise rotation: Swap up-down and then swap elements zig-zag</li>
+<li>Anticlockwise rotation: Swap left right and then swap elements zig-zag</li>
+</ul>
+</li>
+<li>For zig-zag conversion <code>j</code> should start from <code>i + 1</code></li>
+</ol>
+</div>
             </section>
 
 
@@ -152,14 +243,15 @@ ghost.init({
 </div>
                     <div class="read-next-card-content">
                         <ul>
-                            <li><a href="../48-rotate-image/">48. Rotate Image</a></li>
                             <li><a href="../28-implement-strstr/">28. Implement strStr()</a></li>
+                            <li><a href="../20-valid-parentheses/">20. Valid Parentheses</a></li>
                         </ul>
                     </div>
                     <footer class="read-next-card-footer">
                         <a href="../tag/leetcode/">See all 2 posts →</a>
                     </footer>
                 </article>
+
 
                 <article class="post-card post tag-leetcode no-image">
     <div class="post-card-content">
@@ -178,7 +270,6 @@ ghost.init({
     </div>
 </article>
 
-
         </div>
     </div>
 </aside>
@@ -191,16 +282,16 @@ ghost.init({
         </a>
     </div>
     <span class="floating-header-divider">—</span>
-    <div class="floating-header-title">20. Valid Parentheses</div>
+    <div class="floating-header-title">48. Rotate Image</div>
     <div class="floating-header-share">
         <div class="floating-header-share-label">Share this <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24">
     <path d="M7.5 15.5V4a1.5 1.5 0 1 1 3 0v4.5h2a1 1 0 0 1 1 1h2a1 1 0 0 1 1 1H18a1.5 1.5 0 0 1 1.5 1.5v3.099c0 .929-.13 1.854-.385 2.748L17.5 23.5h-9c-1.5-2-5.417-8.673-5.417-8.673a1.2 1.2 0 0 1 1.76-1.605L7.5 15.5zm6-6v2m-3-3.5v3.5m6-1v2"></path>
 </svg>
 </div>
-        <a class="floating-header-share-tw" href="https://twitter.com/share?text=20.%20Valid%20Parentheses&amp;url=http://localhost:2368/20-valid-parentheses/" onclick="window.open(this.href, 'share-twitter', 'width=550,height=235');return false;">
+        <a class="floating-header-share-tw" href="https://twitter.com/share?text=48.%20Rotate%20Image&amp;url=http://localhost:2368/48-rotate-image/" onclick="window.open(this.href, 'share-twitter', 'width=550,height=235');return false;">
             <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 32 32"><path d="M30.063 7.313c-.813 1.125-1.75 2.125-2.875 2.938v.75c0 1.563-.188 3.125-.688 4.625a15.088 15.088 0 0 1-2.063 4.438c-.875 1.438-2 2.688-3.25 3.813a15.015 15.015 0 0 1-4.625 2.563c-1.813.688-3.75 1-5.75 1-3.25 0-6.188-.875-8.875-2.625.438.063.875.125 1.375.125 2.688 0 5.063-.875 7.188-2.5-1.25 0-2.375-.375-3.375-1.125s-1.688-1.688-2.063-2.875c.438.063.813.125 1.125.125.5 0 1-.063 1.5-.25-1.313-.25-2.438-.938-3.313-1.938a5.673 5.673 0 0 1-1.313-3.688v-.063c.813.438 1.688.688 2.625.688a5.228 5.228 0 0 1-1.875-2c-.5-.875-.688-1.813-.688-2.75 0-1.063.25-2.063.75-2.938 1.438 1.75 3.188 3.188 5.25 4.25s4.313 1.688 6.688 1.813a5.579 5.579 0 0 1 1.5-5.438c1.125-1.125 2.5-1.688 4.125-1.688s3.063.625 4.188 1.813a11.48 11.48 0 0 0 3.688-1.375c-.438 1.375-1.313 2.438-2.563 3.188 1.125-.125 2.188-.438 3.313-.875z"></path></svg>
         </a>
-        <a class="floating-header-share-fb" href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:2368/20-valid-parentheses/" onclick="window.open(this.href, 'share-facebook','width=580,height=296');return false;">
+        <a class="floating-header-share-fb" href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:2368/48-rotate-image/" onclick="window.open(this.href, 'share-facebook','width=580,height=296');return false;">
             <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 32 32"><path d="M19 6h5V0h-5c-3.86 0-7 3.14-7 7v3H8v6h4v16h6V16h5l1-6h-6V7c0-.542.458-1 1-1z"></path></svg>
         </a>
     </div>
