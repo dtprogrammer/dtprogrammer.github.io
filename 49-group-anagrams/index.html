@@ -34,7 +34,7 @@
     <meta property="og:description" content="Question Given an array of strings, group anagrams together. For example, given: [&amp;quot;eat&amp;quot;, &amp;quot;tea&amp;quot;, &amp;quot;tan&amp;quot;, &amp;quot;ate&amp;quot;, &amp;quot;nat&amp;quot;, &amp;quot;bat&amp;quot;], Return: [ [&amp;quot;ate&amp;quot;, &amp;quot;eat&amp;quot;,&amp;quot;tea&amp;quot;], [&amp;quot;nat&amp;quot;,&amp;quot;tan&amp;quot;], [&amp;quot;bat&amp;quot;] ] Note:">
     <meta property="og:url" content="http://localhost:2368/49-group-anagrams/">
     <meta property="article:published_time" content="2017-09-13T04:02:41.000Z">
-    <meta property="article:modified_time" content="2017-09-13T04:03:09.000Z">
+    <meta property="article:modified_time" content="2017-09-13T04:09:00.000Z">
     <meta property="article:tag" content="leetcode">
     
     <meta name="twitter:card" content="summary">
@@ -64,7 +64,7 @@
     "headline": "49. Group Anagrams",
     "url": "http://localhost:2368/49-group-anagrams/",
     "datePublished": "2017-09-13T04:02:41.000Z",
-    "dateModified": "2017-09-13T04:03:09.000Z",
+    "dateModified": "2017-09-13T04:09:00.000Z",
     "keywords": "leetcode",
     "description": "Question Given an array of strings, group anagrams together. For example, given: [&amp;quot;eat&amp;quot;, &amp;quot;tea&amp;quot;, &amp;quot;tan&amp;quot;, &amp;quot;ate&amp;quot;, &amp;quot;nat&amp;quot;, &amp;quot;bat&amp;quot;], Return: [ [&amp;quot;ate&amp;quot;, &amp;quot;eat&amp;quot;,&amp;quot;tea&amp;quot;], [&amp;quot;nat&amp;quot;,&amp;quot;tan&amp;quot;], [&amp;quot;bat&amp;quot;] ] Note:",
     "mainEntityOfPage": {
@@ -115,7 +115,7 @@ ghost.init({
 	
 		<header class="postheader_digitus">
             <h1 class="posttitle_digitus">49. Group Anagrams</h1>
-            <span>by</span><h4 class="authorname_digitus"><a href="../author/duct.4">Duct Tape Programmer</a></h4>
+            <span>by</span><h4 class="authorname_digitus"><a href="../author/duct.6">Duct Tape Programmer</a></h4>
             <hr class="pause">
 			<ul>
 				<li><i class="fa fa-calendar"></i><time class="date_digitus">Tuesday 12 Sep 2017</time></li>
@@ -136,16 +136,16 @@ Return:</p>
 ]<br>
 Note: All inputs will be in lower-case.</p>
 <h3 id="solution">Solution</h3>
-<p>There are multiple way to solve this problem.</p>
+<p>There are multiple ways to solve this problem.</p>
 <h4 id="sorting">Sorting:</h4>
-<p>We can sort an generate a key to store in the HashMap although sorting will take O(N * M Log (M)) time where N is the number of strings and M is the average length of string.</p>
+<p>We can sort and generate a key to store in the HashMap although sorting will take O(N * M Log (M)) time where N is the number of strings and M is the average length of a string.</p>
 <h4 id="primenumbermultiplication">Prime number Multiplication:</h4>
-<p>Another approach to solve this will be to assign a prime number to each character from a-z and then multiple. Since the product of two or more prime numbers are always unique we can use that to index. Although this is not a good solution as for a long string it can lead to overflow.</p>
+<p>Another approach to solving this will be to assign a prime number to each character from a-z and then multiple. Since the product of two or more prime numbers is always unique we can use that to index. Although this is not a good solution as for a long string it can lead to overflow.</p>
 <h4 id="charactercount">Character Count:</h4>
-<p>I came across this solution on <a href="https://leetcode.com/problems/group-anagrams/solution/">leetcode solution</a> for this problem. The idea is generate the key for indexing through character occurrence count. The solution on leetcode uses # as a separator to separate the occurrence count so that it can create a string for hashing. Although this is not required. We can hash based on array elements. See the solution below:</p>
+<p>I came across this solution on <a href="https://leetcode.com/problems/group-anagrams/solution/">leetcode solution</a> for this problem. The idea is to generate the key for indexing through character occurrence count. The solution on leetcode uses # as a separator to separate the occurrence count so that it can create a string for hashing. Although this is not required. We can hash based on array elements. See the solution below:</p>
 <script src="https://gist-it.appspot.com/github/dtprogrammer/leetcode-solutions/blob/master/src/main/java/dtprogrammer/github/io/p49/Solution.java"></script>
 <h4 id="timecomplexity">Time complexity</h4>
-<p>The time complexity is O (N * M) where N is the number of string and M is the average size of string.</p>
+<p>The time complexity is O (N * M) where N is the number of string and M is the average size of a string.</p>
 <h3 id="spacecomplexity">Space complexity</h3>
 <p>The space complexity is also O (N * M)</p>
 <h3 id="notes">Notes</h3>
@@ -177,7 +177,7 @@ Note: All inputs will be in lower-case.</p>
          <address>
          
                 </address><ul>
-				    <li><h4 class="authorname_digitus"><a href="../author/duct.4">Duct Tape Programmer</a></h4></li>
+				    <li><h4 class="authorname_digitus"><a href="../author/duct.6">Duct Tape Programmer</a></h4></li>
                     <li><p class="authorbio_digitus"></p></li>
 				    <li>  
                     </li>
