@@ -1,4 +1,36 @@
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" version="2.0"><channel><title>Software Interview Preparation Blog</title><description>Algorithms, Data Structures and System Design for Interviews</description><link>http://localhost:2368/</link><image><url>http://localhost:2368/favicon.png</url><title>Software Interview Preparation Blog</title><link>http://localhost:2368/</link></image><generator>Ghost 1.8</generator><lastBuildDate>Fri, 15 Sep 2017 06:50:34 GMT</lastBuildDate><atom:link href="http://localhost:2368/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title>130. Surrounded Regions</title><description>&lt;div class="kg-card-markdown"&gt;&lt;h3 id="question"&gt;&lt;a href="https://leetcode.com/problems/surrounded-regions/description/"&gt;Question&lt;/a&gt;&lt;/h3&gt;
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" version="2.0"><channel><title>Software Interview Preparation Blog</title><description>Algorithms, Data Structures and System Design for Interviews</description><link>http://localhost:2368/</link><image><url>http://localhost:2368/favicon.png</url><title>Software Interview Preparation Blog</title><link>http://localhost:2368/</link></image><generator>Ghost 1.8</generator><lastBuildDate>Fri, 15 Sep 2017 08:26:17 GMT</lastBuildDate><atom:link href="http://localhost:2368/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title>236. Lowest Common Ancestor of a Binary Tree</title><description>&lt;div class="kg-card-markdown"&gt;&lt;h3 id="question"&gt;&lt;a href="https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/description/"&gt;Question&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Given a binary tree, find the lowest common ancestor (LCA) of two given nodes in the tree.&lt;/p&gt;
+&lt;p&gt;According to the definition of LCA on Wikipedia: “The lowest common ancestor is defined between two nodes v and w as the lowest node in T that has both v and w&lt;/p&gt;&lt;/div&gt;</description><link>http://localhost:2368/236-lowest-common-ancestor-of-a-binary-tree/</link><guid isPermaLink="false">59bb8b12a7b0fe3c2805e7fc</guid><category>leetcode</category><dc:creator>Duct Tape Programmer</dc:creator><pubDate>Fri, 15 Sep 2017 08:26:00 GMT</pubDate><content:encoded>&lt;div class="kg-card-markdown"&gt;&lt;h3 id="question"&gt;&lt;a href="https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/description/"&gt;Question&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Given a binary tree, find the lowest common ancestor (LCA) of two given nodes in the tree.&lt;/p&gt;
+&lt;p&gt;According to the definition of LCA on Wikipedia: “The lowest common ancestor is defined between two nodes v and w as the lowest node in T that has both v and w as descendants (where we allow a node to be a descendant of itself).”&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;        _______3______
+       /              \
+    ___5__          ___1__
+   /      \        /      \
+   6      _2       0       8
+         /  \
+         7   4
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;For example, the lowest common ancestor (LCA) of nodes 5 and 1 is 3. Another example is LCA of nodes 5 and 4 is 5, since a node can be a descendant of itself according to the LCA definition.&lt;/p&gt;
+&lt;h3 id="solution"&gt;Solution&lt;/h3&gt;
+&lt;p&gt;This problem can be solved in different possible ways. EPI also has a solution for this which is pretty lengthy. The &lt;code&gt;Discuss&lt;/code&gt; section on leetcode have a very simple solution which I learned and replicated.&lt;/p&gt;
+&lt;p&gt;There are two possibilities here:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;The nodes are in different subtree&lt;/li&gt;
+&lt;li&gt;One of the nodes itself is the root.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;With the above, we can write the solution below in which if the subtree contains both the nodes then the result is subtree root itself. If it contains either of the nodes then results is that node. If none of the above cause is true then it returns null.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://i.imgur.com/KyrLj5W.jpg" alt=""&gt;&lt;/p&gt;
+&lt;script src="https://gist-it.appspot.com/github/dtprogrammer/leetcode-solutions/blob/master/src/main/java/dtprogrammer/github/io/p236/Solution.java"&gt;&lt;/script&gt;
+&lt;h3 id="timecomplexity"&gt;Time complexity&lt;/h3&gt;
+&lt;p&gt;The time complexity is O(n) since we traverse the tree to find the LCA.&lt;/p&gt;
+&lt;h3 id="spacecomplexity"&gt;Space complexity&lt;/h3&gt;
+&lt;p&gt;The space complexity is constant although since the algorithm uses recursion there is O(log n = h) space required on the stack&lt;/p&gt;
+&lt;h3 id="notes"&gt;Notes&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;If left is null return right, if right is null return left, if both are null the root itself is returned.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;</content:encoded></item><item><title>130. Surrounded Regions</title><description>&lt;div class="kg-card-markdown"&gt;&lt;h3 id="question"&gt;&lt;a href="https://leetcode.com/problems/surrounded-regions/description/"&gt;Question&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;Given a 2D board containing 'X' and 'O' (the letter O), capture all regions surrounded by 'X'.&lt;/p&gt;
 &lt;p&gt;A region is captured by flipping all 'O's into 'X's in that surrounded region.&lt;/p&gt;
 &lt;p&gt;For example,&lt;br&gt;

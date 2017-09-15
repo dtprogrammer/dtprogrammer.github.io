@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
  
-<title>20. Valid Parentheses</title>
+<title>236. Lowest Common Ancestor of a Binary Tree</title>
 <link rel="shortcut icon" href="../favicon.png">
 <meta name="description" content="">
     
@@ -30,17 +30,17 @@
     
     <meta property="og:site_name" content="Software Interview Preparation Blog">
     <meta property="og:type" content="article">
-    <meta property="og:title" content="20. Valid Parentheses">
-    <meta property="og:description" content="Question Given a string containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid. The brackets must close in the correct order, &amp;quot;()&amp;quot; and &amp;quot;()[]{}&amp;quot; are all valid but &amp;quot;(]&amp;quot; and &amp;quot;([)]&amp;quot;">
-    <meta property="og:url" content="http://localhost:2368/20-valid-parentheses/">
-    <meta property="article:published_time" content="2017-09-10T18:46:33.000Z">
-    <meta property="article:modified_time" content="2017-09-13T06:11:08.000Z">
+    <meta property="og:title" content="236. Lowest Common Ancestor of a Binary Tree">
+    <meta property="og:description" content="Question Given a binary tree, find the lowest common ancestor (LCA) of two given nodes in the tree. According to the definition of LCA on Wikipedia: “The lowest common ancestor is defined between two nodes v and w as the lowest node in T that has both v and w">
+    <meta property="og:url" content="http://localhost:2368/236-lowest-common-ancestor-of-a-binary-tree/">
+    <meta property="article:published_time" content="2017-09-15T08:26:00.000Z">
+    <meta property="article:modified_time" content="2017-09-15T08:26:00.000Z">
     <meta property="article:tag" content="leetcode">
     
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="20. Valid Parentheses">
-    <meta name="twitter:description" content="Question Given a string containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid. The brackets must close in the correct order, &amp;quot;()&amp;quot; and &amp;quot;()[]{}&amp;quot; are all valid but &amp;quot;(]&amp;quot; and &amp;quot;([)]&amp;quot;">
-    <meta name="twitter:url" content="http://localhost:2368/20-valid-parentheses/">
+    <meta name="twitter:title" content="236. Lowest Common Ancestor of a Binary Tree">
+    <meta name="twitter:description" content="Question Given a binary tree, find the lowest common ancestor (LCA) of two given nodes in the tree. According to the definition of LCA on Wikipedia: “The lowest common ancestor is defined between two nodes v and w as the lowest node in T that has both v and w">
+    <meta name="twitter:url" content="http://localhost:2368/236-lowest-common-ancestor-of-a-binary-tree/">
     <meta name="twitter:label1" content="Written by">
     <meta name="twitter:data1" content="Duct Tape Programmer">
     <meta name="twitter:label2" content="Filed under">
@@ -61,12 +61,12 @@
         "url": "http://localhost:2368/author/duct/",
         "sameAs": []
     },
-    "headline": "20. Valid Parentheses",
-    "url": "http://localhost:2368/20-valid-parentheses/",
-    "datePublished": "2017-09-10T18:46:33.000Z",
-    "dateModified": "2017-09-13T06:11:08.000Z",
+    "headline": "236. Lowest Common Ancestor of a Binary Tree",
+    "url": "http://localhost:2368/236-lowest-common-ancestor-of-a-binary-tree/",
+    "datePublished": "2017-09-15T08:26:00.000Z",
+    "dateModified": "2017-09-15T08:26:00.000Z",
     "keywords": "leetcode",
-    "description": "Question Given a string containing just the characters &#x27;(&#x27;, &#x27;)&#x27;, &#x27;{&#x27;, &#x27;}&#x27;, &#x27;[&#x27; and &#x27;]&#x27;, determine if the input string is valid. The brackets must close in the correct order, &amp;quot;()&amp;quot; and &amp;quot;()[]{}&amp;quot; are all valid but &amp;quot;(]&amp;quot; and &amp;quot;([)]&amp;quot;",
+    "description": "Question Given a binary tree, find the lowest common ancestor (LCA) of two given nodes in the tree. According to the definition of LCA on Wikipedia: “The lowest common ancestor is defined between two nodes v and w as the lowest node in T that has both v and w",
     "mainEntityOfPage": {
         "@type": "WebPage",
         "@id": "http://localhost:2368/"
@@ -114,30 +114,57 @@ ghost.init({
     <article class="article_digitus">
 	
 		<header class="postheader_digitus">
-            <h1 class="posttitle_digitus">20. Valid Parentheses</h1>
+            <h1 class="posttitle_digitus">236. Lowest Common Ancestor of a Binary Tree</h1>
             <span>by</span><h4 class="authorname_digitus"><a href="../author/duct.12">Duct Tape Programmer</a></h4>
             <hr class="pause">
 			<ul>
-				<li><i class="fa fa-calendar"></i><time class="date_digitus">Sunday 10 Sep 2017</time></li>
-                <li><i class="fa fa-comments"></i><a class="comments_digitus" href="index.html#disqus_thread" data-disqus-identifier="59b58772f23bc812fffcdbc1">Comments</a></li>
+				<li><i class="fa fa-calendar"></i><time class="date_digitus">Friday 15 Sep 2017</time></li>
+                <li><i class="fa fa-comments"></i><a class="comments_digitus" href="index.html#disqus_thread" data-disqus-identifier="59bb8b12a7b0fe3c2805e7fc">Comments</a></li>
 				<li><i class="fa fa-tag"></i><span class="posttags_digitus"><a href="../tag/leetcode/">leetcode</a></span></li>
 			</ul>
 		</header>
 	
 		<div class="postcontent_digitus">
-			<div class="kg-card-markdown"><h3 id="question"><a href="https://leetcode.com/problems/valid-parentheses/description/">Question</a></h3>
-<p>Given a string containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.</p>
-<p>The brackets must close in the correct order, "()" and "()[]{}" are all valid but "(]" and "([)]" are not.</p>
-<script src="https://gist-it.appspot.com/github/dtprogrammer/leetcode-solutions/blob/master/src/main/java/dtprogrammer/github/io/p20/Solution.java"></script></div>
+			<div class="kg-card-markdown"><h3 id="question"><a href="https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/description/">Question</a></h3>
+<p>Given a binary tree, find the lowest common ancestor (LCA) of two given nodes in the tree.</p>
+<p>According to the definition of LCA on Wikipedia: “The lowest common ancestor is defined between two nodes v and w as the lowest node in T that has both v and w as descendants (where we allow a node to be a descendant of itself).”</p>
+<pre><code>        _______3______
+       /              \
+    ___5__          ___1__
+   /      \        /      \
+   6      _2       0       8
+         /  \
+         7   4
+</code></pre>
+<p>For example, the lowest common ancestor (LCA) of nodes 5 and 1 is 3. Another example is LCA of nodes 5 and 4 is 5, since a node can be a descendant of itself according to the LCA definition.</p>
+<h3 id="solution">Solution</h3>
+<p>This problem can be solved in different possible ways. EPI also has a solution for this which is pretty lengthy. The <code>Discuss</code> section on leetcode have a very simple solution which I learned and replicated.</p>
+<p>There are two possibilities here:</p>
+<ol>
+<li>The nodes are in different subtree</li>
+<li>One of the nodes itself is the root.</li>
+</ol>
+<p>With the above, we can write the solution below in which if the subtree contains both the nodes then the result is subtree root itself. If it contains either of the nodes then results is that node. If none of the above cause is true then it returns null.</p>
+<p><img src="https://i.imgur.com/KyrLj5W.jpg" alt=""></p>
+<script src="https://gist-it.appspot.com/github/dtprogrammer/leetcode-solutions/blob/master/src/main/java/dtprogrammer/github/io/p236/Solution.java"></script>
+<h3 id="timecomplexity">Time complexity</h3>
+<p>The time complexity is O(n) since we traverse the tree to find the LCA.</p>
+<h3 id="spacecomplexity">Space complexity</h3>
+<p>The space complexity is constant although since the algorithm uses recursion there is O(log n = h) space required on the stack</p>
+<h3 id="notes">Notes</h3>
+<ol>
+<li>If left is null return right, if right is null return left, if both are null the root itself is returned.</li>
+</ol>
+</div>
 		</div>
 	
 		<ol class="share_digitus">
             <li>
                 <span>Share:</span>
                 <ul class="share-ikons_digitus">
-                    <li><a class="fa fa-twitter-square" target="_blank" href="http://twitter.com/share?text=20.%20Valid%20Parentheses&amp;url=http://localhost:2368/20-valid-parentheses/"><span class="hidden_digitus">Twitter</span></a></li>
-                    <li><a class="fa fa-facebook-square" target="_blank" href="http://www.facebook.com/sharer.php?u=http://localhost:2368/20-valid-parentheses/"><span class="hidden_digitus">Facebook</span></a></li>
-                    <li><a class="fa fa-google-plus-square" target="_blank" href="https://plus.google.com/share?url=http://localhost:2368/20-valid-parentheses/"><span class="hidden_digitus">Google+</span></a></li>
+                    <li><a class="fa fa-twitter-square" target="_blank" href="http://twitter.com/share?text=236.%20Lowest%20Common%20Ancestor%20of%20a%20Binary%20Tree&amp;url=http://localhost:2368/236-lowest-common-ancestor-of-a-binary-tree/"><span class="hidden_digitus">Twitter</span></a></li>
+                    <li><a class="fa fa-facebook-square" target="_blank" href="http://www.facebook.com/sharer.php?u=http://localhost:2368/236-lowest-common-ancestor-of-a-binary-tree/"><span class="hidden_digitus">Facebook</span></a></li>
+                    <li><a class="fa fa-google-plus-square" target="_blank" href="https://plus.google.com/share?url=http://localhost:2368/236-lowest-common-ancestor-of-a-binary-tree/"><span class="hidden_digitus">Google+</span></a></li>
                 </ul>
             </li>
             <li class="back_digitus"><a href="index.html"><i class="fa fa-level-up"></i><span>Back to top</span></a></li>
