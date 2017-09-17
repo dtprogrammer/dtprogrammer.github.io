@@ -1,4 +1,81 @@
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" version="2.0"><channel><title>Software Interview Preparation Blog</title><description>Algorithms, Data Structures and System Design for Interviews</description><link>http://localhost:2368/</link><image><url>http://localhost:2368/favicon.png</url><title>Software Interview Preparation Blog</title><link>http://localhost:2368/</link></image><generator>Ghost 1.8</generator><lastBuildDate>Sun, 17 Sep 2017 00:37:59 GMT</lastBuildDate><atom:link href="http://localhost:2368/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title>102. Binary Tree Level Order Traversal</title><description>&lt;div class="kg-card-markdown"&gt;&lt;h3 id="question"&gt;&lt;a href="https://leetcode.com/problems/binary-tree-level-order-traversal/description/"&gt;Question&lt;/a&gt;&lt;/h3&gt;
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" version="2.0"><channel><title>Software Interview Preparation Blog</title><description>Algorithms, Data Structures and System Design for Interviews</description><link>http://localhost:2368/</link><image><url>http://localhost:2368/favicon.png</url><title>Software Interview Preparation Blog</title><link>http://localhost:2368/</link></image><generator>Ghost 1.8</generator><lastBuildDate>Sun, 17 Sep 2017 08:12:15 GMT</lastBuildDate><atom:link href="http://localhost:2368/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title>54. Spiral Matrix</title><description>&lt;div class="kg-card-markdown"&gt;&lt;h3 id="question"&gt;&lt;a href="https://leetcode.com/problems/spiral-matrix/description/"&gt;Question&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Given a matrix of m x n elements (m rows, n columns), return all elements of the matrix in spiral order.&lt;/p&gt;
+&lt;p&gt;For example,&lt;br&gt;
+Given the following matrix:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;[
+ [ 1, 2, 3 ],
+ [ 4, 5, 6 ],
+ [ 7, 8, 9 ]
+]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;You should return [1,2,3,6,9,8,7,4,5].&lt;/p&gt;
+&lt;h3 id="solution"&gt;Solution&lt;/h3&gt;&lt;/div&gt;</description><link>http://localhost:2368/54-spiral-matrix/</link><guid isPermaLink="false">59be2d56a7b0fe3c2805e808</guid><category>leetcode</category><dc:creator>Duct Tape Programmer</dc:creator><pubDate>Sun, 17 Sep 2017 08:12:05 GMT</pubDate><content:encoded>&lt;div class="kg-card-markdown"&gt;&lt;h3 id="question"&gt;&lt;a href="https://leetcode.com/problems/spiral-matrix/description/"&gt;Question&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Given a matrix of m x n elements (m rows, n columns), return all elements of the matrix in spiral order.&lt;/p&gt;
+&lt;p&gt;For example,&lt;br&gt;
+Given the following matrix:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;[
+ [ 1, 2, 3 ],
+ [ 4, 5, 6 ],
+ [ 7, 8, 9 ]
+]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;You should return [1,2,3,6,9,8,7,4,5].&lt;/p&gt;
+&lt;h3 id="solution"&gt;Solution&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;The problem is straight forward. We just need to keep track of the processed rows and columns so that we avoid them in spiral traversal.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;script src="https://gist-it.appspot.com/github/dtprogrammer/leetcode-solutions/blob/master/src/main/java/dtprogrammer/github/io/p54/Solution.java"&gt;&lt;/script&gt;
+&lt;h3 id="timecomplexity"&gt;Time complexity&lt;/h3&gt;
+&lt;p&gt;O (m * n)&lt;/p&gt;
+&lt;h3 id="spacecomplexity"&gt;Space complexity&lt;/h3&gt;
+&lt;p&gt;Constant&lt;/p&gt;
+&lt;h3 id="notes"&gt;Notes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;We only go right to left and/or down to up only if the there is remaing rows and remaining columns respectively.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;</content:encoded></item><item><title>103. Binary Tree Zigzag Level Order Traversal</title><description>&lt;div class="kg-card-markdown"&gt;&lt;h3 id="question"&gt;&lt;a href="https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/description/"&gt;Question&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Given a binary tree, return the zigzag level order traversal of its nodes' values. (ie, from left to right, then right to left for the next level and alternate between).&lt;/p&gt;
+&lt;p&gt;For example:&lt;br&gt;
+Given binary tree [3,9,20,null,null,15,7],&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;    3
+   / \
+  9  20
+    /  \
+   15   7
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;return its&lt;/p&gt;&lt;/div&gt;</description><link>http://localhost:2368/103-binary-tree-zigzag-level-order-traversal/</link><guid isPermaLink="false">59be25cba7b0fe3c2805e806</guid><category>leetcode</category><dc:creator>Duct Tape Programmer</dc:creator><pubDate>Sun, 17 Sep 2017 07:39:27 GMT</pubDate><content:encoded>&lt;div class="kg-card-markdown"&gt;&lt;h3 id="question"&gt;&lt;a href="https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/description/"&gt;Question&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Given a binary tree, return the zigzag level order traversal of its nodes' values. (ie, from left to right, then right to left for the next level and alternate between).&lt;/p&gt;
+&lt;p&gt;For example:&lt;br&gt;
+Given binary tree [3,9,20,null,null,15,7],&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;    3
+   / \
+  9  20
+    /  \
+   15   7
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;return its zigzag level order traversal as:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;[
+  [3],
+  [20,9],
+  [15,7]
+]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id="solution"&gt;Solution&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;This problem is very similar to &lt;a href="http://dtprogrammer.github.io/102-binary-tree-level-order-traversal/"&gt;102. Binary Tree Level Order Traversal&lt;/a&gt;. We just need to reverse the order while traversing down the level.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;This might be achieved by inserting the items in the queue in the desired way but an easier approach is to insert them in the result list in the desired way. The below solution takes this approach.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;script src="https://gist-it.appspot.com/github/dtprogrammer/leetcode-solutions/blob/master/src/main/java/dtprogrammer/github/io/p103/Solution.java"&gt;&lt;/script&gt;
+&lt;h3 id="timecomplexity"&gt;Time complexity&lt;/h3&gt;
+&lt;p&gt;O (n)&lt;/p&gt;
+&lt;h3 id="spacecomplexity"&gt;Space complexity&lt;/h3&gt;
+&lt;p&gt;O (n) since in worst case we might end up with all the nodes in level and have to keep them in queue&lt;/p&gt;
+&lt;h3 id="notes"&gt;Notes&lt;/h3&gt;
+&lt;/div&gt;</content:encoded></item><item><title>102. Binary Tree Level Order Traversal</title><description>&lt;div class="kg-card-markdown"&gt;&lt;h3 id="question"&gt;&lt;a href="https://leetcode.com/problems/binary-tree-level-order-traversal/description/"&gt;Question&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;Given a binary tree, return the level order traversal of its nodes' values. (ie, from left to right, level by level).&lt;/p&gt;
 &lt;p&gt;For example:&lt;br&gt;
 Given binary tree [3,9,20,null,null,15,7],&lt;/p&gt;
