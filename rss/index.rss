@@ -1,4 +1,69 @@
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" version="2.0"><channel><title>Software Interview Preparation Blog</title><description>Algorithms, Data Structures and System Design for Interviews</description><link>http://localhost:2368/</link><image><url>http://localhost:2368/favicon.png</url><title>Software Interview Preparation Blog</title><link>http://localhost:2368/</link></image><generator>Ghost 1.8</generator><lastBuildDate>Fri, 15 Sep 2017 08:26:17 GMT</lastBuildDate><atom:link href="http://localhost:2368/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title>236. Lowest Common Ancestor of a Binary Tree</title><description>&lt;div class="kg-card-markdown"&gt;&lt;h3 id="question"&gt;&lt;a href="https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/description/"&gt;Question&lt;/a&gt;&lt;/h3&gt;
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" version="2.0"><channel><title>Software Interview Preparation Blog</title><description>Algorithms, Data Structures and System Design for Interviews</description><link>http://localhost:2368/</link><image><url>http://localhost:2368/favicon.png</url><title>Software Interview Preparation Blog</title><link>http://localhost:2368/</link></image><generator>Ghost 1.8</generator><lastBuildDate>Sun, 17 Sep 2017 00:37:59 GMT</lastBuildDate><atom:link href="http://localhost:2368/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title>102. Binary Tree Level Order Traversal</title><description>&lt;div class="kg-card-markdown"&gt;&lt;h3 id="question"&gt;&lt;a href="https://leetcode.com/problems/binary-tree-level-order-traversal/description/"&gt;Question&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Given a binary tree, return the level order traversal of its nodes' values. (ie, from left to right, level by level).&lt;/p&gt;
+&lt;p&gt;For example:&lt;br&gt;
+Given binary tree [3,9,20,null,null,15,7],&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;    3
+   / \
+  9  20
+    /  \
+   15   7
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;return its level order traversal as:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;[
+  [3],
+  [9,20],
+  [15,7]&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description><link>http://localhost:2368/102-binary-tree-level-order-traversal/</link><guid isPermaLink="false">59bdc286a7b0fe3c2805e802</guid><category>leetcode</category><dc:creator>Duct Tape Programmer</dc:creator><pubDate>Sun, 17 Sep 2017 00:36:48 GMT</pubDate><content:encoded>&lt;div class="kg-card-markdown"&gt;&lt;h3 id="question"&gt;&lt;a href="https://leetcode.com/problems/binary-tree-level-order-traversal/description/"&gt;Question&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Given a binary tree, return the level order traversal of its nodes' values. (ie, from left to right, level by level).&lt;/p&gt;
+&lt;p&gt;For example:&lt;br&gt;
+Given binary tree [3,9,20,null,null,15,7],&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;    3
+   / \
+  9  20
+    /  \
+   15   7
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;return its level order traversal as:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;[
+  [3],
+  [9,20],
+  [15,7]
+]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id="solution"&gt;Solution&lt;/h3&gt;
+&lt;p&gt;This problem is really simple. It just need a BFS traversal of the tree with a way to track when a level ends. For this we keep a counter for levelSize which tracks the number of elements at each level.&lt;/p&gt;
+&lt;script src="https://gist-it.appspot.com/github/dtprogrammer/leetcode-solutions/blob/master/src/main/java/dtprogrammer/github/io/p102/Solution.java"&gt;&lt;/script&gt;
+&lt;h3 id="timecomplexity"&gt;Time complexity&lt;/h3&gt;
+&lt;p&gt;O (n)&lt;/p&gt;
+&lt;h3 id="spacecomplexity"&gt;Space complexity&lt;/h3&gt;
+&lt;p&gt;O (n) since in worst case we might end up with all the nodes in level and have to keep them in queue&lt;/p&gt;
+&lt;h3 id="notes"&gt;Notes&lt;/h3&gt;
+&lt;/div&gt;</content:encoded></item><item><title>73. Set Matrix Zeroes</title><description>&lt;div class="kg-card-markdown"&gt;&lt;h3 id="question"&gt;&lt;a href="https://leetcode.com/problems/set-matrix-zeroes/description/"&gt;Question&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Given a m x n matrix, if an element is 0, set its entire row and column to 0. Do it in place.&lt;/p&gt;
+&lt;p&gt;click to show follow up.&lt;/p&gt;
+&lt;p&gt;Follow up:&lt;br&gt;
+Did you use extra space?&lt;br&gt;
+A straight forward solution using O(mn) space is probably a bad idea.&lt;br&gt;
+A&lt;/p&gt;&lt;/div&gt;</description><link>http://localhost:2368/73-set-matrix-zeroes/</link><guid isPermaLink="false">59bdb2d9a7b0fe3c2805e800</guid><category>leetcode</category><dc:creator>Duct Tape Programmer</dc:creator><pubDate>Sat, 16 Sep 2017 23:31:21 GMT</pubDate><content:encoded>&lt;div class="kg-card-markdown"&gt;&lt;h3 id="question"&gt;&lt;a href="https://leetcode.com/problems/set-matrix-zeroes/description/"&gt;Question&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Given a m x n matrix, if an element is 0, set its entire row and column to 0. Do it in place.&lt;/p&gt;
+&lt;p&gt;click to show follow up.&lt;/p&gt;
+&lt;p&gt;Follow up:&lt;br&gt;
+Did you use extra space?&lt;br&gt;
+A straight forward solution using O(mn) space is probably a bad idea.&lt;br&gt;
+A simple improvement uses O(m + n) space, but still not the best solution.&lt;br&gt;
+Could you devise a constant space solution?&lt;/p&gt;
+&lt;h3 id="solution"&gt;Solution&lt;/h3&gt;
+&lt;p&gt;I was not able to solve the problem initially with constant space. I ended up looking up discussions.&lt;/p&gt;
+&lt;p&gt;The idea is to use &lt;code&gt;&amp;lt;i, 0&amp;gt;&lt;/code&gt; as marker for row and &lt;code&gt;&amp;lt;0, j&amp;gt;&lt;/code&gt; as marked for column. Now &lt;code&gt;&amp;lt;0, 0&amp;gt;&lt;/code&gt; becomes special case because it's needed for marking both 0th row and 0th column. So we use it just for the row and we use another variable col0 to store column marking for 0th column.&lt;/p&gt;
+&lt;script src="https://gist-it.appspot.com/github/dtprogrammer/leetcode-solutions/blob/master/src/main/java/dtprogrammer/github/io/p73/Solution.java"&gt;&lt;/script&gt;
+&lt;h3 id="timecomplexity"&gt;Time complexity&lt;/h3&gt;
+&lt;p&gt;The time complexity is O(m * n)&lt;/p&gt;
+&lt;h3 id="spacecomplexity"&gt;Space complexity&lt;/h3&gt;
+&lt;p&gt;Constant&lt;/p&gt;
+&lt;h3 id="notes"&gt;Notes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;It is important to traverse from the bottom-right end while setting to 0 since if we travel from top-left we will set the first row 0 if there is even one zero which in turn will set everything to 0.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;</content:encoded></item><item><title>236. Lowest Common Ancestor of a Binary Tree</title><description>&lt;div class="kg-card-markdown"&gt;&lt;h3 id="question"&gt;&lt;a href="https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/description/"&gt;Question&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;Given a binary tree, find the lowest common ancestor (LCA) of two given nodes in the tree.&lt;/p&gt;
 &lt;p&gt;According to the definition of LCA on Wikipedia: “The lowest common ancestor is defined between two nodes v and w as the lowest node in T that has both v and w&lt;/p&gt;&lt;/div&gt;</description><link>http://localhost:2368/236-lowest-common-ancestor-of-a-binary-tree/</link><guid isPermaLink="false">59bb8b12a7b0fe3c2805e7fc</guid><category>leetcode</category><dc:creator>Duct Tape Programmer</dc:creator><pubDate>Fri, 15 Sep 2017 08:26:00 GMT</pubDate><content:encoded>&lt;div class="kg-card-markdown"&gt;&lt;h3 id="question"&gt;&lt;a href="https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/description/"&gt;Question&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;Given a binary tree, find the lowest common ancestor (LCA) of two given nodes in the tree.&lt;/p&gt;
