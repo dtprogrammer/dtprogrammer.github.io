@@ -2,7 +2,7 @@
 <head>
     <meta charset="utf-8">
 
-    <title>236. Lowest Common Ancestor of a Binary Tree</title>
+    <title>46. Permutations</title>
 
     <meta name="HandheldFriendly" content="True">
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
@@ -15,17 +15,17 @@
     
     <meta property="og:site_name" content="Software Interview Preparation Blog">
     <meta property="og:type" content="article">
-    <meta property="og:title" content="236. Lowest Common Ancestor of a Binary Tree">
-    <meta property="og:description" content="Question Given a binary tree, find the lowest common ancestor (LCA) of two given nodes in the tree. According to the definition of LCA on Wikipedia: “The lowest common ancestor is defined between two nodes v and w as the lowest node in T that has both v and w">
-    <meta property="og:url" content="http://localhost:2368/236-lowest-common-ancestor-of-a-binary-tree/">
-    <meta property="article:published_time" content="2017-09-15T08:26:00.000Z">
-    <meta property="article:modified_time" content="2017-09-15T08:26:00.000Z">
+    <meta property="og:title" content="46. Permutations">
+    <meta property="og:description" content="Question Given a collection of distinct numbers, return all possible permutations. For example, [1,2,3] have the following permutations: [   [1,2,3],   [1,3,2],   [2,1,3],   [2,3,1],   [3,1,2],   [3,2,1] ] Solution This problem is of same domain as 78. Subsets. The idea">
+    <meta property="og:url" content="http://localhost:2368/46-permutations/">
+    <meta property="article:published_time" content="2017-09-18T06:19:31.000Z">
+    <meta property="article:modified_time" content="2017-09-18T06:19:31.000Z">
     <meta property="article:tag" content="leetcode">
     
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="236. Lowest Common Ancestor of a Binary Tree">
-    <meta name="twitter:description" content="Question Given a binary tree, find the lowest common ancestor (LCA) of two given nodes in the tree. According to the definition of LCA on Wikipedia: “The lowest common ancestor is defined between two nodes v and w as the lowest node in T that has both v and w">
-    <meta name="twitter:url" content="http://localhost:2368/236-lowest-common-ancestor-of-a-binary-tree/">
+    <meta name="twitter:title" content="46. Permutations">
+    <meta name="twitter:description" content="Question Given a collection of distinct numbers, return all possible permutations. For example, [1,2,3] have the following permutations: [   [1,2,3],   [1,3,2],   [2,1,3],   [2,3,1],   [3,1,2],   [3,2,1] ] Solution This problem is of same domain as 78. Subsets. The idea">
+    <meta name="twitter:url" content="http://localhost:2368/46-permutations/">
     <meta name="twitter:label1" content="Written by">
     <meta name="twitter:data1" content="Duct Tape Programmer">
     <meta name="twitter:label2" content="Filed under">
@@ -46,12 +46,12 @@
         "url": "http://localhost:2368/author/duct/",
         "sameAs": []
     },
-    "headline": "236. Lowest Common Ancestor of a Binary Tree",
-    "url": "http://localhost:2368/236-lowest-common-ancestor-of-a-binary-tree/",
-    "datePublished": "2017-09-15T08:26:00.000Z",
-    "dateModified": "2017-09-15T08:26:00.000Z",
+    "headline": "46. Permutations",
+    "url": "http://localhost:2368/46-permutations/",
+    "datePublished": "2017-09-18T06:19:31.000Z",
+    "dateModified": "2017-09-18T06:19:31.000Z",
     "keywords": "leetcode",
-    "description": "Question Given a binary tree, find the lowest common ancestor (LCA) of two given nodes in the tree. According to the definition of LCA on Wikipedia: “The lowest common ancestor is defined between two nodes v and w as the lowest node in T that has both v and w",
+    "description": "Question Given a collection of distinct numbers, return all possible permutations. For example, [1,2,3] have the following permutations: [   [1,2,3],   [1,3,2],   [2,1,3],   [2,3,1],   [3,1,2],   [3,2,1] ] Solution This problem is of same domain as 78. Subsets. The idea",
     "mainEntityOfPage": {
         "@type": "WebPage",
         "@id": "http://localhost:2368/"
@@ -83,44 +83,58 @@
         <article class="post">
 
             <header class="post-header">
-                <h1 class="post-title">236. Lowest Common Ancestor of a Binary Tree</h1>
+                <h1 class="post-title">46. Permutations</h1>
                 <section class="post-meta">
                     <p class="author">by <a href="../../author/duct.16">Duct Tape Programmer</a></p>
-                    <time class="post-date" datetime="2017-09-15">2017-09-15</time>
+                    <time class="post-date" datetime="2017-09-17">2017-09-17</time>
                 </section>
             </header>
             <section class="post-content">
 
-                <div class="kg-card-markdown"><h3 id="question"><a href="https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/description/">Question</a></h3>
-<p>Given a binary tree, find the lowest common ancestor (LCA) of two given nodes in the tree.</p>
-<p>According to the definition of LCA on Wikipedia: “The lowest common ancestor is defined between two nodes v and w as the lowest node in T that has both v and w as descendants (where we allow a node to be a descendant of itself).”</p>
-<pre><code>        _______3______
-       /              \
-    ___5__          ___1__
-   /      \        /      \
-   6      _2       0       8
-         /  \
-         7   4
+                <div class="kg-card-markdown"><h3 id="question"><a href="https://leetcode.com/problems/permutations/description/">Question</a></h3>
+<p>Given a collection of distinct numbers, return all possible permutations.</p>
+<p>For example,<br>
+[1,2,3] have the following permutations:</p>
+<pre><code>[
+  [1,2,3],
+  [1,3,2],
+  [2,1,3],
+  [2,3,1],
+  [3,1,2],
+  [3,2,1]
+]
 </code></pre>
-<p>For example, the lowest common ancestor (LCA) of nodes 5 and 1 is 3. Another example is LCA of nodes 5 and 4 is 5, since a node can be a descendant of itself according to the LCA definition.</p>
 <h3 id="solution">Solution</h3>
-<p>This problem can be solved in different possible ways. EPI also has a solution for this which is pretty lengthy. The <code>Discuss</code> section on leetcode have a very simple solution which I learned and replicated.</p>
-<p>There are two possibilities here:</p>
-<ol>
-<li>The nodes are in different subtree</li>
-<li>One of the nodes itself is the root.</li>
-</ol>
-<p>With the above, we can write the solution below in which if the subtree contains both the nodes then the result is subtree root itself. If it contains either of the nodes then results is that node. If none of the above cause is true then it returns null.</p>
-<p><amp-img src="https://i.imgur.com/KyrLj5W.jpg" alt width="4032" height="3024" layout="responsive"></amp-img></p>
+<ul>
+<li>This problem is of same domain as <a href="https://dtprogrammer.github.io/78-subsets/">78. Subsets</a>.</li>
+<li>The idea here is to generate all permutation through recursion.</li>
+<li>We need to keep a track of whether we have included the element in the <code>tempList</code> or not because in case say we added <code>1, 2, 3</code> now when recursion unwinds and 3 and 2 is removed from the stack. The for loops moves and generate a call with <code>tempList</code> as <code>1, 3</code> now we don't want to add 1 again.</li>
+<li>A general approach can be found in <a href="https://cses.fi/book.pdf">5.2  of Competitive Programmer's Handbook</a></li>
+</ul>
+<pre><code>void search() {
+    if (permutation.size() == n) {
+        // process permutation
+    } else {
+        for (int i = 0; i &lt; n; i++) {
+            if (chosen[i]) continue;
+            chosen[i] = true;
+            permutation.push_back(i);
+            search();
+            chosen[i] = false;
+            permutation.pop_back();
+        }
+    }
+}
+</code></pre>
 
 <h3 id="timecomplexity">Time complexity</h3>
-<p>The time complexity is O(n) since we traverse the tree to find the LCA.</p>
 <h3 id="spacecomplexity">Space complexity</h3>
-<p>The space complexity is constant although since the algorithm uses recursion there is O(log n = h) space required on the stack</p>
+<p>O (n) which is the space taken by the stack to keep track and the space taken by the Set to keep track of all possibe unique combination seen so far which in worse case (all unique numbers) will be equal to all possible combinations.<br>
+Also the solution uses recursion so it does take some space on call stack.</p>
 <h3 id="notes">Notes</h3>
-<ol>
-<li>If left is null return right, if right is null return left, if both are null the root itself is returned.</li>
-</ol>
+<ul>
+<li>We don't make recursive call after pop since we don't want to generate a subset where any of the elements in <code>nums</code> is not a part as its in the case of combination.</li>
+</ul>
 </div>
 
             </section>

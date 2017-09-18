@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
  
-<title>50. Pow(x, n)</title>
+<title>90. Subsets II</title>
 <link rel="shortcut icon" href="../favicon.png">
 <meta name="description" content="">
     
@@ -30,17 +30,17 @@
     
     <meta property="og:site_name" content="Software Interview Preparation Blog">
     <meta property="og:type" content="article">
-    <meta property="og:title" content="50. Pow(x, n)">
-    <meta property="og:description" content="Question Implement pow(x, n). Solution The problem is pretty simple although the two edge case which we need to handle are: x == 0: Leading to 1/x become infinite n == Integer.MIN_VALUE: In this case -n will overflow and come back to Integer.MIN_VALUE as its basically">
-    <meta property="og:url" content="http://localhost:2368/50-pow-x-n/">
-    <meta property="article:published_time" content="2017-09-12T06:54:16.000Z">
-    <meta property="article:modified_time" content="2017-09-13T06:08:48.000Z">
+    <meta property="og:title" content="90. Subsets II">
+    <meta property="og:description" content="Question Given a collection of integers that might contain duplicates, nums, return all possible subsets. Note: The solution set must not contain duplicate subsets. For example, If nums = [1,2,2], a solution is: [   [2],   [1],   [1,2,2],   [2,2],   [1,2],   [] ] Solution This problem is similar to 78.">
+    <meta property="og:url" content="http://localhost:2368/90-subsets-ii/">
+    <meta property="article:published_time" content="2017-09-18T05:42:16.000Z">
+    <meta property="article:modified_time" content="2017-09-18T05:42:16.000Z">
     <meta property="article:tag" content="leetcode">
     
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="50. Pow(x, n)">
-    <meta name="twitter:description" content="Question Implement pow(x, n). Solution The problem is pretty simple although the two edge case which we need to handle are: x == 0: Leading to 1/x become infinite n == Integer.MIN_VALUE: In this case -n will overflow and come back to Integer.MIN_VALUE as its basically">
-    <meta name="twitter:url" content="http://localhost:2368/50-pow-x-n/">
+    <meta name="twitter:title" content="90. Subsets II">
+    <meta name="twitter:description" content="Question Given a collection of integers that might contain duplicates, nums, return all possible subsets. Note: The solution set must not contain duplicate subsets. For example, If nums = [1,2,2], a solution is: [   [2],   [1],   [1,2,2],   [2,2],   [1,2],   [] ] Solution This problem is similar to 78.">
+    <meta name="twitter:url" content="http://localhost:2368/90-subsets-ii/">
     <meta name="twitter:label1" content="Written by">
     <meta name="twitter:data1" content="Duct Tape Programmer">
     <meta name="twitter:label2" content="Filed under">
@@ -61,12 +61,12 @@
         "url": "http://localhost:2368/author/duct/",
         "sameAs": []
     },
-    "headline": "50. Pow(x, n)",
-    "url": "http://localhost:2368/50-pow-x-n/",
-    "datePublished": "2017-09-12T06:54:16.000Z",
-    "dateModified": "2017-09-13T06:08:48.000Z",
+    "headline": "90. Subsets II",
+    "url": "http://localhost:2368/90-subsets-ii/",
+    "datePublished": "2017-09-18T05:42:16.000Z",
+    "dateModified": "2017-09-18T05:42:16.000Z",
     "keywords": "leetcode",
-    "description": "Question Implement pow(x, n). Solution The problem is pretty simple although the two edge case which we need to handle are: x &#x3D;&#x3D; 0: Leading to 1/x become infinite n &#x3D;&#x3D; Integer.MIN_VALUE: In this case -n will overflow and come back to Integer.MIN_VALUE as its basically",
+    "description": "Question Given a collection of integers that might contain duplicates, nums, return all possible subsets. Note: The solution set must not contain duplicate subsets. For example, If nums &#x3D; [1,2,2], a solution is: [   [2],   [1],   [1,2,2],   [2,2],   [1,2],   [] ] Solution This problem is similar to 78.",
     "mainEntityOfPage": {
         "@type": "WebPage",
         "@id": "http://localhost:2368/"
@@ -114,35 +114,46 @@ ghost.init({
     <article class="article_digitus">
 	
 		<header class="postheader_digitus">
-            <h1 class="posttitle_digitus">50. Pow(x, n)</h1>
+            <h1 class="posttitle_digitus">90. Subsets II</h1>
             <span>by</span><h4 class="authorname_digitus"><a href="../author/duct.16">Duct Tape Programmer</a></h4>
             <hr class="pause">
 			<ul>
-				<li><i class="fa fa-calendar"></i><time class="date_digitus">Monday 11 Sep 2017</time></li>
-                <li><i class="fa fa-comments"></i><a class="comments_digitus" href="index.html#disqus_thread" data-disqus-identifier="59b782a3301d231e36fc8fe0">Comments</a></li>
+				<li><i class="fa fa-calendar"></i><time class="date_digitus">Sunday 17 Sep 2017</time></li>
+                <li><i class="fa fa-comments"></i><a class="comments_digitus" href="index.html#disqus_thread" data-disqus-identifier="59bf58faa7b0fe3c2805e814">Comments</a></li>
 				<li><i class="fa fa-tag"></i><span class="posttags_digitus"><a href="../tag/leetcode/">leetcode</a></span></li>
 			</ul>
 		</header>
 	
 		<div class="postcontent_digitus">
-			<div class="kg-card-markdown"><h3 id="question"><a href="https://leetcode.com/problems/powx-n/description/">Question</a></h3>
-<p>Implement pow(x, n).</p>
+			<div class="kg-card-markdown"><h3 id="question"><a href="https://leetcode.com/problems/subsets-ii/description/">Question</a></h3>
+<p>Given a collection of integers that might contain duplicates, nums, return all possible subsets.</p>
+<p>Note: The solution set must not contain duplicate subsets.</p>
+<p>For example,<br>
+If nums = [1,2,2], a solution is:</p>
+<pre><code>[
+  [2],
+  [1],
+  [1,2,2],
+  [2,2],
+  [1,2],
+  []
+]
+</code></pre>
 <h3 id="solution">Solution</h3>
-<p>The problem is pretty simple although the two edge case which we need to handle are:</p>
-<ol>
-<li><code>x == 0</code>: Leading to 1/x become infinite</li>
-<li><code>n == Integer.MIN_VALUE</code>: In this case <code>-n</code> will overflow and come back to Integer.MIN_VALUE as its basically a <code>Integer.MAX_VALUE + 1</code></li>
-</ol>
-<script src="https://gist-it.appspot.com/github/dtprogrammer/leetcode-solutions/blob/master/src/main/java/dtprogrammer/github/io/p50/Solution.java"></script>
+<ul>
+<li>This problem is similar to <a href="https://dtprogrammer.github.io/78-subsets/">78. Subsets</a> with the only difference that the <code>nums</code> array can have duplicates.</li>
+</ul>
+<script src="https://gist-it.appspot.com/github/dtprogrammer/leetcode-solutions/blob/master/src/main/java/dtprogrammer/github/io/p90/Solution.java"></script>
+<ul>
+<li>We use a Set to keep track of subsets which we have seen so far and recursed on.</li>
+<li>We also sort the array. This ensures that the Set contains is always checked for for a sorted/fixed order of numbers. For example in case of <code>1, 4, 4</code> and <code>4, 1, 4</code></li>
+<li>Also, the pop and recurse is not done outside of the contains block so that the recursion unwindws all the way through and we get all possible combinations.</li>
+</ul>
 <h3 id="timecomplexity">Time complexity</h3>
-<p>O (log n) since we reduce n by 2 in every step</p>
 <h3 id="spacecomplexity">Space complexity</h3>
-<p>Constant</p>
+<p>O (n) which is the space taken by the stack to keep track and the space taken by the Set to keep track of all possibe unique combination seen so far which in worse case (all unique numbers) will be equal to all possible combinations.<br>
+Also the solution uses recursion so it does take some space on call stack.</p>
 <h3 id="notes">Notes</h3>
-<ol>
-<li><code>-Integer.MIN_VALUE == Integer.MIN_VALUE</code></li>
-<li><em>Double.isInfinite()</em> can returns true if the given number is infinitely large in magnitude</li>
-</ol>
 </div>
 		</div>
 	
@@ -150,9 +161,9 @@ ghost.init({
             <li>
                 <span>Share:</span>
                 <ul class="share-ikons_digitus">
-                    <li><a class="fa fa-twitter-square" target="_blank" href="http://twitter.com/share?text=50.%20Pow(x,%20n)&amp;url=http://localhost:2368/50-pow-x-n/"><span class="hidden_digitus">Twitter</span></a></li>
-                    <li><a class="fa fa-facebook-square" target="_blank" href="http://www.facebook.com/sharer.php?u=http://localhost:2368/50-pow-x-n/"><span class="hidden_digitus">Facebook</span></a></li>
-                    <li><a class="fa fa-google-plus-square" target="_blank" href="https://plus.google.com/share?url=http://localhost:2368/50-pow-x-n/"><span class="hidden_digitus">Google+</span></a></li>
+                    <li><a class="fa fa-twitter-square" target="_blank" href="http://twitter.com/share?text=90.%20Subsets%20II&amp;url=http://localhost:2368/90-subsets-ii/"><span class="hidden_digitus">Twitter</span></a></li>
+                    <li><a class="fa fa-facebook-square" target="_blank" href="http://www.facebook.com/sharer.php?u=http://localhost:2368/90-subsets-ii/"><span class="hidden_digitus">Facebook</span></a></li>
+                    <li><a class="fa fa-google-plus-square" target="_blank" href="https://plus.google.com/share?url=http://localhost:2368/90-subsets-ii/"><span class="hidden_digitus">Google+</span></a></li>
                 </ul>
             </li>
             <li class="back_digitus"><a href="index.html"><i class="fa fa-level-up"></i><span>Back to top</span></a></li>
