@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
  
-<title>236. Lowest Common Ancestor of a Binary Tree</title>
+<title>52. N-Queens II</title>
 <link rel="shortcut icon" href="../favicon.png">
 <meta name="description" content="">
     
@@ -30,17 +30,17 @@
     
     <meta property="og:site_name" content="Software Interview Preparation Blog">
     <meta property="og:type" content="article">
-    <meta property="og:title" content="236. Lowest Common Ancestor of a Binary Tree">
-    <meta property="og:description" content="Question Given a binary tree, find the lowest common ancestor (LCA) of two given nodes in the tree. According to the definition of LCA on Wikipedia: “The lowest common ancestor is defined between two nodes v and w as the lowest node in T that has both v and w">
-    <meta property="og:url" content="http://localhost:2368/236-lowest-common-ancestor-of-a-binary-tree/">
-    <meta property="article:published_time" content="2017-09-15T08:26:00.000Z">
-    <meta property="article:modified_time" content="2017-09-15T08:26:00.000Z">
+    <meta property="og:title" content="52. N-Queens II">
+    <meta property="og:description" content="Question Follow up for N-Queens problem. Now, instead outputting board configurations, return the total number of distinct solutions. Solution The problem can be solved through backtracking. A general approach can be found in the Chapter 5 of Competitive Programmer's Handbook void search(int y) {     if (y == n) {         count++;         return;     }     for">
+    <meta property="og:url" content="http://localhost:2368/52-n-queens-ii/">
+    <meta property="article:published_time" content="2017-09-21T04:08:32.000Z">
+    <meta property="article:modified_time" content="2017-09-21T04:09:36.000Z">
     <meta property="article:tag" content="leetcode">
     
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="236. Lowest Common Ancestor of a Binary Tree">
-    <meta name="twitter:description" content="Question Given a binary tree, find the lowest common ancestor (LCA) of two given nodes in the tree. According to the definition of LCA on Wikipedia: “The lowest common ancestor is defined between two nodes v and w as the lowest node in T that has both v and w">
-    <meta name="twitter:url" content="http://localhost:2368/236-lowest-common-ancestor-of-a-binary-tree/">
+    <meta name="twitter:title" content="52. N-Queens II">
+    <meta name="twitter:description" content="Question Follow up for N-Queens problem. Now, instead outputting board configurations, return the total number of distinct solutions. Solution The problem can be solved through backtracking. A general approach can be found in the Chapter 5 of Competitive Programmer's Handbook void search(int y) {     if (y == n) {         count++;         return;     }     for">
+    <meta name="twitter:url" content="http://localhost:2368/52-n-queens-ii/">
     <meta name="twitter:label1" content="Written by">
     <meta name="twitter:data1" content="Duct Tape Programmer">
     <meta name="twitter:label2" content="Filed under">
@@ -61,12 +61,12 @@
         "url": "http://localhost:2368/author/duct/",
         "sameAs": []
     },
-    "headline": "236. Lowest Common Ancestor of a Binary Tree",
-    "url": "http://localhost:2368/236-lowest-common-ancestor-of-a-binary-tree/",
-    "datePublished": "2017-09-15T08:26:00.000Z",
-    "dateModified": "2017-09-15T08:26:00.000Z",
+    "headline": "52. N-Queens II",
+    "url": "http://localhost:2368/52-n-queens-ii/",
+    "datePublished": "2017-09-21T04:08:32.000Z",
+    "dateModified": "2017-09-21T04:09:36.000Z",
     "keywords": "leetcode",
-    "description": "Question Given a binary tree, find the lowest common ancestor (LCA) of two given nodes in the tree. According to the definition of LCA on Wikipedia: “The lowest common ancestor is defined between two nodes v and w as the lowest node in T that has both v and w",
+    "description": "Question Follow up for N-Queens problem. Now, instead outputting board configurations, return the total number of distinct solutions. Solution The problem can be solved through backtracking. A general approach can be found in the Chapter 5 of Competitive Programmer&#x27;s Handbook void search(int y) {     if (y &#x3D;&#x3D; n) {         count++;         return;     }     for",
     "mainEntityOfPage": {
         "@type": "WebPage",
         "@id": "http://localhost:2368/"
@@ -114,47 +114,62 @@ ghost.init({
     <article class="article_digitus">
 	
 		<header class="postheader_digitus">
-            <h1 class="posttitle_digitus">236. Lowest Common Ancestor of a Binary Tree</h1>
+            <h1 class="posttitle_digitus">52. N-Queens II</h1>
             <span>by</span><h4 class="authorname_digitus"><a href="../author/duct.17">Duct Tape Programmer</a></h4>
             <hr class="pause">
 			<ul>
-				<li><i class="fa fa-calendar"></i><time class="date_digitus">Friday 15 Sep 2017</time></li>
-                <li><i class="fa fa-comments"></i><a class="comments_digitus" href="index.html#disqus_thread" data-disqus-identifier="59bb8b12a7b0fe3c2805e7fc">Comments</a></li>
+				<li><i class="fa fa-calendar"></i><time class="date_digitus">Wednesday 20 Sep 2017</time></li>
+                <li><i class="fa fa-comments"></i><a class="comments_digitus" href="index.html#disqus_thread" data-disqus-identifier="59c3379ca7b0fe3c2805e865">Comments</a></li>
 				<li><i class="fa fa-tag"></i><span class="posttags_digitus"><a href="../tag/leetcode/">leetcode</a></span></li>
 			</ul>
 		</header>
 	
 		<div class="postcontent_digitus">
-			<div class="kg-card-markdown"><h3 id="question"><a href="https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/description/">Question</a></h3>
-<p>Given a binary tree, find the lowest common ancestor (LCA) of two given nodes in the tree.</p>
-<p>According to the definition of LCA on Wikipedia: “The lowest common ancestor is defined between two nodes v and w as the lowest node in T that has both v and w as descendants (where we allow a node to be a descendant of itself).”</p>
-<pre><code>        _______3______
-       /              \
-    ___5__          ___1__
-   /      \        /      \
-   6      _2       0       8
-         /  \
-         7   4
-</code></pre>
-<p>For example, the lowest common ancestor (LCA) of nodes 5 and 1 is 3. Another example is LCA of nodes 5 and 4 is 5, since a node can be a descendant of itself according to the LCA definition.</p>
+			<div class="kg-card-markdown"><h3 id="question"><a href="https://leetcode.com/problems/n-queens-ii/description/">Question</a></h3>
+<p>Follow up for N-Queens problem.</p>
+<p>Now, instead outputting board configurations, return the total number of distinct solutions.</p>
+<p><img src="https://leetcode.com/static/images/problemset/8-queens.png" alt=""></p>
 <h3 id="solution">Solution</h3>
-<p>This problem can be solved in different possible ways. EPI also has a solution for this which is pretty lengthy. The <code>Discuss</code> section on leetcode have a very simple solution which I learned and replicated.</p>
-<p>There are two possibilities here:</p>
-<ol>
-<li>The nodes are in different subtree</li>
-<li>One of the nodes itself is the root.</li>
-</ol>
-<p>With the above, we can write the solution below in which if the subtree contains both the nodes then the result is subtree root itself. If it contains either of the nodes then results is that node. If none of the above cause is true then it returns null.</p>
-<p><img src="https://i.imgur.com/KyrLj5W.jpg" alt=""></p>
-<script src="https://gist-it.appspot.com/github/dtprogrammer/leetcode-solutions/blob/master/src/main/java/dtprogrammer/github/io/p236/Solution.java"></script>
+<ul>
+<li>The problem can be solved through backtracking.</li>
+<li>A general approach can be found in the <a href="https://cses.fi/book.pdf">Chapter 5 of Competitive Programmer's Handbook</a></li>
+</ul>
+<pre><code>void search(int y) {
+    if (y == n) {
+        count++;
+        return;
+    }
+    for (int x = 0; x &lt; n; x++) {
+        if (column[x] || diag1[x+y] || diag2[x-y+n-1]) continue;
+        column[x] = diag1[x+y] = diag2[x-y+n-1] = 1;
+        search(y+1);
+        column[x] = diag1[x+y] = diag2[x-y+n-1] = 0;
+    }
+}
+</code></pre>
+<ul>
+<li>The idea here is that we place a queen in a column and then recursive call the funstion for other row with limitation on where the queen can be places.</li>
+<li>There are two diagonal placement which is not allowed and they can be calculated with the following formulae:
+<ul>
+<li>Diagonal 1: <code>col + row</code></li>
+<li>Diagonal 2: <code>col - row + n</code></li>
+</ul>
+</li>
+</ul>
+<script src="https://gist-it.appspot.com/github/dtprogrammer/leetcode-solutions/blob/master/src/main/java/dtprogrammer/github/io/p52/Solution.java"></script>
 <h3 id="timecomplexity">Time complexity</h3>
-<p>The time complexity is O(n) since we traverse the tree to find the LCA.</p>
+<ul>
+<li>It is hard to analyze the time complexity of this algorithm.</li>
+<li>The time complexity is lower bounded by the number of non-attacking placements</li>
+<li>There is no exact formula for it in terms of <code>n</code>. Although its known that it tends to <code>n!/c to the power of n</code> where <code>c</code> is approx <code>2.54</code>.</li>
+<li>In short its <em>exponential</em>.</li>
+</ul>
 <h3 id="spacecomplexity">Space complexity</h3>
-<p>The space complexity is constant although since the algorithm uses recursion there is O(log n = h) space required on the stack</p>
+<p>Space complexity is O (5n)</p>
 <h3 id="notes">Notes</h3>
-<ol>
-<li>If left is null return right, if right is null return left, if both are null the root itself is returned.</li>
-</ol>
+<ul>
+<li>Its important to understand how we track diagonal in this problem.</li>
+</ul>
 </div>
 		</div>
 	
@@ -162,9 +177,9 @@ ghost.init({
             <li>
                 <span>Share:</span>
                 <ul class="share-ikons_digitus">
-                    <li><a class="fa fa-twitter-square" target="_blank" href="http://twitter.com/share?text=236.%20Lowest%20Common%20Ancestor%20of%20a%20Binary%20Tree&amp;url=http://localhost:2368/236-lowest-common-ancestor-of-a-binary-tree/"><span class="hidden_digitus">Twitter</span></a></li>
-                    <li><a class="fa fa-facebook-square" target="_blank" href="http://www.facebook.com/sharer.php?u=http://localhost:2368/236-lowest-common-ancestor-of-a-binary-tree/"><span class="hidden_digitus">Facebook</span></a></li>
-                    <li><a class="fa fa-google-plus-square" target="_blank" href="https://plus.google.com/share?url=http://localhost:2368/236-lowest-common-ancestor-of-a-binary-tree/"><span class="hidden_digitus">Google+</span></a></li>
+                    <li><a class="fa fa-twitter-square" target="_blank" href="http://twitter.com/share?text=52.%20N-Queens%20II&amp;url=http://localhost:2368/52-n-queens-ii/"><span class="hidden_digitus">Twitter</span></a></li>
+                    <li><a class="fa fa-facebook-square" target="_blank" href="http://www.facebook.com/sharer.php?u=http://localhost:2368/52-n-queens-ii/"><span class="hidden_digitus">Facebook</span></a></li>
+                    <li><a class="fa fa-google-plus-square" target="_blank" href="https://plus.google.com/share?url=http://localhost:2368/52-n-queens-ii/"><span class="hidden_digitus">Google+</span></a></li>
                 </ul>
             </li>
             <li class="back_digitus"><a href="index.html"><i class="fa fa-level-up"></i><span>Back to top</span></a></li>

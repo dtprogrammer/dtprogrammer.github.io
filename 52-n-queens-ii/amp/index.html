@@ -2,7 +2,7 @@
 <head>
     <meta charset="utf-8">
 
-    <title>54. Spiral Matrix</title>
+    <title>52. N-Queens II</title>
 
     <meta name="HandheldFriendly" content="True">
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
@@ -15,17 +15,17 @@
     
     <meta property="og:site_name" content="Software Interview Preparation Blog">
     <meta property="og:type" content="article">
-    <meta property="og:title" content="54. Spiral Matrix">
-    <meta property="og:description" content="Question Given a matrix of m x n elements (m rows, n columns), return all elements of the matrix in spiral order. For example, Given the following matrix: [  [ 1, 2, 3 ],  [ 4, 5, 6 ],  [ 7, 8, 9 ] ] You should return [1,2,3,6,9,8,7,4,5]. Solution">
-    <meta property="og:url" content="http://localhost:2368/54-spiral-matrix/">
-    <meta property="article:published_time" content="2017-09-17T08:12:05.000Z">
-    <meta property="article:modified_time" content="2017-09-17T08:12:05.000Z">
+    <meta property="og:title" content="52. N-Queens II">
+    <meta property="og:description" content="Question Follow up for N-Queens problem. Now, instead outputting board configurations, return the total number of distinct solutions. Solution The problem can be solved through backtracking. A general approach can be found in the Chapter 5 of Competitive Programmer's Handbook void search(int y) {     if (y == n) {         count++;         return;     }     for">
+    <meta property="og:url" content="http://localhost:2368/52-n-queens-ii/">
+    <meta property="article:published_time" content="2017-09-21T04:08:32.000Z">
+    <meta property="article:modified_time" content="2017-09-21T04:09:36.000Z">
     <meta property="article:tag" content="leetcode">
     
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="54. Spiral Matrix">
-    <meta name="twitter:description" content="Question Given a matrix of m x n elements (m rows, n columns), return all elements of the matrix in spiral order. For example, Given the following matrix: [  [ 1, 2, 3 ],  [ 4, 5, 6 ],  [ 7, 8, 9 ] ] You should return [1,2,3,6,9,8,7,4,5]. Solution">
-    <meta name="twitter:url" content="http://localhost:2368/54-spiral-matrix/">
+    <meta name="twitter:title" content="52. N-Queens II">
+    <meta name="twitter:description" content="Question Follow up for N-Queens problem. Now, instead outputting board configurations, return the total number of distinct solutions. Solution The problem can be solved through backtracking. A general approach can be found in the Chapter 5 of Competitive Programmer's Handbook void search(int y) {     if (y == n) {         count++;         return;     }     for">
+    <meta name="twitter:url" content="http://localhost:2368/52-n-queens-ii/">
     <meta name="twitter:label1" content="Written by">
     <meta name="twitter:data1" content="Duct Tape Programmer">
     <meta name="twitter:label2" content="Filed under">
@@ -46,12 +46,12 @@
         "url": "http://localhost:2368/author/duct/",
         "sameAs": []
     },
-    "headline": "54. Spiral Matrix",
-    "url": "http://localhost:2368/54-spiral-matrix/",
-    "datePublished": "2017-09-17T08:12:05.000Z",
-    "dateModified": "2017-09-17T08:12:05.000Z",
+    "headline": "52. N-Queens II",
+    "url": "http://localhost:2368/52-n-queens-ii/",
+    "datePublished": "2017-09-21T04:08:32.000Z",
+    "dateModified": "2017-09-21T04:09:36.000Z",
     "keywords": "leetcode",
-    "description": "Question Given a matrix of m x n elements (m rows, n columns), return all elements of the matrix in spiral order. For example, Given the following matrix: [  [ 1, 2, 3 ],  [ 4, 5, 6 ],  [ 7, 8, 9 ] ] You should return [1,2,3,6,9,8,7,4,5]. Solution",
+    "description": "Question Follow up for N-Queens problem. Now, instead outputting board configurations, return the total number of distinct solutions. Solution The problem can be solved through backtracking. A general approach can be found in the Chapter 5 of Competitive Programmer&#x27;s Handbook void search(int y) {     if (y &#x3D;&#x3D; n) {         count++;         return;     }     for",
     "mainEntityOfPage": {
         "@type": "WebPage",
         "@id": "http://localhost:2368/"
@@ -83,37 +83,58 @@
         <article class="post">
 
             <header class="post-header">
-                <h1 class="post-title">54. Spiral Matrix</h1>
+                <h1 class="post-title">52. N-Queens II</h1>
                 <section class="post-meta">
                     <p class="author">by <a href="../../author/duct.17">Duct Tape Programmer</a></p>
-                    <time class="post-date" datetime="2017-09-17">2017-09-17</time>
+                    <time class="post-date" datetime="2017-09-20">2017-09-20</time>
                 </section>
             </header>
             <section class="post-content">
 
-                <div class="kg-card-markdown"><h3 id="question"><a href="https://leetcode.com/problems/spiral-matrix/description/">Question</a></h3>
-<p>Given a matrix of m x n elements (m rows, n columns), return all elements of the matrix in spiral order.</p>
-<p>For example,<br>
-Given the following matrix:</p>
-<pre><code>[
- [ 1, 2, 3 ],
- [ 4, 5, 6 ],
- [ 7, 8, 9 ]
-]
-</code></pre>
-<p>You should return [1,2,3,6,9,8,7,4,5].</p>
+                <div class="kg-card-markdown"><h3 id="question"><a href="https://leetcode.com/problems/n-queens-ii/description/">Question</a></h3>
+<p>Follow up for N-Queens problem.</p>
+<p>Now, instead outputting board configurations, return the total number of distinct solutions.</p>
+<p><amp-img src="https://leetcode.com/static/images/problemset/8-queens.png" alt width="258" height="276" layout="fixed"></amp-img></p>
 <h3 id="solution">Solution</h3>
 <ul>
-<li>The problem is straight forward. We just need to keep track of the processed rows and columns so that we avoid them in spiral traversal.</li>
+<li>The problem can be solved through backtracking.</li>
+<li>A general approach can be found in the <a href="https://cses.fi/book.pdf">Chapter 5 of Competitive Programmer's Handbook</a></li>
+</ul>
+<pre><code>void search(int y) {
+    if (y == n) {
+        count++;
+        return;
+    }
+    for (int x = 0; x &lt; n; x++) {
+        if (column[x] || diag1[x+y] || diag2[x-y+n-1]) continue;
+        column[x] = diag1[x+y] = diag2[x-y+n-1] = 1;
+        search(y+1);
+        column[x] = diag1[x+y] = diag2[x-y+n-1] = 0;
+    }
+}
+</code></pre>
+<ul>
+<li>The idea here is that we place a queen in a column and then recursive call the funstion for other row with limitation on where the queen can be places.</li>
+<li>There are two diagonal placement which is not allowed and they can be calculated with the following formulae:
+<ul>
+<li>Diagonal 1: <code>col + row</code></li>
+<li>Diagonal 2: <code>col - row + n</code></li>
+</ul>
+</li>
 </ul>
 
 <h3 id="timecomplexity">Time complexity</h3>
-<p>O (m * n)</p>
+<ul>
+<li>It is hard to analyze the time complexity of this algorithm.</li>
+<li>The time complexity is lower bounded by the number of non-attacking placements</li>
+<li>There is no exact formula for it in terms of <code>n</code>. Although its known that it tends to <code>n!/c to the power of n</code> where <code>c</code> is approx <code>2.54</code>.</li>
+<li>In short its <em>exponential</em>.</li>
+</ul>
 <h3 id="spacecomplexity">Space complexity</h3>
-<p>Constant</p>
+<p>Space complexity is O (5n)</p>
 <h3 id="notes">Notes</h3>
 <ul>
-<li>We only go right to left and/or down to up only if the there is remaing rows and remaining columns respectively.</li>
+<li>Its important to understand how we track diagonal in this problem.</li>
 </ul>
 </div>
 

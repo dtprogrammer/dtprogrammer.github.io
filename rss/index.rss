@@ -1,4 +1,174 @@
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" version="2.0"><channel><title>Software Interview Preparation Blog</title><description>Algorithms, Data Structures and System Design for Interviews</description><link>http://localhost:2368/</link><image><url>http://localhost:2368/favicon.png</url><title>Software Interview Preparation Blog</title><link>http://localhost:2368/</link></image><generator>Ghost 1.8</generator><lastBuildDate>Mon, 18 Sep 2017 06:20:19 GMT</lastBuildDate><atom:link href="http://localhost:2368/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title>46. Permutations</title><description>&lt;div class="kg-card-markdown"&gt;&lt;h3 id="question"&gt;&lt;a href="https://leetcode.com/problems/permutations/description/"&gt;Question&lt;/a&gt;&lt;/h3&gt;
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" version="2.0"><channel><title>Software Interview Preparation Blog</title><description>Algorithms, Data Structures and System Design for Interviews</description><link>http://localhost:2368/</link><image><url>http://localhost:2368/favicon.png</url><title>Software Interview Preparation Blog</title><link>http://localhost:2368/</link></image><generator>Ghost 1.8</generator><lastBuildDate>Thu, 21 Sep 2017 04:22:39 GMT</lastBuildDate><atom:link href="http://localhost:2368/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title>51. N-Queens</title><description>&lt;div class="kg-card-markdown"&gt;&lt;h3 id="question"&gt;&lt;a href="https://leetcode.com/problems/n-queens/description/"&gt;Question&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;The n-queens puzzle is the problem of placing n queens on an n×n chessboard such that no two queens attack each other.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://leetcode.com/static/images/problemset/8-queens.png" alt=""&gt;&lt;/p&gt;
+&lt;p&gt;Given an integer n, return all distinct solutions to the n-queens puzzle.&lt;/p&gt;
+&lt;p&gt;Each solution contains a distinct board configuration of the n-queens' placement, where 'Q' and&lt;/p&gt;&lt;/div&gt;</description><link>http://localhost:2368/51-n-queens/</link><guid isPermaLink="false">59c33b88a7b0fe3c2805e867</guid><category>leetcode</category><dc:creator>Duct Tape Programmer</dc:creator><pubDate>Thu, 21 Sep 2017 04:14:34 GMT</pubDate><content:encoded>&lt;div class="kg-card-markdown"&gt;&lt;h3 id="question"&gt;&lt;a href="https://leetcode.com/problems/n-queens/description/"&gt;Question&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;The n-queens puzzle is the problem of placing n queens on an n×n chessboard such that no two queens attack each other.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://leetcode.com/static/images/problemset/8-queens.png" alt=""&gt;&lt;/p&gt;
+&lt;p&gt;Given an integer n, return all distinct solutions to the n-queens puzzle.&lt;/p&gt;
+&lt;p&gt;Each solution contains a distinct board configuration of the n-queens' placement, where 'Q' and '.' both indicate a queen and an empty space respectively.&lt;/p&gt;
+&lt;p&gt;For example,&lt;br&gt;
+There exist two distinct solutions to the 4-queens puzzle:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;[
+ [&amp;quot;.Q..&amp;quot;,  // Solution 1
+  &amp;quot;...Q&amp;quot;,
+  &amp;quot;Q...&amp;quot;,
+  &amp;quot;..Q.&amp;quot;],
+
+ [&amp;quot;..Q.&amp;quot;,  // Solution 2
+  &amp;quot;Q...&amp;quot;,
+  &amp;quot;...Q&amp;quot;,
+  &amp;quot;.Q..&amp;quot;]
+]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id="solution"&gt;Solution&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;The problem can be solved through backtracking just like &lt;a href="http://dtprogrammer.github.io/52-n-queens-ii/"&gt;52. N-Queens II&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;A general approach can be found in the &lt;a href="https://cses.fi/book.pdf"&gt;Chapter 5 of Competitive Programmer's Handbook&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;void search(int y) {
+    if (y == n) {
+        count++;
+        return;
+    }
+    for (int x = 0; x &amp;lt; n; x++) {
+        if (column[x] || diag1[x+y] || diag2[x-y+n-1]) continue;
+        column[x] = diag1[x+y] = diag2[x-y+n-1] = 1;
+        search(y+1);
+        column[x] = diag1[x+y] = diag2[x-y+n-1] = 0;
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;The idea here is that we place a queen in a column and then recursive call the funstion for other row with limitation on where the queen can be places.&lt;/li&gt;
+&lt;li&gt;There are two diagonal placement which is not allowed and they can be calculated with the following formulae:
+&lt;ul&gt;
+&lt;li&gt;Diagonal 1: &lt;code&gt;col + row&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Diagonal 2: &lt;code&gt;col - row + n&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;In this approach we also track the queen placement so that we can return the valid board configurations.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;script src="https://gist-it.appspot.com/github/dtprogrammer/leetcode-solutions/blob/master/src/main/java/dtprogrammer/github/io/p51/Solution.java"&gt;&lt;/script&gt;
+&lt;h3 id="timecomplexity"&gt;Time complexity&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;It is hard to analyze the time complexity of this algorithm.&lt;/li&gt;
+&lt;li&gt;The time complexity is lower bounded by the number of non-attacking placements&lt;/li&gt;
+&lt;li&gt;There is no exact formula for it in terms of &lt;code&gt;n&lt;/code&gt;. Although its known that it tends to &lt;code&gt;n!/c to the power of n&lt;/code&gt; where &lt;code&gt;c&lt;/code&gt; is approx &lt;code&gt;2.54&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;In short its &lt;em&gt;exponential&lt;/em&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="spacecomplexity"&gt;Space complexity&lt;/h3&gt;
+&lt;p&gt;Space complexity is O (5n) and also the space taken by the stack to keep track of the board configuration being evaluated.&lt;/p&gt;
+&lt;h3 id="notes"&gt;Notes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Its important to understand how we track diagonal in this problem.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;</content:encoded></item><item><title>52. N-Queens II</title><description>&lt;div class="kg-card-markdown"&gt;&lt;h3 id="question"&gt;&lt;a href="https://leetcode.com/problems/n-queens-ii/description/"&gt;Question&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Follow up for N-Queens problem.&lt;/p&gt;
+&lt;p&gt;Now, instead outputting board configurations, return the total number of distinct solutions.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://leetcode.com/static/images/problemset/8-queens.png" alt=""&gt;&lt;/p&gt;
+&lt;h3 id="solution"&gt;Solution&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;The problem can be solved through backtracking.&lt;/li&gt;
+&lt;li&gt;A general approach can be found in the &lt;a href="https://cses.fi/book.pdf"&gt;Chapter 5 of Competitive Programmer's Handbook&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;void search(int y) {
+    if (y == n) {
+        count++;
+        return;
+    }
+    for&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description><link>http://localhost:2368/52-n-queens-ii/</link><guid isPermaLink="false">59c3379ca7b0fe3c2805e865</guid><category>leetcode</category><dc:creator>Duct Tape Programmer</dc:creator><pubDate>Thu, 21 Sep 2017 04:08:32 GMT</pubDate><content:encoded>&lt;div class="kg-card-markdown"&gt;&lt;h3 id="question"&gt;&lt;a href="https://leetcode.com/problems/n-queens-ii/description/"&gt;Question&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Follow up for N-Queens problem.&lt;/p&gt;
+&lt;p&gt;Now, instead outputting board configurations, return the total number of distinct solutions.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://leetcode.com/static/images/problemset/8-queens.png" alt=""&gt;&lt;/p&gt;
+&lt;h3 id="solution"&gt;Solution&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;The problem can be solved through backtracking.&lt;/li&gt;
+&lt;li&gt;A general approach can be found in the &lt;a href="https://cses.fi/book.pdf"&gt;Chapter 5 of Competitive Programmer's Handbook&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;void search(int y) {
+    if (y == n) {
+        count++;
+        return;
+    }
+    for (int x = 0; x &amp;lt; n; x++) {
+        if (column[x] || diag1[x+y] || diag2[x-y+n-1]) continue;
+        column[x] = diag1[x+y] = diag2[x-y+n-1] = 1;
+        search(y+1);
+        column[x] = diag1[x+y] = diag2[x-y+n-1] = 0;
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;The idea here is that we place a queen in a column and then recursive call the funstion for other row with limitation on where the queen can be places.&lt;/li&gt;
+&lt;li&gt;There are two diagonal placement which is not allowed and they can be calculated with the following formulae:
+&lt;ul&gt;
+&lt;li&gt;Diagonal 1: &lt;code&gt;col + row&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Diagonal 2: &lt;code&gt;col - row + n&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;script src="https://gist-it.appspot.com/github/dtprogrammer/leetcode-solutions/blob/master/src/main/java/dtprogrammer/github/io/p52/Solution.java"&gt;&lt;/script&gt;
+&lt;h3 id="timecomplexity"&gt;Time complexity&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;It is hard to analyze the time complexity of this algorithm.&lt;/li&gt;
+&lt;li&gt;The time complexity is lower bounded by the number of non-attacking placements&lt;/li&gt;
+&lt;li&gt;There is no exact formula for it in terms of &lt;code&gt;n&lt;/code&gt;. Although its known that it tends to &lt;code&gt;n!/c to the power of n&lt;/code&gt; where &lt;code&gt;c&lt;/code&gt; is approx &lt;code&gt;2.54&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;In short its &lt;em&gt;exponential&lt;/em&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="spacecomplexity"&gt;Space complexity&lt;/h3&gt;
+&lt;p&gt;Space complexity is O (5n)&lt;/p&gt;
+&lt;h3 id="notes"&gt;Notes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Its important to understand how we track diagonal in this problem.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;</content:encoded></item><item><title>47. Permutations II</title><description>&lt;div class="kg-card-markdown"&gt;&lt;h3 id="question"&gt;&lt;a href="https://leetcode.com/problems/permutations-ii/description/"&gt;Question&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Given a collection of numbers that might contain duplicates, return all possible unique permutations.&lt;/p&gt;
+&lt;p&gt;For example,&lt;br&gt;
+[1,1,2] have the following unique permutations:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;[
+  [1,1,2],
+  [1,2,1],
+  [2,1,1]
+]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id="solution"&gt;Solution&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;This problem is of same as &lt;a href="https://dtprogrammer.github.io/76-permutations/"&gt;46. Permutations&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;The only difference is that &lt;code&gt;nums&lt;/code&gt; array&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;</description><link>http://localhost:2368/47-permutations-ii/</link><guid isPermaLink="false">59c09d22a7b0fe3c2805e81a</guid><category>leetcode</category><dc:creator>Duct Tape Programmer</dc:creator><pubDate>Tue, 19 Sep 2017 04:38:15 GMT</pubDate><content:encoded>&lt;div class="kg-card-markdown"&gt;&lt;h3 id="question"&gt;&lt;a href="https://leetcode.com/problems/permutations-ii/description/"&gt;Question&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Given a collection of numbers that might contain duplicates, return all possible unique permutations.&lt;/p&gt;
+&lt;p&gt;For example,&lt;br&gt;
+[1,1,2] have the following unique permutations:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;[
+  [1,1,2],
+  [1,2,1],
+  [2,1,1]
+]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id="solution"&gt;Solution&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;This problem is of same as &lt;a href="https://dtprogrammer.github.io/76-permutations/"&gt;46. Permutations&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;The only difference is that &lt;code&gt;nums&lt;/code&gt; array can have duplicates.&lt;/li&gt;
+&lt;li&gt;For example if the &lt;code&gt;nums&lt;/code&gt; array is &lt;code&gt;1, 1, 2&lt;/code&gt; this leads to issue since we will end up with &lt;code&gt;1, 1, 2&lt;/code&gt; and &lt;code&gt;1, 1, 2&lt;/code&gt; permutations twice for &lt;code&gt;1&lt;/code&gt; at index 0 and 1.&lt;/li&gt;
+&lt;li&gt;We want to avoid this situation and this can be done by tracking the indexes which has be used. When we add an element in the &lt;code&gt;tempList&lt;/code&gt; we mark it in the &lt;code&gt;used&lt;/code&gt; array and when we remove it with pop we unmark it so that it take parts in next iteration.&lt;/li&gt;
+&lt;li&gt;One other thing to noted here is:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;(i &amp;gt; 0 &amp;amp;&amp;amp; nums[i] == nums[i - 1] &amp;amp;&amp;amp; !used[i - 1]&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;Since the numbers are already sorted and if we see a number which is same as the one before we can only use it if the number previous to it is used. This basically means that we include this to generate the permutations for the previous one but we don't generate any permutation for this on its own.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;script src="https://gist-it.appspot.com/github/dtprogrammer/leetcode-solutions/blob/master/src/main/java/dtprogrammer/github/io/p47/Solution.java"&gt;&lt;/script&gt;
+&lt;h3 id="timecomplexity"&gt;Time complexity&lt;/h3&gt;
+&lt;h3 id="spacecomplexity"&gt;Space complexity&lt;/h3&gt;
+&lt;p&gt;O (n) which is the space taken by the stack to keep track and the space taken by the used array which is also of size O (n).&lt;br&gt;
+Also the solution uses recursion so it does take some space on call stack.&lt;/p&gt;
+&lt;h3 id="notes"&gt;Notes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;We don't make recursive call after pop since we don't want to generate a subset where any of the elements in &lt;code&gt;nums&lt;/code&gt; is not a part as its in the case of combination.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;</content:encoded></item><item><title>46. Permutations</title><description>&lt;div class="kg-card-markdown"&gt;&lt;h3 id="question"&gt;&lt;a href="https://leetcode.com/problems/permutations/description/"&gt;Question&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;Given a collection of distinct numbers, return all possible permutations.&lt;/p&gt;
 &lt;p&gt;For example,&lt;br&gt;
 [1,2,3] have the following permutations:&lt;/p&gt;
@@ -518,153 +688,4 @@ Note: All inputs will be in lower-case.&lt;/p&gt;
 &lt;li&gt;Arrays.equal() can be used to compare two arrays for elements.&lt;/li&gt;
 &lt;li&gt;Arrays.hashCode() can be used to generate the hashcode for array based on elements.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/div&gt;</content:encoded></item><item><title>50. Pow(x, n)</title><description>&lt;div class="kg-card-markdown"&gt;&lt;h3 id="question"&gt;&lt;a href="https://leetcode.com/problems/powx-n/description/"&gt;Question&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;Implement pow(x, n).&lt;/p&gt;
-&lt;h3 id="solution"&gt;Solution&lt;/h3&gt;
-&lt;p&gt;The problem is pretty simple although the two edge case which we need to handle are:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;code&gt;x == 0&lt;/code&gt;: Leading to 1/x become infinite&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;n == Integer.MIN_VALUE&lt;/code&gt;: In this case &lt;code&gt;-n&lt;/code&gt; will overflow and come back to Integer.MIN_VALUE as its basically&lt;/li&gt;&lt;/ol&gt;&lt;/div&gt;</description><link>http://localhost:2368/50-pow-x-n/</link><guid isPermaLink="false">59b782a3301d231e36fc8fe0</guid><category>leetcode</category><dc:creator>Duct Tape Programmer</dc:creator><pubDate>Tue, 12 Sep 2017 06:54:16 GMT</pubDate><content:encoded>&lt;div class="kg-card-markdown"&gt;&lt;h3 id="question"&gt;&lt;a href="https://leetcode.com/problems/powx-n/description/"&gt;Question&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;Implement pow(x, n).&lt;/p&gt;
-&lt;h3 id="solution"&gt;Solution&lt;/h3&gt;
-&lt;p&gt;The problem is pretty simple although the two edge case which we need to handle are:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;code&gt;x == 0&lt;/code&gt;: Leading to 1/x become infinite&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;n == Integer.MIN_VALUE&lt;/code&gt;: In this case &lt;code&gt;-n&lt;/code&gt; will overflow and come back to Integer.MIN_VALUE as its basically a &lt;code&gt;Integer.MAX_VALUE + 1&lt;/code&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;script src="https://gist-it.appspot.com/github/dtprogrammer/leetcode-solutions/blob/master/src/main/java/dtprogrammer/github/io/p50/Solution.java"&gt;&lt;/script&gt;
-&lt;h3 id="timecomplexity"&gt;Time complexity&lt;/h3&gt;
-&lt;p&gt;O (log n) since we reduce n by 2 in every step&lt;/p&gt;
-&lt;h3 id="spacecomplexity"&gt;Space complexity&lt;/h3&gt;
-&lt;p&gt;Constant&lt;/p&gt;
-&lt;h3 id="notes"&gt;Notes&lt;/h3&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;code&gt;-Integer.MIN_VALUE == Integer.MIN_VALUE&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;Double.isInfinite()&lt;/em&gt; can returns true if the given number is infinitely large in magnitude&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/div&gt;</content:encoded></item><item><title>48. Rotate Image</title><description>&lt;div class="kg-card-markdown"&gt;&lt;h3 id="question"&gt;&lt;a href="https://leetcode.com/problems/rotate-image/description/"&gt;Question&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;You are given an n x n 2D matrix representing an image.&lt;/p&gt;
-&lt;p&gt;Rotate the image by 90 degrees (clockwise).&lt;/p&gt;
-&lt;p&gt;Note:&lt;br&gt;
-You have to rotate the image in-place, which means you have to modify the input 2D matrix directly. DO NOT allocate another 2D matrix and do the rotation.&lt;/p&gt;
-&lt;p&gt;Example&lt;/p&gt;&lt;/div&gt;</description><link>http://localhost:2368/48-rotate-image/</link><guid isPermaLink="false">59b76e0d301d231e36fc8fde</guid><category>leetcode</category><dc:creator>Duct Tape Programmer</dc:creator><pubDate>Tue, 12 Sep 2017 05:44:35 GMT</pubDate><content:encoded>&lt;div class="kg-card-markdown"&gt;&lt;h3 id="question"&gt;&lt;a href="https://leetcode.com/problems/rotate-image/description/"&gt;Question&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;You are given an n x n 2D matrix representing an image.&lt;/p&gt;
-&lt;p&gt;Rotate the image by 90 degrees (clockwise).&lt;/p&gt;
-&lt;p&gt;Note:&lt;br&gt;
-You have to rotate the image in-place, which means you have to modify the input 2D matrix directly. DO NOT allocate another 2D matrix and do the rotation.&lt;/p&gt;
-&lt;p&gt;Example 1:&lt;/p&gt;
-&lt;p&gt;Given input matrix =&lt;br&gt;
-[&lt;br&gt;
-[1,2,3],&lt;br&gt;
-[4,5,6],&lt;br&gt;
-[7,8,9]&lt;br&gt;
-],&lt;/p&gt;
-&lt;p&gt;rotate the input matrix in-place such that it becomes:&lt;br&gt;
-[&lt;br&gt;
-[7,4,1],&lt;br&gt;
-[8,5,2],&lt;br&gt;
-[9,6,3]&lt;br&gt;
-]&lt;br&gt;
-Example 2:&lt;/p&gt;
-&lt;p&gt;Given input matrix =&lt;br&gt;
-[&lt;br&gt;
-[ 5, 1, 9,11],&lt;br&gt;
-[ 2, 4, 8,10],&lt;br&gt;
-[13, 3, 6, 7],&lt;br&gt;
-[15,14,12,16]&lt;br&gt;
-],&lt;/p&gt;
-&lt;p&gt;rotate the input matrix in-place such that it becomes:&lt;br&gt;
-[&lt;br&gt;
-[15,13, 2, 5],&lt;br&gt;
-[14, 3, 4, 1],&lt;br&gt;
-[12, 6, 8, 9],&lt;br&gt;
-[16, 7,10,11]&lt;br&gt;
-]&lt;/p&gt;
-&lt;h3 id="solution"&gt;Solution&lt;/h3&gt;
-&lt;p&gt;The problem can be solved easily if we remember a trick.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Clockwise rotation: Swap up-down and then swap elements zig-zag&lt;/li&gt;
-&lt;li&gt;Anticlockwise rotation: Swap left right and then swap elements zig-zag&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;For example for the given matrix&lt;br&gt;
-[&lt;br&gt;
-[1,2,3],&lt;br&gt;
-[4,5,6],&lt;br&gt;
-[7,8,9]&lt;br&gt;
-]&lt;/p&gt;
-&lt;p&gt;After swapping up-down we get&lt;br&gt;
-[&lt;br&gt;
-[7,8,9],&lt;br&gt;
-[4,5,6],&lt;br&gt;
-[1,2,3]&lt;br&gt;
-]&lt;br&gt;
-After swapping zig-zag we get&lt;br&gt;
-[&lt;br&gt;
-[7,4,1],&lt;br&gt;
-[8,5,2],&lt;br&gt;
-[9,6,3]&lt;br&gt;
-]&lt;/p&gt;
-&lt;p&gt;Swapping up-down is pretty easy and can easily be achieved by&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;for (int i = 0; i &amp;lt; matrix.length / 2; i++) {
-    for (int j = 0; j &amp;lt; matrix[0].length; j++) {
-        int temp = matrix[i][j];
-        matrix[i][j] = matrix[matrix.length - i - 1][j];
-        matrix[matrix.length - i - 1][j] = temp;
-    }
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Although, I had some trouble in doing zig-zag swap it required you to limit the swap. That is once we swap &lt;code&gt;matrix[0][1]&lt;/code&gt; with &lt;code&gt;matrix[1][0]&lt;/code&gt; we should not swap it again whent the value of i becomes 1 from 0. My initial approach was to limit this with a simple if check as shown below&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;for (int i = 0; i &amp;lt; matrix.length; i++) {
-    for (int j = 0; j &amp;lt; matrix[0].length; j++) {
-        if (i &amp;lt; j) {
-            int temp = matrix[i][j];
-            matrix[i][j] = matrix[j][i];
-            matrix[j][i] = temp;
-        }
-    }
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;This made my solution pass the test but it did poorly in &lt;em&gt;Accepted Solutions Runtime Distribution&lt;/em&gt;. After seeing some solutions in the &lt;em&gt;Discussion&lt;/em&gt; I found out that &lt;code&gt;j&lt;/code&gt; can start from &lt;code&gt;i+1&lt;/code&gt; since we alwasy skip swaps where &lt;code&gt;i == j&lt;/code&gt;. I thought this will improve the performance in the &lt;em&gt;Accepted Solutions Runtime Distribution&lt;/em&gt; since we are skipping one column although the time distribution was still the same.&lt;/p&gt;
-&lt;p&gt;Here is my final solution&lt;/p&gt;
-&lt;script src="https://gist-it.appspot.com/github/dtprogrammer/leetcode-solutions/blob/master/src/main/java/dtprogrammer/github/io/p48/Solution.java"&gt;&lt;/script&gt;
-&lt;h4 id="timecomplexity"&gt;Time complexity&lt;/h4&gt;
-&lt;p&gt;The time complexity O(n * n) since we traverse the matrix.&lt;/p&gt;
-&lt;h3 id="spacecomplexity"&gt;Space complexity&lt;/h3&gt;
-&lt;p&gt;Constant&lt;/p&gt;
-&lt;h3 id="notes"&gt;Notes&lt;/h3&gt;
-&lt;ol&gt;
-&lt;li&gt;As mentioned earlir the trick is:
-&lt;ul&gt;
-&lt;li&gt;Clockwise rotation: Swap up-down and then swap elements zig-zag&lt;/li&gt;
-&lt;li&gt;Anticlockwise rotation: Swap left right and then swap elements zig-zag&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;For zig-zag conversion &lt;code&gt;j&lt;/code&gt; should start from &lt;code&gt;i + 1&lt;/code&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/div&gt;</content:encoded></item><item><title>28. Implement strStr()</title><description>&lt;div class="kg-card-markdown"&gt;&lt;h3 id="question"&gt;&lt;a href="https://leetcode.com/problems/implement-strstr/description/"&gt;Question&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;Implement strStr().&lt;/p&gt;
-&lt;p&gt;Returns the index of the first occurrence of needle in haystack, or -1 if needle is not part of haystack.&lt;/p&gt;
-&lt;h3 id="solution"&gt;Solution&lt;/h3&gt;
-&lt;p&gt;This problem is pretty simple although I was not able to correctly solve this problem for all test cases in single attempt. The idea here is:&lt;/p&gt;&lt;/div&gt;</description><link>http://localhost:2368/28-implement-strstr/</link><guid isPermaLink="false">59b68ab588f7011c428b15a2</guid><category>leetcode</category><dc:creator>Duct Tape Programmer</dc:creator><pubDate>Mon, 11 Sep 2017 13:18:29 GMT</pubDate><content:encoded>&lt;div class="kg-card-markdown"&gt;&lt;h3 id="question"&gt;&lt;a href="https://leetcode.com/problems/implement-strstr/description/"&gt;Question&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;Implement strStr().&lt;/p&gt;
-&lt;p&gt;Returns the index of the first occurrence of needle in haystack, or -1 if needle is not part of haystack.&lt;/p&gt;
-&lt;h3 id="solution"&gt;Solution&lt;/h3&gt;
-&lt;p&gt;This problem is pretty simple although I was not able to correctly solve this problem for all test cases in single attempt. The idea here is:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Scan through the haystack for the first character of the needle&lt;/li&gt;
-&lt;li&gt;As soon as the first character is found match all the remaining character in the needlle&lt;/li&gt;
-&lt;li&gt;If they do then return the index where the first character of needle occurs in the haystack.&lt;/li&gt;
-&lt;li&gt;If they don't then return -1&lt;/li&gt;
-&lt;li&gt;Note: For empty strings &amp;quot;&amp;quot; leetcode test cases expect to return 0. This is where my initial solution was failing as I was returning -1. I tried to have some initial checks for empty string and return early although if out of two string only one is empty then you need to return -1 and not 0.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;script src="https://gist-it.appspot.com/github/dtprogrammer/leetcode-solutions/blob/master/src/main/java/dtprogrammer/github/io/p28/Solution.java"&gt;&lt;/script&gt;
-&lt;h3 id="timecomplexity"&gt;Time complexity&lt;/h3&gt;
-&lt;p&gt;Sine we scan the whole haystack for the first character of needle and then match remaining character it is very possible that in worse case we will run in O (m * n).&lt;/p&gt;
-&lt;h3 id="spacecomplexity"&gt;Space complexity&lt;/h3&gt;
-&lt;p&gt;Constant&lt;/p&gt;
-&lt;h3 id="notes"&gt;Notes&lt;/h3&gt;
-&lt;ol&gt;
-&lt;li&gt;i and j together are used to index the haystack.&lt;/li&gt;
-&lt;li&gt;The time complexity can be improved to O(m) where m is the size of haystack by using some intuitve algorithms like Rabin-Karp or KMP algorithms.&lt;/li&gt;
-&lt;/ol&gt;
 &lt;/div&gt;</content:encoded></item></channel></rss>

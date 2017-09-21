@@ -2,7 +2,7 @@
 <head>
     <meta charset="utf-8">
 
-    <title>54. Spiral Matrix</title>
+    <title>47. Permutations II</title>
 
     <meta name="HandheldFriendly" content="True">
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
@@ -15,17 +15,17 @@
     
     <meta property="og:site_name" content="Software Interview Preparation Blog">
     <meta property="og:type" content="article">
-    <meta property="og:title" content="54. Spiral Matrix">
-    <meta property="og:description" content="Question Given a matrix of m x n elements (m rows, n columns), return all elements of the matrix in spiral order. For example, Given the following matrix: [  [ 1, 2, 3 ],  [ 4, 5, 6 ],  [ 7, 8, 9 ] ] You should return [1,2,3,6,9,8,7,4,5]. Solution">
-    <meta property="og:url" content="http://localhost:2368/54-spiral-matrix/">
-    <meta property="article:published_time" content="2017-09-17T08:12:05.000Z">
-    <meta property="article:modified_time" content="2017-09-17T08:12:05.000Z">
+    <meta property="og:title" content="47. Permutations II">
+    <meta property="og:description" content="Question Given a collection of numbers that might contain duplicates, return all possible unique permutations. For example, [1,1,2] have the following unique permutations: [   [1,1,2],   [1,2,1],   [2,1,1] ] Solution This problem is of same as 46. Permutations. The only difference is that nums array">
+    <meta property="og:url" content="http://localhost:2368/47-permutations-ii/">
+    <meta property="article:published_time" content="2017-09-19T04:38:15.000Z">
+    <meta property="article:modified_time" content="2017-09-19T04:38:15.000Z">
     <meta property="article:tag" content="leetcode">
     
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="54. Spiral Matrix">
-    <meta name="twitter:description" content="Question Given a matrix of m x n elements (m rows, n columns), return all elements of the matrix in spiral order. For example, Given the following matrix: [  [ 1, 2, 3 ],  [ 4, 5, 6 ],  [ 7, 8, 9 ] ] You should return [1,2,3,6,9,8,7,4,5]. Solution">
-    <meta name="twitter:url" content="http://localhost:2368/54-spiral-matrix/">
+    <meta name="twitter:title" content="47. Permutations II">
+    <meta name="twitter:description" content="Question Given a collection of numbers that might contain duplicates, return all possible unique permutations. For example, [1,1,2] have the following unique permutations: [   [1,1,2],   [1,2,1],   [2,1,1] ] Solution This problem is of same as 46. Permutations. The only difference is that nums array">
+    <meta name="twitter:url" content="http://localhost:2368/47-permutations-ii/">
     <meta name="twitter:label1" content="Written by">
     <meta name="twitter:data1" content="Duct Tape Programmer">
     <meta name="twitter:label2" content="Filed under">
@@ -46,12 +46,12 @@
         "url": "http://localhost:2368/author/duct/",
         "sameAs": []
     },
-    "headline": "54. Spiral Matrix",
-    "url": "http://localhost:2368/54-spiral-matrix/",
-    "datePublished": "2017-09-17T08:12:05.000Z",
-    "dateModified": "2017-09-17T08:12:05.000Z",
+    "headline": "47. Permutations II",
+    "url": "http://localhost:2368/47-permutations-ii/",
+    "datePublished": "2017-09-19T04:38:15.000Z",
+    "dateModified": "2017-09-19T04:38:15.000Z",
     "keywords": "leetcode",
-    "description": "Question Given a matrix of m x n elements (m rows, n columns), return all elements of the matrix in spiral order. For example, Given the following matrix: [  [ 1, 2, 3 ],  [ 4, 5, 6 ],  [ 7, 8, 9 ] ] You should return [1,2,3,6,9,8,7,4,5]. Solution",
+    "description": "Question Given a collection of numbers that might contain duplicates, return all possible unique permutations. For example, [1,1,2] have the following unique permutations: [   [1,1,2],   [1,2,1],   [2,1,1] ] Solution This problem is of same as 46. Permutations. The only difference is that nums array",
     "mainEntityOfPage": {
         "@type": "WebPage",
         "@id": "http://localhost:2368/"
@@ -83,37 +83,46 @@
         <article class="post">
 
             <header class="post-header">
-                <h1 class="post-title">54. Spiral Matrix</h1>
+                <h1 class="post-title">47. Permutations II</h1>
                 <section class="post-meta">
                     <p class="author">by <a href="../../author/duct.17">Duct Tape Programmer</a></p>
-                    <time class="post-date" datetime="2017-09-17">2017-09-17</time>
+                    <time class="post-date" datetime="2017-09-18">2017-09-18</time>
                 </section>
             </header>
             <section class="post-content">
 
-                <div class="kg-card-markdown"><h3 id="question"><a href="https://leetcode.com/problems/spiral-matrix/description/">Question</a></h3>
-<p>Given a matrix of m x n elements (m rows, n columns), return all elements of the matrix in spiral order.</p>
+                <div class="kg-card-markdown"><h3 id="question"><a href="https://leetcode.com/problems/permutations-ii/description/">Question</a></h3>
+<p>Given a collection of numbers that might contain duplicates, return all possible unique permutations.</p>
 <p>For example,<br>
-Given the following matrix:</p>
+[1,1,2] have the following unique permutations:</p>
 <pre><code>[
- [ 1, 2, 3 ],
- [ 4, 5, 6 ],
- [ 7, 8, 9 ]
+  [1,1,2],
+  [1,2,1],
+  [2,1,1]
 ]
 </code></pre>
-<p>You should return [1,2,3,6,9,8,7,4,5].</p>
 <h3 id="solution">Solution</h3>
 <ul>
-<li>The problem is straight forward. We just need to keep track of the processed rows and columns so that we avoid them in spiral traversal.</li>
+<li>This problem is of same as <a href="https://dtprogrammer.github.io/76-permutations/">46. Permutations</a>.</li>
+<li>The only difference is that <code>nums</code> array can have duplicates.</li>
+<li>For example if the <code>nums</code> array is <code>1, 1, 2</code> this leads to issue since we will end up with <code>1, 1, 2</code> and <code>1, 1, 2</code> permutations twice for <code>1</code> at index 0 and 1.</li>
+<li>We want to avoid this situation and this can be done by tracking the indexes which has be used. When we add an element in the <code>tempList</code> we mark it in the <code>used</code> array and when we remove it with pop we unmark it so that it take parts in next iteration.</li>
+<li>One other thing to noted here is:</li>
+</ul>
+<blockquote>
+<p>(i &gt; 0 &amp;&amp; nums[i] == nums[i - 1] &amp;&amp; !used[i - 1]</p>
+</blockquote>
+<ul>
+<li>Since the numbers are already sorted and if we see a number which is same as the one before we can only use it if the number previous to it is used. This basically means that we include this to generate the permutations for the previous one but we don't generate any permutation for this on its own.</li>
 </ul>
 
 <h3 id="timecomplexity">Time complexity</h3>
-<p>O (m * n)</p>
 <h3 id="spacecomplexity">Space complexity</h3>
-<p>Constant</p>
+<p>O (n) which is the space taken by the stack to keep track and the space taken by the used array which is also of size O (n).<br>
+Also the solution uses recursion so it does take some space on call stack.</p>
 <h3 id="notes">Notes</h3>
 <ul>
-<li>We only go right to left and/or down to up only if the there is remaing rows and remaining columns respectively.</li>
+<li>We don't make recursive call after pop since we don't want to generate a subset where any of the elements in <code>nums</code> is not a part as its in the case of combination.</li>
 </ul>
 </div>
 

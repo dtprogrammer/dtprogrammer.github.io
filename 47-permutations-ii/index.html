@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
  
-<title>236. Lowest Common Ancestor of a Binary Tree</title>
+<title>47. Permutations II</title>
 <link rel="shortcut icon" href="../favicon.png">
 <meta name="description" content="">
     
@@ -30,17 +30,17 @@
     
     <meta property="og:site_name" content="Software Interview Preparation Blog">
     <meta property="og:type" content="article">
-    <meta property="og:title" content="236. Lowest Common Ancestor of a Binary Tree">
-    <meta property="og:description" content="Question Given a binary tree, find the lowest common ancestor (LCA) of two given nodes in the tree. According to the definition of LCA on Wikipedia: “The lowest common ancestor is defined between two nodes v and w as the lowest node in T that has both v and w">
-    <meta property="og:url" content="http://localhost:2368/236-lowest-common-ancestor-of-a-binary-tree/">
-    <meta property="article:published_time" content="2017-09-15T08:26:00.000Z">
-    <meta property="article:modified_time" content="2017-09-15T08:26:00.000Z">
+    <meta property="og:title" content="47. Permutations II">
+    <meta property="og:description" content="Question Given a collection of numbers that might contain duplicates, return all possible unique permutations. For example, [1,1,2] have the following unique permutations: [   [1,1,2],   [1,2,1],   [2,1,1] ] Solution This problem is of same as 46. Permutations. The only difference is that nums array">
+    <meta property="og:url" content="http://localhost:2368/47-permutations-ii/">
+    <meta property="article:published_time" content="2017-09-19T04:38:15.000Z">
+    <meta property="article:modified_time" content="2017-09-19T04:38:15.000Z">
     <meta property="article:tag" content="leetcode">
     
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="236. Lowest Common Ancestor of a Binary Tree">
-    <meta name="twitter:description" content="Question Given a binary tree, find the lowest common ancestor (LCA) of two given nodes in the tree. According to the definition of LCA on Wikipedia: “The lowest common ancestor is defined between two nodes v and w as the lowest node in T that has both v and w">
-    <meta name="twitter:url" content="http://localhost:2368/236-lowest-common-ancestor-of-a-binary-tree/">
+    <meta name="twitter:title" content="47. Permutations II">
+    <meta name="twitter:description" content="Question Given a collection of numbers that might contain duplicates, return all possible unique permutations. For example, [1,1,2] have the following unique permutations: [   [1,1,2],   [1,2,1],   [2,1,1] ] Solution This problem is of same as 46. Permutations. The only difference is that nums array">
+    <meta name="twitter:url" content="http://localhost:2368/47-permutations-ii/">
     <meta name="twitter:label1" content="Written by">
     <meta name="twitter:data1" content="Duct Tape Programmer">
     <meta name="twitter:label2" content="Filed under">
@@ -61,12 +61,12 @@
         "url": "http://localhost:2368/author/duct/",
         "sameAs": []
     },
-    "headline": "236. Lowest Common Ancestor of a Binary Tree",
-    "url": "http://localhost:2368/236-lowest-common-ancestor-of-a-binary-tree/",
-    "datePublished": "2017-09-15T08:26:00.000Z",
-    "dateModified": "2017-09-15T08:26:00.000Z",
+    "headline": "47. Permutations II",
+    "url": "http://localhost:2368/47-permutations-ii/",
+    "datePublished": "2017-09-19T04:38:15.000Z",
+    "dateModified": "2017-09-19T04:38:15.000Z",
     "keywords": "leetcode",
-    "description": "Question Given a binary tree, find the lowest common ancestor (LCA) of two given nodes in the tree. According to the definition of LCA on Wikipedia: “The lowest common ancestor is defined between two nodes v and w as the lowest node in T that has both v and w",
+    "description": "Question Given a collection of numbers that might contain duplicates, return all possible unique permutations. For example, [1,1,2] have the following unique permutations: [   [1,1,2],   [1,2,1],   [2,1,1] ] Solution This problem is of same as 46. Permutations. The only difference is that nums array",
     "mainEntityOfPage": {
         "@type": "WebPage",
         "@id": "http://localhost:2368/"
@@ -114,47 +114,50 @@ ghost.init({
     <article class="article_digitus">
 	
 		<header class="postheader_digitus">
-            <h1 class="posttitle_digitus">236. Lowest Common Ancestor of a Binary Tree</h1>
+            <h1 class="posttitle_digitus">47. Permutations II</h1>
             <span>by</span><h4 class="authorname_digitus"><a href="../author/duct.17">Duct Tape Programmer</a></h4>
             <hr class="pause">
 			<ul>
-				<li><i class="fa fa-calendar"></i><time class="date_digitus">Friday 15 Sep 2017</time></li>
-                <li><i class="fa fa-comments"></i><a class="comments_digitus" href="index.html#disqus_thread" data-disqus-identifier="59bb8b12a7b0fe3c2805e7fc">Comments</a></li>
+				<li><i class="fa fa-calendar"></i><time class="date_digitus">Monday 18 Sep 2017</time></li>
+                <li><i class="fa fa-comments"></i><a class="comments_digitus" href="index.html#disqus_thread" data-disqus-identifier="59c09d22a7b0fe3c2805e81a">Comments</a></li>
 				<li><i class="fa fa-tag"></i><span class="posttags_digitus"><a href="../tag/leetcode/">leetcode</a></span></li>
 			</ul>
 		</header>
 	
 		<div class="postcontent_digitus">
-			<div class="kg-card-markdown"><h3 id="question"><a href="https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/description/">Question</a></h3>
-<p>Given a binary tree, find the lowest common ancestor (LCA) of two given nodes in the tree.</p>
-<p>According to the definition of LCA on Wikipedia: “The lowest common ancestor is defined between two nodes v and w as the lowest node in T that has both v and w as descendants (where we allow a node to be a descendant of itself).”</p>
-<pre><code>        _______3______
-       /              \
-    ___5__          ___1__
-   /      \        /      \
-   6      _2       0       8
-         /  \
-         7   4
+			<div class="kg-card-markdown"><h3 id="question"><a href="https://leetcode.com/problems/permutations-ii/description/">Question</a></h3>
+<p>Given a collection of numbers that might contain duplicates, return all possible unique permutations.</p>
+<p>For example,<br>
+[1,1,2] have the following unique permutations:</p>
+<pre><code>[
+  [1,1,2],
+  [1,2,1],
+  [2,1,1]
+]
 </code></pre>
-<p>For example, the lowest common ancestor (LCA) of nodes 5 and 1 is 3. Another example is LCA of nodes 5 and 4 is 5, since a node can be a descendant of itself according to the LCA definition.</p>
 <h3 id="solution">Solution</h3>
-<p>This problem can be solved in different possible ways. EPI also has a solution for this which is pretty lengthy. The <code>Discuss</code> section on leetcode have a very simple solution which I learned and replicated.</p>
-<p>There are two possibilities here:</p>
-<ol>
-<li>The nodes are in different subtree</li>
-<li>One of the nodes itself is the root.</li>
-</ol>
-<p>With the above, we can write the solution below in which if the subtree contains both the nodes then the result is subtree root itself. If it contains either of the nodes then results is that node. If none of the above cause is true then it returns null.</p>
-<p><img src="https://i.imgur.com/KyrLj5W.jpg" alt=""></p>
-<script src="https://gist-it.appspot.com/github/dtprogrammer/leetcode-solutions/blob/master/src/main/java/dtprogrammer/github/io/p236/Solution.java"></script>
+<ul>
+<li>This problem is of same as <a href="https://dtprogrammer.github.io/76-permutations/">46. Permutations</a>.</li>
+<li>The only difference is that <code>nums</code> array can have duplicates.</li>
+<li>For example if the <code>nums</code> array is <code>1, 1, 2</code> this leads to issue since we will end up with <code>1, 1, 2</code> and <code>1, 1, 2</code> permutations twice for <code>1</code> at index 0 and 1.</li>
+<li>We want to avoid this situation and this can be done by tracking the indexes which has be used. When we add an element in the <code>tempList</code> we mark it in the <code>used</code> array and when we remove it with pop we unmark it so that it take parts in next iteration.</li>
+<li>One other thing to noted here is:</li>
+</ul>
+<blockquote>
+<p>(i &gt; 0 &amp;&amp; nums[i] == nums[i - 1] &amp;&amp; !used[i - 1]</p>
+</blockquote>
+<ul>
+<li>Since the numbers are already sorted and if we see a number which is same as the one before we can only use it if the number previous to it is used. This basically means that we include this to generate the permutations for the previous one but we don't generate any permutation for this on its own.</li>
+</ul>
+<script src="https://gist-it.appspot.com/github/dtprogrammer/leetcode-solutions/blob/master/src/main/java/dtprogrammer/github/io/p47/Solution.java"></script>
 <h3 id="timecomplexity">Time complexity</h3>
-<p>The time complexity is O(n) since we traverse the tree to find the LCA.</p>
 <h3 id="spacecomplexity">Space complexity</h3>
-<p>The space complexity is constant although since the algorithm uses recursion there is O(log n = h) space required on the stack</p>
+<p>O (n) which is the space taken by the stack to keep track and the space taken by the used array which is also of size O (n).<br>
+Also the solution uses recursion so it does take some space on call stack.</p>
 <h3 id="notes">Notes</h3>
-<ol>
-<li>If left is null return right, if right is null return left, if both are null the root itself is returned.</li>
-</ol>
+<ul>
+<li>We don't make recursive call after pop since we don't want to generate a subset where any of the elements in <code>nums</code> is not a part as its in the case of combination.</li>
+</ul>
 </div>
 		</div>
 	
@@ -162,9 +165,9 @@ ghost.init({
             <li>
                 <span>Share:</span>
                 <ul class="share-ikons_digitus">
-                    <li><a class="fa fa-twitter-square" target="_blank" href="http://twitter.com/share?text=236.%20Lowest%20Common%20Ancestor%20of%20a%20Binary%20Tree&amp;url=http://localhost:2368/236-lowest-common-ancestor-of-a-binary-tree/"><span class="hidden_digitus">Twitter</span></a></li>
-                    <li><a class="fa fa-facebook-square" target="_blank" href="http://www.facebook.com/sharer.php?u=http://localhost:2368/236-lowest-common-ancestor-of-a-binary-tree/"><span class="hidden_digitus">Facebook</span></a></li>
-                    <li><a class="fa fa-google-plus-square" target="_blank" href="https://plus.google.com/share?url=http://localhost:2368/236-lowest-common-ancestor-of-a-binary-tree/"><span class="hidden_digitus">Google+</span></a></li>
+                    <li><a class="fa fa-twitter-square" target="_blank" href="http://twitter.com/share?text=47.%20Permutations%20II&amp;url=http://localhost:2368/47-permutations-ii/"><span class="hidden_digitus">Twitter</span></a></li>
+                    <li><a class="fa fa-facebook-square" target="_blank" href="http://www.facebook.com/sharer.php?u=http://localhost:2368/47-permutations-ii/"><span class="hidden_digitus">Facebook</span></a></li>
+                    <li><a class="fa fa-google-plus-square" target="_blank" href="https://plus.google.com/share?url=http://localhost:2368/47-permutations-ii/"><span class="hidden_digitus">Google+</span></a></li>
                 </ul>
             </li>
             <li class="back_digitus"><a href="index.html"><i class="fa fa-level-up"></i><span>Back to top</span></a></li>
