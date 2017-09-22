@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
  
-<title>20. Valid Parentheses</title>
+<title>66. Plus One</title>
 <link rel="shortcut icon" href="../favicon.png">
 <meta name="description" content="">
     
@@ -26,21 +26,21 @@
 <link rel="shortcut icon" href="../favicon.png" type="image/png">
     <link rel="canonical" href="index.html">
     <meta name="referrer" content="no-referrer-when-downgrade">
-    <link rel="amphtml" href="http://localhost:2368/20-valid-parentheses/amp/">
+    <link rel="amphtml" href="amp/index.html">
     
     <meta property="og:site_name" content="Software Interview Preparation Blog">
     <meta property="og:type" content="article">
-    <meta property="og:title" content="20. Valid Parentheses">
-    <meta property="og:description" content="Question Given a string containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid. The brackets must close in the correct order, &amp;quot;()&amp;quot; and &amp;quot;()[]{}&amp;quot; are all valid but &amp;quot;(]&amp;quot; and &amp;quot;([)]&amp;quot;">
-    <meta property="og:url" content="http://localhost:2368/20-valid-parentheses/">
-    <meta property="article:published_time" content="2017-09-10T18:46:33.000Z">
-    <meta property="article:modified_time" content="2017-09-13T06:11:08.000Z">
+    <meta property="og:title" content="66. Plus One">
+    <meta property="og:description" content="Question Given a non-negative integer represented as a non-empty array of digits, plus one to the integer. You may assume the integer do not contain any leading zero, except the number 0 itself. The digits are stored such that the most significant digit is at the head of the list.">
+    <meta property="og:url" content="http://localhost:2368/66-plus-one/">
+    <meta property="article:published_time" content="2017-09-22T04:50:50.000Z">
+    <meta property="article:modified_time" content="2017-09-22T04:50:50.000Z">
     <meta property="article:tag" content="leetcode">
     
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="20. Valid Parentheses">
-    <meta name="twitter:description" content="Question Given a string containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid. The brackets must close in the correct order, &amp;quot;()&amp;quot; and &amp;quot;()[]{}&amp;quot; are all valid but &amp;quot;(]&amp;quot; and &amp;quot;([)]&amp;quot;">
-    <meta name="twitter:url" content="http://localhost:2368/20-valid-parentheses/">
+    <meta name="twitter:title" content="66. Plus One">
+    <meta name="twitter:description" content="Question Given a non-negative integer represented as a non-empty array of digits, plus one to the integer. You may assume the integer do not contain any leading zero, except the number 0 itself. The digits are stored such that the most significant digit is at the head of the list.">
+    <meta name="twitter:url" content="http://localhost:2368/66-plus-one/">
     <meta name="twitter:label1" content="Written by">
     <meta name="twitter:data1" content="Duct Tape Programmer">
     <meta name="twitter:label2" content="Filed under">
@@ -61,12 +61,12 @@
         "url": "http://localhost:2368/author/duct/",
         "sameAs": []
     },
-    "headline": "20. Valid Parentheses",
-    "url": "http://localhost:2368/20-valid-parentheses/",
-    "datePublished": "2017-09-10T18:46:33.000Z",
-    "dateModified": "2017-09-13T06:11:08.000Z",
+    "headline": "66. Plus One",
+    "url": "http://localhost:2368/66-plus-one/",
+    "datePublished": "2017-09-22T04:50:50.000Z",
+    "dateModified": "2017-09-22T04:50:50.000Z",
     "keywords": "leetcode",
-    "description": "Question Given a string containing just the characters &#x27;(&#x27;, &#x27;)&#x27;, &#x27;{&#x27;, &#x27;}&#x27;, &#x27;[&#x27; and &#x27;]&#x27;, determine if the input string is valid. The brackets must close in the correct order, &amp;quot;()&amp;quot; and &amp;quot;()[]{}&amp;quot; are all valid but &amp;quot;(]&amp;quot; and &amp;quot;([)]&amp;quot;",
+    "description": "Question Given a non-negative integer represented as a non-empty array of digits, plus one to the integer. You may assume the integer do not contain any leading zero, except the number 0 itself. The digits are stored such that the most significant digit is at the head of the list.",
     "mainEntityOfPage": {
         "@type": "WebPage",
         "@id": "http://localhost:2368/"
@@ -114,30 +114,47 @@ ghost.init({
     <article class="article_digitus">
 	
 		<header class="postheader_digitus">
-            <h1 class="posttitle_digitus">20. Valid Parentheses</h1>
+            <h1 class="posttitle_digitus">66. Plus One</h1>
             <span>by</span><h4 class="authorname_digitus"><a href="../author/duct.19">Duct Tape Programmer</a></h4>
             <hr class="pause">
 			<ul>
-				<li><i class="fa fa-calendar"></i><time class="date_digitus">Sunday 10 Sep 2017</time></li>
-                <li><i class="fa fa-comments"></i><a class="comments_digitus" href="index.html#disqus_thread" data-disqus-identifier="59b58772f23bc812fffcdbc1">Comments</a></li>
+				<li><i class="fa fa-calendar"></i><time class="date_digitus">Thursday 21 Sep 2017</time></li>
+                <li><i class="fa fa-comments"></i><a class="comments_digitus" href="index.html#disqus_thread" data-disqus-identifier="59c49625018514b5e1fc0858">Comments</a></li>
 				<li><i class="fa fa-tag"></i><span class="posttags_digitus"><a href="../tag/leetcode/">leetcode</a></span></li>
 			</ul>
 		</header>
 	
 		<div class="postcontent_digitus">
-			<div class="kg-card-markdown"><h3 id="question"><a href="https://leetcode.com/problems/valid-parentheses/description/">Question</a></h3>
-<p>Given a string containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.</p>
-<p>The brackets must close in the correct order, "()" and "()[]{}" are all valid but "(]" and "([)]" are not.</p>
-<script src="https://gist-it.appspot.com/github/dtprogrammer/leetcode-solutions/blob/master/src/main/java/dtprogrammer/github/io/p20/Solution.java"></script></div>
+			<div class="kg-card-markdown"><h3 id="question"><a href="https://leetcode.com/problems/plus-one/description/">Question</a></h3>
+<p>Given a non-negative integer represented as a non-empty array of digits, plus one to the integer.</p>
+<p>You may assume the integer do not contain any leading zero, except the number 0 itself.</p>
+<p>The digits are stored such that the most significant digit is at the head of the list.</p>
+<h3 id="solution">Solution</h3>
+<ul>
+<li>The problem is pretty simple. There are only the following cases possible
+<ul>
+<li>547</li>
+<li>549</li>
+<li>999</li>
+</ul>
+</li>
+</ul>
+<script src="https://gist-it.appspot.com/github/dtprogrammer/leetcode-solutions/blob/master/src/main/java/dtprogrammer/github/io/p66/Solution.java"></script>
+<h3 id="timecomplexity">Time complexity</h3>
+<p>O (n)</p>
+<h3 id="spacecomplexity">Space complexity</h3>
+<p>O (n + 1)</p>
+<h3 id="notes">Notes</h3>
+</div>
 		</div>
 	
 		<ol class="share_digitus">
             <li>
                 <span>Share:</span>
                 <ul class="share-ikons_digitus">
-                    <li><a class="fa fa-twitter-square" target="_blank" href="http://twitter.com/share?text=20.%20Valid%20Parentheses&amp;url=http://localhost:2368/20-valid-parentheses/"><span class="hidden_digitus">Twitter</span></a></li>
-                    <li><a class="fa fa-facebook-square" target="_blank" href="http://www.facebook.com/sharer.php?u=http://localhost:2368/20-valid-parentheses/"><span class="hidden_digitus">Facebook</span></a></li>
-                    <li><a class="fa fa-google-plus-square" target="_blank" href="https://plus.google.com/share?url=http://localhost:2368/20-valid-parentheses/"><span class="hidden_digitus">Google+</span></a></li>
+                    <li><a class="fa fa-twitter-square" target="_blank" href="http://twitter.com/share?text=66.%20Plus%20One&amp;url=http://localhost:2368/66-plus-one/"><span class="hidden_digitus">Twitter</span></a></li>
+                    <li><a class="fa fa-facebook-square" target="_blank" href="http://www.facebook.com/sharer.php?u=http://localhost:2368/66-plus-one/"><span class="hidden_digitus">Facebook</span></a></li>
+                    <li><a class="fa fa-google-plus-square" target="_blank" href="https://plus.google.com/share?url=http://localhost:2368/66-plus-one/"><span class="hidden_digitus">Google+</span></a></li>
                 </ul>
             </li>
             <li class="back_digitus"><a href="index.html"><i class="fa fa-level-up"></i><span>Back to top</span></a></li>
