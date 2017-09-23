@@ -1,4 +1,36 @@
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" version="2.0"><channel><title>Software Interview Preparation Blog</title><description>Algorithms, Data Structures and System Design for Interviews</description><link>http://localhost:2368/</link><image><url>http://localhost:2368/favicon.png</url><title>Software Interview Preparation Blog</title><link>http://localhost:2368/</link></image><generator>Ghost 1.8</generator><lastBuildDate>Sat, 23 Sep 2017 21:24:49 GMT</lastBuildDate><atom:link href="http://localhost:2368/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title>122. Best Time to Buy and Sell Stock II</title><description>&lt;div class="kg-card-markdown"&gt;&lt;h3 id="question"&gt;&lt;a href="https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/"&gt;Question&lt;/a&gt;&lt;/h3&gt;
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" version="2.0"><channel><title>Software Interview Preparation Blog</title><description>Algorithms, Data Structures and System Design for Interviews</description><link>http://localhost:2368/</link><image><url>http://localhost:2368/favicon.png</url><title>Software Interview Preparation Blog</title><link>http://localhost:2368/</link></image><generator>Ghost 1.8</generator><lastBuildDate>Sat, 23 Sep 2017 22:28:03 GMT</lastBuildDate><atom:link href="http://localhost:2368/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title>654. Maximum Binary Tree</title><description>&lt;div class="kg-card-markdown"&gt;&lt;h3 id="question"&gt;&lt;a href="https://leetcode.com/problems/maximum-binary-tree/description/"&gt;Question&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Given an integer array with no duplicates. A maximum tree building on this array is defined as follow:&lt;/p&gt;
+&lt;p&gt;The root is the maximum number in the array.&lt;br&gt;
+The left subtree is the maximum tree constructed from left part subarray divided by the maximum number.&lt;br&gt;
+The right subtree is the&lt;/p&gt;&lt;/div&gt;</description><link>http://localhost:2368/654-maximum-binary-tree/</link><guid isPermaLink="false">59c6dde1018514b5e1fc0866</guid><category>leetcode</category><dc:creator>Duct Tape Programmer</dc:creator><pubDate>Sat, 23 Sep 2017 22:24:26 GMT</pubDate><content:encoded>&lt;div class="kg-card-markdown"&gt;&lt;h3 id="question"&gt;&lt;a href="https://leetcode.com/problems/maximum-binary-tree/description/"&gt;Question&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Given an integer array with no duplicates. A maximum tree building on this array is defined as follow:&lt;/p&gt;
+&lt;p&gt;The root is the maximum number in the array.&lt;br&gt;
+The left subtree is the maximum tree constructed from left part subarray divided by the maximum number.&lt;br&gt;
+The right subtree is the maximum tree constructed from right part subarray divided by the maximum number.&lt;br&gt;
+Construct the maximum tree by the given array and output the root node of this tree.&lt;/p&gt;
+&lt;p&gt;Example 1:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Input: [3,2,1,6,0,5]
+Output: return the tree root node representing the following tree:
+
+      6
+    /   \
+   3     5
+    \    / 
+     2  0   
+       \
+        1
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Note:&lt;br&gt;
+The size of the given array will be in the range [1,1000].&lt;/p&gt;
+&lt;h3 id="solution"&gt;Solution&lt;/h3&gt;
+&lt;p&gt;&lt;img src="https://i.imgur.com/CBwBdff.jpg" alt=""&gt;&lt;/p&gt;
+&lt;script src="https://gist-it.appspot.com/github/dtprogrammer/leetcode-solutions/blob/master/src/main/java/dtprogrammer/github/io/p654/Solution.java"&gt;&lt;/script&gt;
+&lt;h3 id="timecomplexity"&gt;Time complexity&lt;/h3&gt;
+&lt;p&gt;The time complexity in average case will be &lt;code&gt;O (n log n)&lt;/code&gt;. Since the height of the tree will be &lt;code&gt;log n&lt;/code&gt; and finding maximum takes &lt;code&gt;O (n)&lt;/code&gt; time. Although, worst case we might end up with skewed tree and the height of tree will become &lt;code&gt;n&lt;/code&gt;  and the time complexity will become &lt;code&gt;O (n pow 2)&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id="spacecomplexity"&gt;Space complexity&lt;/h3&gt;
+&lt;p&gt;Constant besides the space on stack&lt;/p&gt;
+&lt;h3 id="notes"&gt;Notes&lt;/h3&gt;
+&lt;/div&gt;</content:encoded></item><item><title>122. Best Time to Buy and Sell Stock II</title><description>&lt;div class="kg-card-markdown"&gt;&lt;h3 id="question"&gt;&lt;a href="https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/"&gt;Question&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;Say you have an array for which the ith element is the price of a given stock on day i.&lt;/p&gt;
 &lt;p&gt;Design an algorithm to find the maximum profit. You may complete as many transactions as you like (ie, buy one and sell one share of the stock multiple times)&lt;/p&gt;&lt;/div&gt;</description><link>http://localhost:2368/122-best-time-to-buy-and-sell-stock-ii/</link><guid isPermaLink="false">59c6cf22018514b5e1fc0864</guid><category>leetcode</category><dc:creator>Duct Tape Programmer</dc:creator><pubDate>Sat, 23 Sep 2017 21:22:40 GMT</pubDate><content:encoded>&lt;div class="kg-card-markdown"&gt;&lt;h3 id="question"&gt;&lt;a href="https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/"&gt;Question&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;Say you have an array for which the ith element is the price of a given stock on day i.&lt;/p&gt;
@@ -565,46 +597,4 @@ Given the following matrix:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;We only go right to left and/or down to up only if the there is remaing rows and remaining columns respectively.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/div&gt;</content:encoded></item><item><title>103. Binary Tree Zigzag Level Order Traversal</title><description>&lt;div class="kg-card-markdown"&gt;&lt;h3 id="question"&gt;&lt;a href="https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/description/"&gt;Question&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;Given a binary tree, return the zigzag level order traversal of its nodes' values. (ie, from left to right, then right to left for the next level and alternate between).&lt;/p&gt;
-&lt;p&gt;For example:&lt;br&gt;
-Given binary tree [3,9,20,null,null,15,7],&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;    3
-   / \
-  9  20
-    /  \
-   15   7
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;return its&lt;/p&gt;&lt;/div&gt;</description><link>http://localhost:2368/103-binary-tree-zigzag-level-order-traversal/</link><guid isPermaLink="false">59be25cba7b0fe3c2805e806</guid><category>leetcode</category><dc:creator>Duct Tape Programmer</dc:creator><pubDate>Sun, 17 Sep 2017 07:39:27 GMT</pubDate><content:encoded>&lt;div class="kg-card-markdown"&gt;&lt;h3 id="question"&gt;&lt;a href="https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/description/"&gt;Question&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;Given a binary tree, return the zigzag level order traversal of its nodes' values. (ie, from left to right, then right to left for the next level and alternate between).&lt;/p&gt;
-&lt;p&gt;For example:&lt;br&gt;
-Given binary tree [3,9,20,null,null,15,7],&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;    3
-   / \
-  9  20
-    /  \
-   15   7
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;return its zigzag level order traversal as:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;[
-  [3],
-  [20,9],
-  [15,7]
-]
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id="solution"&gt;Solution&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;This problem is very similar to &lt;a href="http://dtprogrammer.github.io/102-binary-tree-level-order-traversal/"&gt;102. Binary Tree Level Order Traversal&lt;/a&gt;. We just need to reverse the order while traversing down the level.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;This might be achieved by inserting the items in the queue in the desired way but an easier approach is to insert them in the result list in the desired way. The below solution takes this approach.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;script src="https://gist-it.appspot.com/github/dtprogrammer/leetcode-solutions/blob/master/src/main/java/dtprogrammer/github/io/p103/Solution.java"&gt;&lt;/script&gt;
-&lt;h3 id="timecomplexity"&gt;Time complexity&lt;/h3&gt;
-&lt;p&gt;O (n)&lt;/p&gt;
-&lt;h3 id="spacecomplexity"&gt;Space complexity&lt;/h3&gt;
-&lt;p&gt;O (n) since in worst case we might end up with all the nodes in level and have to keep them in queue&lt;/p&gt;
-&lt;h3 id="notes"&gt;Notes&lt;/h3&gt;
 &lt;/div&gt;</content:encoded></item></channel></rss>
