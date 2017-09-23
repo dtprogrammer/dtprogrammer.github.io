@@ -1,0 +1,259 @@
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+ 
+<title>122. Best Time to Buy and Sell Stock II</title>
+<link rel="shortcut icon" href="../favicon.png">
+<meta name="description" content="">
+    
+<meta name="twitter:site" content="">
+
+<meta name="twitter:creator" content="">
+
+<meta name="google-site-verification" content="">
+
+<meta property="fb:admins" content="">	 
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic&amp;subset=latin-ext,latin" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="../assets/css/style.css?v=499d3c15ff">
+<link rel="stylesheet" type="text/css" href="../assets/css/font-awesome.min.css?v=499d3c15ff">
+<link rel="stylesheet" type="text/css" href="../assets/css/animation.css?v=499d3c15ff">
+
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">     
+<link rel="shortcut icon" href="../favicon.png" type="image/png">
+    <link rel="canonical" href="index.html">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <link rel="amphtml" href="amp/index.html">
+    
+    <meta property="og:site_name" content="Software Interview Preparation Blog">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="122. Best Time to Buy and Sell Stock II">
+    <meta property="og:description" content="Question Say you have an array for which the ith element is the price of a given stock on day i. Design an algorithm to find the maximum profit. You may complete as many transactions as you like (ie, buy one and sell one share of the stock multiple times)">
+    <meta property="og:url" content="http://localhost:2368/122-best-time-to-buy-and-sell-stock-ii/">
+    <meta property="article:published_time" content="2017-09-23T21:22:40.000Z">
+    <meta property="article:modified_time" content="2017-09-23T21:22:40.000Z">
+    <meta property="article:tag" content="leetcode">
+    
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="122. Best Time to Buy and Sell Stock II">
+    <meta name="twitter:description" content="Question Say you have an array for which the ith element is the price of a given stock on day i. Design an algorithm to find the maximum profit. You may complete as many transactions as you like (ie, buy one and sell one share of the stock multiple times)">
+    <meta name="twitter:url" content="http://localhost:2368/122-best-time-to-buy-and-sell-stock-ii/">
+    <meta name="twitter:label1" content="Written by">
+    <meta name="twitter:data1" content="Duct Tape Programmer">
+    <meta name="twitter:label2" content="Filed under">
+    <meta name="twitter:data2" content="leetcode">
+    
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Software Interview Preparation Blog",
+        "logo": "http://localhost:2368/content/images/2017/09/publication_logo.png"
+    },
+    "author": {
+        "@type": "Person",
+        "name": "Duct Tape Programmer",
+        "url": "http://localhost:2368/author/duct/",
+        "sameAs": []
+    },
+    "headline": "122. Best Time to Buy and Sell Stock II",
+    "url": "http://localhost:2368/122-best-time-to-buy-and-sell-stock-ii/",
+    "datePublished": "2017-09-23T21:22:40.000Z",
+    "dateModified": "2017-09-23T21:22:40.000Z",
+    "keywords": "leetcode",
+    "description": "Question Say you have an array for which the ith element is the price of a given stock on day i. Design an algorithm to find the maximum profit. You may complete as many transactions as you like (ie, buy one and sell one share of the stock multiple times)",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "http://localhost:2368/"
+    }
+}
+    </script>
+
+    <script type="text/javascript" src="../public/ghost-sdk.js?v=499d3c15ff"></script>
+<script type="text/javascript">
+ghost.init({
+	clientId: "ghost-frontend",
+	clientSecret: "9f8a9b723d67"
+});
+</script>
+    <meta name="generator" content="Ghost 1.8">
+    <link rel="alternate" type="application/rss+xml" title="Software Interview Preparation Blog" href="../rss/index.html">
+    
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-106385900-1'); // Paste your Google Analytics ID here.
+    ga('send', 'pageview');
+</script>    
+</head>
+
+<body class="post-template tag-leetcode">
+ 
+
+<header role="banner" class="site-head_digitus wrapper_digitus fade_digitus">
+        <a class="logo_digitus" href="../"><img src="../content/images/2017/09/publication_logo.png" alt="Software Interview Preparation Blog"></a>
+    <h1 class="blogtitle_digitus">
+        <a title="Software Interview Preparation Blog" href="../">
+            Software Interview Preparation Blog
+        </a>
+    </h1>
+</header>
+
+
+<main class="wrapper_digitus" role="main">
+    
+	
+    <article class="article_digitus">
+	
+		<header class="postheader_digitus">
+            <h1 class="posttitle_digitus">122. Best Time to Buy and Sell Stock II</h1>
+            <span>by</span><h4 class="authorname_digitus"><a href="../author/duct.21">Duct Tape Programmer</a></h4>
+            <hr class="pause">
+			<ul>
+				<li><i class="fa fa-calendar"></i><time class="date_digitus">Saturday 23 Sep 2017</time></li>
+                <li><i class="fa fa-comments"></i><a class="comments_digitus" href="index.html#disqus_thread" data-disqus-identifier="59c6cf22018514b5e1fc0864">Comments</a></li>
+				<li><i class="fa fa-tag"></i><span class="posttags_digitus"><a href="../tag/leetcode/">leetcode</a></span></li>
+			</ul>
+		</header>
+	
+		<div class="postcontent_digitus">
+			<div class="kg-card-markdown"><h3 id="question"><a href="https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/">Question</a></h3>
+<p>Say you have an array for which the ith element is the price of a given stock on day i.</p>
+<p>Design an algorithm to find the maximum profit. You may complete as many transactions as you like (ie, buy one and sell one share of the stock multiple times). However, you may not engage in multiple transactions at the same time (ie, you must sell the stock before you buy again).</p>
+<h3 id="solution">Solution</h3>
+<ul>
+<li>The problem is very similar to <a href="http://dtprogrammer.github.io/121-best-time-to-buy-and-sell-stock/">121. Best Time to Buy and Sell Stock</a> with the only difference that we can buy and sell as many times as we want but can't hold more than one stock at a time.</li>
+<li>So basically we want to buy and sell as many times as we can while making a profit to obtain maximum profit. It's our greedy approach.</li>
+<li>It should be noted that buying a stock at lowest price and holding it not making transaction to sell at peak price does not yield a better result which can be seen in the graphs below.</li>
+</ul>
+<p><img src="https://leetcode.com/media/original_images/122_maxprofit_1.PNG" alt=""><br>
+<img src="https://leetcode.com/media/original_images/122_maxprofit_2.PNG" alt=""></p>
+<script src="https://gist-it.appspot.com/github/dtprogrammer/leetcode-solutions/blob/master/src/main/java/dtprogrammer/github/io/p122/Solution.java"></script>
+<h3 id="timecomplexity">Time complexity</h3>
+<p>O (n)</p>
+<h3 id="spacecomplexity">Space complexity</h3>
+<p>Constant</p>
+<h3 id="notes">Notes</h3>
+<ul>
+<li><a href="https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/solution/">Further reading</a></li>
+</ul>
+</div>
+		</div>
+	
+		<ol class="share_digitus">
+            <li>
+                <span>Share:</span>
+                <ul class="share-ikons_digitus">
+                    <li><a class="fa fa-twitter-square" target="_blank" href="http://twitter.com/share?text=122.%20Best%20Time%20to%20Buy%20and%20Sell%20Stock%20II&amp;url=http://localhost:2368/122-best-time-to-buy-and-sell-stock-ii/"><span class="hidden_digitus">Twitter</span></a></li>
+                    <li><a class="fa fa-facebook-square" target="_blank" href="http://www.facebook.com/sharer.php?u=http://localhost:2368/122-best-time-to-buy-and-sell-stock-ii/"><span class="hidden_digitus">Facebook</span></a></li>
+                    <li><a class="fa fa-google-plus-square" target="_blank" href="https://plus.google.com/share?url=http://localhost:2368/122-best-time-to-buy-and-sell-stock-ii/"><span class="hidden_digitus">Google+</span></a></li>
+                </ul>
+            </li>
+            <li class="back_digitus"><a href="index.html"><i class="fa fa-level-up"></i><span>Back to top</span></a></li>
+		</ol>
+	
+    
+     <footer class="postfooter_digitus">
+         
+            <span class="posttags_typesome"> <a href="../tag/leetcode/">leetcode</a></span>
+            <hr class="pause">
+        
+         <address>
+         
+                </address><ul>
+				    <li><h4 class="authorname_digitus"><a href="../author/duct.21">Duct Tape Programmer</a></h4></li>
+                    <li><p class="authorbio_digitus"></p></li>
+				    <li>  
+                    </li>
+				</ul>
+             
+		</footer>
+	
+	</article>
+	
+	
+	<div id="disqus_thread" class="disqusbox_digitus">
+        
+    <script type="text/javascript">
+        
+        var disqus_shortname = 'software-interview-preparation-blog'; // required: replace example with your Disqus shortname
+        var disqus_identifier = '';
+        
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    
+</div>
+	
+	
+</main>
+<footer class="footer_digitus">
+	<ul>
+        <li>
+            <span class="tooltip_digitus">Subscribe!</span>
+            <a href="../rss/index.rss" target="_blank">
+                <span class="fa fa-stack">
+                    <i class="fa fa-stop fa-stack-2x"></i>
+                    <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                </span>
+            </a>
+        </li>
+
+        <li>
+            <span class="tooltip_digitus">Contact</span>
+            <a href="mailto:ducttapeprogrammer@gmail.com">
+            <span class="fa fa-stack">
+                <i class="fa fa-stop fa-stack-2x"></i>
+                <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                </span>
+            </a>
+        </li>
+
+        <li>
+            <span class="tooltip_digitus">GitHub</span>
+            <a href="https://github.com/dtprogrammer">
+            <span class="fa fa-stack">
+                <i class="fa fa-stop fa-stack-2x"></i>
+                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                </span>
+            </a>
+        </li>
+	</ul>
+    
+		<p>All content copyright <a href="../">Software Interview Preparation Blog</a> © 2017 • All rights reserved. <br>
+		  Theme created by <a href="http://golem.io">golem.io</a> • Proudly published with <a class="icon-ghost" href="http://tryghost.org" target="_blank">Ghost</a></p>
+</footer>
+
+
+    
+<script type="text/javascript">
+    
+    var disqus_shortname = 'software-interview-preparation-blog'; // required: replace example with your Disqus shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+
+<script type="text/javascript" src="../assets/js/jquery.fitvids.js?v=499d3c15ff"></script>
+<script type="text/javascript" src="../assets/js/index.js?v=499d3c15ff"></script>
+    
+</body>

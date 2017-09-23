@@ -1,4 +1,121 @@
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" version="2.0"><channel><title>Software Interview Preparation Blog</title><description>Algorithms, Data Structures and System Design for Interviews</description><link>http://localhost:2368/</link><image><url>http://localhost:2368/favicon.png</url><title>Software Interview Preparation Blog</title><link>http://localhost:2368/</link></image><generator>Ghost 1.8</generator><lastBuildDate>Fri, 22 Sep 2017 06:25:04 GMT</lastBuildDate><atom:link href="http://localhost:2368/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title>66. Plus One</title><description>&lt;div class="kg-card-markdown"&gt;&lt;h3 id="question"&gt;&lt;a href="https://leetcode.com/problems/plus-one/description/"&gt;Question&lt;/a&gt;&lt;/h3&gt;
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" version="2.0"><channel><title>Software Interview Preparation Blog</title><description>Algorithms, Data Structures and System Design for Interviews</description><link>http://localhost:2368/</link><image><url>http://localhost:2368/favicon.png</url><title>Software Interview Preparation Blog</title><link>http://localhost:2368/</link></image><generator>Ghost 1.8</generator><lastBuildDate>Sat, 23 Sep 2017 21:24:49 GMT</lastBuildDate><atom:link href="http://localhost:2368/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title>122. Best Time to Buy and Sell Stock II</title><description>&lt;div class="kg-card-markdown"&gt;&lt;h3 id="question"&gt;&lt;a href="https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/"&gt;Question&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Say you have an array for which the ith element is the price of a given stock on day i.&lt;/p&gt;
+&lt;p&gt;Design an algorithm to find the maximum profit. You may complete as many transactions as you like (ie, buy one and sell one share of the stock multiple times)&lt;/p&gt;&lt;/div&gt;</description><link>http://localhost:2368/122-best-time-to-buy-and-sell-stock-ii/</link><guid isPermaLink="false">59c6cf22018514b5e1fc0864</guid><category>leetcode</category><dc:creator>Duct Tape Programmer</dc:creator><pubDate>Sat, 23 Sep 2017 21:22:40 GMT</pubDate><content:encoded>&lt;div class="kg-card-markdown"&gt;&lt;h3 id="question"&gt;&lt;a href="https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/"&gt;Question&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Say you have an array for which the ith element is the price of a given stock on day i.&lt;/p&gt;
+&lt;p&gt;Design an algorithm to find the maximum profit. You may complete as many transactions as you like (ie, buy one and sell one share of the stock multiple times). However, you may not engage in multiple transactions at the same time (ie, you must sell the stock before you buy again).&lt;/p&gt;
+&lt;h3 id="solution"&gt;Solution&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;The problem is very similar to &lt;a href="http://dtprogrammer.github.io/121-best-time-to-buy-and-sell-stock/"&gt;121. Best Time to Buy and Sell Stock&lt;/a&gt; with the only difference that we can buy and sell as many times as we want but can't hold more than one stock at a time.&lt;/li&gt;
+&lt;li&gt;So basically we want to buy and sell as many times as we can while making a profit to obtain maximum profit. It's our greedy approach.&lt;/li&gt;
+&lt;li&gt;It should be noted that buying a stock at lowest price and holding it not making transaction to sell at peak price does not yield a better result which can be seen in the graphs below.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src="https://leetcode.com/media/original_images/122_maxprofit_1.PNG" alt=""&gt;&lt;br&gt;
+&lt;img src="https://leetcode.com/media/original_images/122_maxprofit_2.PNG" alt=""&gt;&lt;/p&gt;
+&lt;script src="https://gist-it.appspot.com/github/dtprogrammer/leetcode-solutions/blob/master/src/main/java/dtprogrammer/github/io/p122/Solution.java"&gt;&lt;/script&gt;
+&lt;h3 id="timecomplexity"&gt;Time complexity&lt;/h3&gt;
+&lt;p&gt;O (n)&lt;/p&gt;
+&lt;h3 id="spacecomplexity"&gt;Space complexity&lt;/h3&gt;
+&lt;p&gt;Constant&lt;/p&gt;
+&lt;h3 id="notes"&gt;Notes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/solution/"&gt;Further reading&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;</content:encoded></item><item><title>121. Best Time to Buy and Sell Stock</title><description>&lt;div class="kg-card-markdown"&gt;&lt;h3 id="question"&gt;&lt;a href="https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/"&gt;Question&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Say you have an array for which the ith element is the price of a given stock on day i.&lt;/p&gt;
+&lt;p&gt;If you were only permitted to complete at most one transaction (ie, buy one and sell one share of the stock), design an algorithm to find the maximum profit.&lt;/p&gt;&lt;/div&gt;</description><link>http://localhost:2368/121-best-time-to-buy-and-sell-stock/</link><guid isPermaLink="false">59c6bb04018514b5e1fc0862</guid><category>leetcode</category><dc:creator>Duct Tape Programmer</dc:creator><pubDate>Sat, 23 Sep 2017 21:07:53 GMT</pubDate><content:encoded>&lt;div class="kg-card-markdown"&gt;&lt;h3 id="question"&gt;&lt;a href="https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/"&gt;Question&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Say you have an array for which the ith element is the price of a given stock on day i.&lt;/p&gt;
+&lt;p&gt;If you were only permitted to complete at most one transaction (ie, buy one and sell one share of the stock), design an algorithm to find the maximum profit.&lt;/p&gt;
+&lt;p&gt;Example 1:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Input: [7, 1, 5, 3, 6, 4]
+Output: 5
+
+max. difference = 6-1 = 5 (not 7-1 = 6, as selling price needs to be larger than buying price)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Example 2:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Input: [7, 6, 4, 3, 1]
+Output: 0
+
+In this case, no transaction is done, i.e. max profit = 0.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id="solution"&gt;Solution&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;This problem can be solved by noticing that we want to optimize for maximum profit.&lt;/li&gt;
+&lt;li&gt;Obtaining maximum profit depends on finding the minimum prices and then selling at highest price following after.&lt;/li&gt;
+&lt;li&gt;In short, we need to find the highest peak follow by a lowest valley.&lt;/li&gt;
+&lt;li&gt;The below solution keeps a track of the minimum price seen so far and also calculates the maximum profit for all values keeping track of maximum profit seen so far.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;script src="https://gist-it.appspot.com/github/dtprogrammer/leetcode-solutions/blob/master/src/main/java/dtprogrammer/github/io/p121/Solution.java"&gt;&lt;/script&gt;
+&lt;ul&gt;
+&lt;li&gt;The above problem can also be solved by calculating the difference between the prices and then calculating the max which can be obtained.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;prices = [7, 1, 5, 3, 6, 4]
+Stock price change [- 6, 4, -2, 3, -2]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;In the above stock price difference we need to find a window which sums to max.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;script src="https://gist-it.appspot.com/github/dtprogrammer/leetcode-solutions/blob/master/src/main/java/dtprogrammer/github/io/p121/Solution2.java"&gt;&lt;/script&gt;
+&lt;h3 id="timecomplexity"&gt;Time complexity&lt;/h3&gt;
+&lt;p&gt;O (n)&lt;/p&gt;
+&lt;h3 id="spacecomplexity"&gt;Space complexity&lt;/h3&gt;
+&lt;p&gt;Constant&lt;/p&gt;
+&lt;h3 id="notes"&gt;Notes&lt;/h3&gt;
+&lt;/div&gt;</content:encoded></item><item><title>253. Meeting Rooms II</title><description>&lt;div class="kg-card-markdown"&gt;&lt;h3 id="question"&gt;&lt;a href="https://leetcode.com/problems/meeting-rooms-ii"&gt;Question&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Given an array of meeting time intervals consisting of start and end times [[s1,e1],[s2,e2],...] (si &amp;lt; ei), find the minimum number of conference rooms required.&lt;/p&gt;
+&lt;p&gt;For example,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Given [[0, 30],[5, 10],[15, 20]],
+return 2.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id="solution"&gt;Solution&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;The idea to solve this problem is simple&lt;/li&gt;
+&lt;li&gt;First&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;</description><link>http://localhost:2368/253-meeting-rooms-ii/</link><guid isPermaLink="false">59c6a6d0018514b5e1fc085e</guid><category>leetcode</category><category>leetcode-locked</category><dc:creator>Duct Tape Programmer</dc:creator><pubDate>Sat, 23 Sep 2017 18:34:23 GMT</pubDate><content:encoded>&lt;div class="kg-card-markdown"&gt;&lt;h3 id="question"&gt;&lt;a href="https://leetcode.com/problems/meeting-rooms-ii"&gt;Question&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Given an array of meeting time intervals consisting of start and end times [[s1,e1],[s2,e2],...] (si &amp;lt; ei), find the minimum number of conference rooms required.&lt;/p&gt;
+&lt;p&gt;For example,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Given [[0, 30],[5, 10],[15, 20]],
+return 2.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id="solution"&gt;Solution&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;The idea to solve this problem is simple&lt;/li&gt;
+&lt;li&gt;First we need to sort the &lt;code&gt;Interval&lt;/code&gt; on basis of their start time so that we can traverse them in the order they start.&lt;/li&gt;
+&lt;li&gt;We initialize our min heap (based on meeting end time) with the first interval and then traverse the remaining intervals to determine how many simultaneously running intervals we have.
+&lt;ul&gt;
+&lt;li&gt;If most early ending interval in the queue has a end time &lt;code&gt;&amp;lt;=&lt;/code&gt; current interval start time we can reuse the room. So we just update the end time with the current interval end time.&lt;/li&gt;
+&lt;li&gt;Else we know that we need another room to accomodate this even so we push the current Interval on the min heap.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;script src="https://gist-it.appspot.com/github/dtprogrammer/leetcode-solutions/blob/master/src/main/java/dtprogrammer/github/io/p253/Solution.java"&gt;&lt;/script&gt;
+&lt;h3 id="timecomplexity"&gt;Time complexity&lt;/h3&gt;
+&lt;p&gt;O (n log n)&lt;/p&gt;
+&lt;h3 id="spacecomplexity"&gt;Space complexity&lt;/h3&gt;
+&lt;p&gt;Constant&lt;/p&gt;
+&lt;h3 id="notes"&gt;Notes&lt;/h3&gt;
+&lt;/div&gt;</content:encoded></item><item><title>134. Gas Station</title><description>&lt;div class="kg-card-markdown"&gt;&lt;h3 id="question"&gt;&lt;a href="https://leetcode.com/problems/gas-station/description/"&gt;Question&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;There are N gas stations along a circular route, where the amount of gas at station i is gas[i].&lt;/p&gt;
+&lt;p&gt;You have a car with an unlimited gas tank and it costs cost[i] of gas to travel from station i to its next station (i+1). You begin&lt;/p&gt;&lt;/div&gt;</description><link>http://localhost:2368/134-gas-station/</link><guid isPermaLink="false">59c69ab1018514b5e1fc085c</guid><category>leetcode</category><dc:creator>Duct Tape Programmer</dc:creator><pubDate>Sat, 23 Sep 2017 18:00:21 GMT</pubDate><content:encoded>&lt;div class="kg-card-markdown"&gt;&lt;h3 id="question"&gt;&lt;a href="https://leetcode.com/problems/gas-station/description/"&gt;Question&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;There are N gas stations along a circular route, where the amount of gas at station i is gas[i].&lt;/p&gt;
+&lt;p&gt;You have a car with an unlimited gas tank and it costs cost[i] of gas to travel from station i to its next station (i+1). You begin the journey with an empty tank at one of the gas stations.&lt;/p&gt;
+&lt;p&gt;Return the starting gas station's index if you can travel around the circuit once, otherwise return -1.&lt;/p&gt;
+&lt;p&gt;Note:&lt;br&gt;
+The solution is guaranteed to be unique.&lt;/p&gt;
+&lt;h3 id="solution"&gt;Solution&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;There are two things to be noticed here:
+&lt;ul&gt;
+&lt;li&gt;If we cannot reach from A to E then we cannot reach to E from any stop between A and E to E. This is there reason why we do &lt;code&gt;start = i + 1&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;A solution always exists if total gas in the circuit is greater than or equal to total distance (total cost) of circuit.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;script src="https://gist-it.appspot.com/github/dtprogrammer/leetcode-solutions/blob/master/src/main/java/dtprogrammer/github/io/p134/Solution.java"&gt;&lt;/script&gt;
+&lt;h3 id="timecomplexity"&gt;Time complexity&lt;/h3&gt;
+&lt;p&gt;O (n)&lt;/p&gt;
+&lt;h3 id="spacecomplexity"&gt;Space complexity&lt;/h3&gt;
+&lt;p&gt;Constant&lt;/p&gt;
+&lt;h3 id="notes"&gt;Notes&lt;/h3&gt;
+&lt;/div&gt;</content:encoded></item><item><title>66. Plus One</title><description>&lt;div class="kg-card-markdown"&gt;&lt;h3 id="question"&gt;&lt;a href="https://leetcode.com/problems/plus-one/description/"&gt;Question&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;Given a non-negative integer represented as a non-empty array of digits, plus one to the integer.&lt;/p&gt;
 &lt;p&gt;You may assume the integer do not contain any leading zero, except the number 0 itself.&lt;/p&gt;
 &lt;p&gt;The digits are stored such that the most significant digit is at the head of the list.&lt;/p&gt;&lt;/div&gt;</description><link>http://localhost:2368/66-plus-one/</link><guid isPermaLink="false">59c49625018514b5e1fc0858</guid><category>leetcode</category><dc:creator>Duct Tape Programmer</dc:creator><pubDate>Fri, 22 Sep 2017 04:50:50 GMT</pubDate><content:encoded>&lt;div class="kg-card-markdown"&gt;&lt;h3 id="question"&gt;&lt;a href="https://leetcode.com/problems/plus-one/description/"&gt;Question&lt;/a&gt;&lt;/h3&gt;
@@ -490,195 +607,4 @@ Given binary tree [3,9,20,null,null,15,7],&lt;/p&gt;
 &lt;h3 id="spacecomplexity"&gt;Space complexity&lt;/h3&gt;
 &lt;p&gt;O (n) since in worst case we might end up with all the nodes in level and have to keep them in queue&lt;/p&gt;
 &lt;h3 id="notes"&gt;Notes&lt;/h3&gt;
-&lt;/div&gt;</content:encoded></item><item><title>102. Binary Tree Level Order Traversal</title><description>&lt;div class="kg-card-markdown"&gt;&lt;h3 id="question"&gt;&lt;a href="https://leetcode.com/problems/binary-tree-level-order-traversal/description/"&gt;Question&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;Given a binary tree, return the level order traversal of its nodes' values. (ie, from left to right, level by level).&lt;/p&gt;
-&lt;p&gt;For example:&lt;br&gt;
-Given binary tree [3,9,20,null,null,15,7],&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;    3
-   / \
-  9  20
-    /  \
-   15   7
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;return its level order traversal as:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;[
-  [3],
-  [9,20],
-  [15,7]&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description><link>http://localhost:2368/102-binary-tree-level-order-traversal/</link><guid isPermaLink="false">59bdc286a7b0fe3c2805e802</guid><category>leetcode</category><dc:creator>Duct Tape Programmer</dc:creator><pubDate>Sun, 17 Sep 2017 00:36:48 GMT</pubDate><content:encoded>&lt;div class="kg-card-markdown"&gt;&lt;h3 id="question"&gt;&lt;a href="https://leetcode.com/problems/binary-tree-level-order-traversal/description/"&gt;Question&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;Given a binary tree, return the level order traversal of its nodes' values. (ie, from left to right, level by level).&lt;/p&gt;
-&lt;p&gt;For example:&lt;br&gt;
-Given binary tree [3,9,20,null,null,15,7],&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;    3
-   / \
-  9  20
-    /  \
-   15   7
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;return its level order traversal as:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;[
-  [3],
-  [9,20],
-  [15,7]
-]
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id="solution"&gt;Solution&lt;/h3&gt;
-&lt;p&gt;This problem is really simple. It just need a BFS traversal of the tree with a way to track when a level ends. For this we keep a counter for levelSize which tracks the number of elements at each level.&lt;/p&gt;
-&lt;script src="https://gist-it.appspot.com/github/dtprogrammer/leetcode-solutions/blob/master/src/main/java/dtprogrammer/github/io/p102/Solution.java"&gt;&lt;/script&gt;
-&lt;h3 id="timecomplexity"&gt;Time complexity&lt;/h3&gt;
-&lt;p&gt;O (n)&lt;/p&gt;
-&lt;h3 id="spacecomplexity"&gt;Space complexity&lt;/h3&gt;
-&lt;p&gt;O (n) since in worst case we might end up with all the nodes in level and have to keep them in queue&lt;/p&gt;
-&lt;h3 id="notes"&gt;Notes&lt;/h3&gt;
-&lt;/div&gt;</content:encoded></item><item><title>73. Set Matrix Zeroes</title><description>&lt;div class="kg-card-markdown"&gt;&lt;h3 id="question"&gt;&lt;a href="https://leetcode.com/problems/set-matrix-zeroes/description/"&gt;Question&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;Given a m x n matrix, if an element is 0, set its entire row and column to 0. Do it in place.&lt;/p&gt;
-&lt;p&gt;click to show follow up.&lt;/p&gt;
-&lt;p&gt;Follow up:&lt;br&gt;
-Did you use extra space?&lt;br&gt;
-A straight forward solution using O(mn) space is probably a bad idea.&lt;br&gt;
-A&lt;/p&gt;&lt;/div&gt;</description><link>http://localhost:2368/73-set-matrix-zeroes/</link><guid isPermaLink="false">59bdb2d9a7b0fe3c2805e800</guid><category>leetcode</category><dc:creator>Duct Tape Programmer</dc:creator><pubDate>Sat, 16 Sep 2017 23:31:21 GMT</pubDate><content:encoded>&lt;div class="kg-card-markdown"&gt;&lt;h3 id="question"&gt;&lt;a href="https://leetcode.com/problems/set-matrix-zeroes/description/"&gt;Question&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;Given a m x n matrix, if an element is 0, set its entire row and column to 0. Do it in place.&lt;/p&gt;
-&lt;p&gt;click to show follow up.&lt;/p&gt;
-&lt;p&gt;Follow up:&lt;br&gt;
-Did you use extra space?&lt;br&gt;
-A straight forward solution using O(mn) space is probably a bad idea.&lt;br&gt;
-A simple improvement uses O(m + n) space, but still not the best solution.&lt;br&gt;
-Could you devise a constant space solution?&lt;/p&gt;
-&lt;h3 id="solution"&gt;Solution&lt;/h3&gt;
-&lt;p&gt;I was not able to solve the problem initially with constant space. I ended up looking up discussions.&lt;/p&gt;
-&lt;p&gt;The idea is to use &lt;code&gt;&amp;lt;i, 0&amp;gt;&lt;/code&gt; as marker for row and &lt;code&gt;&amp;lt;0, j&amp;gt;&lt;/code&gt; as marked for column. Now &lt;code&gt;&amp;lt;0, 0&amp;gt;&lt;/code&gt; becomes special case because it's needed for marking both 0th row and 0th column. So we use it just for the row and we use another variable col0 to store column marking for 0th column.&lt;/p&gt;
-&lt;script src="https://gist-it.appspot.com/github/dtprogrammer/leetcode-solutions/blob/master/src/main/java/dtprogrammer/github/io/p73/Solution.java"&gt;&lt;/script&gt;
-&lt;h3 id="timecomplexity"&gt;Time complexity&lt;/h3&gt;
-&lt;p&gt;The time complexity is O(m * n)&lt;/p&gt;
-&lt;h3 id="spacecomplexity"&gt;Space complexity&lt;/h3&gt;
-&lt;p&gt;Constant&lt;/p&gt;
-&lt;h3 id="notes"&gt;Notes&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;It is important to traverse from the bottom-right end while setting to 0 since if we travel from top-left we will set the first row 0 if there is even one zero which in turn will set everything to 0.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;</content:encoded></item><item><title>236. Lowest Common Ancestor of a Binary Tree</title><description>&lt;div class="kg-card-markdown"&gt;&lt;h3 id="question"&gt;&lt;a href="https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/description/"&gt;Question&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;Given a binary tree, find the lowest common ancestor (LCA) of two given nodes in the tree.&lt;/p&gt;
-&lt;p&gt;According to the definition of LCA on Wikipedia: “The lowest common ancestor is defined between two nodes v and w as the lowest node in T that has both v and w&lt;/p&gt;&lt;/div&gt;</description><link>http://localhost:2368/236-lowest-common-ancestor-of-a-binary-tree/</link><guid isPermaLink="false">59bb8b12a7b0fe3c2805e7fc</guid><category>leetcode</category><dc:creator>Duct Tape Programmer</dc:creator><pubDate>Fri, 15 Sep 2017 08:26:00 GMT</pubDate><content:encoded>&lt;div class="kg-card-markdown"&gt;&lt;h3 id="question"&gt;&lt;a href="https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/description/"&gt;Question&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;Given a binary tree, find the lowest common ancestor (LCA) of two given nodes in the tree.&lt;/p&gt;
-&lt;p&gt;According to the definition of LCA on Wikipedia: “The lowest common ancestor is defined between two nodes v and w as the lowest node in T that has both v and w as descendants (where we allow a node to be a descendant of itself).”&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;        _______3______
-       /              \
-    ___5__          ___1__
-   /      \        /      \
-   6      _2       0       8
-         /  \
-         7   4
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;For example, the lowest common ancestor (LCA) of nodes 5 and 1 is 3. Another example is LCA of nodes 5 and 4 is 5, since a node can be a descendant of itself according to the LCA definition.&lt;/p&gt;
-&lt;h3 id="solution"&gt;Solution&lt;/h3&gt;
-&lt;p&gt;This problem can be solved in different possible ways. EPI also has a solution for this which is pretty lengthy. The &lt;code&gt;Discuss&lt;/code&gt; section on leetcode have a very simple solution which I learned and replicated.&lt;/p&gt;
-&lt;p&gt;There are two possibilities here:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;The nodes are in different subtree&lt;/li&gt;
-&lt;li&gt;One of the nodes itself is the root.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;With the above, we can write the solution below in which if the subtree contains both the nodes then the result is subtree root itself. If it contains either of the nodes then results is that node. If none of the above cause is true then it returns null.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://i.imgur.com/KyrLj5W.jpg" alt=""&gt;&lt;/p&gt;
-&lt;script src="https://gist-it.appspot.com/github/dtprogrammer/leetcode-solutions/blob/master/src/main/java/dtprogrammer/github/io/p236/Solution.java"&gt;&lt;/script&gt;
-&lt;h3 id="timecomplexity"&gt;Time complexity&lt;/h3&gt;
-&lt;p&gt;The time complexity is O(n) since we traverse the tree to find the LCA.&lt;/p&gt;
-&lt;h3 id="spacecomplexity"&gt;Space complexity&lt;/h3&gt;
-&lt;p&gt;The space complexity is constant although since the algorithm uses recursion there is O(log n = h) space required on the stack&lt;/p&gt;
-&lt;h3 id="notes"&gt;Notes&lt;/h3&gt;
-&lt;ol&gt;
-&lt;li&gt;If left is null return right, if right is null return left, if both are null the root itself is returned.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/div&gt;</content:encoded></item><item><title>130. Surrounded Regions</title><description>&lt;div class="kg-card-markdown"&gt;&lt;h3 id="question"&gt;&lt;a href="https://leetcode.com/problems/surrounded-regions/description/"&gt;Question&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;Given a 2D board containing 'X' and 'O' (the letter O), capture all regions surrounded by 'X'.&lt;/p&gt;
-&lt;p&gt;A region is captured by flipping all 'O's into 'X's in that surrounded region.&lt;/p&gt;
-&lt;p&gt;For example,&lt;br&gt;
-X X X X&lt;br&gt;
-X O O X&lt;br&gt;
-X X O X&lt;br&gt;
-X O X X&lt;br&gt;&lt;/p&gt;&lt;/div&gt;</description><link>http://localhost:2368/130-surrounded-regions/</link><guid isPermaLink="false">59b8da5a301d231e36fc8fe7</guid><category>leetcode</category><dc:creator>Duct Tape Programmer</dc:creator><pubDate>Wed, 13 Sep 2017 07:25:54 GMT</pubDate><content:encoded>&lt;div class="kg-card-markdown"&gt;&lt;h3 id="question"&gt;&lt;a href="https://leetcode.com/problems/surrounded-regions/description/"&gt;Question&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;Given a 2D board containing 'X' and 'O' (the letter O), capture all regions surrounded by 'X'.&lt;/p&gt;
-&lt;p&gt;A region is captured by flipping all 'O's into 'X's in that surrounded region.&lt;/p&gt;
-&lt;p&gt;For example,&lt;br&gt;
-X X X X&lt;br&gt;
-X O O X&lt;br&gt;
-X X O X&lt;br&gt;
-X O X X&lt;br&gt;
-After running your function, the board should be:&lt;/p&gt;
-&lt;p&gt;X X X X&lt;br&gt;
-X X X X&lt;br&gt;
-X X X X&lt;br&gt;
-X O X X&lt;/p&gt;
-&lt;h3 id="solution"&gt;Solution&lt;/h3&gt;
-&lt;p&gt;I was able to think of the solution since I have seen this problem long back. The trick here is to notice is that if any of the boundary (left, right, up, down) has &lt;code&gt;O&lt;/code&gt; then that will remain &lt;code&gt;0&lt;/code&gt; as it has an open surrounding. Now this &lt;code&gt;O&lt;/code&gt; will cause other &lt;code&gt;O&lt;/code&gt; to remain &lt;code&gt;O&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;So overall the idea is:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;For all &lt;code&gt;O&lt;/code&gt; present in boundaries and its connected &lt;code&gt;O&lt;/code&gt; mark it with some other character. Here we choose &lt;code&gt;*&lt;/code&gt; as we know for certain they will remain &lt;code&gt;O&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;Now everything else can marked &lt;code&gt;X&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Switch &lt;code&gt;*&lt;/code&gt; back to &lt;code&gt;O&lt;/code&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;My initial solution was as below&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;public class Solution {
-    public void solve(char[][] board) {
-        // flip all 0 from borders to *
-        if (board != null &amp;amp;&amp;amp; board.length != 0) {
-            // mark from all boundaries
-            // top
-            markFromBorder(board, 0, 1, 0, board[0].length);
-            // bottom
-            markFromBorder(board, board.length - 1, board.length, 0, board[board.length - 1].length);
-            // left
-            markFromBorder(board, 0, board.length, 0, 1);
-            // right
-            markFromBorder(board, 0, board.length, board[0].length - 1, board[0].length);
-            // now mark all remaining O to X
-            replaceInMatrix(board, 'O', 'X');
-            replaceInMatrix(board, '*', 'O');
-        }
-    }
-
-    private void replaceInMatrix(char[][] board, Character charToReplace, Character replacingChar) {
-        for (int i = 0; i &amp;lt; board.length; i++) {
-            for (int j = 0; j &amp;lt; board[i].length; j++) {
-                if (board[i][j] == charToReplace) {
-                    board[i][j] = replacingChar;
-                }
-            }
-        }
-    }
-
-    private void markFromBorder(char[][] board, int rowStart, int rowEnd, int colStart, int colEnd) {
-        for (int i = rowStart; i &amp;lt; rowEnd; i++) {
-            for (int j = colStart; j &amp;lt; colEnd; j++) {
-                markWithNeighbors(board, i, j);
-            }
-        }
-    }
-
-    private void markWithNeighbors(char[][] board, int row, int col) {
-        // base case
-        if (row &amp;lt; 0 || row &amp;gt;= board.length || col &amp;lt; 0 || col &amp;gt;= board[row].length) {
-            return;
-        }
-        if (board[row][col] == 'O') {
-            // mark
-            board[row][col] = '*';
-            // handle neighbors
-            markWithNeighbors(board, row + 1, col);
-            markWithNeighbors(board, row - 1, col);
-            markWithNeighbors(board, row, col + 1);
-            markWithNeighbors(board, row, col - 1);
-        }
-    }
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Although this did work for most test case it failed for one of the test cases with stack overflow. Apparently, for one of the test case leetcode checks the number of the recursive call made to be under a limit. The solution is a DFS method where the max depth of recurses should be the size of matrix i.e. N. Since, my solution makes more recursive call it failed. Later, I was able to modify my solution to make less recursive call with the help of this &lt;a href="https://discuss.leetcode.com/topic/17224/a-really-simple-and-readable-c-solution-only-cost-12ms/18"&gt;post&lt;/a&gt;.&lt;/p&gt;
-&lt;script src="https://gist-it.appspot.com/github/dtprogrammer/leetcode-solutions/blob/master/src/main/java/dtprogrammer/github/io/p130/Solution.java"&gt;&lt;/script&gt;
-&lt;h3 id="timecomplexity"&gt;Time complexity&lt;/h3&gt;
-&lt;p&gt;The time complexity is O (N * N)&lt;/p&gt;
-&lt;h3 id="spacecomplexity"&gt;Space complexity&lt;/h3&gt;
-&lt;p&gt;Constant. Although since we are using recursive approach the solution does take some space in the recursion stack.&lt;/p&gt;
-&lt;h3 id="notes"&gt;Notes&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Recurse only for &lt;code&gt;O&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Recurse only if the range is valid&lt;/li&gt;
-&lt;/ul&gt;
 &lt;/div&gt;</content:encoded></item></channel></rss>
