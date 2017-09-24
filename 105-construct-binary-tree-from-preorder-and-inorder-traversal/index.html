@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
  
-<title>66. Plus One</title>
+<title>105. Construct Binary Tree from Preorder and Inorder Traversal</title>
 <link rel="shortcut icon" href="../favicon.png">
 <meta name="description" content="">
     
@@ -30,17 +30,17 @@
     
     <meta property="og:site_name" content="Software Interview Preparation Blog">
     <meta property="og:type" content="article">
-    <meta property="og:title" content="66. Plus One">
-    <meta property="og:description" content="Question Given a non-negative integer represented as a non-empty array of digits, plus one to the integer. You may assume the integer do not contain any leading zero, except the number 0 itself. The digits are stored such that the most significant digit is at the head of the list.">
-    <meta property="og:url" content="http://localhost:2368/66-plus-one/">
-    <meta property="article:published_time" content="2017-09-22T04:50:50.000Z">
-    <meta property="article:modified_time" content="2017-09-22T04:50:50.000Z">
+    <meta property="og:title" content="105. Construct Binary Tree from Preorder and Inorder Traversal">
+    <meta property="og:description" content="Question Given preorder and inorder traversal of a tree, construct the binary tree. Note: You may assume that duplicates do not exist in the tree. Solution This problem is similar to 654. Maximum Binary Tree The pattern to notice here is that the root of the subtree always comes firt">
+    <meta property="og:url" content="http://localhost:2368/105-construct-binary-tree-from-preorder-and-inorder-traversal/">
+    <meta property="article:published_time" content="2017-09-24T20:49:57.000Z">
+    <meta property="article:modified_time" content="2017-09-24T20:49:57.000Z">
     <meta property="article:tag" content="leetcode">
     
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="66. Plus One">
-    <meta name="twitter:description" content="Question Given a non-negative integer represented as a non-empty array of digits, plus one to the integer. You may assume the integer do not contain any leading zero, except the number 0 itself. The digits are stored such that the most significant digit is at the head of the list.">
-    <meta name="twitter:url" content="http://localhost:2368/66-plus-one/">
+    <meta name="twitter:title" content="105. Construct Binary Tree from Preorder and Inorder Traversal">
+    <meta name="twitter:description" content="Question Given preorder and inorder traversal of a tree, construct the binary tree. Note: You may assume that duplicates do not exist in the tree. Solution This problem is similar to 654. Maximum Binary Tree The pattern to notice here is that the root of the subtree always comes firt">
+    <meta name="twitter:url" content="http://localhost:2368/105-construct-binary-tree-from-preorder-and-inorder-traversal/">
     <meta name="twitter:label1" content="Written by">
     <meta name="twitter:data1" content="Duct Tape Programmer">
     <meta name="twitter:label2" content="Filed under">
@@ -61,12 +61,12 @@
         "url": "http://localhost:2368/author/duct/",
         "sameAs": []
     },
-    "headline": "66. Plus One",
-    "url": "http://localhost:2368/66-plus-one/",
-    "datePublished": "2017-09-22T04:50:50.000Z",
-    "dateModified": "2017-09-22T04:50:50.000Z",
+    "headline": "105. Construct Binary Tree from Preorder and Inorder Traversal",
+    "url": "http://localhost:2368/105-construct-binary-tree-from-preorder-and-inorder-traversal/",
+    "datePublished": "2017-09-24T20:49:57.000Z",
+    "dateModified": "2017-09-24T20:49:57.000Z",
     "keywords": "leetcode",
-    "description": "Question Given a non-negative integer represented as a non-empty array of digits, plus one to the integer. You may assume the integer do not contain any leading zero, except the number 0 itself. The digits are stored such that the most significant digit is at the head of the list.",
+    "description": "Question Given preorder and inorder traversal of a tree, construct the binary tree. Note: You may assume that duplicates do not exist in the tree. Solution This problem is similar to 654. Maximum Binary Tree The pattern to notice here is that the root of the subtree always comes firt",
     "mainEntityOfPage": {
         "@type": "WebPage",
         "@id": "http://localhost:2368/"
@@ -114,37 +114,47 @@ ghost.init({
     <article class="article_digitus">
 	
 		<header class="postheader_digitus">
-            <h1 class="posttitle_digitus">66. Plus One</h1>
+            <h1 class="posttitle_digitus">105. Construct Binary Tree from Preorder and Inorder Traversal</h1>
             <span>by</span><h4 class="authorname_digitus"><a href="../author/duct.26">Duct Tape Programmer</a></h4>
             <hr class="pause">
 			<ul>
-				<li><i class="fa fa-calendar"></i><time class="date_digitus">Thursday 21 Sep 2017</time></li>
-                <li><i class="fa fa-comments"></i><a class="comments_digitus" href="index.html#disqus_thread" data-disqus-identifier="59c49625018514b5e1fc0858">Comments</a></li>
+				<li><i class="fa fa-calendar"></i><time class="date_digitus">Sunday 24 Sep 2017</time></li>
+                <li><i class="fa fa-comments"></i><a class="comments_digitus" href="index.html#disqus_thread" data-disqus-identifier="59c8168e018514b5e1fc0948">Comments</a></li>
 				<li><i class="fa fa-tag"></i><span class="posttags_digitus"><a href="../tag/leetcode/">leetcode</a></span></li>
 			</ul>
 		</header>
 	
 		<div class="postcontent_digitus">
-			<div class="kg-card-markdown"><h3 id="question"><a href="https://leetcode.com/problems/plus-one/description/">Question</a></h3>
-<p>Given a non-negative integer represented as a non-empty array of digits, plus one to the integer.</p>
-<p>You may assume the integer do not contain any leading zero, except the number 0 itself.</p>
-<p>The digits are stored such that the most significant digit is at the head of the list.</p>
+			<div class="kg-card-markdown"><h3 id="question"><a href="https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/description/">Question</a></h3>
+<p>Given preorder and inorder traversal of a tree, construct the binary tree.</p>
+<p>Note:<br>
+You may assume that duplicates do not exist in the tree.</p>
 <h3 id="solution">Solution</h3>
 <ul>
-<li>The problem is pretty simple. There are only the following cases possible
+<li>This problem is similar to <a href="http://dtprogrammer.github.io/654-maximum-binary-tree/">654. Maximum Binary Tree</a></li>
+<li>The pattern to notice here is that the root of the subtree always comes firt in the preorder traversal and in middle in inorder traversal.</li>
+</ul>
+<pre><code>In:  D B E A F C
+Pre: A B D E C F
+</code></pre>
 <ul>
-<li>547</li>
-<li>549</li>
-<li>999</li>
+<li>We take the first element in the preorder traversal find it in the inorder traversal. Now the elements to the left to it inorder traversal is the left subtree and right to it is the inorder traversal of the right subtree.</li>
+<li>The next element in the preorder traversal is the root of the left subtree (if one exists)</li>
 </ul>
-</li>
-</ul>
-<script src="https://gist-it.appspot.com/github/dtprogrammer/leetcode-solutions/blob/master/src/main/java/dtprogrammer/github/io/p66/Solution.java"></script>
+<p><img src="https://i.imgur.com/wA8vSGZ.jpg" alt=""></p>
+<script src="https://gist-it.appspot.com/github/dtprogrammer/leetcode-solutions/blob/master/src/main/java/dtprogrammer/github/io/p105/Solution.java"></script>
 <h3 id="timecomplexity">Time complexity</h3>
-<p>O (n)</p>
+<ul>
+<li>The time complexity in average case will be <code>O (n log n)</code>. Since the height of the tree will be <code>log n</code> and finding the element takes <code>O (n)</code> time. Although, worst case we might end up with skewed tree and the height of tree will become <code>n</code>  and the time complexity will become <code>O (n pow 2)</code></li>
+<li>The time complexity can be improved to <code>O (n)</code> by first creating a <code>HashTable</code> which maps the keys to their positions inorder traversal. Building this <code>HashTable</code> takes <code>O (n)</code> time although the space complexity will increase to <code>O (n + h)</code> where n is the space taken by the hashtable and h is height of the tree (recursion stack).</li>
+</ul>
 <h3 id="spacecomplexity">Space complexity</h3>
-<p>O (n + 1)</p>
+<p>Constant besides the space on stack</p>
 <h3 id="notes">Notes</h3>
+<ul>
+<li>Many different trees gives the same sequence of keys in an inorder, preorder or postorder traversal.</li>
+<li>Although, if an inorder traversal and one more (preorder or postorder) traversal is given then there exists only one unique binary tree, given the nodes hold unique values.</li>
+</ul>
 </div>
 		</div>
 	
@@ -152,9 +162,9 @@ ghost.init({
             <li>
                 <span>Share:</span>
                 <ul class="share-ikons_digitus">
-                    <li><a class="fa fa-twitter-square" target="_blank" href="http://twitter.com/share?text=66.%20Plus%20One&amp;url=http://localhost:2368/66-plus-one/"><span class="hidden_digitus">Twitter</span></a></li>
-                    <li><a class="fa fa-facebook-square" target="_blank" href="http://www.facebook.com/sharer.php?u=http://localhost:2368/66-plus-one/"><span class="hidden_digitus">Facebook</span></a></li>
-                    <li><a class="fa fa-google-plus-square" target="_blank" href="https://plus.google.com/share?url=http://localhost:2368/66-plus-one/"><span class="hidden_digitus">Google+</span></a></li>
+                    <li><a class="fa fa-twitter-square" target="_blank" href="http://twitter.com/share?text=105.%20Construct%20Binary%20Tree%20from%20Preorder%20and%20Inorder%20Traversal&amp;url=http://localhost:2368/105-construct-binary-tree-from-preorder-and-inorder-traversal/"><span class="hidden_digitus">Twitter</span></a></li>
+                    <li><a class="fa fa-facebook-square" target="_blank" href="http://www.facebook.com/sharer.php?u=http://localhost:2368/105-construct-binary-tree-from-preorder-and-inorder-traversal/"><span class="hidden_digitus">Facebook</span></a></li>
+                    <li><a class="fa fa-google-plus-square" target="_blank" href="https://plus.google.com/share?url=http://localhost:2368/105-construct-binary-tree-from-preorder-and-inorder-traversal/"><span class="hidden_digitus">Google+</span></a></li>
                 </ul>
             </li>
             <li class="back_digitus"><a href="index.html"><i class="fa fa-level-up"></i><span>Back to top</span></a></li>

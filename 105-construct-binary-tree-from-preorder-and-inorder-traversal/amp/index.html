@@ -2,7 +2,7 @@
 <head>
     <meta charset="utf-8">
 
-    <title>121. Best Time to Buy and Sell Stock</title>
+    <title>105. Construct Binary Tree from Preorder and Inorder Traversal</title>
 
     <meta name="HandheldFriendly" content="True">
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
@@ -15,17 +15,17 @@
     
     <meta property="og:site_name" content="Software Interview Preparation Blog">
     <meta property="og:type" content="article">
-    <meta property="og:title" content="121. Best Time to Buy and Sell Stock">
-    <meta property="og:description" content="Question Say you have an array for which the ith element is the price of a given stock on day i. If you were only permitted to complete at most one transaction (ie, buy one and sell one share of the stock), design an algorithm to find the maximum profit.">
-    <meta property="og:url" content="http://localhost:2368/121-best-time-to-buy-and-sell-stock/">
-    <meta property="article:published_time" content="2017-09-23T21:07:53.000Z">
-    <meta property="article:modified_time" content="2017-09-23T21:07:53.000Z">
+    <meta property="og:title" content="105. Construct Binary Tree from Preorder and Inorder Traversal">
+    <meta property="og:description" content="Question Given preorder and inorder traversal of a tree, construct the binary tree. Note: You may assume that duplicates do not exist in the tree. Solution This problem is similar to 654. Maximum Binary Tree The pattern to notice here is that the root of the subtree always comes firt">
+    <meta property="og:url" content="http://localhost:2368/105-construct-binary-tree-from-preorder-and-inorder-traversal/">
+    <meta property="article:published_time" content="2017-09-24T20:49:57.000Z">
+    <meta property="article:modified_time" content="2017-09-24T20:49:57.000Z">
     <meta property="article:tag" content="leetcode">
     
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="121. Best Time to Buy and Sell Stock">
-    <meta name="twitter:description" content="Question Say you have an array for which the ith element is the price of a given stock on day i. If you were only permitted to complete at most one transaction (ie, buy one and sell one share of the stock), design an algorithm to find the maximum profit.">
-    <meta name="twitter:url" content="http://localhost:2368/121-best-time-to-buy-and-sell-stock/">
+    <meta name="twitter:title" content="105. Construct Binary Tree from Preorder and Inorder Traversal">
+    <meta name="twitter:description" content="Question Given preorder and inorder traversal of a tree, construct the binary tree. Note: You may assume that duplicates do not exist in the tree. Solution This problem is similar to 654. Maximum Binary Tree The pattern to notice here is that the root of the subtree always comes firt">
+    <meta name="twitter:url" content="http://localhost:2368/105-construct-binary-tree-from-preorder-and-inorder-traversal/">
     <meta name="twitter:label1" content="Written by">
     <meta name="twitter:data1" content="Duct Tape Programmer">
     <meta name="twitter:label2" content="Filed under">
@@ -46,12 +46,12 @@
         "url": "http://localhost:2368/author/duct/",
         "sameAs": []
     },
-    "headline": "121. Best Time to Buy and Sell Stock",
-    "url": "http://localhost:2368/121-best-time-to-buy-and-sell-stock/",
-    "datePublished": "2017-09-23T21:07:53.000Z",
-    "dateModified": "2017-09-23T21:07:53.000Z",
+    "headline": "105. Construct Binary Tree from Preorder and Inorder Traversal",
+    "url": "http://localhost:2368/105-construct-binary-tree-from-preorder-and-inorder-traversal/",
+    "datePublished": "2017-09-24T20:49:57.000Z",
+    "dateModified": "2017-09-24T20:49:57.000Z",
     "keywords": "leetcode",
-    "description": "Question Say you have an array for which the ith element is the price of a given stock on day i. If you were only permitted to complete at most one transaction (ie, buy one and sell one share of the stock), design an algorithm to find the maximum profit.",
+    "description": "Question Given preorder and inorder traversal of a tree, construct the binary tree. Note: You may assume that duplicates do not exist in the tree. Solution This problem is similar to 654. Maximum Binary Tree The pattern to notice here is that the root of the subtree always comes firt",
     "mainEntityOfPage": {
         "@type": "WebPage",
         "@id": "http://localhost:2368/"
@@ -83,52 +83,44 @@
         <article class="post">
 
             <header class="post-header">
-                <h1 class="post-title">121. Best Time to Buy and Sell Stock</h1>
+                <h1 class="post-title">105. Construct Binary Tree from Preorder and Inorder Traversal</h1>
                 <section class="post-meta">
                     <p class="author">by <a href="../../author/duct.26">Duct Tape Programmer</a></p>
-                    <time class="post-date" datetime="2017-09-23">2017-09-23</time>
+                    <time class="post-date" datetime="2017-09-24">2017-09-24</time>
                 </section>
             </header>
             <section class="post-content">
 
-                <div class="kg-card-markdown"><h3 id="question"><a href="https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/">Question</a></h3>
-<p>Say you have an array for which the ith element is the price of a given stock on day i.</p>
-<p>If you were only permitted to complete at most one transaction (ie, buy one and sell one share of the stock), design an algorithm to find the maximum profit.</p>
-<p>Example 1:</p>
-<pre><code>Input: [7, 1, 5, 3, 6, 4]
-Output: 5
-
-max. difference = 6-1 = 5 (not 7-1 = 6, as selling price needs to be larger than buying price)
-</code></pre>
-<p>Example 2:</p>
-<pre><code>Input: [7, 6, 4, 3, 1]
-Output: 0
-
-In this case, no transaction is done, i.e. max profit = 0.
-</code></pre>
+                <div class="kg-card-markdown"><h3 id="question"><a href="https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/description/">Question</a></h3>
+<p>Given preorder and inorder traversal of a tree, construct the binary tree.</p>
+<p>Note:<br>
+You may assume that duplicates do not exist in the tree.</p>
 <h3 id="solution">Solution</h3>
 <ul>
-<li>This problem can be solved by noticing that we want to optimize for maximum profit.</li>
-<li>Obtaining maximum profit depends on finding the minimum prices and then selling at highest price following after.</li>
-<li>In short, we need to find the highest peak follow by a lowest valley.</li>
-<li>The below solution keeps a track of the minimum price seen so far and also calculates the maximum profit for all values keeping track of maximum profit seen so far.</li>
+<li>This problem is similar to <a href="http://dtprogrammer.github.io/654-maximum-binary-tree/">654. Maximum Binary Tree</a></li>
+<li>The pattern to notice here is that the root of the subtree always comes firt in the preorder traversal and in middle in inorder traversal.</li>
 </ul>
-
-<ul>
-<li>The above problem can also be solved by calculating the difference between the prices and then calculating the max which can be obtained.</li>
-</ul>
-<pre><code>prices = [7, 1, 5, 3, 6, 4]
-Stock price change [- 6, 4, -2, 3, -2]
+<pre><code>In:  D B E A F C
+Pre: A B D E C F
 </code></pre>
 <ul>
-<li>In the above stock price difference we need to find a window which sums to max.</li>
+<li>We take the first element in the preorder traversal find it in the inorder traversal. Now the elements to the left to it inorder traversal is the left subtree and right to it is the inorder traversal of the right subtree.</li>
+<li>The next element in the preorder traversal is the root of the left subtree (if one exists)</li>
 </ul>
+<p><amp-img src="https://i.imgur.com/wA8vSGZ.jpg" alt width="3024" height="4032" layout="responsive"></amp-img></p>
 
 <h3 id="timecomplexity">Time complexity</h3>
-<p>O (n)</p>
+<ul>
+<li>The time complexity in average case will be <code>O (n log n)</code>. Since the height of the tree will be <code>log n</code> and finding the element takes <code>O (n)</code> time. Although, worst case we might end up with skewed tree and the height of tree will become <code>n</code>  and the time complexity will become <code>O (n pow 2)</code></li>
+<li>The time complexity can be improved to <code>O (n)</code> by first creating a <code>HashTable</code> which maps the keys to their positions inorder traversal. Building this <code>HashTable</code> takes <code>O (n)</code> time although the space complexity will increase to <code>O (n + h)</code> where n is the space taken by the hashtable and h is height of the tree (recursion stack).</li>
+</ul>
 <h3 id="spacecomplexity">Space complexity</h3>
-<p>Constant</p>
+<p>Constant besides the space on stack</p>
 <h3 id="notes">Notes</h3>
+<ul>
+<li>Many different trees gives the same sequence of keys in an inorder, preorder or postorder traversal.</li>
+<li>Although, if an inorder traversal and one more (preorder or postorder) traversal is given then there exists only one unique binary tree, given the nodes hold unique values.</li>
+</ul>
 </div>
 
             </section>

@@ -2,7 +2,7 @@
 <head>
     <meta charset="utf-8">
 
-    <title>121. Best Time to Buy and Sell Stock</title>
+    <title>283. Move Zeroes</title>
 
     <meta name="HandheldFriendly" content="True">
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
@@ -15,17 +15,17 @@
     
     <meta property="og:site_name" content="Software Interview Preparation Blog">
     <meta property="og:type" content="article">
-    <meta property="og:title" content="121. Best Time to Buy and Sell Stock">
-    <meta property="og:description" content="Question Say you have an array for which the ith element is the price of a given stock on day i. If you were only permitted to complete at most one transaction (ie, buy one and sell one share of the stock), design an algorithm to find the maximum profit.">
-    <meta property="og:url" content="http://localhost:2368/121-best-time-to-buy-and-sell-stock/">
-    <meta property="article:published_time" content="2017-09-23T21:07:53.000Z">
-    <meta property="article:modified_time" content="2017-09-23T21:07:53.000Z">
+    <meta property="og:title" content="283. Move Zeroes">
+    <meta property="og:description" content="Question Given an array nums, write a function to move all 0's to the end of it while maintaining the relative order of the non-zero elements. For example, given nums = [0, 1, 0, 3, 12], after calling your function, nums should be [1, 3, 12, 0, 0]. Note: You must">
+    <meta property="og:url" content="http://localhost:2368/283-move-zeroes/">
+    <meta property="article:published_time" content="2017-09-24T18:34:45.000Z">
+    <meta property="article:modified_time" content="2017-09-24T20:33:02.000Z">
     <meta property="article:tag" content="leetcode">
     
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="121. Best Time to Buy and Sell Stock">
-    <meta name="twitter:description" content="Question Say you have an array for which the ith element is the price of a given stock on day i. If you were only permitted to complete at most one transaction (ie, buy one and sell one share of the stock), design an algorithm to find the maximum profit.">
-    <meta name="twitter:url" content="http://localhost:2368/121-best-time-to-buy-and-sell-stock/">
+    <meta name="twitter:title" content="283. Move Zeroes">
+    <meta name="twitter:description" content="Question Given an array nums, write a function to move all 0's to the end of it while maintaining the relative order of the non-zero elements. For example, given nums = [0, 1, 0, 3, 12], after calling your function, nums should be [1, 3, 12, 0, 0]. Note: You must">
+    <meta name="twitter:url" content="http://localhost:2368/283-move-zeroes/">
     <meta name="twitter:label1" content="Written by">
     <meta name="twitter:data1" content="Duct Tape Programmer">
     <meta name="twitter:label2" content="Filed under">
@@ -46,12 +46,12 @@
         "url": "http://localhost:2368/author/duct/",
         "sameAs": []
     },
-    "headline": "121. Best Time to Buy and Sell Stock",
-    "url": "http://localhost:2368/121-best-time-to-buy-and-sell-stock/",
-    "datePublished": "2017-09-23T21:07:53.000Z",
-    "dateModified": "2017-09-23T21:07:53.000Z",
+    "headline": "283. Move Zeroes",
+    "url": "http://localhost:2368/283-move-zeroes/",
+    "datePublished": "2017-09-24T18:34:45.000Z",
+    "dateModified": "2017-09-24T20:33:02.000Z",
     "keywords": "leetcode",
-    "description": "Question Say you have an array for which the ith element is the price of a given stock on day i. If you were only permitted to complete at most one transaction (ie, buy one and sell one share of the stock), design an algorithm to find the maximum profit.",
+    "description": "Question Given an array nums, write a function to move all 0&#x27;s to the end of it while maintaining the relative order of the non-zero elements. For example, given nums &#x3D; [0, 1, 0, 3, 12], after calling your function, nums should be [1, 3, 12, 0, 0]. Note: You must",
     "mainEntityOfPage": {
         "@type": "WebPage",
         "@id": "http://localhost:2368/"
@@ -83,46 +83,21 @@
         <article class="post">
 
             <header class="post-header">
-                <h1 class="post-title">121. Best Time to Buy and Sell Stock</h1>
+                <h1 class="post-title">283. Move Zeroes</h1>
                 <section class="post-meta">
                     <p class="author">by <a href="../../author/duct.26">Duct Tape Programmer</a></p>
-                    <time class="post-date" datetime="2017-09-23">2017-09-23</time>
+                    <time class="post-date" datetime="2017-09-24">2017-09-24</time>
                 </section>
             </header>
             <section class="post-content">
 
-                <div class="kg-card-markdown"><h3 id="question"><a href="https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/">Question</a></h3>
-<p>Say you have an array for which the ith element is the price of a given stock on day i.</p>
-<p>If you were only permitted to complete at most one transaction (ie, buy one and sell one share of the stock), design an algorithm to find the maximum profit.</p>
-<p>Example 1:</p>
-<pre><code>Input: [7, 1, 5, 3, 6, 4]
-Output: 5
-
-max. difference = 6-1 = 5 (not 7-1 = 6, as selling price needs to be larger than buying price)
-</code></pre>
-<p>Example 2:</p>
-<pre><code>Input: [7, 6, 4, 3, 1]
-Output: 0
-
-In this case, no transaction is done, i.e. max profit = 0.
-</code></pre>
+                <div class="kg-card-markdown"><h3 id="question"><a href="https://leetcode.com/problems/move-zeroes/description/">Question</a></h3>
+<p>Given an array nums, write a function to move all 0's to the end of it while maintaining the relative order of the non-zero elements.</p>
+<p>For example, given nums = [0, 1, 0, 3, 12], after calling your function, nums should be [1, 3, 12, 0, 0].</p>
+<p>Note:<br>
+You must do this in-place without making a copy of the array.<br>
+Minimize the total number of operations.</p>
 <h3 id="solution">Solution</h3>
-<ul>
-<li>This problem can be solved by noticing that we want to optimize for maximum profit.</li>
-<li>Obtaining maximum profit depends on finding the minimum prices and then selling at highest price following after.</li>
-<li>In short, we need to find the highest peak follow by a lowest valley.</li>
-<li>The below solution keeps a track of the minimum price seen so far and also calculates the maximum profit for all values keeping track of maximum profit seen so far.</li>
-</ul>
-
-<ul>
-<li>The above problem can also be solved by calculating the difference between the prices and then calculating the max which can be obtained.</li>
-</ul>
-<pre><code>prices = [7, 1, 5, 3, 6, 4]
-Stock price change [- 6, 4, -2, 3, -2]
-</code></pre>
-<ul>
-<li>In the above stock price difference we need to find a window which sums to max.</li>
-</ul>
 
 <h3 id="timecomplexity">Time complexity</h3>
 <p>O (n)</p>
