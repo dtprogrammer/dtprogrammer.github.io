@@ -1,4 +1,62 @@
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" version="2.0"><channel><title>Software Interview Preparation Blog</title><description>Algorithms, Data Structures and System Design for Interviews</description><link>http://localhost:2368/</link><image><url>http://localhost:2368/favicon.png</url><title>Software Interview Preparation Blog</title><link>http://localhost:2368/</link></image><generator>Ghost 1.8</generator><lastBuildDate>Sun, 24 Sep 2017 02:59:29 GMT</lastBuildDate><atom:link href="http://localhost:2368/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title>152. Maximum Product Subarray</title><description>&lt;div class="kg-card-markdown"&gt;&lt;h3 id="question"&gt;&lt;a href="https://leetcode.com/problems/maximum-product-subarray/description/"&gt;Question&lt;/a&gt;&lt;/h3&gt;
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" version="2.0"><channel><title>Software Interview Preparation Blog</title><description>Algorithms, Data Structures and System Design for Interviews</description><link>http://localhost:2368/</link><image><url>http://localhost:2368/favicon.png</url><title>Software Interview Preparation Blog</title><link>http://localhost:2368/</link></image><generator>Ghost 1.8</generator><lastBuildDate>Sun, 24 Sep 2017 08:10:11 GMT</lastBuildDate><atom:link href="http://localhost:2368/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title>268. Missing Number</title><description>&lt;div class="kg-card-markdown"&gt;&lt;h3 id="question"&gt;&lt;a href="https://leetcode.com/problems/missing-number/description/"&gt;Question&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Given an array containing n distinct numbers taken from 0, 1, 2, ..., n, find the one that is missing from the array.&lt;/p&gt;
+&lt;p&gt;For example,&lt;br&gt;
+Given nums = [0, 1, 3] return 2.&lt;/p&gt;
+&lt;p&gt;Note:&lt;br&gt;
+Your algorithm should run in linear runtime complexity. Could you implement it using only constant extra space&lt;/p&gt;&lt;/div&gt;</description><link>http://localhost:2368/268-missing-number/</link><guid isPermaLink="false">59c761cc018514b5e1fc0944</guid><category>leetcode</category><dc:creator>Duct Tape Programmer</dc:creator><pubDate>Sun, 24 Sep 2017 07:43:30 GMT</pubDate><content:encoded>&lt;div class="kg-card-markdown"&gt;&lt;h3 id="question"&gt;&lt;a href="https://leetcode.com/problems/missing-number/description/"&gt;Question&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Given an array containing n distinct numbers taken from 0, 1, 2, ..., n, find the one that is missing from the array.&lt;/p&gt;
+&lt;p&gt;For example,&lt;br&gt;
+Given nums = [0, 1, 3] return 2.&lt;/p&gt;
+&lt;p&gt;Note:&lt;br&gt;
+Your algorithm should run in linear runtime complexity. Could you implement it using only constant extra space complexity?&lt;/p&gt;
+&lt;h3 id="solution"&gt;Solution&lt;/h3&gt;
+&lt;script src="https://gist-it.appspot.com/github/dtprogrammer/leetcode-solutions/blob/master/src/main/java/dtprogrammer/github/io/p268/Solution.java"&gt;&lt;/script&gt;
+&lt;h3 id="timecomplexity"&gt;Time complexity&lt;/h3&gt;
+&lt;p&gt;O (n)&lt;/p&gt;
+&lt;h3 id="spacecomplexity"&gt;Space complexity&lt;/h3&gt;
+&lt;h3 id="notes"&gt;Notes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Sum of first n natural number is &lt;code&gt;n (n + 1) /2&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;</content:encoded></item><item><title>384. Shuffle an Array</title><description>&lt;div class="kg-card-markdown"&gt;&lt;h3 id="question"&gt;&lt;a href="https://leetcode.com/problems/shuffle-an-array/description/"&gt;Question&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Shuffle a set of numbers without duplicates.&lt;/p&gt;
+&lt;p&gt;Example:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;// Init an array with set 1, 2, and 3.
+int[] nums = {1,2,3};
+Solution solution = new Solution(nums);
+
+// Shuffle the array [1,2,3] and return its result. Any permutation of [1,2,3] must equally likely to be returned.&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description><link>http://localhost:2368/384-shuffle-an-array/</link><guid isPermaLink="false">59c75e51018514b5e1fc0942</guid><category>leetcode</category><dc:creator>Duct Tape Programmer</dc:creator><pubDate>Sun, 24 Sep 2017 07:32:38 GMT</pubDate><content:encoded>&lt;div class="kg-card-markdown"&gt;&lt;h3 id="question"&gt;&lt;a href="https://leetcode.com/problems/shuffle-an-array/description/"&gt;Question&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Shuffle a set of numbers without duplicates.&lt;/p&gt;
+&lt;p&gt;Example:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;// Init an array with set 1, 2, and 3.
+int[] nums = {1,2,3};
+Solution solution = new Solution(nums);
+
+// Shuffle the array [1,2,3] and return its result. Any permutation of [1,2,3] must equally likely to be returned.
+solution.shuffle();
+
+// Resets the array back to its original configuration [1,2,3].
+solution.reset();
+
+// Returns the random shuffling of array [1,2,3].
+solution.shuffle();
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id="solution"&gt;Solution&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;We use &lt;a href="https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle"&gt;Fisher-Yates Algorithm&lt;/a&gt; to shuffle&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;-- To shuffle an array a of n elements (indices 0..n-1):
+for i from n−1 downto 1 do
+     j ← random integer such that 0 ≤ j ≤ i
+     exchange a[j] and a[i]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;script src="https://gist-it.appspot.com/github/dtprogrammer/leetcode-solutions/blob/master/src/main/java/dtprogrammer/github/io/p384/Solution.java"&gt;&lt;/script&gt;
+&lt;h3 id="timecomplexity"&gt;Time complexity&lt;/h3&gt;
+&lt;p&gt;O (n)&lt;/p&gt;
+&lt;h3 id="spacecomplexity"&gt;Space complexity&lt;/h3&gt;
+&lt;p&gt;Constant unless we consider the space taken by the resultant shuffled array.&lt;/p&gt;
+&lt;h3 id="notes"&gt;Notes&lt;/h3&gt;
+&lt;/div&gt;</content:encoded></item><item><title>152. Maximum Product Subarray</title><description>&lt;div class="kg-card-markdown"&gt;&lt;h3 id="question"&gt;&lt;a href="https://leetcode.com/problems/maximum-product-subarray/description/"&gt;Question&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;Find the contiguous subarray within an array (containing at least one number) which has the largest product.&lt;/p&gt;
 &lt;p&gt;For example, given the array [2,3,-2,4],&lt;br&gt;
 the contiguous subarray [2,3] has the largest product = 6.&lt;/p&gt;
@@ -447,109 +505,4 @@ Also the solution uses recursion so it does take some space on call stack.&lt;/p
 &lt;ul&gt;
 &lt;li&gt;We don't make recursive call after pop since we don't want to generate a subset where any of the elements in &lt;code&gt;nums&lt;/code&gt; is not a part as its in the case of combination.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/div&gt;</content:encoded></item><item><title>46. Permutations</title><description>&lt;div class="kg-card-markdown"&gt;&lt;h3 id="question"&gt;&lt;a href="https://leetcode.com/problems/permutations/description/"&gt;Question&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;Given a collection of distinct numbers, return all possible permutations.&lt;/p&gt;
-&lt;p&gt;For example,&lt;br&gt;
-[1,2,3] have the following permutations:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;[
-  [1,2,3],
-  [1,3,2],
-  [2,1,3],
-  [2,3,1],
-  [3,1,2],
-  [3,2,1]
-]
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id="solution"&gt;Solution&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;This problem is of same domain as &lt;a href="https://dtprogrammer.github.io/78-subsets/"&gt;78. Subsets&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;The idea&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;</description><link>http://localhost:2368/46-permutations/</link><guid isPermaLink="false">59bf63c2a7b0fe3c2805e818</guid><category>leetcode</category><dc:creator>Duct Tape Programmer</dc:creator><pubDate>Mon, 18 Sep 2017 06:19:31 GMT</pubDate><content:encoded>&lt;div class="kg-card-markdown"&gt;&lt;h3 id="question"&gt;&lt;a href="https://leetcode.com/problems/permutations/description/"&gt;Question&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;Given a collection of distinct numbers, return all possible permutations.&lt;/p&gt;
-&lt;p&gt;For example,&lt;br&gt;
-[1,2,3] have the following permutations:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;[
-  [1,2,3],
-  [1,3,2],
-  [2,1,3],
-  [2,3,1],
-  [3,1,2],
-  [3,2,1]
-]
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id="solution"&gt;Solution&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;This problem is of same domain as &lt;a href="https://dtprogrammer.github.io/78-subsets/"&gt;78. Subsets&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;The idea here is to generate all permutation through recursion.&lt;/li&gt;
-&lt;li&gt;We need to keep a track of whether we have included the element in the &lt;code&gt;tempList&lt;/code&gt; or not because in case say we added &lt;code&gt;1, 2, 3&lt;/code&gt; now when recursion unwinds and 3 and 2 is removed from the stack. The for loops moves and generate a call with &lt;code&gt;tempList&lt;/code&gt; as &lt;code&gt;1, 3&lt;/code&gt; now we don't want to add 1 again.&lt;/li&gt;
-&lt;li&gt;A general approach can be found in &lt;a href="https://cses.fi/book.pdf"&gt;5.2  of Competitive Programmer's Handbook&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;pre&gt;&lt;code&gt;void search() {
-    if (permutation.size() == n) {
-        // process permutation
-    } else {
-        for (int i = 0; i &amp;lt; n; i++) {
-            if (chosen[i]) continue;
-            chosen[i] = true;
-            permutation.push_back(i);
-            search();
-            chosen[i] = false;
-            permutation.pop_back();
-        }
-    }
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;script src="https://gist-it.appspot.com/github/dtprogrammer/leetcode-solutions/blob/master/src/main/java/dtprogrammer/github/io/p46/Solution.java"&gt;&lt;/script&gt;
-&lt;h3 id="timecomplexity"&gt;Time complexity&lt;/h3&gt;
-&lt;h3 id="spacecomplexity"&gt;Space complexity&lt;/h3&gt;
-&lt;p&gt;O (n) which is the space taken by the stack to keep track and the space taken by the Set to keep track of all possibe unique combination seen so far which in worse case (all unique numbers) will be equal to all possible combinations.&lt;br&gt;
-Also the solution uses recursion so it does take some space on call stack.&lt;/p&gt;
-&lt;h3 id="notes"&gt;Notes&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;We don't make recursive call after pop since we don't want to generate a subset where any of the elements in &lt;code&gt;nums&lt;/code&gt; is not a part as its in the case of combination.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;</content:encoded></item><item><title>90. Subsets II</title><description>&lt;div class="kg-card-markdown"&gt;&lt;h3 id="question"&gt;&lt;a href="https://leetcode.com/problems/subsets-ii/description/"&gt;Question&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;Given a collection of integers that might contain duplicates, nums, return all possible subsets.&lt;/p&gt;
-&lt;p&gt;Note: The solution set must not contain duplicate subsets.&lt;/p&gt;
-&lt;p&gt;For example,&lt;br&gt;
-If nums = [1,2,2], a solution is:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;[
-  [2],
-  [1],
-  [1,2,2],
-  [2,2],
-  [1,2],
-  []
-]
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id="solution"&gt;Solution&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;This problem is similar to &lt;a href="https://dtprogrammer.github.io/78-subsets/"&gt;78.&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;</description><link>http://localhost:2368/90-subsets-ii/</link><guid isPermaLink="false">59bf58faa7b0fe3c2805e814</guid><category>leetcode</category><dc:creator>Duct Tape Programmer</dc:creator><pubDate>Mon, 18 Sep 2017 05:42:16 GMT</pubDate><content:encoded>&lt;div class="kg-card-markdown"&gt;&lt;h3 id="question"&gt;&lt;a href="https://leetcode.com/problems/subsets-ii/description/"&gt;Question&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;Given a collection of integers that might contain duplicates, nums, return all possible subsets.&lt;/p&gt;
-&lt;p&gt;Note: The solution set must not contain duplicate subsets.&lt;/p&gt;
-&lt;p&gt;For example,&lt;br&gt;
-If nums = [1,2,2], a solution is:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;[
-  [2],
-  [1],
-  [1,2,2],
-  [2,2],
-  [1,2],
-  []
-]
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id="solution"&gt;Solution&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;This problem is similar to &lt;a href="https://dtprogrammer.github.io/78-subsets/"&gt;78. Subsets&lt;/a&gt; with the only difference that the &lt;code&gt;nums&lt;/code&gt; array can have duplicates.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;script src="https://gist-it.appspot.com/github/dtprogrammer/leetcode-solutions/blob/master/src/main/java/dtprogrammer/github/io/p90/Solution.java"&gt;&lt;/script&gt;
-&lt;ul&gt;
-&lt;li&gt;We use a Set to keep track of subsets which we have seen so far and recursed on.&lt;/li&gt;
-&lt;li&gt;We also sort the array. This ensures that the Set contains is always checked for for a sorted/fixed order of numbers. For example in case of &lt;code&gt;1, 4, 4&lt;/code&gt; and &lt;code&gt;4, 1, 4&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Also, the pop and recurse is not done outside of the contains block so that the recursion unwindws all the way through and we get all possible combinations.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id="timecomplexity"&gt;Time complexity&lt;/h3&gt;
-&lt;h3 id="spacecomplexity"&gt;Space complexity&lt;/h3&gt;
-&lt;p&gt;O (n) which is the space taken by the stack to keep track and the space taken by the Set to keep track of all possibe unique combination seen so far which in worse case (all unique numbers) will be equal to all possible combinations.&lt;br&gt;
-Also the solution uses recursion so it does take some space on call stack.&lt;/p&gt;
-&lt;h3 id="notes"&gt;Notes&lt;/h3&gt;
 &lt;/div&gt;</content:encoded></item></channel></rss>

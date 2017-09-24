@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
  
-<title>152. Maximum Product Subarray</title>
+<title>268. Missing Number</title>
 <link rel="shortcut icon" href="../favicon.png">
 <meta name="description" content="">
     
@@ -30,17 +30,17 @@
     
     <meta property="og:site_name" content="Software Interview Preparation Blog">
     <meta property="og:type" content="article">
-    <meta property="og:title" content="152. Maximum Product Subarray">
-    <meta property="og:description" content="Question Find the contiguous subarray within an array (containing at least one number) which has the largest product. For example, given the array [2,3,-2,4], the contiguous subarray [2,3] has the largest product = 6. Solution This problem is similar to 53. Maximum Subarray with the only difference">
-    <meta property="og:url" content="http://localhost:2368/152-maximum-product-subarray/">
-    <meta property="article:published_time" content="2017-09-24T02:58:34.000Z">
-    <meta property="article:modified_time" content="2017-09-24T02:58:34.000Z">
+    <meta property="og:title" content="268. Missing Number">
+    <meta property="og:description" content="Question Given an array containing n distinct numbers taken from 0, 1, 2, ..., n, find the one that is missing from the array. For example, Given nums = [0, 1, 3] return 2. Note: Your algorithm should run in linear runtime complexity. Could you implement it using only constant extra space">
+    <meta property="og:url" content="http://localhost:2368/268-missing-number/">
+    <meta property="article:published_time" content="2017-09-24T07:43:30.000Z">
+    <meta property="article:modified_time" content="2017-09-24T07:43:30.000Z">
     <meta property="article:tag" content="leetcode">
     
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="152. Maximum Product Subarray">
-    <meta name="twitter:description" content="Question Find the contiguous subarray within an array (containing at least one number) which has the largest product. For example, given the array [2,3,-2,4], the contiguous subarray [2,3] has the largest product = 6. Solution This problem is similar to 53. Maximum Subarray with the only difference">
-    <meta name="twitter:url" content="http://localhost:2368/152-maximum-product-subarray/">
+    <meta name="twitter:title" content="268. Missing Number">
+    <meta name="twitter:description" content="Question Given an array containing n distinct numbers taken from 0, 1, 2, ..., n, find the one that is missing from the array. For example, Given nums = [0, 1, 3] return 2. Note: Your algorithm should run in linear runtime complexity. Could you implement it using only constant extra space">
+    <meta name="twitter:url" content="http://localhost:2368/268-missing-number/">
     <meta name="twitter:label1" content="Written by">
     <meta name="twitter:data1" content="Duct Tape Programmer">
     <meta name="twitter:label2" content="Filed under">
@@ -61,12 +61,12 @@
         "url": "http://localhost:2368/author/duct/",
         "sameAs": []
     },
-    "headline": "152. Maximum Product Subarray",
-    "url": "http://localhost:2368/152-maximum-product-subarray/",
-    "datePublished": "2017-09-24T02:58:34.000Z",
-    "dateModified": "2017-09-24T02:58:34.000Z",
+    "headline": "268. Missing Number",
+    "url": "http://localhost:2368/268-missing-number/",
+    "datePublished": "2017-09-24T07:43:30.000Z",
+    "dateModified": "2017-09-24T07:43:30.000Z",
     "keywords": "leetcode",
-    "description": "Question Find the contiguous subarray within an array (containing at least one number) which has the largest product. For example, given the array [2,3,-2,4], the contiguous subarray [2,3] has the largest product &#x3D; 6. Solution This problem is similar to 53. Maximum Subarray with the only difference",
+    "description": "Question Given an array containing n distinct numbers taken from 0, 1, 2, ..., n, find the one that is missing from the array. For example, Given nums &#x3D; [0, 1, 3] return 2. Note: Your algorithm should run in linear runtime complexity. Could you implement it using only constant extra space",
     "mainEntityOfPage": {
         "@type": "WebPage",
         "@id": "http://localhost:2368/"
@@ -114,34 +114,31 @@ ghost.init({
     <article class="article_digitus">
 	
 		<header class="postheader_digitus">
-            <h1 class="posttitle_digitus">152. Maximum Product Subarray</h1>
+            <h1 class="posttitle_digitus">268. Missing Number</h1>
             <span>by</span><h4 class="authorname_digitus"><a href="../author/duct.25">Duct Tape Programmer</a></h4>
             <hr class="pause">
 			<ul>
-				<li><i class="fa fa-calendar"></i><time class="date_digitus">Saturday 23 Sep 2017</time></li>
-                <li><i class="fa fa-comments"></i><a class="comments_digitus" href="index.html#disqus_thread" data-disqus-identifier="59c71e5b018514b5e1fc08f6">Comments</a></li>
+				<li><i class="fa fa-calendar"></i><time class="date_digitus">Sunday 24 Sep 2017</time></li>
+                <li><i class="fa fa-comments"></i><a class="comments_digitus" href="index.html#disqus_thread" data-disqus-identifier="59c761cc018514b5e1fc0944">Comments</a></li>
 				<li><i class="fa fa-tag"></i><span class="posttags_digitus"><a href="../tag/leetcode/">leetcode</a></span></li>
 			</ul>
 		</header>
 	
 		<div class="postcontent_digitus">
-			<div class="kg-card-markdown"><h3 id="question"><a href="https://leetcode.com/problems/maximum-product-subarray/description/">Question</a></h3>
-<p>Find the contiguous subarray within an array (containing at least one number) which has the largest product.</p>
-<p>For example, given the array [2,3,-2,4],<br>
-the contiguous subarray [2,3] has the largest product = 6.</p>
+			<div class="kg-card-markdown"><h3 id="question"><a href="https://leetcode.com/problems/missing-number/description/">Question</a></h3>
+<p>Given an array containing n distinct numbers taken from 0, 1, 2, ..., n, find the one that is missing from the array.</p>
+<p>For example,<br>
+Given nums = [0, 1, 3] return 2.</p>
+<p>Note:<br>
+Your algorithm should run in linear runtime complexity. Could you implement it using only constant extra space complexity?</p>
 <h3 id="solution">Solution</h3>
-<ul>
-<li>This problem is similar to <a href="http://dtprogrammer.github.io/53-maximum-subarray/">53. Maximum Subarray</a> with the only difference that we need to calculate the max product.</li>
-<li>In this case we need to handle the negative numbers. So we also track the minimum seen so far (the largest negative value) and when we see a negative value we switch the <code>maEndingHere</code> and <code>minEndingHere</code> since by multiplying with the current number they will switch signs and become the other way.</li>
-</ul>
-<script src="https://gist-it.appspot.com/github/dtprogrammer/leetcode-solutions/blob/master/src/main/java/dtprogrammer/github/io/p152/Solution.java"></script>
+<script src="https://gist-it.appspot.com/github/dtprogrammer/leetcode-solutions/blob/master/src/main/java/dtprogrammer/github/io/p268/Solution.java"></script>
 <h3 id="timecomplexity">Time complexity</h3>
 <p>O (n)</p>
 <h3 id="spacecomplexity">Space complexity</h3>
-<p>Constant</p>
 <h3 id="notes">Notes</h3>
 <ul>
-<li>Negative number handling is the special case here</li>
+<li>Sum of first n natural number is <code>n (n + 1) /2</code></li>
 </ul>
 </div>
 		</div>
@@ -150,9 +147,9 @@ the contiguous subarray [2,3] has the largest product = 6.</p>
             <li>
                 <span>Share:</span>
                 <ul class="share-ikons_digitus">
-                    <li><a class="fa fa-twitter-square" target="_blank" href="http://twitter.com/share?text=152.%20Maximum%20Product%20Subarray&amp;url=http://localhost:2368/152-maximum-product-subarray/"><span class="hidden_digitus">Twitter</span></a></li>
-                    <li><a class="fa fa-facebook-square" target="_blank" href="http://www.facebook.com/sharer.php?u=http://localhost:2368/152-maximum-product-subarray/"><span class="hidden_digitus">Facebook</span></a></li>
-                    <li><a class="fa fa-google-plus-square" target="_blank" href="https://plus.google.com/share?url=http://localhost:2368/152-maximum-product-subarray/"><span class="hidden_digitus">Google+</span></a></li>
+                    <li><a class="fa fa-twitter-square" target="_blank" href="http://twitter.com/share?text=268.%20Missing%20Number&amp;url=http://localhost:2368/268-missing-number/"><span class="hidden_digitus">Twitter</span></a></li>
+                    <li><a class="fa fa-facebook-square" target="_blank" href="http://www.facebook.com/sharer.php?u=http://localhost:2368/268-missing-number/"><span class="hidden_digitus">Facebook</span></a></li>
+                    <li><a class="fa fa-google-plus-square" target="_blank" href="https://plus.google.com/share?url=http://localhost:2368/268-missing-number/"><span class="hidden_digitus">Google+</span></a></li>
                 </ul>
             </li>
             <li class="back_digitus"><a href="index.html"><i class="fa fa-level-up"></i><span>Back to top</span></a></li>
