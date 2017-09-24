@@ -2,7 +2,7 @@
 <head>
     <meta charset="utf-8">
 
-    <title>66. Plus One</title>
+    <title>152. Maximum Product Subarray</title>
 
     <meta name="HandheldFriendly" content="True">
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
@@ -15,17 +15,17 @@
     
     <meta property="og:site_name" content="Software Interview Preparation Blog">
     <meta property="og:type" content="article">
-    <meta property="og:title" content="66. Plus One">
-    <meta property="og:description" content="Question Given a non-negative integer represented as a non-empty array of digits, plus one to the integer. You may assume the integer do not contain any leading zero, except the number 0 itself. The digits are stored such that the most significant digit is at the head of the list.">
-    <meta property="og:url" content="http://localhost:2368/66-plus-one/">
-    <meta property="article:published_time" content="2017-09-22T04:50:50.000Z">
-    <meta property="article:modified_time" content="2017-09-22T04:50:50.000Z">
+    <meta property="og:title" content="152. Maximum Product Subarray">
+    <meta property="og:description" content="Question Find the contiguous subarray within an array (containing at least one number) which has the largest product. For example, given the array [2,3,-2,4], the contiguous subarray [2,3] has the largest product = 6. Solution This problem is similar to 53. Maximum Subarray with the only difference">
+    <meta property="og:url" content="http://localhost:2368/152-maximum-product-subarray/">
+    <meta property="article:published_time" content="2017-09-24T02:58:34.000Z">
+    <meta property="article:modified_time" content="2017-09-24T02:58:34.000Z">
     <meta property="article:tag" content="leetcode">
     
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="66. Plus One">
-    <meta name="twitter:description" content="Question Given a non-negative integer represented as a non-empty array of digits, plus one to the integer. You may assume the integer do not contain any leading zero, except the number 0 itself. The digits are stored such that the most significant digit is at the head of the list.">
-    <meta name="twitter:url" content="http://localhost:2368/66-plus-one/">
+    <meta name="twitter:title" content="152. Maximum Product Subarray">
+    <meta name="twitter:description" content="Question Find the contiguous subarray within an array (containing at least one number) which has the largest product. For example, given the array [2,3,-2,4], the contiguous subarray [2,3] has the largest product = 6. Solution This problem is similar to 53. Maximum Subarray with the only difference">
+    <meta name="twitter:url" content="http://localhost:2368/152-maximum-product-subarray/">
     <meta name="twitter:label1" content="Written by">
     <meta name="twitter:data1" content="Duct Tape Programmer">
     <meta name="twitter:label2" content="Filed under">
@@ -46,12 +46,12 @@
         "url": "http://localhost:2368/author/duct/",
         "sameAs": []
     },
-    "headline": "66. Plus One",
-    "url": "http://localhost:2368/66-plus-one/",
-    "datePublished": "2017-09-22T04:50:50.000Z",
-    "dateModified": "2017-09-22T04:50:50.000Z",
+    "headline": "152. Maximum Product Subarray",
+    "url": "http://localhost:2368/152-maximum-product-subarray/",
+    "datePublished": "2017-09-24T02:58:34.000Z",
+    "dateModified": "2017-09-24T02:58:34.000Z",
     "keywords": "leetcode",
-    "description": "Question Given a non-negative integer represented as a non-empty array of digits, plus one to the integer. You may assume the integer do not contain any leading zero, except the number 0 itself. The digits are stored such that the most significant digit is at the head of the list.",
+    "description": "Question Find the contiguous subarray within an array (containing at least one number) which has the largest product. For example, given the array [2,3,-2,4], the contiguous subarray [2,3] has the largest product &#x3D; 6. Solution This problem is similar to 53. Maximum Subarray with the only difference",
     "mainEntityOfPage": {
         "@type": "WebPage",
         "@id": "http://localhost:2368/"
@@ -83,34 +83,32 @@
         <article class="post">
 
             <header class="post-header">
-                <h1 class="post-title">66. Plus One</h1>
+                <h1 class="post-title">152. Maximum Product Subarray</h1>
                 <section class="post-meta">
                     <p class="author">by <a href="../../author/duct.24">Duct Tape Programmer</a></p>
-                    <time class="post-date" datetime="2017-09-21">2017-09-21</time>
+                    <time class="post-date" datetime="2017-09-23">2017-09-23</time>
                 </section>
             </header>
             <section class="post-content">
 
-                <div class="kg-card-markdown"><h3 id="question"><a href="https://leetcode.com/problems/plus-one/description/">Question</a></h3>
-<p>Given a non-negative integer represented as a non-empty array of digits, plus one to the integer.</p>
-<p>You may assume the integer do not contain any leading zero, except the number 0 itself.</p>
-<p>The digits are stored such that the most significant digit is at the head of the list.</p>
+                <div class="kg-card-markdown"><h3 id="question"><a href="https://leetcode.com/problems/maximum-product-subarray/description/">Question</a></h3>
+<p>Find the contiguous subarray within an array (containing at least one number) which has the largest product.</p>
+<p>For example, given the array [2,3,-2,4],<br>
+the contiguous subarray [2,3] has the largest product = 6.</p>
 <h3 id="solution">Solution</h3>
 <ul>
-<li>The problem is pretty simple. There are only the following cases possible
-<ul>
-<li>547</li>
-<li>549</li>
-<li>999</li>
-</ul>
-</li>
+<li>This problem is similar to <a href="http://dtprogrammer.github.io/53-maximum-subarray/">53. Maximum Subarray</a> with the only difference that we need to calculate the max product.</li>
+<li>In this case we need to handle the negative numbers. So we also track the minimum seen so far (the largest negative value) and when we see a negative value we switch the <code>maEndingHere</code> and <code>minEndingHere</code> since by multiplying with the current number they will switch signs and become the other way.</li>
 </ul>
 
 <h3 id="timecomplexity">Time complexity</h3>
 <p>O (n)</p>
 <h3 id="spacecomplexity">Space complexity</h3>
-<p>O (n + 1)</p>
+<p>Constant</p>
 <h3 id="notes">Notes</h3>
+<ul>
+<li>Negative number handling is the special case here</li>
+</ul>
 </div>
 
             </section>
