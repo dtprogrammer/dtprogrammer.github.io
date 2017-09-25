@@ -1,4 +1,126 @@
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" version="2.0"><channel><title>Software Interview Preparation Blog</title><description>Algorithms, Data Structures and System Design for Interviews</description><link>http://localhost:2368/</link><image><url>http://localhost:2368/favicon.png</url><title>Software Interview Preparation Blog</title><link>http://localhost:2368/</link></image><generator>Ghost 1.8</generator><lastBuildDate>Sun, 24 Sep 2017 20:51:06 GMT</lastBuildDate><atom:link href="http://localhost:2368/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title>105. Construct Binary Tree from Preorder and Inorder Traversal</title><description>&lt;div class="kg-card-markdown"&gt;&lt;h3 id="question"&gt;&lt;a href="https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/description/"&gt;Question&lt;/a&gt;&lt;/h3&gt;
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" version="2.0"><channel><title>Software Interview Preparation Blog</title><description>Algorithms, Data Structures and System Design for Interviews</description><link>http://localhost:2368/</link><image><url>http://localhost:2368/favicon.png</url><title>Software Interview Preparation Blog</title><link>http://localhost:2368/</link></image><generator>Ghost 1.8</generator><lastBuildDate>Mon, 25 Sep 2017 03:30:30 GMT</lastBuildDate><atom:link href="http://localhost:2368/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title>189. Rotate Array</title><description>&lt;div class="kg-card-markdown"&gt;&lt;h3 id="question"&gt;&lt;a href="https://leetcode.com/problems/rotate-array/description/"&gt;Question&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Rotate an array of n elements to the right by k steps.&lt;/p&gt;
+&lt;p&gt;For example, with n = 7 and k = 3, the array [1,2,3,4,5,6,7] is rotated to [5,6,7,1,2,3,4].&lt;/p&gt;
+&lt;p&gt;Note:&lt;br&gt;
+Try to come up as many solutions as you&lt;/p&gt;&lt;/div&gt;</description><link>http://localhost:2368/189-rotate-array/</link><guid isPermaLink="false">59c87710018514b5e1fc0952</guid><category>leetcode</category><dc:creator>Duct Tape Programmer</dc:creator><pubDate>Mon, 25 Sep 2017 03:27:41 GMT</pubDate><content:encoded>&lt;div class="kg-card-markdown"&gt;&lt;h3 id="question"&gt;&lt;a href="https://leetcode.com/problems/rotate-array/description/"&gt;Question&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Rotate an array of n elements to the right by k steps.&lt;/p&gt;
+&lt;p&gt;For example, with n = 7 and k = 3, the array [1,2,3,4,5,6,7] is rotated to [5,6,7,1,2,3,4].&lt;/p&gt;
+&lt;p&gt;Note:&lt;br&gt;
+Try to come up as many solutions as you can, there are at least 3 different ways to solve this problem.&lt;/p&gt;
+&lt;p&gt;[show hint]&lt;/p&gt;
+&lt;p&gt;Hint:&lt;br&gt;
+Could you do it in-place with O(1) extra space?&lt;br&gt;
+Related problem: Reverse Words in a String II&lt;/p&gt;
+&lt;h3 id="solution"&gt;Solution&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Reverse the &lt;code&gt;whole array&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Reverse first &lt;code&gt;k&lt;/code&gt; elements&lt;/li&gt;
+&lt;li&gt;Reverse remaining &lt;code&gt;n - k&lt;/code&gt; elements&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Remember to handle the case where k is greater than array size.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;k = k % nums.length
+&lt;/code&gt;&lt;/pre&gt;
+&lt;script src="https://gist-it.appspot.com/github/dtprogrammer/leetcode-solutions/blob/master/src/main/java/dtprogrammer/github/io/p189/Solution.java"&gt;&lt;/script&gt;
+&lt;h3 id="timecomplexity"&gt;Time complexity&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;O (n)&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id="spacecomplexity"&gt;Space complexity&lt;/h3&gt;
+&lt;p&gt;Constant&lt;/p&gt;
+&lt;h3 id="notes"&gt;Notes&lt;/h3&gt;
+&lt;/div&gt;</content:encoded></item><item><title>198. House Robber</title><description>&lt;div class="kg-card-markdown"&gt;&lt;h3 id="question"&gt;&lt;a href="https://leetcode.com/problems/house-robber/description/"&gt;Question&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;You are a professional robber planning to rob houses along a street. Each house has a certain amount of money stashed, the only constraint stopping you from robbing each of them is that adjacent houses have security system connected and it will automatically contact the police if two adjacent&lt;/p&gt;&lt;/div&gt;</description><link>http://localhost:2368/198-house-robber/</link><guid isPermaLink="false">59c86d8d018514b5e1fc0950</guid><category>leetcode</category><dc:creator>Duct Tape Programmer</dc:creator><pubDate>Mon, 25 Sep 2017 02:53:49 GMT</pubDate><content:encoded>&lt;div class="kg-card-markdown"&gt;&lt;h3 id="question"&gt;&lt;a href="https://leetcode.com/problems/house-robber/description/"&gt;Question&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;You are a professional robber planning to rob houses along a street. Each house has a certain amount of money stashed, the only constraint stopping you from robbing each of them is that adjacent houses have security system connected and it will automatically contact the police if two adjacent houses were broken into on the same night.&lt;/p&gt;
+&lt;p&gt;Given a list of non-negative integers representing the amount of money of each house, determine the maximum amount of money you can rob tonight without alerting the police.&lt;/p&gt;
+&lt;h3 id="solution"&gt;Solution&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Since the robber can rob alternate house we have set of odds and even indexes.&lt;/li&gt;
+&lt;li&gt;We can solve this by dynamic programming. For any index &lt;code&gt;i&lt;/code&gt; the max profit which can be made is either the maxProfit including the money at the location &lt;code&gt;i&lt;/code&gt; with the previous sum or by not including it which is represented by&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;maxEven = Math.max(maxOdd, maxEven + nums[i]) // if i is even
+&lt;/code&gt;&lt;/pre&gt;
+&lt;script src="https://gist-it.appspot.com/github/dtprogrammer/leetcode-solutions/blob/master/src/main/java/dtprogrammer/github/io/p198/Solution.java"&gt;&lt;/script&gt;
+&lt;h3 id="timecomplexity"&gt;Time complexity&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;O (n)&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id="spacecomplexity"&gt;Space complexity&lt;/h3&gt;
+&lt;p&gt;Constant&lt;/p&gt;
+&lt;h3 id="notes"&gt;Notes&lt;/h3&gt;
+&lt;/div&gt;</content:encoded></item><item><title>237. Delete Node in a Linked List</title><description>&lt;div class="kg-card-markdown"&gt;&lt;h3 id="question"&gt;&lt;a href="https://leetcode.com/problems/delete-node-in-a-linked-list/description/"&gt;Question&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Write a function to delete a node (except the tail) in a singly linked list, given only access to that node.&lt;/p&gt;
+&lt;p&gt;Supposed the linked list is 1 -&amp;gt; 2 -&amp;gt; 3 -&amp;gt; 4 and you are given the third node with value 3, the linked list&lt;/p&gt;&lt;/div&gt;</description><link>http://localhost:2368/237-delete-node-in-a-linked-list/</link><guid isPermaLink="false">59c860f9018514b5e1fc094e</guid><category>leetcode</category><dc:creator>Duct Tape Programmer</dc:creator><pubDate>Mon, 25 Sep 2017 01:52:56 GMT</pubDate><content:encoded>&lt;div class="kg-card-markdown"&gt;&lt;h3 id="question"&gt;&lt;a href="https://leetcode.com/problems/delete-node-in-a-linked-list/description/"&gt;Question&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Write a function to delete a node (except the tail) in a singly linked list, given only access to that node.&lt;/p&gt;
+&lt;p&gt;Supposed the linked list is 1 -&amp;gt; 2 -&amp;gt; 3 -&amp;gt; 4 and you are given the third node with value 3, the linked list should become 1 -&amp;gt; 2 -&amp;gt; 4 after calling your function.&lt;/p&gt;
+&lt;h3 id="solution"&gt;Solution&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Since the problem says that the delete will never be called for the last element and all we have is pointer to the node to be deleted. We just copy over the value from the node next to it and adjust the pointer to mimic the delete.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;script src="https://gist-it.appspot.com/github/dtprogrammer/leetcode-solutions/blob/master/src/main/java/dtprogrammer/github/io/p237/Solution.java"&gt;&lt;/script&gt;
+&lt;h3 id="timecomplexity"&gt;Time complexity&lt;/h3&gt;
+&lt;p&gt;Constant&lt;/p&gt;
+&lt;h3 id="spacecomplexity"&gt;Space complexity&lt;/h3&gt;
+&lt;p&gt;Constant&lt;/p&gt;
+&lt;h3 id="notes"&gt;Notes&lt;/h3&gt;
+&lt;/div&gt;</content:encoded></item><item><title>238. Product of Array Except Self</title><description>&lt;div class="kg-card-markdown"&gt;&lt;h3 id="question"&gt;&lt;a href="https://leetcode.com/problems/product-of-array-except-self/description/"&gt;Question&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Given an array of n integers where n &amp;gt; 1, nums, return an array output such that output[i] is equal to the product of all the elements of nums except nums[i].&lt;/p&gt;
+&lt;p&gt;Solve it without division and in O(n).&lt;/p&gt;
+&lt;p&gt;For example, given [1,2,3,4], return&lt;/p&gt;&lt;/div&gt;</description><link>http://localhost:2368/238-product-of-array-except-self/</link><guid isPermaLink="false">59c85e30018514b5e1fc094c</guid><category>leetcode</category><dc:creator>Duct Tape Programmer</dc:creator><pubDate>Mon, 25 Sep 2017 01:41:06 GMT</pubDate><content:encoded>&lt;div class="kg-card-markdown"&gt;&lt;h3 id="question"&gt;&lt;a href="https://leetcode.com/problems/product-of-array-except-self/description/"&gt;Question&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Given an array of n integers where n &amp;gt; 1, nums, return an array output such that output[i] is equal to the product of all the elements of nums except nums[i].&lt;/p&gt;
+&lt;p&gt;Solve it without division and in O(n).&lt;/p&gt;
+&lt;p&gt;For example, given [1,2,3,4], return [24,12,8,6].&lt;/p&gt;
+&lt;p&gt;Follow up:&lt;br&gt;
+Could you solve it with constant space complexity? (Note: The output array does not count as extra space for the purpose of space complexity analysis.)&lt;/p&gt;
+&lt;h3 id="solution"&gt;Solution&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;We make two pass and calculate and update the result&lt;/li&gt;
+&lt;/ul&gt;
+&lt;script src="https://gist-it.appspot.com/github/dtprogrammer/leetcode-solutions/blob/master/src/main/java/dtprogrammer/github/io/p238/Solution.java"&gt;&lt;/script&gt;
+&lt;h3 id="timecomplexity"&gt;Time complexity&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;O (n)&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="spacecomplexity"&gt;Space complexity&lt;/h3&gt;
+&lt;p&gt;Constant&lt;/p&gt;
+&lt;h3 id="notes"&gt;Notes&lt;/h3&gt;
+&lt;/div&gt;</content:encoded></item><item><title>160. Intersection of Two Linked Lists</title><description>&lt;div class="kg-card-markdown"&gt;&lt;h3 id="question"&gt;&lt;a href="https://leetcode.com/problems/intersection-of-two-linked-lists/description/"&gt;Question&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Write a program to find the node at which the intersection of two singly linked lists begins.&lt;/p&gt;
+&lt;p&gt;For example, the following two linked lists:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;A:          a1 → a2
+                   ↘
+                     c1 → c2 → c3
+                   ↗            
+B:     b1 → b2 → b3
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;begin to intersect at node c1.&lt;/p&gt;
+&lt;p&gt;Notes:&lt;/p&gt;
+&lt;p&gt;If the two linked lists have no intersection&lt;/p&gt;&lt;/div&gt;</description><link>http://localhost:2368/160-intersection-of-two-linked-lists/</link><guid isPermaLink="false">59c84b22018514b5e1fc094a</guid><category>leetcode</category><dc:creator>Duct Tape Programmer</dc:creator><pubDate>Mon, 25 Sep 2017 00:21:57 GMT</pubDate><content:encoded>&lt;div class="kg-card-markdown"&gt;&lt;h3 id="question"&gt;&lt;a href="https://leetcode.com/problems/intersection-of-two-linked-lists/description/"&gt;Question&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Write a program to find the node at which the intersection of two singly linked lists begins.&lt;/p&gt;
+&lt;p&gt;For example, the following two linked lists:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;A:          a1 → a2
+                   ↘
+                     c1 → c2 → c3
+                   ↗            
+B:     b1 → b2 → b3
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;begin to intersect at node c1.&lt;/p&gt;
+&lt;p&gt;Notes:&lt;/p&gt;
+&lt;p&gt;If the two linked lists have no intersection at all, return null.&lt;br&gt;
+The linked lists must retain their original structure after the function returns.&lt;br&gt;
+You may assume there are no cycles anywhere in the entire linked structure.&lt;br&gt;
+Your code should preferably run in O(n) time and use only O(1) memory.&lt;/p&gt;
+&lt;h3 id="solution"&gt;Solution&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;This problem can be solved by making by using two pointers.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;pointerA&lt;/code&gt; traverses from &lt;code&gt;headA&lt;/code&gt; and &lt;code&gt;pointerB&lt;/code&gt; traverses from &lt;code&gt;headB&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;When either of them reached thee end we set them to another list.&lt;/li&gt;
+&lt;li&gt;Overall they will traverse the same distance and reach and the intersection point if one exists or become &lt;code&gt;null&lt;/code&gt; at the same time in second iteration.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;script src="https://gist-it.appspot.com/github/dtprogrammer/leetcode-solutions/blob/master/src/main/java/dtprogrammer/github/io/p160/Solution.java"&gt;&lt;/script&gt;
+&lt;h3 id="timecomplexity"&gt;Time complexity&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;O (n)&lt;/code&gt; where n is the size of larger list&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="spacecomplexity"&gt;Space complexity&lt;/h3&gt;
+&lt;p&gt;Constant&lt;/p&gt;
+&lt;h3 id="notes"&gt;Notes&lt;/h3&gt;
+&lt;/div&gt;</content:encoded></item><item><title>105. Construct Binary Tree from Preorder and Inorder Traversal</title><description>&lt;div class="kg-card-markdown"&gt;&lt;h3 id="question"&gt;&lt;a href="https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/description/"&gt;Question&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;Given preorder and inorder traversal of a tree, construct the binary tree.&lt;/p&gt;
 &lt;p&gt;Note:&lt;br&gt;
 You may assume that duplicates do not exist in the tree.&lt;/p&gt;
@@ -280,178 +402,4 @@ Stock price change [- 6, 4, -2, 3, -2]
 &lt;h3 id="spacecomplexity"&gt;Space complexity&lt;/h3&gt;
 &lt;p&gt;Constant&lt;/p&gt;
 &lt;h3 id="notes"&gt;Notes&lt;/h3&gt;
-&lt;/div&gt;</content:encoded></item><item><title>253. Meeting Rooms II</title><description>&lt;div class="kg-card-markdown"&gt;&lt;h3 id="question"&gt;&lt;a href="https://leetcode.com/problems/meeting-rooms-ii"&gt;Question&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;Given an array of meeting time intervals consisting of start and end times [[s1,e1],[s2,e2],...] (si &amp;lt; ei), find the minimum number of conference rooms required.&lt;/p&gt;
-&lt;p&gt;For example,&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;Given [[0, 30],[5, 10],[15, 20]],
-return 2.
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id="solution"&gt;Solution&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;The idea to solve this problem is simple&lt;/li&gt;
-&lt;li&gt;First&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;</description><link>http://localhost:2368/253-meeting-rooms-ii/</link><guid isPermaLink="false">59c6a6d0018514b5e1fc085e</guid><category>leetcode</category><category>leetcode-locked</category><dc:creator>Duct Tape Programmer</dc:creator><pubDate>Sat, 23 Sep 2017 18:34:23 GMT</pubDate><content:encoded>&lt;div class="kg-card-markdown"&gt;&lt;h3 id="question"&gt;&lt;a href="https://leetcode.com/problems/meeting-rooms-ii"&gt;Question&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;Given an array of meeting time intervals consisting of start and end times [[s1,e1],[s2,e2],...] (si &amp;lt; ei), find the minimum number of conference rooms required.&lt;/p&gt;
-&lt;p&gt;For example,&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;Given [[0, 30],[5, 10],[15, 20]],
-return 2.
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id="solution"&gt;Solution&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;The idea to solve this problem is simple&lt;/li&gt;
-&lt;li&gt;First we need to sort the &lt;code&gt;Interval&lt;/code&gt; on basis of their start time so that we can traverse them in the order they start.&lt;/li&gt;
-&lt;li&gt;We initialize our min heap (based on meeting end time) with the first interval and then traverse the remaining intervals to determine how many simultaneously running intervals we have.
-&lt;ul&gt;
-&lt;li&gt;If most early ending interval in the queue has a end time &lt;code&gt;&amp;lt;=&lt;/code&gt; current interval start time we can reuse the room. So we just update the end time with the current interval end time.&lt;/li&gt;
-&lt;li&gt;Else we know that we need another room to accomodate this even so we push the current Interval on the min heap.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;script src="https://gist-it.appspot.com/github/dtprogrammer/leetcode-solutions/blob/master/src/main/java/dtprogrammer/github/io/p253/Solution.java"&gt;&lt;/script&gt;
-&lt;h3 id="timecomplexity"&gt;Time complexity&lt;/h3&gt;
-&lt;p&gt;O (n log n)&lt;/p&gt;
-&lt;h3 id="spacecomplexity"&gt;Space complexity&lt;/h3&gt;
-&lt;p&gt;Constant&lt;/p&gt;
-&lt;h3 id="notes"&gt;Notes&lt;/h3&gt;
-&lt;/div&gt;</content:encoded></item><item><title>134. Gas Station</title><description>&lt;div class="kg-card-markdown"&gt;&lt;h3 id="question"&gt;&lt;a href="https://leetcode.com/problems/gas-station/description/"&gt;Question&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;There are N gas stations along a circular route, where the amount of gas at station i is gas[i].&lt;/p&gt;
-&lt;p&gt;You have a car with an unlimited gas tank and it costs cost[i] of gas to travel from station i to its next station (i+1). You begin&lt;/p&gt;&lt;/div&gt;</description><link>http://localhost:2368/134-gas-station/</link><guid isPermaLink="false">59c69ab1018514b5e1fc085c</guid><category>leetcode</category><dc:creator>Duct Tape Programmer</dc:creator><pubDate>Sat, 23 Sep 2017 18:00:21 GMT</pubDate><content:encoded>&lt;div class="kg-card-markdown"&gt;&lt;h3 id="question"&gt;&lt;a href="https://leetcode.com/problems/gas-station/description/"&gt;Question&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;There are N gas stations along a circular route, where the amount of gas at station i is gas[i].&lt;/p&gt;
-&lt;p&gt;You have a car with an unlimited gas tank and it costs cost[i] of gas to travel from station i to its next station (i+1). You begin the journey with an empty tank at one of the gas stations.&lt;/p&gt;
-&lt;p&gt;Return the starting gas station's index if you can travel around the circuit once, otherwise return -1.&lt;/p&gt;
-&lt;p&gt;Note:&lt;br&gt;
-The solution is guaranteed to be unique.&lt;/p&gt;
-&lt;h3 id="solution"&gt;Solution&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;There are two things to be noticed here:
-&lt;ul&gt;
-&lt;li&gt;If we cannot reach from A to E then we cannot reach to E from any stop between A and E to E. This is there reason why we do &lt;code&gt;start = i + 1&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;A solution always exists if total gas in the circuit is greater than or equal to total distance (total cost) of circuit.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;script src="https://gist-it.appspot.com/github/dtprogrammer/leetcode-solutions/blob/master/src/main/java/dtprogrammer/github/io/p134/Solution.java"&gt;&lt;/script&gt;
-&lt;h3 id="timecomplexity"&gt;Time complexity&lt;/h3&gt;
-&lt;p&gt;O (n)&lt;/p&gt;
-&lt;h3 id="spacecomplexity"&gt;Space complexity&lt;/h3&gt;
-&lt;p&gt;Constant&lt;/p&gt;
-&lt;h3 id="notes"&gt;Notes&lt;/h3&gt;
-&lt;/div&gt;</content:encoded></item><item><title>66. Plus One</title><description>&lt;div class="kg-card-markdown"&gt;&lt;h3 id="question"&gt;&lt;a href="https://leetcode.com/problems/plus-one/description/"&gt;Question&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;Given a non-negative integer represented as a non-empty array of digits, plus one to the integer.&lt;/p&gt;
-&lt;p&gt;You may assume the integer do not contain any leading zero, except the number 0 itself.&lt;/p&gt;
-&lt;p&gt;The digits are stored such that the most significant digit is at the head of the list.&lt;/p&gt;&lt;/div&gt;</description><link>http://localhost:2368/66-plus-one/</link><guid isPermaLink="false">59c49625018514b5e1fc0858</guid><category>leetcode</category><dc:creator>Duct Tape Programmer</dc:creator><pubDate>Fri, 22 Sep 2017 04:50:50 GMT</pubDate><content:encoded>&lt;div class="kg-card-markdown"&gt;&lt;h3 id="question"&gt;&lt;a href="https://leetcode.com/problems/plus-one/description/"&gt;Question&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;Given a non-negative integer represented as a non-empty array of digits, plus one to the integer.&lt;/p&gt;
-&lt;p&gt;You may assume the integer do not contain any leading zero, except the number 0 itself.&lt;/p&gt;
-&lt;p&gt;The digits are stored such that the most significant digit is at the head of the list.&lt;/p&gt;
-&lt;h3 id="solution"&gt;Solution&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;The problem is pretty simple. There are only the following cases possible
-&lt;ul&gt;
-&lt;li&gt;547&lt;/li&gt;
-&lt;li&gt;549&lt;/li&gt;
-&lt;li&gt;999&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;script src="https://gist-it.appspot.com/github/dtprogrammer/leetcode-solutions/blob/master/src/main/java/dtprogrammer/github/io/p66/Solution.java"&gt;&lt;/script&gt;
-&lt;h3 id="timecomplexity"&gt;Time complexity&lt;/h3&gt;
-&lt;p&gt;O (n)&lt;/p&gt;
-&lt;h3 id="spacecomplexity"&gt;Space complexity&lt;/h3&gt;
-&lt;p&gt;O (n + 1)&lt;/p&gt;
-&lt;h3 id="notes"&gt;Notes&lt;/h3&gt;
-&lt;/div&gt;</content:encoded></item><item><title>39. Combination Sum</title><description>&lt;div class="kg-card-markdown"&gt;&lt;h3 id="question"&gt;&lt;a href="https://leetcode.com/problems/combination-sum/description/"&gt;Question&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;Given a set of candidate numbers (C) (without duplicates) and a target number (T), find all unique combinations in C where the candidate numbers sums to T.&lt;/p&gt;
-&lt;p&gt;The same repeated number may be chosen from C unlimited number of times.&lt;/p&gt;
-&lt;p&gt;Note:&lt;br&gt;
-All numbers (including target) will be positive integers.&lt;/p&gt;&lt;/div&gt;</description><link>http://localhost:2368/39-combination-sum/</link><guid isPermaLink="false">59c358ffa7b0fe3c2805e869</guid><category>leetcode</category><dc:creator>Duct Tape Programmer</dc:creator><pubDate>Thu, 21 Sep 2017 06:20:37 GMT</pubDate><content:encoded>&lt;div class="kg-card-markdown"&gt;&lt;h3 id="question"&gt;&lt;a href="https://leetcode.com/problems/combination-sum/description/"&gt;Question&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;Given a set of candidate numbers (C) (without duplicates) and a target number (T), find all unique combinations in C where the candidate numbers sums to T.&lt;/p&gt;
-&lt;p&gt;The same repeated number may be chosen from C unlimited number of times.&lt;/p&gt;
-&lt;p&gt;Note:&lt;br&gt;
-All numbers (including target) will be positive integers.&lt;br&gt;
-The solution set must not contain duplicate combinations.&lt;br&gt;
-For example, given candidate set [2, 3, 6, 7] and target 7,&lt;br&gt;
-A solution set is:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;[
-  [7],
-  [2, 2, 3]
-]
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id="solution"&gt;Solution&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;This problem is just a modification of &lt;a href="https://dtprogrammer.github.io/78-subsets/"&gt;78. Subsets&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;All we need to do is generate all the subsets and include those whose sum is equal to &lt;code&gt;target&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;script src="https://gist-it.appspot.com/github/dtprogrammer/leetcode-solutions/blob/master/src/main/java/dtprogrammer/github/io/p39/Solution.java"&gt;&lt;/script&gt;
-&lt;h3 id="timecomplexity"&gt;Time complexity&lt;/h3&gt;
-&lt;h3 id="spacecomplexity"&gt;Space complexity&lt;/h3&gt;
-&lt;p&gt;O (n) which is the space taken by the stack to keep track. Also the solution uses recursion so it does take some space on call stack.&lt;/p&gt;
-&lt;h3 id="notes"&gt;Notes&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;The terminating condition is if &lt;code&gt;curSum &amp;gt;= 0&lt;/code&gt; or &lt;code&gt;start&lt;/code&gt; i.e. index reached end of the array.&lt;/li&gt;
-&lt;li&gt;It should also be noted that when we recurse while including the element we don't do &lt;code&gt;start + 1&lt;/code&gt; since the number can be included again.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;</content:encoded></item><item><title>51. N-Queens</title><description>&lt;div class="kg-card-markdown"&gt;&lt;h3 id="question"&gt;&lt;a href="https://leetcode.com/problems/n-queens/description/"&gt;Question&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;The n-queens puzzle is the problem of placing n queens on an n×n chessboard such that no two queens attack each other.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://leetcode.com/static/images/problemset/8-queens.png" alt=""&gt;&lt;/p&gt;
-&lt;p&gt;Given an integer n, return all distinct solutions to the n-queens puzzle.&lt;/p&gt;
-&lt;p&gt;Each solution contains a distinct board configuration of the n-queens' placement, where 'Q' and&lt;/p&gt;&lt;/div&gt;</description><link>http://localhost:2368/51-n-queens/</link><guid isPermaLink="false">59c33b88a7b0fe3c2805e867</guid><category>leetcode</category><dc:creator>Duct Tape Programmer</dc:creator><pubDate>Thu, 21 Sep 2017 04:14:34 GMT</pubDate><content:encoded>&lt;div class="kg-card-markdown"&gt;&lt;h3 id="question"&gt;&lt;a href="https://leetcode.com/problems/n-queens/description/"&gt;Question&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;The n-queens puzzle is the problem of placing n queens on an n×n chessboard such that no two queens attack each other.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://leetcode.com/static/images/problemset/8-queens.png" alt=""&gt;&lt;/p&gt;
-&lt;p&gt;Given an integer n, return all distinct solutions to the n-queens puzzle.&lt;/p&gt;
-&lt;p&gt;Each solution contains a distinct board configuration of the n-queens' placement, where 'Q' and '.' both indicate a queen and an empty space respectively.&lt;/p&gt;
-&lt;p&gt;For example,&lt;br&gt;
-There exist two distinct solutions to the 4-queens puzzle:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;[
- [&amp;quot;.Q..&amp;quot;,  // Solution 1
-  &amp;quot;...Q&amp;quot;,
-  &amp;quot;Q...&amp;quot;,
-  &amp;quot;..Q.&amp;quot;],
-
- [&amp;quot;..Q.&amp;quot;,  // Solution 2
-  &amp;quot;Q...&amp;quot;,
-  &amp;quot;...Q&amp;quot;,
-  &amp;quot;.Q..&amp;quot;]
-]
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id="solution"&gt;Solution&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;The problem can be solved through backtracking just like &lt;a href="http://dtprogrammer.github.io/52-n-queens-ii/"&gt;52. N-Queens II&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;A general approach can be found in the &lt;a href="https://cses.fi/book.pdf"&gt;Chapter 5 of Competitive Programmer's Handbook&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;pre&gt;&lt;code&gt;void search(int y) {
-    if (y == n) {
-        count++;
-        return;
-    }
-    for (int x = 0; x &amp;lt; n; x++) {
-        if (column[x] || diag1[x+y] || diag2[x-y+n-1]) continue;
-        column[x] = diag1[x+y] = diag2[x-y+n-1] = 1;
-        search(y+1);
-        column[x] = diag1[x+y] = diag2[x-y+n-1] = 0;
-    }
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;ul&gt;
-&lt;li&gt;The idea here is that we place a queen in a column and then recursive call the funstion for other row with limitation on where the queen can be places.&lt;/li&gt;
-&lt;li&gt;There are two diagonal placement which is not allowed and they can be calculated with the following formulae:
-&lt;ul&gt;
-&lt;li&gt;Diagonal 1: &lt;code&gt;col + row&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Diagonal 2: &lt;code&gt;col - row + n&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;In this approach we also track the queen placement so that we can return the valid board configurations.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;script src="https://gist-it.appspot.com/github/dtprogrammer/leetcode-solutions/blob/master/src/main/java/dtprogrammer/github/io/p51/Solution.java"&gt;&lt;/script&gt;
-&lt;h3 id="timecomplexity"&gt;Time complexity&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;It is hard to analyze the time complexity of this algorithm.&lt;/li&gt;
-&lt;li&gt;The time complexity is lower bounded by the number of non-attacking placements&lt;/li&gt;
-&lt;li&gt;There is no exact formula for it in terms of &lt;code&gt;n&lt;/code&gt;. Although its known that it tends to &lt;code&gt;n!/c to the power of n&lt;/code&gt; where &lt;code&gt;c&lt;/code&gt; is approx &lt;code&gt;2.54&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;In short its &lt;em&gt;exponential&lt;/em&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id="spacecomplexity"&gt;Space complexity&lt;/h3&gt;
-&lt;p&gt;Space complexity is O (5n) and also the space taken by the stack to keep track of the board configuration being evaluated.&lt;/p&gt;
-&lt;h3 id="notes"&gt;Notes&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Its important to understand how we track diagonal in this problem.&lt;/li&gt;
-&lt;/ul&gt;
 &lt;/div&gt;</content:encoded></item></channel></rss>
