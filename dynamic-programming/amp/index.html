@@ -1,7 +1,8 @@
+
 <head>
     <meta charset="utf-8">
 
-    <title>134. Gas Station</title>
+    <title>Dynamic Programming</title>
 
     <meta name="HandheldFriendly" content="True">
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
@@ -14,21 +15,21 @@
     
     <meta property="og:site_name" content="Software Interview Preparation Blog">
     <meta property="og:type" content="article">
-    <meta property="og:title" content="134. Gas Station">
-    <meta property="og:description" content="Question There are N gas stations along a circular route, where the amount of gas at station i is gas[i]. You have a car with an unlimited gas tank and it costs cost[i] of gas to travel from station i to its next station (i+1). You begin">
-    <meta property="og:url" content="http://localhost:2368/134-gas-station/">
-    <meta property="article:published_time" content="2017-09-23T18:00:21.000Z">
-    <meta property="article:modified_time" content="2017-09-23T18:00:21.000Z">
-    <meta property="article:tag" content="leetcode">
+    <meta property="og:title" content="Dynamic Programming">
+    <meta property="og:description" content="Introduction Dynamic programming is a technique that combines the correctness of com- plete search and the efficiency of greedy algorithms. Dynamic programming can be applied if the problem can be divided into overlapping subproblems that can be solved independently. There are two uses for dynamic programming: Finding an optimal solution:">
+    <meta property="og:url" content="http://localhost:2368/dynamic-programming/">
+    <meta property="article:published_time" content="2017-09-26T07:21:13.000Z">
+    <meta property="article:modified_time" content="2017-09-26T07:24:29.000Z">
+    <meta property="article:tag" content="Algorithms">
     
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="134. Gas Station">
-    <meta name="twitter:description" content="Question There are N gas stations along a circular route, where the amount of gas at station i is gas[i]. You have a car with an unlimited gas tank and it costs cost[i] of gas to travel from station i to its next station (i+1). You begin">
-    <meta name="twitter:url" content="http://localhost:2368/134-gas-station/">
+    <meta name="twitter:title" content="Dynamic Programming">
+    <meta name="twitter:description" content="Introduction Dynamic programming is a technique that combines the correctness of com- plete search and the efficiency of greedy algorithms. Dynamic programming can be applied if the problem can be divided into overlapping subproblems that can be solved independently. There are two uses for dynamic programming: Finding an optimal solution:">
+    <meta name="twitter:url" content="http://localhost:2368/dynamic-programming/">
     <meta name="twitter:label1" content="Written by">
     <meta name="twitter:data1" content="Duct Tape Programmer">
     <meta name="twitter:label2" content="Filed under">
-    <meta name="twitter:data2" content="leetcode">
+    <meta name="twitter:data2" content="Algorithms">
     
     <script type="application/ld+json">
 {
@@ -45,12 +46,12 @@
         "url": "http://localhost:2368/author/duct/",
         "sameAs": []
     },
-    "headline": "134. Gas Station",
-    "url": "http://localhost:2368/134-gas-station/",
-    "datePublished": "2017-09-23T18:00:21.000Z",
-    "dateModified": "2017-09-23T18:00:21.000Z",
-    "keywords": "leetcode",
-    "description": "Question There are N gas stations along a circular route, where the amount of gas at station i is gas[i]. You have a car with an unlimited gas tank and it costs cost[i] of gas to travel from station i to its next station (i+1). You begin",
+    "headline": "Dynamic Programming",
+    "url": "http://localhost:2368/dynamic-programming/",
+    "datePublished": "2017-09-26T07:21:13.000Z",
+    "dateModified": "2017-09-26T07:24:29.000Z",
+    "keywords": "Algorithms",
+    "description": "Introduction Dynamic programming is a technique that combines the correctness of com- plete search and the efficiency of greedy algorithms. Dynamic programming can be applied if the problem can be divided into overlapping subproblems that can be solved independently. There are two uses for dynamic programming: Finding an optimal solution:",
     "mainEntityOfPage": {
         "@type": "WebPage",
         "@id": "http://localhost:2368/"
@@ -82,35 +83,77 @@
         <article class="post">
 
             <header class="post-header">
-                <h1 class="post-title">134. Gas Station</h1>
+                <h1 class="post-title">Dynamic Programming</h1>
                 <section class="post-meta">
-                    <p class="author">by <a href="../../author/duct.28">Duct Tape Programmer</a></p>
-                    <time class="post-date" datetime="2017-09-23">2017-09-23</time>
+                    <p class="author">by <a href="../../author/duct.29">Duct Tape Programmer</a></p>
+                    <time class="post-date" datetime="2017-09-26">2017-09-26</time>
                 </section>
             </header>
             <section class="post-content">
 
-                <div class="kg-card-markdown"><h3 id="question"><a href="https://leetcode.com/problems/gas-station/description/">Question</a></h3>
-<p>There are N gas stations along a circular route, where the amount of gas at station i is gas[i].</p>
-<p>You have a car with an unlimited gas tank and it costs cost[i] of gas to travel from station i to its next station (i+1). You begin the journey with an empty tank at one of the gas stations.</p>
-<p>Return the starting gas station's index if you can travel around the circuit once, otherwise return -1.</p>
-<p>Note:<br>
-The solution is guaranteed to be unique.</p>
-<h3 id="solution">Solution</h3>
+                <div class="kg-card-markdown"><h2 id="introduction">Introduction</h2>
 <ul>
-<li>There are two things to be noticed here:
+<li>Dynamic programming is a technique that combines the correctness of com- plete search and the efficiency of greedy algorithms.</li>
+<li>Dynamic programming can be applied if the problem can be divided into overlapping subproblems that can be solved independently.</li>
+<li>There are two uses for dynamic programming:
 <ul>
-<li>If we cannot reach from A to E then we cannot reach to E from any stop between A and E to E. This is there reason why we do <code>start = i + 1</code>.</li>
-<li>A solution always exists if total gas in the circuit is greater than or equal to total distance (total cost) of circuit.</li>
+<li>Finding an optimal solution: We want to find a solution that is as large as possible or as small as possible.</li>
+<li>Counting the number of solutions: We want to calculate the total num- ber of possible solutions.</li>
 </ul>
 </li>
+<li>Dynamic programming algorithm is efficient because it uses memoization and calculates the answer to each subproblem only once.</li>
 </ul>
-
-<h3 id="timecomplexity">Time complexity</h3>
-<p>O (n)</p>
-<h3 id="spacecomplexity">Space complexity</h3>
-<p>Constant</p>
-<h3 id="notes">Notes</h3>
+<h2 id="problems">Problems</h2>
+<h3 id="coinproblem">Coin Problem</h3>
+<p>If types of coins = {1, 3, 4}</p>
+<pre><code>solve(x) = min(solve(x - 1) + 1, solve(x - 3) + 1, solve(x - 4) + 1)
+</code></pre>
+<p><amp-img src="https://i.imgur.com/x2m4Mh0.png" alt width="489" height="127" layout="responsive"></amp-img></p>
+<h4 id="recursivesolution">Recursive Solution</h4>
+<pre><code>int solve(int x) {
+    if (x &lt; 0) return INF;
+    if (x == 0) return 0;
+    if (ready[x]) return value[x];
+    int best = INF;
+    for (auto c : coins) {
+       best = min(best, solve(x-c)+1);
+    }
+    value[x] = best;
+    ready[x] = true;
+    return best;
+}
+</code></pre>
+<p>where ready[x] indicates whether the value of solve(x) has been calculated, and if it is, value[x] contains this value.</p>
+<h4 id="iterativesolution">Iterative Solution</h4>
+<pre><code>value[0] = 0;
+for (int x = 1; x &lt;= n; x++) {
+    value[x] = INF;
+    for (auto c : coins) {
+       if (x-c &gt;= 0) {
+           value[x] = min(value[x], value[x-c]+1);
+           } 
+    }
+}
+</code></pre>
+<p>The time complexity of the algorithm is <code>O(nk)</code>, where <code>n</code> is the target sum and <code>k</code> is the number of coins.</p>
+<p>In the coin problem, for example, we can declare another array that indicates for each sum of money the first coin in an optimal solution:</p>
+<pre><code>value[0] = 0;
+for (int x = 1; x &lt;= n; x++) {
+    value[x] = INF;
+    for (auto c : coins) {
+       if (x-c &gt;= 0 &amp;&amp; value[x-c]+1 &lt; value[x]) {
+           value[x] = value[x-c]+1;
+           first[x] = c;
+           } 
+    }
+}
+</code></pre>
+<p>After this, the following code can be used to print the coins that appear in an optimal solution for the sum n:</p>
+<pre><code>while (n &gt; 0) {
+    cout &lt;&lt; first[n] &lt;&lt; "\n";
+    n -= first[n];
+}
+</code></pre>
 </div>
 
             </section>

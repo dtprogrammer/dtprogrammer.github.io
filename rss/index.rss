@@ -1,4 +1,109 @@
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" version="2.0"><channel><title>Software Interview Preparation Blog</title><description>Algorithms, Data Structures and System Design for Interviews</description><link>http://localhost:2368/</link><image><url>http://localhost:2368/favicon.png</url><title>Software Interview Preparation Blog</title><link>http://localhost:2368/</link></image><generator>Ghost 1.8</generator><lastBuildDate>Tue, 26 Sep 2017 06:49:45 GMT</lastBuildDate><atom:link href="http://localhost:2368/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title>139. Word Break</title><description>&lt;div class="kg-card-markdown"&gt;&lt;h3 id="question"&gt;&lt;a href="https://leetcode.com/problems/word-break/description/"&gt;Question&lt;/a&gt;&lt;/h3&gt;
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" version="2.0"><channel><title>Software Interview Preparation Blog</title><description>Algorithms, Data Structures and System Design for Interviews</description><link>http://localhost:2368/</link><image><url>http://localhost:2368/favicon.png</url><title>Software Interview Preparation Blog</title><link>http://localhost:2368/</link></image><generator>Ghost 1.8</generator><lastBuildDate>Tue, 26 Sep 2017 08:07:02 GMT</lastBuildDate><atom:link href="http://localhost:2368/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title>322. Coin Change</title><description>&lt;div class="kg-card-markdown"&gt;&lt;h3 id="question"&gt;&lt;a href="https://leetcode.com/problems/coin-change/description/"&gt;Question&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;You are given coins of different denominations and a total amount of money amount. Write a function to compute the fewest number of coins that you need to make up that amount. If that amount of money cannot be made up by any combination of the coins, return -1.&lt;/p&gt;&lt;/div&gt;</description><link>http://localhost:2368/322-coin-change/</link><guid isPermaLink="false">59ca09e4a588803d1e4d5a77</guid><category>leetcode</category><dc:creator>Duct Tape Programmer</dc:creator><pubDate>Tue, 26 Sep 2017 08:06:21 GMT</pubDate><content:encoded>&lt;div class="kg-card-markdown"&gt;&lt;h3 id="question"&gt;&lt;a href="https://leetcode.com/problems/coin-change/description/"&gt;Question&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;You are given coins of different denominations and a total amount of money amount. Write a function to compute the fewest number of coins that you need to make up that amount. If that amount of money cannot be made up by any combination of the coins, return -1.&lt;/p&gt;
+&lt;p&gt;Example 1:&lt;br&gt;
+coins = [1, 2, 5], amount = 11&lt;br&gt;
+return 3 (11 = 5 + 5 + 1)&lt;/p&gt;
+&lt;p&gt;Example 2:&lt;br&gt;
+coins = [2], amount = 3&lt;br&gt;
+return -1.&lt;/p&gt;
+&lt;p&gt;Note:&lt;br&gt;
+You may assume that you have an infinite number of each kind of coin.&lt;/p&gt;
+&lt;h3 id="quickhints"&gt;Quick Hints&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Use memoization to calculate&lt;/li&gt;
+&lt;li&gt;amount - all coin value&lt;/li&gt;
+&lt;li&gt;Dynamic programming&lt;/li&gt;
+&lt;li&gt;initially min is -1 and then do the calculation&lt;/li&gt;
+&lt;li&gt;min of all the  possible ways&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="solution"&gt;Solution&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;value[0] = 0;
+for (int x = 1; x &amp;lt;= n; x++) {
+    value[x] = INF;
+    for (auto c : coins) {
+       if (x-c &amp;gt;= 0) {
+           value[x] = min(value[x], value[x-c]+1);
+           } 
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;script src="https://gist-it.appspot.com/github/dtprogrammer/leetcode-solutions/blob/master/src/main/java/dtprogrammer/github/io/p322/Solution.java"&gt;&lt;/script&gt;
+&lt;h3 id="timecomplexity"&gt;Time complexity&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;O (n * k)&lt;/code&gt; where &lt;code&gt;n&lt;/code&gt; is the amount and &lt;code&gt;k&lt;/code&gt; is the number of coins denominations.&lt;/p&gt;
+&lt;h3 id="spacecomplexity"&gt;Space complexity&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;O (n + 1)&lt;/code&gt; for memoization&lt;/p&gt;
+&lt;h3 id="notes"&gt;Notes&lt;/h3&gt;
+&lt;/div&gt;</content:encoded></item><item><title>Dynamic Programming</title><description>&lt;div class="kg-card-markdown"&gt;&lt;h2 id="introduction"&gt;Introduction&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Dynamic programming is a technique that combines the correctness of com- plete search and the efficiency of greedy algorithms.&lt;/li&gt;
+&lt;li&gt;Dynamic programming can be applied if the problem can be divided into overlapping subproblems that can be solved independently.&lt;/li&gt;
+&lt;li&gt;There are two uses for dynamic programming:
+&lt;ul&gt;
+&lt;li&gt;Finding an optimal solution:&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;</description><link>http://localhost:2368/dynamic-programming/</link><guid isPermaLink="false">59c9f9e2a588803d1e4d5a74</guid><category>Algorithms</category><dc:creator>Duct Tape Programmer</dc:creator><pubDate>Tue, 26 Sep 2017 07:21:13 GMT</pubDate><content:encoded>&lt;div class="kg-card-markdown"&gt;&lt;h2 id="introduction"&gt;Introduction&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Dynamic programming is a technique that combines the correctness of com- plete search and the efficiency of greedy algorithms.&lt;/li&gt;
+&lt;li&gt;Dynamic programming can be applied if the problem can be divided into overlapping subproblems that can be solved independently.&lt;/li&gt;
+&lt;li&gt;There are two uses for dynamic programming:
+&lt;ul&gt;
+&lt;li&gt;Finding an optimal solution: We want to find a solution that is as large as possible or as small as possible.&lt;/li&gt;
+&lt;li&gt;Counting the number of solutions: We want to calculate the total num- ber of possible solutions.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Dynamic programming algorithm is efficient because it uses memoization and calculates the answer to each subproblem only once.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="problems"&gt;Problems&lt;/h2&gt;
+&lt;h3 id="coinproblem"&gt;Coin Problem&lt;/h3&gt;
+&lt;p&gt;If types of coins = {1, 3, 4}&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;solve(x) = min(solve(x - 1) + 1, solve(x - 3) + 1, solve(x - 4) + 1)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src="https://i.imgur.com/x2m4Mh0.png" alt=""&gt;&lt;/p&gt;
+&lt;h4 id="recursivesolution"&gt;Recursive Solution&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;int solve(int x) {
+    if (x &amp;lt; 0) return INF;
+    if (x == 0) return 0;
+    if (ready[x]) return value[x];
+    int best = INF;
+    for (auto c : coins) {
+       best = min(best, solve(x-c)+1);
+    }
+    value[x] = best;
+    ready[x] = true;
+    return best;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;where ready[x] indicates whether the value of solve(x) has been calculated, and if it is, value[x] contains this value.&lt;/p&gt;
+&lt;h4 id="iterativesolution"&gt;Iterative Solution&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;value[0] = 0;
+for (int x = 1; x &amp;lt;= n; x++) {
+    value[x] = INF;
+    for (auto c : coins) {
+       if (x-c &amp;gt;= 0) {
+           value[x] = min(value[x], value[x-c]+1);
+           } 
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The time complexity of the algorithm is &lt;code&gt;O(nk)&lt;/code&gt;, where &lt;code&gt;n&lt;/code&gt; is the target sum and &lt;code&gt;k&lt;/code&gt; is the number of coins.&lt;/p&gt;
+&lt;p&gt;In the coin problem, for example, we can declare another array that indicates for each sum of money the first coin in an optimal solution:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;value[0] = 0;
+for (int x = 1; x &amp;lt;= n; x++) {
+    value[x] = INF;
+    for (auto c : coins) {
+       if (x-c &amp;gt;= 0 &amp;amp;&amp;amp; value[x-c]+1 &amp;lt; value[x]) {
+           value[x] = value[x-c]+1;
+           first[x] = c;
+           } 
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;After this, the following code can be used to print the coins that appear in an optimal solution for the sum n:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;while (n &amp;gt; 0) {
+    cout &amp;lt;&amp;lt; first[n] &amp;lt;&amp;lt; &amp;quot;\n&amp;quot;;
+    n -= first[n];
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;</content:encoded></item><item><title>139. Word Break</title><description>&lt;div class="kg-card-markdown"&gt;&lt;h3 id="question"&gt;&lt;a href="https://leetcode.com/problems/word-break/description/"&gt;Question&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;Given a non-empty string s and a dictionary wordDict containing a list of non-empty words, determine if s can be segmented into a space-separated sequence of one or more dictionary words. You may assume the dictionary does not contain duplicate words.&lt;/p&gt;
 &lt;p&gt;For example, given&lt;br&gt;
 s = &amp;quot;leetcode&amp;quot;,&lt;br&gt;
@@ -345,59 +450,5 @@ MaxEndingHere is either A[i] plus the previous MaxEndingHere, or just A[i], whic
 &lt;p&gt;O (n)&lt;/p&gt;
 &lt;h3 id="spacecomplexity"&gt;Space complexity&lt;/h3&gt;
 &lt;p&gt;Constant&lt;/p&gt;
-&lt;h3 id="notes"&gt;Notes&lt;/h3&gt;
-&lt;/div&gt;</content:encoded></item><item><title>141. Linked List Cycle</title><description>&lt;div class="kg-card-markdown"&gt;&lt;h3 id="question"&gt;&lt;a href="https://leetcode.com/problems/maximum-binary-tree/description/"&gt;Question&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;Given a linked list, determine if it has a cycle in it.&lt;/p&gt;
-&lt;p&gt;Follow up:&lt;br&gt;
-Can you solve it without using extra space?&lt;/p&gt;
-&lt;h3 id="solution"&gt;Solution&lt;/h3&gt;
-&lt;script src="https://gist-it.appspot.com/github/dtprogrammer/leetcode-solutions/blob/master/src/main/java/dtprogrammer/github/io/p141/Solution.java"&gt;&lt;/script&gt;
-&lt;h3 id="timecomplexity"&gt;Time complexity&lt;/h3&gt;
-&lt;p&gt;O (n)&lt;/p&gt;
-&lt;h3 id="spacecomplexity"&gt;Space complexity&lt;/h3&gt;
-&lt;p&gt;Constant&lt;/p&gt;
-&lt;h3 id="notes"&gt;Notes&lt;/h3&gt;
-&lt;/div&gt;</description><link>http://localhost:2368/141-linked-list-cycle/</link><guid isPermaLink="false">59c6f189018514b5e1fc0868</guid><category>leetcode</category><dc:creator>Duct Tape Programmer</dc:creator><pubDate>Sat, 23 Sep 2017 23:44:25 GMT</pubDate><content:encoded>&lt;div class="kg-card-markdown"&gt;&lt;h3 id="question"&gt;&lt;a href="https://leetcode.com/problems/maximum-binary-tree/description/"&gt;Question&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;Given a linked list, determine if it has a cycle in it.&lt;/p&gt;
-&lt;p&gt;Follow up:&lt;br&gt;
-Can you solve it without using extra space?&lt;/p&gt;
-&lt;h3 id="solution"&gt;Solution&lt;/h3&gt;
-&lt;script src="https://gist-it.appspot.com/github/dtprogrammer/leetcode-solutions/blob/master/src/main/java/dtprogrammer/github/io/p141/Solution.java"&gt;&lt;/script&gt;
-&lt;h3 id="timecomplexity"&gt;Time complexity&lt;/h3&gt;
-&lt;p&gt;O (n)&lt;/p&gt;
-&lt;h3 id="spacecomplexity"&gt;Space complexity&lt;/h3&gt;
-&lt;p&gt;Constant&lt;/p&gt;
-&lt;h3 id="notes"&gt;Notes&lt;/h3&gt;
-&lt;/div&gt;</content:encoded></item><item><title>654. Maximum Binary Tree</title><description>&lt;div class="kg-card-markdown"&gt;&lt;h3 id="question"&gt;&lt;a href="https://leetcode.com/problems/maximum-binary-tree/description/"&gt;Question&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;Given an integer array with no duplicates. A maximum tree building on this array is defined as follow:&lt;/p&gt;
-&lt;p&gt;The root is the maximum number in the array.&lt;br&gt;
-The left subtree is the maximum tree constructed from left part subarray divided by the maximum number.&lt;br&gt;
-The right subtree is the&lt;/p&gt;&lt;/div&gt;</description><link>http://localhost:2368/654-maximum-binary-tree/</link><guid isPermaLink="false">59c6dde1018514b5e1fc0866</guid><category>leetcode</category><dc:creator>Duct Tape Programmer</dc:creator><pubDate>Sat, 23 Sep 2017 22:24:26 GMT</pubDate><content:encoded>&lt;div class="kg-card-markdown"&gt;&lt;h3 id="question"&gt;&lt;a href="https://leetcode.com/problems/maximum-binary-tree/description/"&gt;Question&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;Given an integer array with no duplicates. A maximum tree building on this array is defined as follow:&lt;/p&gt;
-&lt;p&gt;The root is the maximum number in the array.&lt;br&gt;
-The left subtree is the maximum tree constructed from left part subarray divided by the maximum number.&lt;br&gt;
-The right subtree is the maximum tree constructed from right part subarray divided by the maximum number.&lt;br&gt;
-Construct the maximum tree by the given array and output the root node of this tree.&lt;/p&gt;
-&lt;p&gt;Example 1:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;Input: [3,2,1,6,0,5]
-Output: return the tree root node representing the following tree:
-
-      6
-    /   \
-   3     5
-    \    / 
-     2  0   
-       \
-        1
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Note:&lt;br&gt;
-The size of the given array will be in the range [1,1000].&lt;/p&gt;
-&lt;h3 id="solution"&gt;Solution&lt;/h3&gt;
-&lt;p&gt;&lt;img src="https://i.imgur.com/CBwBdff.jpg" alt=""&gt;&lt;/p&gt;
-&lt;script src="https://gist-it.appspot.com/github/dtprogrammer/leetcode-solutions/blob/master/src/main/java/dtprogrammer/github/io/p654/Solution.java"&gt;&lt;/script&gt;
-&lt;h3 id="timecomplexity"&gt;Time complexity&lt;/h3&gt;
-&lt;p&gt;The time complexity in average case will be &lt;code&gt;O (n log n)&lt;/code&gt;. Since the height of the tree will be &lt;code&gt;log n&lt;/code&gt; and finding maximum takes &lt;code&gt;O (n)&lt;/code&gt; time. Although, worst case we might end up with skewed tree and the height of tree will become &lt;code&gt;n&lt;/code&gt;  and the time complexity will become &lt;code&gt;O (n pow 2)&lt;/code&gt;&lt;/p&gt;
-&lt;h3 id="spacecomplexity"&gt;Space complexity&lt;/h3&gt;
-&lt;p&gt;Constant besides the space on stack&lt;/p&gt;
 &lt;h3 id="notes"&gt;Notes&lt;/h3&gt;
 &lt;/div&gt;</content:encoded></item></channel></rss>
