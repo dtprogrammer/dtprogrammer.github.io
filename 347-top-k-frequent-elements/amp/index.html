@@ -1,7 +1,8 @@
+
 <head>
     <meta charset="utf-8">
 
-    <title>51. N-Queens</title>
+    <title>347. Top K Frequent Elements</title>
 
     <meta name="HandheldFriendly" content="True">
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
@@ -14,17 +15,17 @@
     
     <meta property="og:site_name" content="Software Interview Preparation Blog">
     <meta property="og:type" content="article">
-    <meta property="og:title" content="51. N-Queens">
-    <meta property="og:description" content="Question The n-queens puzzle is the problem of placing n queens on an n×n chessboard such that no two queens attack each other. Given an integer n, return all distinct solutions to the n-queens puzzle. Each solution contains a distinct board configuration of the n-queens' placement, where 'Q' and">
-    <meta property="og:url" content="http://localhost:2368/51-n-queens/">
-    <meta property="article:published_time" content="2017-09-21T04:14:34.000Z">
-    <meta property="article:modified_time" content="2017-09-21T04:14:34.000Z">
+    <meta property="og:title" content="347. Top K Frequent Elements">
+    <meta property="og:description" content="Question Given a non-empty array of integers, return the k most frequent elements. For example, Given [1,1,1,2,2,3] and k = 2, return [1,2]. Note: You may assume k is always valid, 1 ≤ k ≤ number of unique elements. Your algorithm's time complexity must be better than">
+    <meta property="og:url" content="http://localhost:2368/347-top-k-frequent-elements/">
+    <meta property="article:published_time" content="2017-09-26T05:41:39.000Z">
+    <meta property="article:modified_time" content="2017-09-26T05:54:07.000Z">
     <meta property="article:tag" content="leetcode">
     
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="51. N-Queens">
-    <meta name="twitter:description" content="Question The n-queens puzzle is the problem of placing n queens on an n×n chessboard such that no two queens attack each other. Given an integer n, return all distinct solutions to the n-queens puzzle. Each solution contains a distinct board configuration of the n-queens' placement, where 'Q' and">
-    <meta name="twitter:url" content="http://localhost:2368/51-n-queens/">
+    <meta name="twitter:title" content="347. Top K Frequent Elements">
+    <meta name="twitter:description" content="Question Given a non-empty array of integers, return the k most frequent elements. For example, Given [1,1,1,2,2,3] and k = 2, return [1,2]. Note: You may assume k is always valid, 1 ≤ k ≤ number of unique elements. Your algorithm's time complexity must be better than">
+    <meta name="twitter:url" content="http://localhost:2368/347-top-k-frequent-elements/">
     <meta name="twitter:label1" content="Written by">
     <meta name="twitter:data1" content="Duct Tape Programmer">
     <meta name="twitter:label2" content="Filed under">
@@ -45,12 +46,12 @@
         "url": "http://localhost:2368/author/duct/",
         "sameAs": []
     },
-    "headline": "51. N-Queens",
-    "url": "http://localhost:2368/51-n-queens/",
-    "datePublished": "2017-09-21T04:14:34.000Z",
-    "dateModified": "2017-09-21T04:14:34.000Z",
+    "headline": "347. Top K Frequent Elements",
+    "url": "http://localhost:2368/347-top-k-frequent-elements/",
+    "datePublished": "2017-09-26T05:41:39.000Z",
+    "dateModified": "2017-09-26T05:54:07.000Z",
     "keywords": "leetcode",
-    "description": "Question The n-queens puzzle is the problem of placing n queens on an n×n chessboard such that no two queens attack each other. Given an integer n, return all distinct solutions to the n-queens puzzle. Each solution contains a distinct board configuration of the n-queens&#x27; placement, where &#x27;Q&#x27; and",
+    "description": "Question Given a non-empty array of integers, return the k most frequent elements. For example, Given [1,1,1,2,2,3] and k &#x3D; 2, return [1,2]. Note: You may assume k is always valid, 1 ≤ k ≤ number of unique elements. Your algorithm&#x27;s time complexity must be better than",
     "mainEntityOfPage": {
         "@type": "WebPage",
         "@id": "http://localhost:2368/"
@@ -82,75 +83,43 @@
         <article class="post">
 
             <header class="post-header">
-                <h1 class="post-title">51. N-Queens</h1>
+                <h1 class="post-title">347. Top K Frequent Elements</h1>
                 <section class="post-meta">
-                    <p class="author">by <a href="../../author/duct.27">Duct Tape Programmer</a></p>
-                    <time class="post-date" datetime="2017-09-20">2017-09-20</time>
+                    <p class="author">by <a href="../../author/duct.28">Duct Tape Programmer</a></p>
+                    <time class="post-date" datetime="2017-09-25">2017-09-25</time>
                 </section>
             </header>
             <section class="post-content">
 
-                <div class="kg-card-markdown"><h3 id="question"><a href="https://leetcode.com/problems/n-queens/description/">Question</a></h3>
-<p>The n-queens puzzle is the problem of placing n queens on an n×n chessboard such that no two queens attack each other.</p>
-<p><amp-img src="https://leetcode.com/static/images/problemset/8-queens.png" alt width="258" height="276" layout="fixed"></amp-img></p>
-<p>Given an integer n, return all distinct solutions to the n-queens puzzle.</p>
-<p>Each solution contains a distinct board configuration of the n-queens' placement, where 'Q' and '.' both indicate a queen and an empty space respectively.</p>
+                <div class="kg-card-markdown"><h3 id="question"><a href="https://leetcode.com/problems/top-k-frequent-elements/description/">Question</a></h3>
+<p>Given a non-empty array of integers, return the k most frequent elements.</p>
 <p>For example,<br>
-There exist two distinct solutions to the 4-queens puzzle:</p>
-<pre><code>[
- [".Q..",  // Solution 1
-  "...Q",
-  "Q...",
-  "..Q."],
-
- ["..Q.",  // Solution 2
-  "Q...",
-  "...Q",
-  ".Q.."]
-]
-</code></pre>
+Given [1,1,1,2,2,3] and k = 2, return [1,2].</p>
+<p>Note:<br>
+You may assume k is always valid, 1 ≤ k ≤ number of unique elements.<br>
+Your algorithm's time complexity must be better than O(n log n), where n is the array's size.</p>
+<h3 id="quickhints">Quick Hints</h3>
+<ul>
+<li><code>Map</code> of occurrence</li>
+<li>Bucket sort</li>
+<li>Return k (from end) from bucket array</li>
+</ul>
 <h3 id="solution">Solution</h3>
 <ul>
-<li>The problem can be solved through backtracking just like <a href="http://dtprogrammer.github.io/52-n-queens-ii/">52. N-Queens II</a></li>
-<li>A general approach can be found in the <a href="https://cses.fi/book.pdf">Chapter 5 of Competitive Programmer's Handbook</a></li>
-</ul>
-<pre><code>void search(int y) {
-    if (y == n) {
-        count++;
-        return;
-    }
-    for (int x = 0; x &lt; n; x++) {
-        if (column[x] || diag1[x+y] || diag2[x-y+n-1]) continue;
-        column[x] = diag1[x+y] = diag2[x-y+n-1] = 1;
-        search(y+1);
-        column[x] = diag1[x+y] = diag2[x-y+n-1] = 0;
-    }
-}
-</code></pre>
-<ul>
-<li>The idea here is that we place a queen in a column and then recursive call the funstion for other row with limitation on where the queen can be places.</li>
-<li>There are two diagonal placement which is not allowed and they can be calculated with the following formulae:
-<ul>
-<li>Diagonal 1: <code>col + row</code></li>
-<li>Diagonal 2: <code>col - row + n</code></li>
-</ul>
+<li>The solution involved doing the following
+<ol>
+<li>Create a <code>Map&lt;Number, OccurrenceCount&gt;</code> to track how many times a number has occurred.</li>
+<li>Now iterate through the above <code>Map</code> and put the numbers as a list in an array which is indexed by the occurrence count.</li>
+<li>Now iterate the occurence count arrya <code>List&lt;Integer&gt;[]</code> in reverse order and get the k most occuring numbers.</li>
+</ol>
 </li>
-<li>In this approach we also track the queen placement so that we can return the valid board configurations.</li>
 </ul>
 
 <h3 id="timecomplexity">Time complexity</h3>
-<ul>
-<li>It is hard to analyze the time complexity of this algorithm.</li>
-<li>The time complexity is lower bounded by the number of non-attacking placements</li>
-<li>There is no exact formula for it in terms of <code>n</code>. Although its known that it tends to <code>n!/c to the power of n</code> where <code>c</code> is approx <code>2.54</code>.</li>
-<li>In short its <em>exponential</em>.</li>
-</ul>
+<p><code>O (n)</code></p>
 <h3 id="spacecomplexity">Space complexity</h3>
-<p>Space complexity is O (5n) and also the space taken by the stack to keep track of the board configuration being evaluated.</p>
+<p><code>O (n)</code></p>
 <h3 id="notes">Notes</h3>
-<ul>
-<li>Its important to understand how we track diagonal in this problem.</li>
-</ul>
 </div>
 
             </section>

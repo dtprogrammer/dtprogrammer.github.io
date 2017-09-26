@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
  
-<title>268. Missing Number</title>
+<title>347. Top K Frequent Elements</title>
 <link rel="shortcut icon" href="../favicon.png">
 <meta name="description" content="">
     
@@ -30,17 +30,17 @@
     
     <meta property="og:site_name" content="Software Interview Preparation Blog">
     <meta property="og:type" content="article">
-    <meta property="og:title" content="268. Missing Number">
-    <meta property="og:description" content="Question Given an array containing n distinct numbers taken from 0, 1, 2, ..., n, find the one that is missing from the array. For example, Given nums = [0, 1, 3] return 2. Note: Your algorithm should run in linear runtime complexity. Could you implement it using only constant extra space">
-    <meta property="og:url" content="http://localhost:2368/268-missing-number/">
-    <meta property="article:published_time" content="2017-09-24T07:43:30.000Z">
-    <meta property="article:modified_time" content="2017-09-24T07:43:30.000Z">
+    <meta property="og:title" content="347. Top K Frequent Elements">
+    <meta property="og:description" content="Question Given a non-empty array of integers, return the k most frequent elements. For example, Given [1,1,1,2,2,3] and k = 2, return [1,2]. Note: You may assume k is always valid, 1 ≤ k ≤ number of unique elements. Your algorithm's time complexity must be better than">
+    <meta property="og:url" content="http://localhost:2368/347-top-k-frequent-elements/">
+    <meta property="article:published_time" content="2017-09-26T05:41:39.000Z">
+    <meta property="article:modified_time" content="2017-09-26T05:54:07.000Z">
     <meta property="article:tag" content="leetcode">
     
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="268. Missing Number">
-    <meta name="twitter:description" content="Question Given an array containing n distinct numbers taken from 0, 1, 2, ..., n, find the one that is missing from the array. For example, Given nums = [0, 1, 3] return 2. Note: Your algorithm should run in linear runtime complexity. Could you implement it using only constant extra space">
-    <meta name="twitter:url" content="http://localhost:2368/268-missing-number/">
+    <meta name="twitter:title" content="347. Top K Frequent Elements">
+    <meta name="twitter:description" content="Question Given a non-empty array of integers, return the k most frequent elements. For example, Given [1,1,1,2,2,3] and k = 2, return [1,2]. Note: You may assume k is always valid, 1 ≤ k ≤ number of unique elements. Your algorithm's time complexity must be better than">
+    <meta name="twitter:url" content="http://localhost:2368/347-top-k-frequent-elements/">
     <meta name="twitter:label1" content="Written by">
     <meta name="twitter:data1" content="Duct Tape Programmer">
     <meta name="twitter:label2" content="Filed under">
@@ -61,12 +61,12 @@
         "url": "http://localhost:2368/author/duct/",
         "sameAs": []
     },
-    "headline": "268. Missing Number",
-    "url": "http://localhost:2368/268-missing-number/",
-    "datePublished": "2017-09-24T07:43:30.000Z",
-    "dateModified": "2017-09-24T07:43:30.000Z",
+    "headline": "347. Top K Frequent Elements",
+    "url": "http://localhost:2368/347-top-k-frequent-elements/",
+    "datePublished": "2017-09-26T05:41:39.000Z",
+    "dateModified": "2017-09-26T05:54:07.000Z",
     "keywords": "leetcode",
-    "description": "Question Given an array containing n distinct numbers taken from 0, 1, 2, ..., n, find the one that is missing from the array. For example, Given nums &#x3D; [0, 1, 3] return 2. Note: Your algorithm should run in linear runtime complexity. Could you implement it using only constant extra space",
+    "description": "Question Given a non-empty array of integers, return the k most frequent elements. For example, Given [1,1,1,2,2,3] and k &#x3D; 2, return [1,2]. Note: You may assume k is always valid, 1 ≤ k ≤ number of unique elements. Your algorithm&#x27;s time complexity must be better than",
     "mainEntityOfPage": {
         "@type": "WebPage",
         "@id": "http://localhost:2368/"
@@ -114,32 +114,46 @@ ghost.init({
     <article class="article_digitus">
 	
 		<header class="postheader_digitus">
-            <h1 class="posttitle_digitus">268. Missing Number</h1>
+            <h1 class="posttitle_digitus">347. Top K Frequent Elements</h1>
             <span>by</span><h4 class="authorname_digitus"><a href="../author/duct.28">Duct Tape Programmer</a></h4>
             <hr class="pause">
 			<ul>
-				<li><i class="fa fa-calendar"></i><time class="date_digitus">Sunday 24 Sep 2017</time></li>
-                <li><i class="fa fa-comments"></i><a class="comments_digitus" href="index.html#disqus_thread" data-disqus-identifier="59c761cc018514b5e1fc0944">Comments</a></li>
+				<li><i class="fa fa-calendar"></i><time class="date_digitus">Monday 25 Sep 2017</time></li>
+                <li><i class="fa fa-comments"></i><a class="comments_digitus" href="index.html#disqus_thread" data-disqus-identifier="59c9e669a588803d1e4d5a70">Comments</a></li>
 				<li><i class="fa fa-tag"></i><span class="posttags_digitus"><a href="../tag/leetcode/">leetcode</a></span></li>
 			</ul>
 		</header>
 	
 		<div class="postcontent_digitus">
-			<div class="kg-card-markdown"><h3 id="question"><a href="https://leetcode.com/problems/missing-number/description/">Question</a></h3>
-<p>Given an array containing n distinct numbers taken from 0, 1, 2, ..., n, find the one that is missing from the array.</p>
+			<div class="kg-card-markdown"><h3 id="question"><a href="https://leetcode.com/problems/top-k-frequent-elements/description/">Question</a></h3>
+<p>Given a non-empty array of integers, return the k most frequent elements.</p>
 <p>For example,<br>
-Given nums = [0, 1, 3] return 2.</p>
+Given [1,1,1,2,2,3] and k = 2, return [1,2].</p>
 <p>Note:<br>
-Your algorithm should run in linear runtime complexity. Could you implement it using only constant extra space complexity?</p>
-<h3 id="solution">Solution</h3>
-<script src="https://gist-it.appspot.com/github/dtprogrammer/leetcode-solutions/blob/master/src/main/java/dtprogrammer/github/io/p268/Solution.java"></script>
-<h3 id="timecomplexity">Time complexity</h3>
-<p>O (n)</p>
-<h3 id="spacecomplexity">Space complexity</h3>
-<h3 id="notes">Notes</h3>
+You may assume k is always valid, 1 ≤ k ≤ number of unique elements.<br>
+Your algorithm's time complexity must be better than O(n log n), where n is the array's size.</p>
+<h3 id="quickhints">Quick Hints</h3>
 <ul>
-<li>Sum of first n natural number is <code>n (n + 1) /2</code></li>
+<li><code>Map</code> of occurrence</li>
+<li>Bucket sort</li>
+<li>Return k (from end) from bucket array</li>
 </ul>
+<h3 id="solution">Solution</h3>
+<ul>
+<li>The solution involved doing the following
+<ol>
+<li>Create a <code>Map&lt;Number, OccurrenceCount&gt;</code> to track how many times a number has occurred.</li>
+<li>Now iterate through the above <code>Map</code> and put the numbers as a list in an array which is indexed by the occurrence count.</li>
+<li>Now iterate the occurence count arrya <code>List&lt;Integer&gt;[]</code> in reverse order and get the k most occuring numbers.</li>
+</ol>
+</li>
+</ul>
+<script src="https://gist-it.appspot.com/github/dtprogrammer/leetcode-solutions/blob/master/src/main/java/dtprogrammer/github/io/p347/Solution.java"></script>
+<h3 id="timecomplexity">Time complexity</h3>
+<p><code>O (n)</code></p>
+<h3 id="spacecomplexity">Space complexity</h3>
+<p><code>O (n)</code></p>
+<h3 id="notes">Notes</h3>
 </div>
 		</div>
 	
@@ -147,9 +161,9 @@ Your algorithm should run in linear runtime complexity. Could you implement it u
             <li>
                 <span>Share:</span>
                 <ul class="share-ikons_digitus">
-                    <li><a class="fa fa-twitter-square" target="_blank" href="http://twitter.com/share?text=268.%20Missing%20Number&amp;url=http://localhost:2368/268-missing-number/"><span class="hidden_digitus">Twitter</span></a></li>
-                    <li><a class="fa fa-facebook-square" target="_blank" href="http://www.facebook.com/sharer.php?u=http://localhost:2368/268-missing-number/"><span class="hidden_digitus">Facebook</span></a></li>
-                    <li><a class="fa fa-google-plus-square" target="_blank" href="https://plus.google.com/share?url=http://localhost:2368/268-missing-number/"><span class="hidden_digitus">Google+</span></a></li>
+                    <li><a class="fa fa-twitter-square" target="_blank" href="http://twitter.com/share?text=347.%20Top%20K%20Frequent%20Elements&amp;url=http://localhost:2368/347-top-k-frequent-elements/"><span class="hidden_digitus">Twitter</span></a></li>
+                    <li><a class="fa fa-facebook-square" target="_blank" href="http://www.facebook.com/sharer.php?u=http://localhost:2368/347-top-k-frequent-elements/"><span class="hidden_digitus">Facebook</span></a></li>
+                    <li><a class="fa fa-google-plus-square" target="_blank" href="https://plus.google.com/share?url=http://localhost:2368/347-top-k-frequent-elements/"><span class="hidden_digitus">Google+</span></a></li>
                 </ul>
             </li>
             <li class="back_digitus"><a href="index.html"><i class="fa fa-level-up"></i><span>Back to top</span></a></li>
