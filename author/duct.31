@@ -1,12 +1,13 @@
-
+<!DOCTYPE html>
+<html>
 <head>
 
-<meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
  
-<title>Software Interview Preparation Blog (Page 2)</title>
-<link rel="shortcut icon" href="../../favicon.png">
-<meta name="description" content="">
+<title>Duct Tape Programmer - Software Interview Preparation Blog</title>
+<link rel="shortcut icon" href="../favicon.png">
+<meta name="description" content="" />
     
 <meta name="twitter:site" content="">
 
@@ -15,28 +16,51 @@
 <meta name="google-site-verification" content="">
 
 <meta property="fb:admins" content="">	 
-<link href="http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic&amp;subset=latin-ext,latin" rel="stylesheet" type="text/css">
-<link rel="stylesheet" type="text/css" href="../../assets/css/style.css?v=503556b698">
-<link rel="stylesheet" type="text/css" href="../../assets/css/font-awesome.min.css?v=503556b698">
-<link rel="stylesheet" type="text/css" href="../../assets/css/animation.css?v=503556b698">
+<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="../assets/css/style.css?v=503556b698" />
+<link rel="stylesheet" type="text/css" href="../assets/css/font-awesome.min.css?v=503556b698" />
+<link rel="stylesheet" type="text/css" href="../assets/css/animation.css?v=503556b698" />
 
-<meta name="HandheldFriendly" content="True">
-<meta name="MobileOptimized" content="320">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">     
-<link rel="shortcut icon" href="../../favicon.png" type="image/png">
-    <link rel="canonical" href="index.html">
-    <meta name="referrer" content="no-referrer-when-downgrade">
-    <link rel="prev" href="../../index.html">
-    <link rel="next" href="../3/index.html">
-    <script type="text/javascript" src="../../public/ghost-sdk.js?v=503556b698"></script>
+<meta name="HandheldFriendly" content="True" />
+<meta name="MobileOptimized" content="320" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />     
+<link rel="shortcut icon" href="../favicon.png" type="image/png" />
+    <link rel="canonical" href="duct.31" />
+    <meta name="referrer" content="no-referrer-when-downgrade" />
+    <link rel="next" href="duct/page/2/index.html" />
+    
+    <meta property="og:site_name" content="Software Interview Preparation Blog" />
+    <meta property="og:type" content="profile" />
+    <meta property="og:title" content="Duct Tape Programmer - Software Interview Preparation Blog" />
+    <meta property="og:url" content="http://localhost:2368/author/duct/" />
+    <meta property="article:modified_time" content="2017-09-27T03:58:31.000Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Duct Tape Programmer - Software Interview Preparation Blog" />
+    <meta name="twitter:url" content="http://localhost:2368/author/duct/" />
+    
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "sameAs": [],
+    "name": "Duct Tape Programmer",
+    "url": "http://localhost:2368/author/duct/",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "http://localhost:2368/"
+    }
+}
+    </script>
+
+    <script type="text/javascript" src="../public/ghost-sdk.js?v=503556b698"></script>
 <script type="text/javascript">
 ghost.init({
 	clientId: "ghost-frontend",
 	clientSecret: "9f8a9b723d67"
 });
 </script>
-    <meta name="generator" content="Ghost 1.8">
-    <link rel="alternate" type="application/rss+xml" title="Software Interview Preparation Blog" href="../../rss/index.html">
+    <meta name="generator" content="Ghost 1.8" />
+    <link rel="alternate" type="application/rss+xml" title="Software Interview Preparation Blog" href="../rss/index.html" />
     
 <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -49,104 +73,102 @@ ghost.init({
 </script>    
 </head>
 
-<body class="paged">
+<body class="author-template author-duct">
  
-<header role="banner" class="site-head_digitus wrapper_digitus">
-        <a class="logo_digitus" href="../../"><img src="../../content/images/2017/09/publication_logo.png" alt="Software Interview Preparation Blog"></a>
+<header role='banner' class="site-head_digitus wrapper_digitus">
     <h1 class="blogtitle_digitus">
-        <a title="Software Interview Preparation Blog" href="../../">
-            Software Interview Preparation Blog
-        </a>
+        Duct Tape Programmer
     </h1>
     <p class="blogdescription_digitus">
-        Algorithms, Data Structures and System Design for Interviews
-    </p>	
+        
+    </p>
+    <p class="go-back_digitus"><a class="fa fa-long-arrow-left" href="../index.html"><span>Back to front page</span></a></p>
 </header>
 
 <main class="wrapper_digitus" role="main">
     
-    <h3>Table of contents</h3>
+    <h3 class="number-posts_purus">Number of posts&#58;<span>46</span></h3>
     
     
 		<article class="article_digitus">
             
             <span class="posttitle_digitus">
-                <h2><a href="../../dynamic-programming/" rel="bookmark">
-				    Dynamic Programming
+                <h2 itemprop="headline"><a href="../hadoop-the-definitive-guide/index.html" rel="bookmark">
+				    Hadoop The Definitive Guide
+                    </a>
+                </h2>
+                <span class="tooltip_digitus">
+                    <p><i class="fa fa-calendar"></i>
+                    <time>
+                        10 minutes ago
+                    </time></p>
+                </span>
+           </span> 	
+		</article>
+	
+    
+		<article class="article_digitus">
+            
+            <span class="posttitle_digitus">
+                <h2 itemprop="headline"><a href="../221-maximal-square/index.html" rel="bookmark">
+				    221. Maximal Square
+                    </a>
+                </h2>
+                <span class="tooltip_digitus">
+                    <p><i class="fa fa-calendar"></i>
+                    <time>
+                        35 minutes ago
+                    </time></p>
+                </span>
+           </span> 	
+		</article>
+	
+    
+		<article class="article_digitus">
+            
+            <span class="posttitle_digitus">
+                <h2 itemprop="headline"><a href="../300-longest-increasing-subsequence/index.html" rel="bookmark">
+				    300. Longest Increasing Subsequence
+                    </a>
+                </h2>
+                <span class="tooltip_digitus">
+                    <p><i class="fa fa-calendar"></i>
+                    <time>
+                        5 hours ago
+                    </time></p>
+                </span>
+           </span> 	
+		</article>
+	
+    
+		<article class="article_digitus">
+            
+            <span class="posttitle_digitus">
+                <h2 itemprop="headline"><a href="../518-coin-change-2/index.html" rel="bookmark">
+				    518. Coin Change 2
+                    </a>
+                </h2>
+                <span class="tooltip_digitus">
+                    <p><i class="fa fa-calendar"></i>
+                    <time>
+                        5 hours ago
+                    </time></p>
+                </span>
+           </span> 	
+		</article>
+	
+    
+		<article class="article_digitus">
+            
+            <span class="posttitle_digitus">
+                <h2 itemprop="headline"><a href="../322-coin-change/index.html" rel="bookmark">
+				    322. Coin Change
                     </a>
                 </h2>
                 <span class="tooltip_digitus">
                     <p><i class="fa fa-calendar"></i>
                     <time>
                         a day ago
-                    </time></p>
-                </span>
-           </span> 	
-		</article>
-	
-    
-		<article class="article_digitus">
-            
-            <span class="posttitle_digitus">
-                <h2><a href="../../139-word-break/" rel="bookmark">
-				    139. Word Break
-                    </a>
-                </h2>
-                <span class="tooltip_digitus">
-                    <p><i class="fa fa-calendar"></i>
-                    <time>
-                        a day ago
-                    </time></p>
-                </span>
-           </span> 	
-		</article>
-	
-    
-		<article class="article_digitus">
-            
-            <span class="posttitle_digitus">
-                <h2><a href="../../347-top-k-frequent-elements/" rel="bookmark">
-				    347. Top K Frequent Elements
-                    </a>
-                </h2>
-                <span class="tooltip_digitus">
-                    <p><i class="fa fa-calendar"></i>
-                    <time>
-                        a day ago
-                    </time></p>
-                </span>
-           </span> 	
-		</article>
-	
-    
-		<article class="article_digitus">
-            
-            <span class="posttitle_digitus">
-                <h2><a href="../../189-rotate-array/" rel="bookmark">
-				    189. Rotate Array
-                    </a>
-                </h2>
-                <span class="tooltip_digitus">
-                    <p><i class="fa fa-calendar"></i>
-                    <time>
-                        2 days ago
-                    </time></p>
-                </span>
-           </span> 	
-		</article>
-	
-    
-		<article class="article_digitus">
-            
-            <span class="posttitle_digitus">
-                <h2><a href="../../198-house-robber/" rel="bookmark">
-				    198. House Robber
-                    </a>
-                </h2>
-                <span class="tooltip_digitus">
-                    <p><i class="fa fa-calendar"></i>
-                    <time>
-                        2 days ago
                     </time></p>
                 </span>
            </span> 	
@@ -154,9 +176,8 @@ ghost.init({
 	
 
         <nav class="pagination_digitus" role="navigation">
-    <span class="page-number">Page 2 of 10</span>
-        <i class="fa fa-caret-left"></i><a class="newer-posts" href="../../">Newer</a>
-        <a class="older-posts" href="../3/">Older</a><i class="fa fa-caret-right"></i>
+    <span class="page-number">Page 1 of 10</span>
+        <a class="older-posts" href="duct/page/2/index.html">Older</a><i class="fa fa-caret-right"></i>
 </nav>
 
 </main>
@@ -164,7 +185,7 @@ ghost.init({
 	<ul>
         <li>
             <span class="tooltip_digitus">Subscribe!</span>
-            <a href="../../rss/index.rss" target="_blank">
+            <a href="../rss/index.html" target="_blank">
                 <span class="fa fa-stack">
                     <i class="fa fa-stop fa-stack-2x"></i>
                     <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
@@ -193,8 +214,8 @@ ghost.init({
         </li>
 	</ul>
     
-		<p>All content copyright <a href="../../">Software Interview Preparation Blog</a> © 2017 • All rights reserved. <br>
-		  Theme created by <a href="http://golem.io">golem.io</a> • Proudly published with <a class="icon-ghost" href="http://tryghost.org" target="_blank">Ghost</a></p>
+		<p>All content copyright <a href="../index.html">Software Interview Preparation Blog</a> &copy; 2017 &bull; All rights reserved. <br/>
+		  Theme created by <a href="http://golem.io">golem.io</a> &bull; Proudly published with <a class="icon-ghost" href="http://tryghost.org" target="_blank">Ghost</a></p>
 </footer>
 
 
@@ -212,7 +233,8 @@ ghost.init({
     }());
 </script>
 
-<script type="text/javascript" src="../../assets/js/jquery.fitvids.js?v=503556b698"></script>
-<script type="text/javascript" src="../../assets/js/index.js?v=503556b698"></script>
+<script type="text/javascript" src="../assets/js/jquery.fitvids.js?v=503556b698"></script>
+<script type="text/javascript" src="../assets/js/index.js?v=503556b698"></script>
     
 </body>
+</html>
