@@ -1,4 +1,107 @@
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" version="2.0"><channel><title>Software Interview Preparation Blog</title><description>Algorithms, Data Structures and System Design for Interviews</description><link>http://localhost:2368/</link><image><url>http://localhost:2368/favicon.png</url><title>Software Interview Preparation Blog</title><link>http://localhost:2368/</link></image><generator>Ghost 1.8</generator><lastBuildDate>Tue, 26 Sep 2017 08:07:02 GMT</lastBuildDate><atom:link href="http://localhost:2368/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title>322. Coin Change</title><description>&lt;div class="kg-card-markdown"&gt;&lt;h3 id="question"&gt;&lt;a href="https://leetcode.com/problems/coin-change/description/"&gt;Question&lt;/a&gt;&lt;/h3&gt;
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" version="2.0"><channel><title>Software Interview Preparation Blog</title><description>Algorithms, Data Structures and System Design for Interviews</description><link>http://localhost:2368/</link><image><url>http://localhost:2368/favicon.png</url><title>Software Interview Preparation Blog</title><link>http://localhost:2368/</link></image><generator>Ghost 1.8</generator><lastBuildDate>Wed, 27 Sep 2017 07:55:47 GMT</lastBuildDate><atom:link href="http://localhost:2368/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title>221. Maximal Square</title><description>&lt;div class="kg-card-markdown"&gt;&lt;h3 id="question"&gt;&lt;a href="https://leetcode.com/problems/maximal-square/description/"&gt;Question&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Given a 2D binary matrix filled with 0's and 1's, find the largest square containing only 1's and return its area.&lt;/p&gt;
+&lt;p&gt;For example, given the following matrix:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;1 0 1 0 0
+1 0 1 1 1
+1 1 1 1 1
+1 0 0 1 0
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Return 4.&lt;/p&gt;&lt;/div&gt;</description><link>http://localhost:2368/221-maximal-square/</link><guid isPermaLink="false">59cb5757a588803d1e4d5b94</guid><category>leetcode</category><dc:creator>Duct Tape Programmer</dc:creator><pubDate>Wed, 27 Sep 2017 07:52:23 GMT</pubDate><content:encoded>&lt;div class="kg-card-markdown"&gt;&lt;h3 id="question"&gt;&lt;a href="https://leetcode.com/problems/maximal-square/description/"&gt;Question&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Given a 2D binary matrix filled with 0's and 1's, find the largest square containing only 1's and return its area.&lt;/p&gt;
+&lt;p&gt;For example, given the following matrix:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;1 0 1 0 0
+1 0 1 1 1
+1 1 1 1 1
+1 0 0 1 0
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Return 4.&lt;/p&gt;
+&lt;h3 id="quickhints"&gt;Quick Hints&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Use memoization to calculate&lt;br&gt;
+&lt;img src="https://i.imgur.com/8gHUcnd.png" alt=""&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="solution"&gt;Solution&lt;/h3&gt;
+&lt;p&gt;&lt;img src="https://i.imgur.com/meiI5ic.png" alt=""&gt;&lt;/p&gt;
+&lt;script src="https://gist-it.appspot.com/github/dtprogrammer/leetcode-solutions/blob/master/src/main/java/dtprogrammer/github/io/p221/Solution.java"&gt;&lt;/script&gt;
+&lt;h3 id="timecomplexity"&gt;Time complexity&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;O (m * n)&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id="spacecomplexity"&gt;Space complexity&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;O (n)&lt;/code&gt; for memoization&lt;/p&gt;
+&lt;h3 id="notes"&gt;Notes&lt;/h3&gt;
+&lt;/div&gt;</content:encoded></item><item><title>300. Longest Increasing Subsequence</title><description>&lt;div class="kg-card-markdown"&gt;&lt;h3 id="question"&gt;&lt;a href="https://leetcode.com/problems/longest-increasing-subsequence/description/"&gt;Question&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Given an unsorted array of integers, find the length of longest increasing subsequence.&lt;/p&gt;
+&lt;p&gt;For example,&lt;br&gt;
+Given [10, 9, 2, 5, 3, 7, 101, 18],&lt;br&gt;
+The longest increasing subsequence is [2, 3, 7, 101], therefore the length is 4. Note that there may be more than one LIS combination, it&lt;/p&gt;&lt;/div&gt;</description><link>http://localhost:2368/300-longest-increasing-subsequence/</link><guid isPermaLink="false">59cb1ee2a588803d1e4d5b8f</guid><category>leetcode</category><dc:creator>Duct Tape Programmer</dc:creator><pubDate>Wed, 27 Sep 2017 03:52:04 GMT</pubDate><content:encoded>&lt;div class="kg-card-markdown"&gt;&lt;h3 id="question"&gt;&lt;a href="https://leetcode.com/problems/longest-increasing-subsequence/description/"&gt;Question&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Given an unsorted array of integers, find the length of longest increasing subsequence.&lt;/p&gt;
+&lt;p&gt;For example,&lt;br&gt;
+Given [10, 9, 2, 5, 3, 7, 101, 18],&lt;br&gt;
+The longest increasing subsequence is [2, 3, 7, 101], therefore the length is 4. Note that there may be more than one LIS combination, it is only necessary for you to return the length.&lt;/p&gt;
+&lt;p&gt;Your algorithm should run in O(n2) complexity.&lt;/p&gt;
+&lt;p&gt;Follow up: Could you improve it to O(n log n) time complexity?&lt;/p&gt;
+&lt;h3 id="quickhints"&gt;Quick Hints&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Use memoization to calculate&lt;/li&gt;
+&lt;li&gt;If the current element is greater then update&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="solution"&gt;Solution&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;To calculate a value of length(k), we should find a position i &amp;lt; k for which array[i] &amp;lt; array[k] and length(i) is as large as possible. Then we know that length(k) = length(i) + 1, because this is an optimal way to add array[k] to a subsequence. However, if there is no such position i, then length(k) = 1&lt;/li&gt;
+&lt;/ul&gt;
+&lt;script src="https://gist-it.appspot.com/github/dtprogrammer/leetcode-solutions/blob/master/src/main/java/dtprogrammer/github/io/p300/Solution.java"&gt;&lt;/script&gt;
+&lt;h3 id="timecomplexity"&gt;Time complexity&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;O (n ^ 2)&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id="spacecomplexity"&gt;Space complexity&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;O (n)&lt;/code&gt; for memoization&lt;/p&gt;
+&lt;h3 id="notes"&gt;Notes&lt;/h3&gt;
+&lt;/div&gt;</content:encoded></item><item><title>518. Coin Change 2</title><description>&lt;div class="kg-card-markdown"&gt;&lt;h3 id="question"&gt;&lt;a href="https://leetcode.com/problems/coin-change-2/description/"&gt;Question&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;You are given coins of different denominations and a total amount of money. Write a function to compute the number of combinations that make up that amount. You may assume that you have infinite number of each kind of coin.&lt;/p&gt;
+&lt;p&gt;Note: You can assume that&lt;/p&gt;
+&lt;p&gt;0 &amp;lt;= amount &amp;lt;&lt;/p&gt;&lt;/div&gt;</description><link>http://localhost:2368/518-coin-change-2/</link><guid isPermaLink="false">59cb0af0a588803d1e4d5b89</guid><category>leetcode</category><dc:creator>Duct Tape Programmer</dc:creator><pubDate>Wed, 27 Sep 2017 02:58:25 GMT</pubDate><content:encoded>&lt;div class="kg-card-markdown"&gt;&lt;h3 id="question"&gt;&lt;a href="https://leetcode.com/problems/coin-change-2/description/"&gt;Question&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;You are given coins of different denominations and a total amount of money. Write a function to compute the number of combinations that make up that amount. You may assume that you have infinite number of each kind of coin.&lt;/p&gt;
+&lt;p&gt;Note: You can assume that&lt;/p&gt;
+&lt;p&gt;0 &amp;lt;= amount &amp;lt;= 5000&lt;br&gt;
+1 &amp;lt;= coin &amp;lt;= 5000&lt;br&gt;
+the number of coins is less than 500&lt;br&gt;
+the answer is guaranteed to fit into signed 32-bit integer&lt;br&gt;
+Example 1:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Input: amount = 5, coins = [1, 2, 5]
+Output: 4
+Explanation: there are four ways to make up the amount:
+5=5
+5=2+2+1
+5=2+1+1+1
+5=1+1+1+1+1
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Example 2:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Input: amount = 3, coins = [2]
+Output: 0
+Explanation: the amount of 3 cannot be made up just with coins of 2.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Example 3:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Input: amount = 10, coins = [10] 
+Output: 1
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id="quickhints"&gt;Quick Hints&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Use memoization to calculate&lt;/li&gt;
+&lt;li&gt;amount - all coin value&lt;/li&gt;
+&lt;li&gt;Dynamic programming&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;a[0] = 1&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;iterate through coins first&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="solution"&gt;Solution&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;This problem is very similar to &lt;a href="https://dtprogrammer.github.io/322-coin-change/"&gt;322. Coin Change&lt;/a&gt;. All we need to do here is keep a count rather than tracking minimum.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src="https://i.imgur.com/hwS4hF2.jpg" alt=""&gt;&lt;/p&gt;
+&lt;script src="https://gist-it.appspot.com/github/dtprogrammer/leetcode-solutions/blob/master/src/main/java/dtprogrammer/github/io/p518/Solution.java"&gt;&lt;/script&gt;
+&lt;h3 id="timecomplexity"&gt;Time complexity&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;O (k * n)&lt;/code&gt; where &lt;code&gt;n&lt;/code&gt; is the amount and &lt;code&gt;k&lt;/code&gt; is the number of coins denominations.&lt;/p&gt;
+&lt;h3 id="spacecomplexity"&gt;Space complexity&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;O (n + 1)&lt;/code&gt; for memoization&lt;/p&gt;
+&lt;h3 id="notes"&gt;Notes&lt;/h3&gt;
+&lt;/div&gt;</content:encoded></item><item><title>322. Coin Change</title><description>&lt;div class="kg-card-markdown"&gt;&lt;h3 id="question"&gt;&lt;a href="https://leetcode.com/problems/coin-change/description/"&gt;Question&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;You are given coins of different denominations and a total amount of money amount. Write a function to compute the fewest number of coins that you need to make up that amount. If that amount of money cannot be made up by any combination of the coins, return -1.&lt;/p&gt;&lt;/div&gt;</description><link>http://localhost:2368/322-coin-change/</link><guid isPermaLink="false">59ca09e4a588803d1e4d5a77</guid><category>leetcode</category><dc:creator>Duct Tape Programmer</dc:creator><pubDate>Tue, 26 Sep 2017 08:06:21 GMT</pubDate><content:encoded>&lt;div class="kg-card-markdown"&gt;&lt;h3 id="question"&gt;&lt;a href="https://leetcode.com/problems/coin-change/description/"&gt;Question&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;You are given coins of different denominations and a total amount of money amount. Write a function to compute the fewest number of coins that you need to make up that amount. If that amount of money cannot be made up by any combination of the coins, return -1.&lt;/p&gt;
 &lt;p&gt;Example 1:&lt;br&gt;
@@ -97,10 +200,38 @@ for (int x = 1; x &amp;lt;= n; x++) {
     }
 }
 &lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id="printingsolution"&gt;Printing Solution&lt;/h4&gt;
 &lt;p&gt;After this, the following code can be used to print the coins that appear in an optimal solution for the sum n:&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;while (n &amp;gt; 0) {
     cout &amp;lt;&amp;lt; first[n] &amp;lt;&amp;lt; &amp;quot;\n&amp;quot;;
     n -= first[n];
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id="countingsolution"&gt;Counting Solution&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;solve(x) =solve(x - 1) + solve(x - 3) + solve(x - 4)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src="https://i.imgur.com/OMzPKkV.png" alt=""&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;count[0] = 1;
+for (int x = 1; x &amp;lt;= n; i++) {
+    for (auto c : coins) {
+       if (x-c &amp;gt;= 0) {
+           count[x] += count[x-c];
+       }
+    } 
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id="longestincreasingsubsequence"&gt;Longest Increasing Subsequence&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;This is a maximum-length sequence of array elements that goes from left to right, and each element in the sequence is larger than the previous element.&lt;/li&gt;
+&lt;li&gt;To calculate a value of length(k), we should find a position i &amp;lt; k for which array[i] &amp;lt; array[k] and length(i) is as large as possible. Then we know that length(k) = length(i) + 1, because this is an optimal way to add array[k] to a subsequence. However, if there is no such position i, then length(k) = 1, which means that the subsequence only contains array[k].&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;for (int k = 0; k &amp;lt; n; k++) {
+    length[k] = 1;
+    for (int i = 0; i &amp;lt; k; i++) {
+       if (array[i] &amp;lt; array[k]) {
+           length[k] = max(length[k],length[i]+1);
+       }
+    } 
 }
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;</content:encoded></item><item><title>139. Word Break</title><description>&lt;div class="kg-card-markdown"&gt;&lt;h3 id="question"&gt;&lt;a href="https://leetcode.com/problems/word-break/description/"&gt;Question&lt;/a&gt;&lt;/h3&gt;
@@ -359,96 +490,4 @@ Your algorithm should run in linear runtime complexity. Could you implement it u
 &lt;ul&gt;
 &lt;li&gt;Sum of first n natural number is &lt;code&gt;n (n + 1) /2&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/div&gt;</content:encoded></item><item><title>384. Shuffle an Array</title><description>&lt;div class="kg-card-markdown"&gt;&lt;h3 id="question"&gt;&lt;a href="https://leetcode.com/problems/shuffle-an-array/description/"&gt;Question&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;Shuffle a set of numbers without duplicates.&lt;/p&gt;
-&lt;p&gt;Example:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;// Init an array with set 1, 2, and 3.
-int[] nums = {1,2,3};
-Solution solution = new Solution(nums);
-
-// Shuffle the array [1,2,3] and return its result. Any permutation of [1,2,3] must equally likely to be returned.&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description><link>http://localhost:2368/384-shuffle-an-array/</link><guid isPermaLink="false">59c75e51018514b5e1fc0942</guid><category>leetcode</category><dc:creator>Duct Tape Programmer</dc:creator><pubDate>Sun, 24 Sep 2017 07:32:38 GMT</pubDate><content:encoded>&lt;div class="kg-card-markdown"&gt;&lt;h3 id="question"&gt;&lt;a href="https://leetcode.com/problems/shuffle-an-array/description/"&gt;Question&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;Shuffle a set of numbers without duplicates.&lt;/p&gt;
-&lt;p&gt;Example:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;// Init an array with set 1, 2, and 3.
-int[] nums = {1,2,3};
-Solution solution = new Solution(nums);
-
-// Shuffle the array [1,2,3] and return its result. Any permutation of [1,2,3] must equally likely to be returned.
-solution.shuffle();
-
-// Resets the array back to its original configuration [1,2,3].
-solution.reset();
-
-// Returns the random shuffling of array [1,2,3].
-solution.shuffle();
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id="solution"&gt;Solution&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;We use &lt;a href="https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle"&gt;Fisher-Yates Algorithm&lt;/a&gt; to shuffle&lt;/li&gt;
-&lt;/ul&gt;
-&lt;pre&gt;&lt;code&gt;-- To shuffle an array a of n elements (indices 0..n-1):
-for i from n−1 downto 1 do
-     j ← random integer such that 0 ≤ j ≤ i
-     exchange a[j] and a[i]
-&lt;/code&gt;&lt;/pre&gt;
-&lt;script src="https://gist-it.appspot.com/github/dtprogrammer/leetcode-solutions/blob/master/src/main/java/dtprogrammer/github/io/p384/Solution.java"&gt;&lt;/script&gt;
-&lt;h3 id="timecomplexity"&gt;Time complexity&lt;/h3&gt;
-&lt;p&gt;O (n)&lt;/p&gt;
-&lt;h3 id="spacecomplexity"&gt;Space complexity&lt;/h3&gt;
-&lt;p&gt;Constant unless we consider the space taken by the resultant shuffled array.&lt;/p&gt;
-&lt;h3 id="notes"&gt;Notes&lt;/h3&gt;
-&lt;/div&gt;</content:encoded></item><item><title>152. Maximum Product Subarray</title><description>&lt;div class="kg-card-markdown"&gt;&lt;h3 id="question"&gt;&lt;a href="https://leetcode.com/problems/maximum-product-subarray/description/"&gt;Question&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;Find the contiguous subarray within an array (containing at least one number) which has the largest product.&lt;/p&gt;
-&lt;p&gt;For example, given the array [2,3,-2,4],&lt;br&gt;
-the contiguous subarray [2,3] has the largest product = 6.&lt;/p&gt;
-&lt;h3 id="solution"&gt;Solution&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;This problem is similar to &lt;a href="http://dtprogrammer.github.io/53-maximum-subarray/"&gt;53. Maximum Subarray&lt;/a&gt; with the only difference&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;</description><link>http://localhost:2368/152-maximum-product-subarray/</link><guid isPermaLink="false">59c71e5b018514b5e1fc08f6</guid><category>leetcode</category><dc:creator>Duct Tape Programmer</dc:creator><pubDate>Sun, 24 Sep 2017 02:58:34 GMT</pubDate><content:encoded>&lt;div class="kg-card-markdown"&gt;&lt;h3 id="question"&gt;&lt;a href="https://leetcode.com/problems/maximum-product-subarray/description/"&gt;Question&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;Find the contiguous subarray within an array (containing at least one number) which has the largest product.&lt;/p&gt;
-&lt;p&gt;For example, given the array [2,3,-2,4],&lt;br&gt;
-the contiguous subarray [2,3] has the largest product = 6.&lt;/p&gt;
-&lt;h3 id="solution"&gt;Solution&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;This problem is similar to &lt;a href="http://dtprogrammer.github.io/53-maximum-subarray/"&gt;53. Maximum Subarray&lt;/a&gt; with the only difference that we need to calculate the max product.&lt;/li&gt;
-&lt;li&gt;In this case we need to handle the negative numbers. So we also track the minimum seen so far (the largest negative value) and when we see a negative value we switch the &lt;code&gt;maEndingHere&lt;/code&gt; and &lt;code&gt;minEndingHere&lt;/code&gt; since by multiplying with the current number they will switch signs and become the other way.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;script src="https://gist-it.appspot.com/github/dtprogrammer/leetcode-solutions/blob/master/src/main/java/dtprogrammer/github/io/p152/Solution.java"&gt;&lt;/script&gt;
-&lt;h3 id="timecomplexity"&gt;Time complexity&lt;/h3&gt;
-&lt;p&gt;O (n)&lt;/p&gt;
-&lt;h3 id="spacecomplexity"&gt;Space complexity&lt;/h3&gt;
-&lt;p&gt;Constant&lt;/p&gt;
-&lt;h3 id="notes"&gt;Notes&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Negative number handling is the special case here&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;</content:encoded></item><item><title>53. Maximum Subarray</title><description>&lt;div class="kg-card-markdown"&gt;&lt;h3 id="question"&gt;&lt;a href="https://leetcode.com/problems/maximum-subarray/description/"&gt;Question&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;Find the contiguous subarray within an array (containing at least one number) which has the largest sum.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;For example, given the array [-2,1,-3,4,-1,2,1,-5,4],
-the contiguous subarray [4,-1,2,1] has the largest sum = 6.
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;click to show more practice.&lt;/p&gt;
-&lt;p&gt;More&lt;/p&gt;&lt;/div&gt;</description><link>http://localhost:2368/53-maximum-subarray/</link><guid isPermaLink="false">59c711d6018514b5e1fc08f4</guid><category>leetcode</category><dc:creator>Duct Tape Programmer</dc:creator><pubDate>Sun, 24 Sep 2017 02:05:06 GMT</pubDate><content:encoded>&lt;div class="kg-card-markdown"&gt;&lt;h3 id="question"&gt;&lt;a href="https://leetcode.com/problems/maximum-subarray/description/"&gt;Question&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;Find the contiguous subarray within an array (containing at least one number) which has the largest sum.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;For example, given the array [-2,1,-3,4,-1,2,1,-5,4],
-the contiguous subarray [4,-1,2,1] has the largest sum = 6.
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;click to show more practice.&lt;/p&gt;
-&lt;p&gt;More practice:&lt;br&gt;
-If you have figured out the O(n) solution, try coding another solution using the divide and conquer approach, which is more subtle.&lt;/p&gt;
-&lt;h3 id="solution"&gt;Solution&lt;/h3&gt;
-&lt;pre&gt;&lt;code&gt;This problem was discussed by Jon Bentley (Sep. 1984 Vol. 27 No. 9 Communications of the ACM P885)
-
-the paragraph below was copied from his paper (with a little modifications)
-
-algorithm that operates on arrays: it starts at the left end (element A[1]) and scans through to the right end (element A[n]), keeping track of the maximum sum subvector seen so far. The maximum is initially A[0]. Suppose we've solved the problem for A[1 .. i - 1]; how can we extend that to A[1 .. i]? The maximum
-sum in the first i elements is either the maximum sum in the first i - 1 elements (which we'll call MaxSoFar), or it is that of a subvector that ends in position i (which we'll call MaxEndingHere).
-
-MaxEndingHere is either A[i] plus the previous MaxEndingHere, or just A[i], whichever is larger.
-&lt;/code&gt;&lt;/pre&gt;
-&lt;script src="https://gist-it.appspot.com/github/dtprogrammer/leetcode-solutions/blob/master/src/main/java/dtprogrammer/github/io/p53/Solution.java"&gt;&lt;/script&gt;
-&lt;h3 id="timecomplexity"&gt;Time complexity&lt;/h3&gt;
-&lt;p&gt;O (n)&lt;/p&gt;
-&lt;h3 id="spacecomplexity"&gt;Space complexity&lt;/h3&gt;
-&lt;p&gt;Constant&lt;/p&gt;
-&lt;h3 id="notes"&gt;Notes&lt;/h3&gt;
 &lt;/div&gt;</content:encoded></item></channel></rss>

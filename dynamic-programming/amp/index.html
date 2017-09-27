@@ -19,7 +19,7 @@
     <meta property="og:description" content="Introduction Dynamic programming is a technique that combines the correctness of com- plete search and the efficiency of greedy algorithms. Dynamic programming can be applied if the problem can be divided into overlapping subproblems that can be solved independently. There are two uses for dynamic programming: Finding an optimal solution:">
     <meta property="og:url" content="http://localhost:2368/dynamic-programming/">
     <meta property="article:published_time" content="2017-09-26T07:21:13.000Z">
-    <meta property="article:modified_time" content="2017-09-26T07:24:29.000Z">
+    <meta property="article:modified_time" content="2017-09-27T02:18:36.000Z">
     <meta property="article:tag" content="Algorithms">
     
     <meta name="twitter:card" content="summary">
@@ -49,7 +49,7 @@
     "headline": "Dynamic Programming",
     "url": "http://localhost:2368/dynamic-programming/",
     "datePublished": "2017-09-26T07:21:13.000Z",
-    "dateModified": "2017-09-26T07:24:29.000Z",
+    "dateModified": "2017-09-27T02:18:36.000Z",
     "keywords": "Algorithms",
     "description": "Introduction Dynamic programming is a technique that combines the correctness of com- plete search and the efficiency of greedy algorithms. Dynamic programming can be applied if the problem can be divided into overlapping subproblems that can be solved independently. There are two uses for dynamic programming: Finding an optimal solution:",
     "mainEntityOfPage": {
@@ -85,7 +85,7 @@
             <header class="post-header">
                 <h1 class="post-title">Dynamic Programming</h1>
                 <section class="post-meta">
-                    <p class="author">by <a href="../../author/duct.29">Duct Tape Programmer</a></p>
+                    <p class="author">by <a href="../../author/duct.30">Duct Tape Programmer</a></p>
                     <time class="post-date" datetime="2017-09-26">2017-09-26</time>
                 </section>
             </header>
@@ -148,10 +148,38 @@ for (int x = 1; x &lt;= n; x++) {
     }
 }
 </code></pre>
+<h4 id="printingsolution">Printing Solution</h4>
 <p>After this, the following code can be used to print the coins that appear in an optimal solution for the sum n:</p>
 <pre><code>while (n &gt; 0) {
     cout &lt;&lt; first[n] &lt;&lt; "\n";
     n -= first[n];
+}
+</code></pre>
+<h4 id="countingsolution">Counting Solution</h4>
+<pre><code>solve(x) =solve(x - 1) + solve(x - 3) + solve(x - 4)
+</code></pre>
+<p><amp-img src="https://i.imgur.com/OMzPKkV.png" alt width="430" height="123" layout="responsive"></amp-img></p>
+<pre><code>count[0] = 1;
+for (int x = 1; x &lt;= n; i++) {
+    for (auto c : coins) {
+       if (x-c &gt;= 0) {
+           count[x] += count[x-c];
+       }
+    } 
+}
+</code></pre>
+<h3 id="longestincreasingsubsequence">Longest Increasing Subsequence</h3>
+<ul>
+<li>This is a maximum-length sequence of array elements that goes from left to right, and each element in the sequence is larger than the previous element.</li>
+<li>To calculate a value of length(k), we should find a position i &lt; k for which array[i] &lt; array[k] and length(i) is as large as possible. Then we know that length(k) = length(i) + 1, because this is an optimal way to add array[k] to a subsequence. However, if there is no such position i, then length(k) = 1, which means that the subsequence only contains array[k].</li>
+</ul>
+<pre><code>for (int k = 0; k &lt; n; k++) {
+    length[k] = 1;
+    for (int i = 0; i &lt; k; i++) {
+       if (array[i] &lt; array[k]) {
+           length[k] = max(length[k],length[i]+1);
+       }
+    } 
 }
 </code></pre>
 </div>
