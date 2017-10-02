@@ -1,0 +1,263 @@
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+ 
+<title>162. Find Peak Element</title>
+<link rel="shortcut icon" href="../favicon.png">
+<meta name="description" content="">
+    
+<meta name="twitter:site" content="">
+
+<meta name="twitter:creator" content="">
+
+<meta name="google-site-verification" content="">
+
+<meta property="fb:admins" content="">	 
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic&amp;subset=latin-ext,latin" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="../assets/css/style.css?v=217b774c52">
+<link rel="stylesheet" type="text/css" href="../assets/css/font-awesome.min.css?v=217b774c52">
+<link rel="stylesheet" type="text/css" href="../assets/css/animation.css?v=217b774c52">
+
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">     
+<link rel="shortcut icon" href="../favicon.png" type="image/png">
+    <link rel="canonical" href="index.html">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <link rel="amphtml" href="amp/index.html">
+    
+    <meta property="og:site_name" content="Software Interview Preparation Blog">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="162. Find Peak Element">
+    <meta property="og:description" content="Question A peak element is an element that is greater than its neighbors. Given an input array where num[i] ≠ num[i+1], find a peak element and return its index. The array may contain multiple peaks, in that case return the index to any one of the peaks is">
+    <meta property="og:url" content="http://localhost:2368/162-find-peak-element/">
+    <meta property="article:published_time" content="2017-10-02T15:26:47.000Z">
+    <meta property="article:modified_time" content="2017-10-02T15:30:26.000Z">
+    <meta property="article:tag" content="leetcode">
+    
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="162. Find Peak Element">
+    <meta name="twitter:description" content="Question A peak element is an element that is greater than its neighbors. Given an input array where num[i] ≠ num[i+1], find a peak element and return its index. The array may contain multiple peaks, in that case return the index to any one of the peaks is">
+    <meta name="twitter:url" content="http://localhost:2368/162-find-peak-element/">
+    <meta name="twitter:label1" content="Written by">
+    <meta name="twitter:data1" content="Duct Tape Programmer">
+    <meta name="twitter:label2" content="Filed under">
+    <meta name="twitter:data2" content="leetcode">
+    
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Software Interview Preparation Blog",
+        "logo": "http://localhost:2368/content/images/2017/09/publication_logo.png"
+    },
+    "author": {
+        "@type": "Person",
+        "name": "Duct Tape Programmer",
+        "url": "http://localhost:2368/author/duct/",
+        "sameAs": []
+    },
+    "headline": "162. Find Peak Element",
+    "url": "http://localhost:2368/162-find-peak-element/",
+    "datePublished": "2017-10-02T15:26:47.000Z",
+    "dateModified": "2017-10-02T15:30:26.000Z",
+    "keywords": "leetcode",
+    "description": "Question A peak element is an element that is greater than its neighbors. Given an input array where num[i] ≠ num[i+1], find a peak element and return its index. The array may contain multiple peaks, in that case return the index to any one of the peaks is",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "http://localhost:2368/"
+    }
+}
+    </script>
+
+    <script type="text/javascript" src="../public/ghost-sdk.js?v=217b774c52"></script>
+<script type="text/javascript">
+ghost.init({
+	clientId: "ghost-frontend",
+	clientSecret: "9f8a9b723d67"
+});
+</script>
+    <meta name="generator" content="Ghost 1.8">
+    <link rel="alternate" type="application/rss+xml" title="Software Interview Preparation Blog" href="../rss/index.html">
+    
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-106385900-1'); // Paste your Google Analytics ID here.
+    ga('send', 'pageview');
+</script>    
+</head>
+
+<body class="post-template tag-leetcode">
+ 
+
+<header role="banner" class="site-head_digitus wrapper_digitus fade_digitus">
+        <a class="logo_digitus" href="../"><img src="../content/images/2017/09/publication_logo.png" alt="Software Interview Preparation Blog"></a>
+    <h1 class="blogtitle_digitus">
+        <a title="Software Interview Preparation Blog" href="../">
+            Software Interview Preparation Blog
+        </a>
+    </h1>
+</header>
+
+
+<main class="wrapper_digitus" role="main">
+    
+	
+    <article class="article_digitus">
+	
+		<header class="postheader_digitus">
+            <h1 class="posttitle_digitus">162. Find Peak Element</h1>
+            <span>by</span><h4 class="authorname_digitus"><a href="../author/duct.33">Duct Tape Programmer</a></h4>
+            <hr class="pause">
+			<ul>
+				<li><i class="fa fa-calendar"></i><time class="date_digitus">Monday 02 Oct 2017</time></li>
+                <li><i class="fa fa-comments"></i><a class="comments_digitus" href="index.html#disqus_thread" data-disqus-identifier="59d25a6deb9941586725f973">Comments</a></li>
+				<li><i class="fa fa-tag"></i><span class="posttags_digitus"><a href="../tag/leetcode/">leetcode</a></span></li>
+			</ul>
+		</header>
+	
+		<div class="postcontent_digitus">
+			<div class="kg-card-markdown"><h3 id="question"><a href="https://leetcode.com/problems/find-peak-element/description/">Question</a></h3>
+<p>A peak element is an element that is greater than its neighbors.</p>
+<p>Given an input array where num[i] ≠ num[i+1], find a peak element and return its index.</p>
+<p>The array may contain multiple peaks, in that case return the index to any one of the peaks is fine.</p>
+<p>You may imagine that num[-1] = num[n] = -∞.</p>
+<p>For example, in array [1, 2, 3, 1], 3 is a peak element and your function should return the index number 2.</p>
+<p>click to show spoilers.</p>
+<p>Note:<br>
+Your solution should be in logarithmic complexity.</p>
+<h3 id="quickhints">Quick Hints</h3>
+<ul>
+<li>Binary search</li>
+</ul>
+<h3 id="solution">Solution</h3>
+<ul>
+<li>A very good guide to solve this problem is present <a href="https://leetcode.com/problems/find-peak-element/solution/">here</a></li>
+<li>The idea here is that we can use binary search. If <code>nums(i) &lt; nums(i+1)</code> we know that the peak exists towards the right and we can make our <code>low</code> boundary <code>mid + 1</code> else we make our high boundary <code>mid</code> since the mid itself can be peak.</li>
+</ul>
+<script src="https://gist-it.appspot.com/github/dtprogrammer/leetcode-solutions/blob/master/src/main/java/dtprogrammer/github/io/p162/Solution.java"></script>
+<h3 id="timecomplexity">Time complexity</h3>
+<p><code>O (log n)</code></p>
+<h3 id="spacecomplexity">Space complexity</h3>
+<p><code>O(1)</code> except the space on stack</p>
+<h3 id="notes">Notes</h3>
+</div>
+		</div>
+	
+		<ol class="share_digitus">
+            <li>
+                <span>Share:</span>
+                <ul class="share-ikons_digitus">
+                    <li><a class="fa fa-twitter-square" target="_blank" href="http://twitter.com/share?text=162.%20Find%20Peak%20Element&amp;url=http://localhost:2368/162-find-peak-element/"><span class="hidden_digitus">Twitter</span></a></li>
+                    <li><a class="fa fa-facebook-square" target="_blank" href="http://www.facebook.com/sharer.php?u=http://localhost:2368/162-find-peak-element/"><span class="hidden_digitus">Facebook</span></a></li>
+                    <li><a class="fa fa-google-plus-square" target="_blank" href="https://plus.google.com/share?url=http://localhost:2368/162-find-peak-element/"><span class="hidden_digitus">Google+</span></a></li>
+                </ul>
+            </li>
+            <li class="back_digitus"><a href="index.html"><i class="fa fa-level-up"></i><span>Back to top</span></a></li>
+		</ol>
+	
+    
+     <footer class="postfooter_digitus">
+         
+            <span class="posttags_typesome"> <a href="../tag/leetcode/">leetcode</a></span>
+            <hr class="pause">
+        
+         <address>
+         
+                </address><ul>
+				    <li><h4 class="authorname_digitus"><a href="../author/duct.33">Duct Tape Programmer</a></h4></li>
+                    <li><p class="authorbio_digitus"></p></li>
+				    <li>  
+                    </li>
+				</ul>
+             
+		</footer>
+	
+	</article>
+	
+	
+	<div id="disqus_thread" class="disqusbox_digitus">
+        
+    <script type="text/javascript">
+        
+        var disqus_shortname = 'software-interview-preparation-blog'; // required: replace example with your Disqus shortname
+        var disqus_identifier = '';
+        
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    
+</div>
+	
+	
+</main>
+<footer class="footer_digitus">
+	<ul>
+        <li>
+            <span class="tooltip_digitus">Subscribe!</span>
+            <a href="../rss/index.rss" target="_blank">
+                <span class="fa fa-stack">
+                    <i class="fa fa-stop fa-stack-2x"></i>
+                    <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                </span>
+            </a>
+        </li>
+
+        <li>
+            <span class="tooltip_digitus">Contact</span>
+            <a href="mailto:ducttapeprogrammer@gmail.com">
+            <span class="fa fa-stack">
+                <i class="fa fa-stop fa-stack-2x"></i>
+                <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                </span>
+            </a>
+        </li>
+
+        <li>
+            <span class="tooltip_digitus">GitHub</span>
+            <a href="https://github.com/dtprogrammer">
+            <span class="fa fa-stack">
+                <i class="fa fa-stop fa-stack-2x"></i>
+                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                </span>
+            </a>
+        </li>
+	</ul>
+    
+		<p>All content copyright <a href="../">Software Interview Preparation Blog</a> © 2017 • All rights reserved. <br>
+		  Theme created by <a href="http://golem.io">golem.io</a> • Proudly published with <a class="icon-ghost" href="http://tryghost.org" target="_blank">Ghost</a></p>
+</footer>
+
+
+    
+<script type="text/javascript">
+    
+    var disqus_shortname = 'software-interview-preparation-blog'; // required: replace example with your Disqus shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+
+<script type="text/javascript" src="../assets/js/jquery.fitvids.js?v=217b774c52"></script>
+<script type="text/javascript" src="../assets/js/index.js?v=217b774c52"></script>
+    
+</body>
