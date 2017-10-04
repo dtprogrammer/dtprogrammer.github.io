@@ -1,4 +1,96 @@
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" version="2.0"><channel><title>Software Interview Preparation Blog</title><description>Algorithms, Data Structures and System Design for Interviews</description><link>http://localhost:2368/</link><image><url>http://localhost:2368/favicon.png</url><title>Software Interview Preparation Blog</title><link>http://localhost:2368/</link></image><generator>Ghost 1.8</generator><lastBuildDate>Mon, 02 Oct 2017 15:31:13 GMT</lastBuildDate><atom:link href="http://localhost:2368/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title>162. Find Peak Element</title><description>&lt;div class="kg-card-markdown"&gt;&lt;h3 id="question"&gt;&lt;a href="https://leetcode.com/problems/find-peak-element/description/"&gt;Question&lt;/a&gt;&lt;/h3&gt;
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" version="2.0"><channel><title>Software Interview Preparation Blog</title><description>Algorithms, Data Structures and System Design for Interviews</description><link>http://localhost:2368/</link><image><url>http://localhost:2368/favicon.png</url><title>Software Interview Preparation Blog</title><link>http://localhost:2368/</link></image><generator>Ghost 1.8</generator><lastBuildDate>Wed, 04 Oct 2017 07:58:53 GMT</lastBuildDate><atom:link href="http://localhost:2368/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title>150. Evaluate Reverse Polish Notation</title><description>&lt;div class="kg-card-markdown"&gt;&lt;h3 id="question"&gt;&lt;a href="https://leetcode.com/problems/evaluate-reverse-polish-notation/description/"&gt;Question&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Evaluate the value of an arithmetic expression in Reverse Polish Notation.&lt;/p&gt;
+&lt;p&gt;Valid operators are +, -, *, /. Each operand may be an integer or another expression.&lt;/p&gt;
+&lt;p&gt;Some examples:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;  [&amp;quot;2&amp;quot;, &amp;quot;1&amp;quot;, &amp;quot;+&amp;quot;, &amp;quot;3&amp;quot;, &amp;quot;*&amp;quot;] -&amp;gt; ((2 + 1) * 3) -&amp;gt; 9
+  [&amp;quot;4&amp;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description><link>http://localhost:2368/150-evaluate-reverse-polish-notation/</link><guid isPermaLink="false">59d48839a1f270a4425a9c82</guid><category>leetcode</category><dc:creator>Duct Tape Programmer</dc:creator><pubDate>Wed, 04 Oct 2017 07:06:54 GMT</pubDate><content:encoded>&lt;div class="kg-card-markdown"&gt;&lt;h3 id="question"&gt;&lt;a href="https://leetcode.com/problems/evaluate-reverse-polish-notation/description/"&gt;Question&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Evaluate the value of an arithmetic expression in Reverse Polish Notation.&lt;/p&gt;
+&lt;p&gt;Valid operators are +, -, *, /. Each operand may be an integer or another expression.&lt;/p&gt;
+&lt;p&gt;Some examples:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;  [&amp;quot;2&amp;quot;, &amp;quot;1&amp;quot;, &amp;quot;+&amp;quot;, &amp;quot;3&amp;quot;, &amp;quot;*&amp;quot;] -&amp;gt; ((2 + 1) * 3) -&amp;gt; 9
+  [&amp;quot;4&amp;quot;, &amp;quot;13&amp;quot;, &amp;quot;5&amp;quot;, &amp;quot;/&amp;quot;, &amp;quot;+&amp;quot;] -&amp;gt; (4 + (13 / 5)) -&amp;gt; 6
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id="quickhints"&gt;Quick Hints&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Stack&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="solution"&gt;Solution&lt;/h3&gt;
+&lt;script src="https://gist-it.appspot.com/github/dtprogrammer/leetcode-solutions/blob/master/src/main/java/dtprogrammer/github/io/p150/Solution2.java"&gt;&lt;/script&gt;
+&lt;h3 id="timecomplexity"&gt;Time complexity&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;O (n)&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id="spacecomplexity"&gt;Space complexity&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;O(n)&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id="notes"&gt;Notes&lt;/h3&gt;
+&lt;/div&gt;</content:encoded></item><item><title>279. Perfect Squares</title><description>&lt;div class="kg-card-markdown"&gt;&lt;h3 id="question"&gt;&lt;a href="https://leetcode.com/problems/perfect-squares/description/"&gt;Question&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Given a positive integer n, find the least number of perfect square numbers (for example, 1, 4, 9, 16, ...) which sum to n.&lt;/p&gt;
+&lt;p&gt;For example, given n = 12, return 3 because 12 = 4 + 4 + 4; given n = 13, return 2 because 13 = 4 + 9.&lt;/p&gt;
+&lt;h3 id="quickhints"&gt;Quick Hints&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Dynamic Programming&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;sol[&lt;/code&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;</description><link>http://localhost:2368/279-perfect-squares/</link><guid isPermaLink="false">59d47bada1f270a4425a9c80</guid><category>leetcode</category><dc:creator>Duct Tape Programmer</dc:creator><pubDate>Wed, 04 Oct 2017 06:35:14 GMT</pubDate><content:encoded>&lt;div class="kg-card-markdown"&gt;&lt;h3 id="question"&gt;&lt;a href="https://leetcode.com/problems/perfect-squares/description/"&gt;Question&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Given a positive integer n, find the least number of perfect square numbers (for example, 1, 4, 9, 16, ...) which sum to n.&lt;/p&gt;
+&lt;p&gt;For example, given n = 12, return 3 because 12 = 4 + 4 + 4; given n = 13, return 2 because 13 = 4 + 9.&lt;/p&gt;
+&lt;h3 id="quickhints"&gt;Quick Hints&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Dynamic Programming&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;sol[i] = Math.min(sol[i], sol[i - j * j] + 1)&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="solution"&gt;Solution&lt;/h3&gt;
+&lt;script src="https://gist-it.appspot.com/github/dtprogrammer/leetcode-solutions/blob/master/src/main/java/dtprogrammer/github/io/p279/Solution2.java"&gt;&lt;/script&gt;
+&lt;h3 id="timecomplexity"&gt;Time complexity&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;O (n ^ 2)&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id="spacecomplexity"&gt;Space complexity&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;O(n)&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id="notes"&gt;Notes&lt;/h3&gt;
+&lt;/div&gt;</content:encoded></item><item><title>206. Reverse Linked List</title><description>&lt;div class="kg-card-markdown"&gt;&lt;h3 id="question"&gt;&lt;a href="https://leetcode.com/problems/reverse-linked-list/description/"&gt;Question&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Reverse a singly linked list.&lt;/p&gt;
+&lt;h3 id="quickhints"&gt;Quick Hints&lt;/h3&gt;
+&lt;h3 id="solution"&gt;Solution&lt;/h3&gt;
+&lt;h5 id="iterative"&gt;Iterative:&lt;/h5&gt;
+&lt;script src="https://gist-it.appspot.com/github/dtprogrammer/leetcode-solutions/blob/master/src/main/java/dtprogrammer/github/io/p206/Solution.java"&gt;&lt;/script&gt;
+&lt;h5 id="recursive"&gt;Recursive:&lt;/h5&gt;
+&lt;script src="https://gist-it.appspot.com/github/dtprogrammer/leetcode-solutions/blob/master/src/main/java/dtprogrammer/github/io/p206/Solution2.java"&gt;&lt;/script&gt;
+&lt;h3 id="timecomplexity"&gt;Time complexity&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;O (n)&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id="spacecomplexity"&gt;Space complexity&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;O(1)&lt;/code&gt; for iterative &lt;code&gt;O(n)&lt;/code&gt; for recursive&lt;/p&gt;
+&lt;h3 id="notes"&gt;Notes&lt;/h3&gt;
+&lt;/div&gt;</description><link>http://localhost:2368/206-reverse-linked-list/</link><guid isPermaLink="false">59d47083a1f270a4425a9c7d</guid><category>leetcode</category><dc:creator>Duct Tape Programmer</dc:creator><pubDate>Wed, 04 Oct 2017 05:25:53 GMT</pubDate><content:encoded>&lt;div class="kg-card-markdown"&gt;&lt;h3 id="question"&gt;&lt;a href="https://leetcode.com/problems/reverse-linked-list/description/"&gt;Question&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Reverse a singly linked list.&lt;/p&gt;
+&lt;h3 id="quickhints"&gt;Quick Hints&lt;/h3&gt;
+&lt;h3 id="solution"&gt;Solution&lt;/h3&gt;
+&lt;h5 id="iterative"&gt;Iterative:&lt;/h5&gt;
+&lt;script src="https://gist-it.appspot.com/github/dtprogrammer/leetcode-solutions/blob/master/src/main/java/dtprogrammer/github/io/p206/Solution.java"&gt;&lt;/script&gt;
+&lt;h5 id="recursive"&gt;Recursive:&lt;/h5&gt;
+&lt;script src="https://gist-it.appspot.com/github/dtprogrammer/leetcode-solutions/blob/master/src/main/java/dtprogrammer/github/io/p206/Solution2.java"&gt;&lt;/script&gt;
+&lt;h3 id="timecomplexity"&gt;Time complexity&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;O (n)&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id="spacecomplexity"&gt;Space complexity&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;O(1)&lt;/code&gt; for iterative &lt;code&gt;O(n)&lt;/code&gt; for recursive&lt;/p&gt;
+&lt;h3 id="notes"&gt;Notes&lt;/h3&gt;
+&lt;/div&gt;</content:encoded></item><item><title>230. Kth Smallest Element in a BST</title><description>&lt;div class="kg-card-markdown"&gt;&lt;h3 id="question"&gt;&lt;a href="https://leetcode.com/problems/kth-smallest-element-in-a-bst/"&gt;Question&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Given a binary search tree, write a function kthSmallest to find the kth smallest element in it.&lt;/p&gt;
+&lt;p&gt;Note:&lt;br&gt;
+You may assume k is always valid, 1 ≤ k ≤ BST's total elements.&lt;/p&gt;
+&lt;p&gt;Follow up:&lt;br&gt;
+What if the BST is modified (insert/delete operations) often and you need to find the kth&lt;/p&gt;&lt;/div&gt;</description><link>http://localhost:2368/230-kth-smallest-element-in-a-bst/</link><guid isPermaLink="false">59d3293ceb9941586725f977</guid><category>leetcode</category><dc:creator>Duct Tape Programmer</dc:creator><pubDate>Tue, 03 Oct 2017 06:09:13 GMT</pubDate><content:encoded>&lt;div class="kg-card-markdown"&gt;&lt;h3 id="question"&gt;&lt;a href="https://leetcode.com/problems/kth-smallest-element-in-a-bst/"&gt;Question&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Given a binary search tree, write a function kthSmallest to find the kth smallest element in it.&lt;/p&gt;
+&lt;p&gt;Note:&lt;br&gt;
+You may assume k is always valid, 1 ≤ k ≤ BST's total elements.&lt;/p&gt;
+&lt;p&gt;Follow up:&lt;br&gt;
+What if the BST is modified (insert/delete operations) often and you need to find the kth smallest frequently? How would you optimize the kthSmallest routine?&lt;/p&gt;
+&lt;h3 id="quickhints"&gt;Quick Hints&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;In order traversal&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="solution"&gt;Solution&lt;/h3&gt;
+&lt;script src="https://gist-it.appspot.com/github/dtprogrammer/leetcode-solutions/blob/master/src/main/java/dtprogrammer/github/io/p230/Solution.java"&gt;&lt;/script&gt;
+&lt;h3 id="timecomplexity"&gt;Time complexity&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;O (n)&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id="spacecomplexity"&gt;Space complexity&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;O(log n)&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id="notes"&gt;Notes&lt;/h3&gt;
+&lt;/div&gt;</content:encoded></item><item><title>162. Find Peak Element</title><description>&lt;div class="kg-card-markdown"&gt;&lt;h3 id="question"&gt;&lt;a href="https://leetcode.com/problems/find-peak-element/description/"&gt;Question&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;A peak element is an element that is greater than its neighbors.&lt;/p&gt;
 &lt;p&gt;Given an input array where num[i] ≠ num[i+1], find a peak element and return its index.&lt;/p&gt;
 &lt;p&gt;The array may contain multiple peaks, in that case return the index to any one of the peaks is&lt;/p&gt;&lt;/div&gt;</description><link>http://localhost:2368/162-find-peak-element/</link><guid isPermaLink="false">59d25a6deb9941586725f973</guid><category>leetcode</category><dc:creator>Duct Tape Programmer</dc:creator><pubDate>Mon, 02 Oct 2017 15:26:47 GMT</pubDate><content:encoded>&lt;div class="kg-card-markdown"&gt;&lt;h3 id="question"&gt;&lt;a href="https://leetcode.com/problems/find-peak-element/description/"&gt;Question&lt;/a&gt;&lt;/h3&gt;
@@ -412,221 +504,5 @@ The longest increasing subsequence is [2, 3, 7, 101], therefore the length is 4.
 &lt;p&gt;&lt;code&gt;O (n ^ 2)&lt;/code&gt;&lt;/p&gt;
 &lt;h3 id="spacecomplexity"&gt;Space complexity&lt;/h3&gt;
 &lt;p&gt;&lt;code&gt;O (n)&lt;/code&gt; for memoization&lt;/p&gt;
-&lt;h3 id="notes"&gt;Notes&lt;/h3&gt;
-&lt;/div&gt;</content:encoded></item><item><title>518. Coin Change 2</title><description>&lt;div class="kg-card-markdown"&gt;&lt;h3 id="question"&gt;&lt;a href="https://leetcode.com/problems/coin-change-2/description/"&gt;Question&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;You are given coins of different denominations and a total amount of money. Write a function to compute the number of combinations that make up that amount. You may assume that you have infinite number of each kind of coin.&lt;/p&gt;
-&lt;p&gt;Note: You can assume that&lt;/p&gt;
-&lt;p&gt;0 &amp;lt;= amount &amp;lt;&lt;/p&gt;&lt;/div&gt;</description><link>http://localhost:2368/518-coin-change-2/</link><guid isPermaLink="false">59cb0af0a588803d1e4d5b89</guid><category>leetcode</category><dc:creator>Duct Tape Programmer</dc:creator><pubDate>Wed, 27 Sep 2017 02:58:25 GMT</pubDate><content:encoded>&lt;div class="kg-card-markdown"&gt;&lt;h3 id="question"&gt;&lt;a href="https://leetcode.com/problems/coin-change-2/description/"&gt;Question&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;You are given coins of different denominations and a total amount of money. Write a function to compute the number of combinations that make up that amount. You may assume that you have infinite number of each kind of coin.&lt;/p&gt;
-&lt;p&gt;Note: You can assume that&lt;/p&gt;
-&lt;p&gt;0 &amp;lt;= amount &amp;lt;= 5000&lt;br&gt;
-1 &amp;lt;= coin &amp;lt;= 5000&lt;br&gt;
-the number of coins is less than 500&lt;br&gt;
-the answer is guaranteed to fit into signed 32-bit integer&lt;br&gt;
-Example 1:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;Input: amount = 5, coins = [1, 2, 5]
-Output: 4
-Explanation: there are four ways to make up the amount:
-5=5
-5=2+2+1
-5=2+1+1+1
-5=1+1+1+1+1
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Example 2:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;Input: amount = 3, coins = [2]
-Output: 0
-Explanation: the amount of 3 cannot be made up just with coins of 2.
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Example 3:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;Input: amount = 10, coins = [10] 
-Output: 1
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id="quickhints"&gt;Quick Hints&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Use memoization to calculate&lt;/li&gt;
-&lt;li&gt;amount - all coin value&lt;/li&gt;
-&lt;li&gt;Dynamic programming&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;a[0] = 1&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;iterate through coins first&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id="solution"&gt;Solution&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;This problem is very similar to &lt;a href="https://dtprogrammer.github.io/322-coin-change/"&gt;322. Coin Change&lt;/a&gt;. All we need to do here is keep a count rather than tracking minimum.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;img src="https://i.imgur.com/hwS4hF2.jpg" alt=""&gt;&lt;/p&gt;
-&lt;script src="https://gist-it.appspot.com/github/dtprogrammer/leetcode-solutions/blob/master/src/main/java/dtprogrammer/github/io/p518/Solution.java"&gt;&lt;/script&gt;
-&lt;h3 id="timecomplexity"&gt;Time complexity&lt;/h3&gt;
-&lt;p&gt;&lt;code&gt;O (k * n)&lt;/code&gt; where &lt;code&gt;n&lt;/code&gt; is the amount and &lt;code&gt;k&lt;/code&gt; is the number of coins denominations.&lt;/p&gt;
-&lt;h3 id="spacecomplexity"&gt;Space complexity&lt;/h3&gt;
-&lt;p&gt;&lt;code&gt;O (n + 1)&lt;/code&gt; for memoization&lt;/p&gt;
-&lt;h3 id="notes"&gt;Notes&lt;/h3&gt;
-&lt;/div&gt;</content:encoded></item><item><title>322. Coin Change</title><description>&lt;div class="kg-card-markdown"&gt;&lt;h3 id="question"&gt;&lt;a href="https://leetcode.com/problems/coin-change/description/"&gt;Question&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;You are given coins of different denominations and a total amount of money amount. Write a function to compute the fewest number of coins that you need to make up that amount. If that amount of money cannot be made up by any combination of the coins, return -1.&lt;/p&gt;&lt;/div&gt;</description><link>http://localhost:2368/322-coin-change/</link><guid isPermaLink="false">59ca09e4a588803d1e4d5a77</guid><category>leetcode</category><dc:creator>Duct Tape Programmer</dc:creator><pubDate>Tue, 26 Sep 2017 08:06:21 GMT</pubDate><content:encoded>&lt;div class="kg-card-markdown"&gt;&lt;h3 id="question"&gt;&lt;a href="https://leetcode.com/problems/coin-change/description/"&gt;Question&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;You are given coins of different denominations and a total amount of money amount. Write a function to compute the fewest number of coins that you need to make up that amount. If that amount of money cannot be made up by any combination of the coins, return -1.&lt;/p&gt;
-&lt;p&gt;Example 1:&lt;br&gt;
-coins = [1, 2, 5], amount = 11&lt;br&gt;
-return 3 (11 = 5 + 5 + 1)&lt;/p&gt;
-&lt;p&gt;Example 2:&lt;br&gt;
-coins = [2], amount = 3&lt;br&gt;
-return -1.&lt;/p&gt;
-&lt;p&gt;Note:&lt;br&gt;
-You may assume that you have an infinite number of each kind of coin.&lt;/p&gt;
-&lt;h3 id="quickhints"&gt;Quick Hints&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Use memoization to calculate&lt;/li&gt;
-&lt;li&gt;amount - all coin value&lt;/li&gt;
-&lt;li&gt;Dynamic programming&lt;/li&gt;
-&lt;li&gt;initially min is -1 and then do the calculation&lt;/li&gt;
-&lt;li&gt;min of all the  possible ways&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id="solution"&gt;Solution&lt;/h3&gt;
-&lt;pre&gt;&lt;code&gt;value[0] = 0;
-for (int x = 1; x &amp;lt;= n; x++) {
-    value[x] = INF;
-    for (auto c : coins) {
-       if (x-c &amp;gt;= 0) {
-           value[x] = min(value[x], value[x-c]+1);
-           } 
-    }
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;script src="https://gist-it.appspot.com/github/dtprogrammer/leetcode-solutions/blob/master/src/main/java/dtprogrammer/github/io/p322/Solution.java"&gt;&lt;/script&gt;
-&lt;h3 id="timecomplexity"&gt;Time complexity&lt;/h3&gt;
-&lt;p&gt;&lt;code&gt;O (n * k)&lt;/code&gt; where &lt;code&gt;n&lt;/code&gt; is the amount and &lt;code&gt;k&lt;/code&gt; is the number of coins denominations.&lt;/p&gt;
-&lt;h3 id="spacecomplexity"&gt;Space complexity&lt;/h3&gt;
-&lt;p&gt;&lt;code&gt;O (n + 1)&lt;/code&gt; for memoization&lt;/p&gt;
-&lt;h3 id="notes"&gt;Notes&lt;/h3&gt;
-&lt;/div&gt;</content:encoded></item><item><title>Dynamic Programming</title><description>&lt;div class="kg-card-markdown"&gt;&lt;h2 id="introduction"&gt;Introduction&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Dynamic programming is a technique that combines the correctness of com- plete search and the efficiency of greedy algorithms.&lt;/li&gt;
-&lt;li&gt;Dynamic programming can be applied if the problem can be divided into overlapping subproblems that can be solved independently.&lt;/li&gt;
-&lt;li&gt;There are two uses for dynamic programming:
-&lt;ul&gt;
-&lt;li&gt;Finding an optimal solution:&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;</description><link>http://localhost:2368/dynamic-programming/</link><guid isPermaLink="false">59c9f9e2a588803d1e4d5a74</guid><category>Algorithms</category><dc:creator>Duct Tape Programmer</dc:creator><pubDate>Tue, 26 Sep 2017 07:21:13 GMT</pubDate><content:encoded>&lt;div class="kg-card-markdown"&gt;&lt;h2 id="introduction"&gt;Introduction&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Dynamic programming is a technique that combines the correctness of com- plete search and the efficiency of greedy algorithms.&lt;/li&gt;
-&lt;li&gt;Dynamic programming can be applied if the problem can be divided into overlapping subproblems that can be solved independently.&lt;/li&gt;
-&lt;li&gt;There are two uses for dynamic programming:
-&lt;ul&gt;
-&lt;li&gt;Finding an optimal solution: We want to find a solution that is as large as possible or as small as possible.&lt;/li&gt;
-&lt;li&gt;Counting the number of solutions: We want to calculate the total num- ber of possible solutions.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Dynamic programming algorithm is efficient because it uses memoization and calculates the answer to each subproblem only once.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="problems"&gt;Problems&lt;/h2&gt;
-&lt;h3 id="coinproblem"&gt;Coin Problem&lt;/h3&gt;
-&lt;p&gt;If types of coins = {1, 3, 4}&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;solve(x) = min(solve(x - 1) + 1, solve(x - 3) + 1, solve(x - 4) + 1)
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src="https://i.imgur.com/x2m4Mh0.png" alt=""&gt;&lt;/p&gt;
-&lt;h4 id="recursivesolution"&gt;Recursive Solution&lt;/h4&gt;
-&lt;pre&gt;&lt;code&gt;int solve(int x) {
-    if (x &amp;lt; 0) return INF;
-    if (x == 0) return 0;
-    if (ready[x]) return value[x];
-    int best = INF;
-    for (auto c : coins) {
-       best = min(best, solve(x-c)+1);
-    }
-    value[x] = best;
-    ready[x] = true;
-    return best;
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;where ready[x] indicates whether the value of solve(x) has been calculated, and if it is, value[x] contains this value.&lt;/p&gt;
-&lt;h4 id="iterativesolution"&gt;Iterative Solution&lt;/h4&gt;
-&lt;pre&gt;&lt;code&gt;value[0] = 0;
-for (int x = 1; x &amp;lt;= n; x++) {
-    value[x] = INF;
-    for (auto c : coins) {
-       if (x-c &amp;gt;= 0) {
-           value[x] = min(value[x], value[x-c]+1);
-           } 
-    }
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;The time complexity of the algorithm is &lt;code&gt;O(nk)&lt;/code&gt;, where &lt;code&gt;n&lt;/code&gt; is the target sum and &lt;code&gt;k&lt;/code&gt; is the number of coins.&lt;/p&gt;
-&lt;p&gt;In the coin problem, for example, we can declare another array that indicates for each sum of money the first coin in an optimal solution:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;value[0] = 0;
-for (int x = 1; x &amp;lt;= n; x++) {
-    value[x] = INF;
-    for (auto c : coins) {
-       if (x-c &amp;gt;= 0 &amp;amp;&amp;amp; value[x-c]+1 &amp;lt; value[x]) {
-           value[x] = value[x-c]+1;
-           first[x] = c;
-           } 
-    }
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h4 id="printingsolution"&gt;Printing Solution&lt;/h4&gt;
-&lt;p&gt;After this, the following code can be used to print the coins that appear in an optimal solution for the sum n:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;while (n &amp;gt; 0) {
-    cout &amp;lt;&amp;lt; first[n] &amp;lt;&amp;lt; &amp;quot;\n&amp;quot;;
-    n -= first[n];
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h4 id="countingsolution"&gt;Counting Solution&lt;/h4&gt;
-&lt;pre&gt;&lt;code&gt;solve(x) =solve(x - 1) + solve(x - 3) + solve(x - 4)
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src="https://i.imgur.com/OMzPKkV.png" alt=""&gt;&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;count[0] = 1;
-for (int x = 1; x &amp;lt;= n; i++) {
-    for (auto c : coins) {
-       if (x-c &amp;gt;= 0) {
-           count[x] += count[x-c];
-       }
-    } 
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id="longestincreasingsubsequence"&gt;Longest Increasing Subsequence&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;This is a maximum-length sequence of array elements that goes from left to right, and each element in the sequence is larger than the previous element.&lt;/li&gt;
-&lt;li&gt;To calculate a value of length(k), we should find a position i &amp;lt; k for which array[i] &amp;lt; array[k] and length(i) is as large as possible. Then we know that length(k) = length(i) + 1, because this is an optimal way to add array[k] to a subsequence. However, if there is no such position i, then length(k) = 1, which means that the subsequence only contains array[k].&lt;/li&gt;
-&lt;/ul&gt;
-&lt;pre&gt;&lt;code&gt;for (int k = 0; k &amp;lt; n; k++) {
-    length[k] = 1;
-    for (int i = 0; i &amp;lt; k; i++) {
-       if (array[i] &amp;lt; array[k]) {
-           length[k] = max(length[k],length[i]+1);
-       }
-    } 
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id="longestincreasingsubsequence"&gt;Longest Increasing Subsequence&lt;/h3&gt;
-&lt;p&gt;&lt;img src="https://i.imgur.com/AQlumT4.png" alt=""&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://i.imgur.com/f1C8dQl.png" alt=""&gt;&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;for (int y = 1; y &amp;lt;= n; y++) {
-    for (int x = 1; x &amp;lt;= n; x++) {
-       sum[y][x] = max(sum[y][x-1],sum[y-1][x])+value[y][x];
-    }
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Time complexity: &lt;code&gt;O(n ^ 2)&lt;/code&gt;&lt;/p&gt;
-&lt;h3 id="knapsackproblems"&gt;Knapsack problems&lt;/h3&gt;
-&lt;/div&gt;</content:encoded></item><item><title>139. Word Break</title><description>&lt;div class="kg-card-markdown"&gt;&lt;h3 id="question"&gt;&lt;a href="https://leetcode.com/problems/word-break/description/"&gt;Question&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;Given a non-empty string s and a dictionary wordDict containing a list of non-empty words, determine if s can be segmented into a space-separated sequence of one or more dictionary words. You may assume the dictionary does not contain duplicate words.&lt;/p&gt;
-&lt;p&gt;For example, given&lt;br&gt;
-s = &amp;quot;leetcode&amp;quot;,&lt;br&gt;
-dict&lt;/p&gt;&lt;/div&gt;</description><link>http://localhost:2368/139-word-break/</link><guid isPermaLink="false">59c9f537a588803d1e4d5a72</guid><category>leetcode</category><dc:creator>Duct Tape Programmer</dc:creator><pubDate>Tue, 26 Sep 2017 06:48:59 GMT</pubDate><content:encoded>&lt;div class="kg-card-markdown"&gt;&lt;h3 id="question"&gt;&lt;a href="https://leetcode.com/problems/word-break/description/"&gt;Question&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;Given a non-empty string s and a dictionary wordDict containing a list of non-empty words, determine if s can be segmented into a space-separated sequence of one or more dictionary words. You may assume the dictionary does not contain duplicate words.&lt;/p&gt;
-&lt;p&gt;For example, given&lt;br&gt;
-s = &amp;quot;leetcode&amp;quot;,&lt;br&gt;
-dict = [&amp;quot;leet&amp;quot;, &amp;quot;code&amp;quot;].&lt;/p&gt;
-&lt;p&gt;Return true because &amp;quot;leetcode&amp;quot; can be segmented as &amp;quot;leet code&amp;quot;.&lt;/p&gt;
-&lt;p&gt;UPDATE (2017/1/4):&lt;br&gt;
-The wordDict parameter had been changed to a list of strings (instead of a set of strings). Please reload the code definition to get the latest changes.&lt;/p&gt;
-&lt;h3 id="quickhints"&gt;Quick Hints&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;keep a boolean array to track till which position the word is valid when broken&lt;/li&gt;
-&lt;li&gt;array[0] is always valid since its empty&lt;/li&gt;
-&lt;li&gt;Break the string and update the boolean array&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id="solution"&gt;Solution&lt;/h3&gt;
-&lt;script src="https://gist-it.appspot.com/github/dtprogrammer/leetcode-solutions/blob/master/src/main/java/dtprogrammer/github/io/p139/Solution.java"&gt;&lt;/script&gt;
-&lt;h3 id="timecomplexity"&gt;Time complexity&lt;/h3&gt;
-&lt;p&gt;&lt;code&gt;O (n pow 2)&lt;/code&gt; where n is the dictionary size. This is because the lookup in the dictionary takes &lt;code&gt;O (n)&lt;/code&gt; time.&lt;/p&gt;
-&lt;h3 id="spacecomplexity"&gt;Space complexity&lt;/h3&gt;
-&lt;p&gt;&lt;code&gt;O (n)&lt;/code&gt;&lt;/p&gt;
 &lt;h3 id="notes"&gt;Notes&lt;/h3&gt;
 &lt;/div&gt;</content:encoded></item></channel></rss>
