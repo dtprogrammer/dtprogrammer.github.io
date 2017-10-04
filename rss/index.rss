@@ -1,4 +1,61 @@
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" version="2.0"><channel><title>Software Interview Preparation Blog</title><description>Algorithms, Data Structures and System Design for Interviews</description><link>http://localhost:2368/</link><image><url>http://localhost:2368/favicon.png</url><title>Software Interview Preparation Blog</title><link>http://localhost:2368/</link></image><generator>Ghost 1.8</generator><lastBuildDate>Wed, 04 Oct 2017 07:58:53 GMT</lastBuildDate><atom:link href="http://localhost:2368/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title>150. Evaluate Reverse Polish Notation</title><description>&lt;div class="kg-card-markdown"&gt;&lt;h3 id="question"&gt;&lt;a href="https://leetcode.com/problems/evaluate-reverse-polish-notation/description/"&gt;Question&lt;/a&gt;&lt;/h3&gt;
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" version="2.0"><channel><title>Software Interview Preparation Blog</title><description>Algorithms, Data Structures and System Design for Interviews</description><link>http://localhost:2368/</link><image><url>http://localhost:2368/favicon.png</url><title>Software Interview Preparation Blog</title><link>http://localhost:2368/</link></image><generator>Ghost 1.8</generator><lastBuildDate>Wed, 04 Oct 2017 17:53:32 GMT</lastBuildDate><atom:link href="http://localhost:2368/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title>116. Populating Next Right Pointers in Each Node</title><description>&lt;div class="kg-card-markdown"&gt;&lt;h3 id="question"&gt;&lt;a href="https://leetcode.com/problems/populating-next-right-pointers-in-each-node/description/"&gt;Question&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Given a binary tree&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;struct TreeLinkNode {
+  TreeLinkNode *left;
+  TreeLinkNode *right;
+  TreeLinkNode *next;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Populate each next pointer to point to its next right node. If there is no next right node, the next pointer should be set to NULL.&lt;/p&gt;
+&lt;p&gt;Initially, all next pointers are set to NULL.&lt;/p&gt;
+&lt;p&gt;Note:&lt;/p&gt;
+&lt;p&gt;You may&lt;/p&gt;&lt;/div&gt;</description><link>http://localhost:2368/116-populating-next-right-pointers-in-each-node/</link><guid isPermaLink="false">59d51b79a1f270a4425a9c86</guid><category>leetcode</category><dc:creator>Duct Tape Programmer</dc:creator><pubDate>Wed, 04 Oct 2017 17:41:33 GMT</pubDate><content:encoded>&lt;div class="kg-card-markdown"&gt;&lt;h3 id="question"&gt;&lt;a href="https://leetcode.com/problems/populating-next-right-pointers-in-each-node/description/"&gt;Question&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Given a binary tree&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;struct TreeLinkNode {
+  TreeLinkNode *left;
+  TreeLinkNode *right;
+  TreeLinkNode *next;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Populate each next pointer to point to its next right node. If there is no next right node, the next pointer should be set to NULL.&lt;/p&gt;
+&lt;p&gt;Initially, all next pointers are set to NULL.&lt;/p&gt;
+&lt;p&gt;Note:&lt;/p&gt;
+&lt;p&gt;You may only use constant extra space.&lt;br&gt;
+You may assume that it is a perfect binary tree (ie, all leaves are at the same level, and every parent has two children).&lt;br&gt;
+For example,&lt;br&gt;
+Given the following perfect binary tree,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;         1
+       /  \
+      2    3
+     / \  / \
+    4  5  6  7
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;After calling your function, the tree should look like:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;         1 -&amp;gt; NULL
+       /  \
+      2 -&amp;gt; 3 -&amp;gt; NULL
+     / \  / \
+    4-&amp;gt;5-&amp;gt;6-&amp;gt;7 -&amp;gt; NULL
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id="quickhints"&gt;Quick Hints&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Traverse level by level&lt;/li&gt;
+&lt;li&gt;Fixing the next pointer&lt;/li&gt;
+&lt;li&gt;Notice that the other side subtree can be reached by curNode's next.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="solution"&gt;Solution&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;The idea is to generate the next pointer level by level&lt;/li&gt;
+&lt;li&gt;Generating it for the child of same node is similar but we go across tree it becomes a little different.&lt;/li&gt;
+&lt;li&gt;Although at that point we already have the next for the node setup which allow us to go to the other side and use it.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;script src="https://gist-it.appspot.com/github/dtprogrammer/leetcode-solutions/blob/master/src/main/java/dtprogrammer/github/io/p116/Solution.java"&gt;&lt;/script&gt;
+&lt;h3 id="timecomplexity"&gt;Time complexity&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;O (n)&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id="spacecomplexity"&gt;Space complexity&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;O(1)&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id="notes"&gt;Notes&lt;/h3&gt;
+&lt;/div&gt;</content:encoded></item><item><title>150. Evaluate Reverse Polish Notation</title><description>&lt;div class="kg-card-markdown"&gt;&lt;h3 id="question"&gt;&lt;a href="https://leetcode.com/problems/evaluate-reverse-polish-notation/description/"&gt;Question&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;Evaluate the value of an arithmetic expression in Reverse Polish Notation.&lt;/p&gt;
 &lt;p&gt;Valid operators are +, -, *, /. Each operand may be an integer or another expression.&lt;/p&gt;
 &lt;p&gt;Some examples:&lt;/p&gt;
@@ -15,7 +72,7 @@
 &lt;li&gt;Stack&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id="solution"&gt;Solution&lt;/h3&gt;
-&lt;script src="https://gist-it.appspot.com/github/dtprogrammer/leetcode-solutions/blob/master/src/main/java/dtprogrammer/github/io/p150/Solution2.java"&gt;&lt;/script&gt;
+&lt;script src="https://gist-it.appspot.com/github/dtprogrammer/leetcode-solutions/blob/master/src/main/java/dtprogrammer/github/io/p150/Solution.java"&gt;&lt;/script&gt;
 &lt;h3 id="timecomplexity"&gt;Time complexity&lt;/h3&gt;
 &lt;p&gt;&lt;code&gt;O (n)&lt;/code&gt;&lt;/p&gt;
 &lt;h3 id="spacecomplexity"&gt;Space complexity&lt;/h3&gt;
@@ -36,7 +93,7 @@
 &lt;li&gt;&lt;code&gt;sol[i] = Math.min(sol[i], sol[i - j * j] + 1)&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id="solution"&gt;Solution&lt;/h3&gt;
-&lt;script src="https://gist-it.appspot.com/github/dtprogrammer/leetcode-solutions/blob/master/src/main/java/dtprogrammer/github/io/p279/Solution2.java"&gt;&lt;/script&gt;
+&lt;script src="https://gist-it.appspot.com/github/dtprogrammer/leetcode-solutions/blob/master/src/main/java/dtprogrammer/github/io/p279/Solution.java"&gt;&lt;/script&gt;
 &lt;h3 id="timecomplexity"&gt;Time complexity&lt;/h3&gt;
 &lt;p&gt;&lt;code&gt;O (n ^ 2)&lt;/code&gt;&lt;/p&gt;
 &lt;h3 id="spacecomplexity"&gt;Space complexity&lt;/h3&gt;
@@ -476,32 +533,6 @@ You may assume k is always valid, 1 ≤ k ≤ n2.&lt;/p&gt;
 &lt;script src="https://gist-it.appspot.com/github/dtprogrammer/leetcode-solutions/blob/master/src/main/java/dtprogrammer/github/io/p221/Solution.java"&gt;&lt;/script&gt;
 &lt;h3 id="timecomplexity"&gt;Time complexity&lt;/h3&gt;
 &lt;p&gt;&lt;code&gt;O (m * n)&lt;/code&gt;&lt;/p&gt;
-&lt;h3 id="spacecomplexity"&gt;Space complexity&lt;/h3&gt;
-&lt;p&gt;&lt;code&gt;O (n)&lt;/code&gt; for memoization&lt;/p&gt;
-&lt;h3 id="notes"&gt;Notes&lt;/h3&gt;
-&lt;/div&gt;</content:encoded></item><item><title>300. Longest Increasing Subsequence</title><description>&lt;div class="kg-card-markdown"&gt;&lt;h3 id="question"&gt;&lt;a href="https://leetcode.com/problems/longest-increasing-subsequence/description/"&gt;Question&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;Given an unsorted array of integers, find the length of longest increasing subsequence.&lt;/p&gt;
-&lt;p&gt;For example,&lt;br&gt;
-Given [10, 9, 2, 5, 3, 7, 101, 18],&lt;br&gt;
-The longest increasing subsequence is [2, 3, 7, 101], therefore the length is 4. Note that there may be more than one LIS combination, it&lt;/p&gt;&lt;/div&gt;</description><link>http://localhost:2368/300-longest-increasing-subsequence/</link><guid isPermaLink="false">59cb1ee2a588803d1e4d5b8f</guid><category>leetcode</category><dc:creator>Duct Tape Programmer</dc:creator><pubDate>Wed, 27 Sep 2017 03:52:04 GMT</pubDate><content:encoded>&lt;div class="kg-card-markdown"&gt;&lt;h3 id="question"&gt;&lt;a href="https://leetcode.com/problems/longest-increasing-subsequence/description/"&gt;Question&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;Given an unsorted array of integers, find the length of longest increasing subsequence.&lt;/p&gt;
-&lt;p&gt;For example,&lt;br&gt;
-Given [10, 9, 2, 5, 3, 7, 101, 18],&lt;br&gt;
-The longest increasing subsequence is [2, 3, 7, 101], therefore the length is 4. Note that there may be more than one LIS combination, it is only necessary for you to return the length.&lt;/p&gt;
-&lt;p&gt;Your algorithm should run in O(n2) complexity.&lt;/p&gt;
-&lt;p&gt;Follow up: Could you improve it to O(n log n) time complexity?&lt;/p&gt;
-&lt;h3 id="quickhints"&gt;Quick Hints&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Use memoization to calculate&lt;/li&gt;
-&lt;li&gt;If the current element is greater then update&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id="solution"&gt;Solution&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;To calculate a value of length(k), we should find a position i &amp;lt; k for which array[i] &amp;lt; array[k] and length(i) is as large as possible. Then we know that length(k) = length(i) + 1, because this is an optimal way to add array[k] to a subsequence. However, if there is no such position i, then length(k) = 1&lt;/li&gt;
-&lt;/ul&gt;
-&lt;script src="https://gist-it.appspot.com/github/dtprogrammer/leetcode-solutions/blob/master/src/main/java/dtprogrammer/github/io/p300/Solution.java"&gt;&lt;/script&gt;
-&lt;h3 id="timecomplexity"&gt;Time complexity&lt;/h3&gt;
-&lt;p&gt;&lt;code&gt;O (n ^ 2)&lt;/code&gt;&lt;/p&gt;
 &lt;h3 id="spacecomplexity"&gt;Space complexity&lt;/h3&gt;
 &lt;p&gt;&lt;code&gt;O (n)&lt;/code&gt; for memoization&lt;/p&gt;
 &lt;h3 id="notes"&gt;Notes&lt;/h3&gt;
