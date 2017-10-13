@@ -1,4 +1,124 @@
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" version="2.0"><channel><title>Software Interview Preparation Blog</title><description>Algorithms, Data Structures and System Design for Interviews</description><link>http://localhost:2368/</link><image><url>http://localhost:2368/favicon.png</url><title>Software Interview Preparation Blog</title><link>http://localhost:2368/</link></image><generator>Ghost 1.8</generator><lastBuildDate>Wed, 04 Oct 2017 17:53:32 GMT</lastBuildDate><atom:link href="http://localhost:2368/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title>116. Populating Next Right Pointers in Each Node</title><description>&lt;div class="kg-card-markdown"&gt;&lt;h3 id="question"&gt;&lt;a href="https://leetcode.com/problems/populating-next-right-pointers-in-each-node/description/"&gt;Question&lt;/a&gt;&lt;/h3&gt;
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" version="2.0"><channel><title>Software Interview Preparation Blog</title><description>Algorithms, Data Structures and System Design for Interviews</description><link>http://localhost:2368/</link><image><url>http://localhost:2368/favicon.png</url><title>Software Interview Preparation Blog</title><link>http://localhost:2368/</link></image><generator>Ghost 1.8</generator><lastBuildDate>Fri, 13 Oct 2017 02:24:19 GMT</lastBuildDate><atom:link href="http://localhost:2368/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title>207. Course Schedule</title><description>&lt;div class="kg-card-markdown"&gt;&lt;h3 id="question"&gt;&lt;a href="https://leetcode.com/problems/course-schedule/description/"&gt;Question&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;There are a total of n courses you have to take, labeled from 0 to n - 1.&lt;/p&gt;
+&lt;p&gt;Some courses may have prerequisites, for example to take course 0 you have to first take course 1, which is expressed as a pair: [0,1]&lt;/p&gt;
+&lt;p&gt;Given the total number of&lt;/p&gt;&lt;/div&gt;</description><link>http://localhost:2368/207-course-schedule/</link><guid isPermaLink="false">59e0229b2a7fec25c8dc8a22</guid><category>leetcode</category><dc:creator>Duct Tape Programmer</dc:creator><pubDate>Fri, 13 Oct 2017 02:22:48 GMT</pubDate><content:encoded>&lt;div class="kg-card-markdown"&gt;&lt;h3 id="question"&gt;&lt;a href="https://leetcode.com/problems/course-schedule/description/"&gt;Question&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;There are a total of n courses you have to take, labeled from 0 to n - 1.&lt;/p&gt;
+&lt;p&gt;Some courses may have prerequisites, for example to take course 0 you have to first take course 1, which is expressed as a pair: [0,1]&lt;/p&gt;
+&lt;p&gt;Given the total number of courses and a list of prerequisite pairs, is it possible for you to finish all courses?&lt;/p&gt;
+&lt;p&gt;For example:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;2, [[1,0]]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;There are a total of 2 courses to take. To take course 1 you should have finished course 0. So it is possible.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;2, [[1,0],[0,1]]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;There are a total of 2 courses to take. To take course 1 you should have finished course 0, and to take course 0 you should also have finished course 1. So it is impossible.&lt;/p&gt;
+&lt;p&gt;Note:&lt;br&gt;
+The input prerequisites is a graph represented by a list of edges, not adjacency matrices. Read more about how a graph is represented.&lt;br&gt;
+You may assume that there are no duplicate edges in the input prerequisites.&lt;br&gt;
+click to show more hints.&lt;/p&gt;
+&lt;p&gt;Hints:&lt;br&gt;
+This problem is equivalent to finding if a cycle exists in a directed graph. If a cycle exists, no topological ordering exists and therefore it will be impossible to take all courses.&lt;br&gt;
+Topological Sort via DFS - A great video tutorial (21 minutes) on Coursera explaining the basic concepts of Topological Sort.&lt;br&gt;
+Topological sort could also be done via BFS.&lt;/p&gt;
+&lt;h3 id="quickhints"&gt;Quick Hints&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Topological Sort&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="solution"&gt;Solution&lt;/h3&gt;
+&lt;script src="https://gist-it.appspot.com/github/dtprogrammer/leetcode-solutions/blob/master/src/main/java/dtprogrammer/github/io/p207/Solution.java"&gt;&lt;/script&gt;
+&lt;h3 id="timecomplexity"&gt;Time complexity&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;O (V + E)&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id="spacecomplexity"&gt;Space complexity&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;O (V)&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id="notes"&gt;Notes&lt;/h3&gt;
+&lt;/div&gt;</content:encoded></item><item><title>Check whether a given graph is Bipartite or not</title><description>&lt;div class="kg-card-markdown"&gt;&lt;h3 id="question"&gt;&lt;a href="http://www.geeksforgeeks.org/bipartite-graph/"&gt;Question&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id="quickhints"&gt;Quick Hints&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;If a graph has odd cycle length it cannot be bipartite&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="solution"&gt;Solution&lt;/h3&gt;
+&lt;script src="https://gist-it.appspot.com/github/dtprogrammer/leetcode-solutions/blob/master/src/main/java/dtprogrammer/github/io/other/graph/Bipartite.java"&gt;&lt;/script&gt;
+&lt;h3 id="timecomplexity"&gt;Time complexity&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Same time complexity as BFS&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;O (n * n)&lt;/code&gt; for adjancency matrix &lt;code&gt;O (V + E)&lt;/code&gt; for adjancency list&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="spacecomplexity"&gt;Space complexity&lt;/h3&gt;
+&lt;h3 id="notes"&gt;Notes&lt;/h3&gt;
+&lt;/div&gt;</description><link>http://localhost:2368/check-whether-a-given-graph-is-bipartite-or-not/</link><guid isPermaLink="false">59ddc4d82a7fec25c8dc8a1b</guid><category>geeksforgeeks</category><category>WePay</category><dc:creator>Duct Tape Programmer</dc:creator><pubDate>Wed, 11 Oct 2017 07:17:38 GMT</pubDate><content:encoded>&lt;div class="kg-card-markdown"&gt;&lt;h3 id="question"&gt;&lt;a href="http://www.geeksforgeeks.org/bipartite-graph/"&gt;Question&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id="quickhints"&gt;Quick Hints&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;If a graph has odd cycle length it cannot be bipartite&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="solution"&gt;Solution&lt;/h3&gt;
+&lt;script src="https://gist-it.appspot.com/github/dtprogrammer/leetcode-solutions/blob/master/src/main/java/dtprogrammer/github/io/other/graph/Bipartite.java"&gt;&lt;/script&gt;
+&lt;h3 id="timecomplexity"&gt;Time complexity&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Same time complexity as BFS&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;O (n * n)&lt;/code&gt; for adjancency matrix &lt;code&gt;O (V + E)&lt;/code&gt; for adjancency list&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="spacecomplexity"&gt;Space complexity&lt;/h3&gt;
+&lt;h3 id="notes"&gt;Notes&lt;/h3&gt;
+&lt;/div&gt;</content:encoded></item><item><title>CAP Theorem</title><description>&lt;div class="kg-card-markdown"&gt;&lt;p&gt;According to CAP theorem, a distributed software system cannot simultaneously provide more than two out of three of the following guarantees (CAP):&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Consistency&lt;/strong&gt;: All nodes see the same data at the same time. Consistency is achieved by updating several nodes before allowing further reads.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Availability&lt;/strong&gt;: Every request gets a response&lt;/li&gt;&lt;/ol&gt;&lt;/div&gt;</description><link>http://localhost:2368/cap-theorem/</link><guid isPermaLink="false">59db3cf6874f280ddcef2eb1</guid><category>distributed-systems</category><dc:creator>Duct Tape Programmer</dc:creator><pubDate>Mon, 09 Oct 2017 09:17:21 GMT</pubDate><media:content url="http://localhost:2368/content/images/2017/10/Hx8h0.png" medium="image"/><content:encoded>&lt;div class="kg-card-markdown"&gt;&lt;img src="http://localhost:2368/content/images/2017/10/Hx8h0.png" alt="CAP Theorem"&gt;&lt;p&gt;According to CAP theorem, a distributed software system cannot simultaneously provide more than two out of three of the following guarantees (CAP):&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Consistency&lt;/strong&gt;: All nodes see the same data at the same time. Consistency is achieved by updating several nodes before allowing further reads.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Availability&lt;/strong&gt;: Every request gets a response on success/failure. Availability is achieved by replicating the data across different servers.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Partition tolerance&lt;/strong&gt;: System continues to work despite message loss or partial failure. A system that is partition-tolerant can sustain any amount of network failure that doesn’t result in a failure of the entire network. Data is sufficiently replicated across combinations of nodes and networks to keep the system up through intermittent outages.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src="https://i.stack.imgur.com/Hx8h0.png" alt="CAP Theorem"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://codahale.com/you-cant-sacrifice-partition-tolerance/"&gt;Interesting Read: You Can’t Sacrifice Partition Tolerance&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;According to the above article a distributed system must require partition tolerance since to not require it the system will need to run on a network which is guranteed to never drop a message and such a network does not exist (at least as of now).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Choosing between Consistency and Availability:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Choosing Consistency Over Availability:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;If a system chooses to provide Consistency over Availability in the presence of partitions (again, read: failures), it will preserve the guarantees of its atomic reads and writes by refusing to respond to some requests. It may decide to shut down entirely (like the clients of a single-node data store), refuse writes (like Two-Phase Commit), or only respond to reads and writes for pieces of data whose “master” node is inside the partition component (like Membase).&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;Choosing Availability Over Consistency:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;If a system chooses to provide Availability over Consistency in the presence of partitions (all together now: failures), it will respond to all requests, potentially returning stale reads and accepting conflicting writes. These inconsistencies are often resolved via causal ordering mechanisms like vector clocks and application-specific conflict resolution procedures. (Dynamo systems usually offer both of these; Cassandra’s hard-coded Last-Writer-Wins conflict resolution being the main exception.)&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;But Never Both:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;You cannot, however, choose both consistency and availability in a distributed system. As a thought experiment, imagine a distributed system which keeps track of a single piece of data using three nodes—AA, BB, and CC—and which claims to be both consistent and available in the face of network partitions. Misfortune strikes, and that system is partitioned into two components: {A,B}{A,B} and {C}{C}. In this state, a write request arrives at node CC to update the single piece of data.&lt;br&gt;
+That node only has two options:&lt;br&gt;
+Accept the write, knowing that neither AA nor BB will know about this new data until the partition heals.&lt;br&gt;
+Refuse the write, knowing that the client might not be able to contact AA or BB until the partition heals.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;</content:encoded></item><item><title>179. Largest Number</title><description>&lt;div class="kg-card-markdown"&gt;&lt;h3 id="question"&gt;&lt;a href="https://leetcode.com/problems/populating-next-right-pointers-in-each-node/description/"&gt;Question&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Given a list of non negative integers, arrange them such that they form the largest number.&lt;/p&gt;
+&lt;p&gt;For example, given [3, 30, 34, 5, 9], the largest formed number is 9534330.&lt;/p&gt;
+&lt;p&gt;Note: The result may be very large, so you need to return a string instead of an integer.&lt;/p&gt;
+&lt;h3 id="quickhints"&gt;Quick&lt;/h3&gt;&lt;/div&gt;</description><link>http://localhost:2368/179-largest-number/</link><guid isPermaLink="false">59d5cd03a1f270a4425a9c88</guid><category>leetcode</category><dc:creator>Duct Tape Programmer</dc:creator><pubDate>Thu, 05 Oct 2017 06:12:40 GMT</pubDate><content:encoded>&lt;div class="kg-card-markdown"&gt;&lt;h3 id="question"&gt;&lt;a href="https://leetcode.com/problems/populating-next-right-pointers-in-each-node/description/"&gt;Question&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Given a list of non negative integers, arrange them such that they form the largest number.&lt;/p&gt;
+&lt;p&gt;For example, given [3, 30, 34, 5, 9], the largest formed number is 9534330.&lt;/p&gt;
+&lt;p&gt;Note: The result may be very large, so you need to return a string instead of an integer.&lt;/p&gt;
+&lt;h3 id="quickhints"&gt;Quick Hints&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Sort the number as String&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="solution"&gt;Solution&lt;/h3&gt;
+&lt;script src="https://gist-it.appspot.com/github/dtprogrammer/leetcode-solutions/blob/master/src/main/java/dtprogrammer/github/io/p179/Solution.java"&gt;&lt;/script&gt;
+&lt;h3 id="timecomplexity"&gt;Time complexity&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;O (n log n)&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id="spacecomplexity"&gt;Space complexity&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;O(n)&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id="notes"&gt;Notes&lt;/h3&gt;
+&lt;/div&gt;</content:encoded></item><item><title>116. Populating Next Right Pointers in Each Node</title><description>&lt;div class="kg-card-markdown"&gt;&lt;h3 id="question"&gt;&lt;a href="https://leetcode.com/problems/populating-next-right-pointers-in-each-node/description/"&gt;Question&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;Given a binary tree&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;struct TreeLinkNode {
   TreeLinkNode *left;
@@ -386,154 +506,5 @@ What if the inputs contain unicode characters? How would you adapt your solution
 &lt;p&gt;&lt;code&gt;O (n)&lt;/code&gt;&lt;/p&gt;
 &lt;h3 id="spacecomplexity"&gt;Space complexity&lt;/h3&gt;
 &lt;p&gt;&lt;code&gt;O (n)&lt;/code&gt; taken by stack in case if all operators are &lt;code&gt;+&lt;/code&gt; or &lt;code&gt;-&lt;/code&gt;&lt;/p&gt;
-&lt;h3 id="notes"&gt;Notes&lt;/h3&gt;
-&lt;/div&gt;</content:encoded></item><item><title>378. Kth Smallest Element in a Sorted Matrix</title><description>&lt;div class="kg-card-markdown"&gt;&lt;h3 id="question"&gt;&lt;a href="https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/description/"&gt;Question&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;Given a n x n matrix where each of the rows and columns are sorted in ascending order, find the kth smallest element in the matrix.&lt;/p&gt;
-&lt;p&gt;Note that it is the kth smallest element in the sorted order, not the kth distinct element.&lt;/p&gt;
-&lt;p&gt;Example:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;matrix = [
-   [ 1,  5,  9],
-   [10,&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description><link>http://localhost:2368/378-kth-smallest-element-in-a-sorted-matrix/</link><guid isPermaLink="false">59cc44e286a7c704df1334d3</guid><category>leetcode</category><dc:creator>Duct Tape Programmer</dc:creator><pubDate>Thu, 28 Sep 2017 00:42:56 GMT</pubDate><content:encoded>&lt;div class="kg-card-markdown"&gt;&lt;h3 id="question"&gt;&lt;a href="https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/description/"&gt;Question&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;Given a n x n matrix where each of the rows and columns are sorted in ascending order, find the kth smallest element in the matrix.&lt;/p&gt;
-&lt;p&gt;Note that it is the kth smallest element in the sorted order, not the kth distinct element.&lt;/p&gt;
-&lt;p&gt;Example:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;matrix = [
-   [ 1,  5,  9],
-   [10, 11, 13],
-   [12, 13, 15]
-],
-k = 8,
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;return 13.&lt;br&gt;
-Note:&lt;br&gt;
-You may assume k is always valid, 1 ≤ k ≤ n2.&lt;/p&gt;
-&lt;h3 id="quickhints"&gt;Quick Hints&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;PriorityQueue&lt;/code&gt; for row or column&lt;/li&gt;
-&lt;li&gt;Keep popping and updating till k&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id="solution"&gt;Solution&lt;/h3&gt;
-&lt;script src="https://gist-it.appspot.com/github/dtprogrammer/leetcode-solutions/blob/master/src/main/java/dtprogrammer/github/io/p378/Solution.java"&gt;&lt;/script&gt;
-&lt;h3 id="timecomplexity"&gt;Time complexity&lt;/h3&gt;
-&lt;p&gt;&lt;code&gt;O (n + k log(n))&lt;/code&gt; where n is the number of columns&lt;/p&gt;
-&lt;h3 id="spacecomplexity"&gt;Space complexity&lt;/h3&gt;
-&lt;p&gt;&lt;code&gt;O (n)&lt;/code&gt; taken by the priority queue&lt;/p&gt;
-&lt;h3 id="notes"&gt;Notes&lt;/h3&gt;
-&lt;/div&gt;</content:encoded></item><item><title>85. Maximal Rectangle</title><description>&lt;div class="kg-card-markdown"&gt;&lt;h3 id="question"&gt;&lt;a href="https://leetcode.com/problems/maximal-rectangle/description/"&gt;Question&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;Given a 2D binary matrix filled with 0's and 1's, find the largest rectangle containing only 1's and return its area.&lt;/p&gt;
-&lt;p&gt;For example, given the following matrix:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;1 0 1 0 0
-1 0 1 1 1
-1 1 1 1 1
-1 0 0 1 0
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Return 6.&lt;/p&gt;&lt;/div&gt;</description><link>http://localhost:2368/85-maximal-rectangle/</link><guid isPermaLink="false">59cbe139a588803d1e4d5b99</guid><category>leetcode</category><dc:creator>Duct Tape Programmer</dc:creator><pubDate>Wed, 27 Sep 2017 17:39:49 GMT</pubDate><content:encoded>&lt;div class="kg-card-markdown"&gt;&lt;h3 id="question"&gt;&lt;a href="https://leetcode.com/problems/maximal-rectangle/description/"&gt;Question&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;Given a 2D binary matrix filled with 0's and 1's, find the largest rectangle containing only 1's and return its area.&lt;/p&gt;
-&lt;p&gt;For example, given the following matrix:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;1 0 1 0 0
-1 0 1 1 1
-1 1 1 1 1
-1 0 0 1 0
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Return 6.&lt;/p&gt;
-&lt;h3 id="quickhints"&gt;Quick Hints&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Use memoization to calculate&lt;/li&gt;
-&lt;li&gt;We need to find the &lt;code&gt;left boundary start&lt;/code&gt;, &lt;code&gt;right boundary start&lt;/code&gt; and &lt;code&gt;height&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;Use three single dimension array to keep track of the above&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id="solution"&gt;Solution&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;This problem is very similar to &lt;a href="https://dtprogrammer.github.io/221-maximal-square/"&gt;221. Maximal Square&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;We iterate through all rows.&lt;/li&gt;
-&lt;li&gt;For every row we track the &lt;code&gt;left&lt;/code&gt; boundary, &lt;code&gt;right&lt;/code&gt; boundary and &lt;code&gt;height&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;blockquote&gt;
-&lt;p&gt;left(i,j) = max(left(i-1,j), cur_left), cur_left can be determined from the current row&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;right(i,j) = min(right(i-1,j), cur_right), cur_right can be determined from the current row&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;height(i,j) = height(i-1,j) + 1, if matrix[i][j]=='1' else height(i,j) = 0&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;script src="https://gist-it.appspot.com/github/dtprogrammer/leetcode-solutions/blob/master/src/main/java/dtprogrammer/github/io/p85/Solution.java"&gt;&lt;/script&gt;
-&lt;h3 id="timecomplexity"&gt;Time complexity&lt;/h3&gt;
-&lt;p&gt;&lt;code&gt;O (m * n)&lt;/code&gt;&lt;/p&gt;
-&lt;h3 id="spacecomplexity"&gt;Space complexity&lt;/h3&gt;
-&lt;p&gt;&lt;code&gt;O (3n)&lt;/code&gt; for memoization&lt;/p&gt;
-&lt;h3 id="notes"&gt;Notes&lt;/h3&gt;
-&lt;/div&gt;</content:encoded></item><item><title>Hadoop The Definitive Guide</title><description>&lt;div class="kg-card-markdown"&gt;&lt;h1 id="booksummary"&gt;Book Summary&lt;/h1&gt;
-&lt;p&gt;This is a summary and notes from Hadoop The Definitive Guide 4th Edition.&lt;/p&gt;
-&lt;h2 id="introduction"&gt;Introduction&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;more data usually beats better algorithms&lt;/li&gt;
-&lt;li&gt;In a nutshell, this is what Hadoop provides: a reliable, scalable platform for storage and analysis.&lt;/li&gt;
-&lt;li&gt;MapReduce is a batch query processor, and the ability to run an&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;</description><link>http://localhost:2368/hadoop-the-definitive-guide/</link><guid isPermaLink="false">59cb5b4fa588803d1e4d5b96</guid><category>distributed-systems</category><dc:creator>Duct Tape Programmer</dc:creator><pubDate>Wed, 27 Sep 2017 08:17:57 GMT</pubDate><content:encoded>&lt;div class="kg-card-markdown"&gt;&lt;h1 id="booksummary"&gt;Book Summary&lt;/h1&gt;
-&lt;p&gt;This is a summary and notes from Hadoop The Definitive Guide 4th Edition.&lt;/p&gt;
-&lt;h2 id="introduction"&gt;Introduction&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;more data usually beats better algorithms&lt;/li&gt;
-&lt;li&gt;In a nutshell, this is what Hadoop provides: a reliable, scalable platform for storage and analysis.&lt;/li&gt;
-&lt;li&gt;MapReduce is a batch query processor, and the ability to run an ad hoc query against your whole dataset and get the results in a reasonable time is transformative.&lt;/li&gt;
-&lt;li&gt;seek time is improving more slowly than transfer rate.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="chapter2mapreduce3"&gt;Chapter 2: MapReduce3&lt;/h2&gt;
-&lt;h3 id="dataflow"&gt;Data Flow&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;A &lt;code&gt;MapReduce job&lt;/code&gt; is a unit of work that the client wants to be performed: it consists of the input data, the MapReduce program, and configuration information.&lt;/li&gt;
-&lt;li&gt;Hadoop runs the job by dividing it into tasks, of which there are two types: &lt;code&gt;map tasks&lt;/code&gt; and &lt;code&gt;reduce tasks&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;The tasks are scheduled using YARN and run on nodes in the cluster. If a task fails, it will be automatically rescheduled to run on a different node.&lt;/li&gt;
-&lt;li&gt;Hadoop divides the input to a MapReduce job into fixed-size pieces called &lt;code&gt;input splits&lt;/code&gt;, or just splits.&lt;/li&gt;
-&lt;li&gt;Hadoop creates one map task for each split, which runs the user-defined map function for each record in the split.&lt;/li&gt;
-&lt;li&gt;Having many splits means the time taken to process each split is small compared to the time to process the whole input.&lt;/li&gt;
-&lt;li&gt;On the other hand, if splits are too small, the overhead of managing the splits and map task creation begins to dominate the total job execution time.&lt;/li&gt;
-&lt;li&gt;For most jobs, a good split size tends to be the size of an &lt;code&gt;HDFS block&lt;/code&gt;, which is 128 MB by default.&lt;/li&gt;
-&lt;li&gt;Hadoop does its best to run the map task on a node where the input data resides in HDFS, because it doesn’t use valuable cluster bandwidth. This is called the &lt;code&gt;data locality optimization&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Map tasks write their output to the &lt;code&gt;local disk&lt;/code&gt;, not to HDFS. Why is this? Map output is intermediate output: it’s processed by reduce tasks to produce the final output, and once the job is complete, the map output can be thrown away. So, storing it in HDFS with replication would be overkill.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;img src="https://i.imgur.com/KSeXaal.png" alt=""&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;Reduce tasks don’t have the advantage of data locality&lt;/code&gt;; the input to a single reduce task is normally the output from all mappers. In the present example, we have a single reduce task that is fed by all of the map tasks.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;img src="https://i.imgur.com/HFucObH.png" alt=""&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;When there are multiple reducers, the map tasks partition their output, each creating one partition for each reduce task. There can be many keys (and their associated values) in each partition, but the records for any given key are all in a single partition.&lt;/li&gt;
-&lt;li&gt;The above diagram makes it clear why the data flow between map and reduce tasks is collo‐ quially known as “the shuffle,” as each reduce task is fed by many map tasks.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id="combinerfunctions"&gt;Combiner Functions&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Many MapReduce jobs are limited by the bandwidth available on the cluster, so it pays to minimize the data transferred between map and reduce tasks. Hadoop allows the user to specify a combiner function to be run on the map output, and the combiner function’s output forms the input to the reduce function.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="chapter3thehadoopdistributedfilesystem"&gt;Chapter 3: The Hadoop Distributed Filesystem&lt;/h2&gt;
-&lt;/div&gt;</content:encoded></item><item><title>221. Maximal Square</title><description>&lt;div class="kg-card-markdown"&gt;&lt;h3 id="question"&gt;&lt;a href="https://leetcode.com/problems/maximal-square/description/"&gt;Question&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;Given a 2D binary matrix filled with 0's and 1's, find the largest square containing only 1's and return its area.&lt;/p&gt;
-&lt;p&gt;For example, given the following matrix:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;1 0 1 0 0
-1 0 1 1 1
-1 1 1 1 1
-1 0 0 1 0
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Return 4.&lt;/p&gt;&lt;/div&gt;</description><link>http://localhost:2368/221-maximal-square/</link><guid isPermaLink="false">59cb5757a588803d1e4d5b94</guid><category>leetcode</category><dc:creator>Duct Tape Programmer</dc:creator><pubDate>Wed, 27 Sep 2017 07:52:23 GMT</pubDate><content:encoded>&lt;div class="kg-card-markdown"&gt;&lt;h3 id="question"&gt;&lt;a href="https://leetcode.com/problems/maximal-square/description/"&gt;Question&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;Given a 2D binary matrix filled with 0's and 1's, find the largest square containing only 1's and return its area.&lt;/p&gt;
-&lt;p&gt;For example, given the following matrix:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;1 0 1 0 0
-1 0 1 1 1
-1 1 1 1 1
-1 0 0 1 0
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Return 4.&lt;/p&gt;
-&lt;h3 id="quickhints"&gt;Quick Hints&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Use memoization to calculate&lt;br&gt;
-&lt;img src="https://i.imgur.com/8gHUcnd.png" alt=""&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id="solution"&gt;Solution&lt;/h3&gt;
-&lt;p&gt;&lt;img src="https://i.imgur.com/meiI5ic.png" alt=""&gt;&lt;/p&gt;
-&lt;script src="https://gist-it.appspot.com/github/dtprogrammer/leetcode-solutions/blob/master/src/main/java/dtprogrammer/github/io/p221/Solution.java"&gt;&lt;/script&gt;
-&lt;h3 id="timecomplexity"&gt;Time complexity&lt;/h3&gt;
-&lt;p&gt;&lt;code&gt;O (m * n)&lt;/code&gt;&lt;/p&gt;
-&lt;h3 id="spacecomplexity"&gt;Space complexity&lt;/h3&gt;
-&lt;p&gt;&lt;code&gt;O (n)&lt;/code&gt; for memoization&lt;/p&gt;
 &lt;h3 id="notes"&gt;Notes&lt;/h3&gt;
 &lt;/div&gt;</content:encoded></item></channel></rss>
