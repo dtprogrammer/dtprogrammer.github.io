@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
  
-<title>328. Odd Even Linked List</title>
+<title>329. Longest Increasing Path in a Matrix</title>
 <link rel="shortcut icon" href="../favicon.png">
 <meta name="description" content="">
     
@@ -30,17 +30,17 @@
     
     <meta property="og:site_name" content="Software Interview Preparation Blog">
     <meta property="og:type" content="article">
-    <meta property="og:title" content="328. Odd Even Linked List">
-    <meta property="og:description" content="Question Given a singly linked list, group all odd nodes together followed by the even nodes. Please note here we are talking about the node number and not the value in the nodes. You should try to do it in place. The program should run in O(1) space complexity">
-    <meta property="og:url" content="http://localhost:2368/328-odd-even-linked-list/">
-    <meta property="article:published_time" content="2017-10-01T22:23:32.000Z">
-    <meta property="article:modified_time" content="2017-10-01T22:23:32.000Z">
+    <meta property="og:title" content="329. Longest Increasing Path in a Matrix">
+    <meta property="og:description" content="Question Given an integer matrix, find the length of the longest increasing path. From each cell, you can either move to four directions: left, right, up or down. You may NOT move diagonally or move outside of the boundary (i.e. wrap-around is not allowed). Example 1: nums = [   [9,9,">
+    <meta property="og:url" content="http://localhost:2368/329-longest-increasing-path-in-a-matrix/">
+    <meta property="article:published_time" content="2017-11-09T16:00:10.000Z">
+    <meta property="article:modified_time" content="2017-11-09T17:20:05.000Z">
     <meta property="article:tag" content="leetcode">
     
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="328. Odd Even Linked List">
-    <meta name="twitter:description" content="Question Given a singly linked list, group all odd nodes together followed by the even nodes. Please note here we are talking about the node number and not the value in the nodes. You should try to do it in place. The program should run in O(1) space complexity">
-    <meta name="twitter:url" content="http://localhost:2368/328-odd-even-linked-list/">
+    <meta name="twitter:title" content="329. Longest Increasing Path in a Matrix">
+    <meta name="twitter:description" content="Question Given an integer matrix, find the length of the longest increasing path. From each cell, you can either move to four directions: left, right, up or down. You may NOT move diagonally or move outside of the boundary (i.e. wrap-around is not allowed). Example 1: nums = [   [9,9,">
+    <meta name="twitter:url" content="http://localhost:2368/329-longest-increasing-path-in-a-matrix/">
     <meta name="twitter:label1" content="Written by">
     <meta name="twitter:data1" content="Duct Tape Programmer">
     <meta name="twitter:label2" content="Filed under">
@@ -61,12 +61,12 @@
         "url": "http://localhost:2368/author/duct/",
         "sameAs": []
     },
-    "headline": "328. Odd Even Linked List",
-    "url": "http://localhost:2368/328-odd-even-linked-list/",
-    "datePublished": "2017-10-01T22:23:32.000Z",
-    "dateModified": "2017-10-01T22:23:32.000Z",
+    "headline": "329. Longest Increasing Path in a Matrix",
+    "url": "http://localhost:2368/329-longest-increasing-path-in-a-matrix/",
+    "datePublished": "2017-11-09T16:00:10.000Z",
+    "dateModified": "2017-11-09T17:20:05.000Z",
     "keywords": "leetcode",
-    "description": "Question Given a singly linked list, group all odd nodes together followed by the even nodes. Please note here we are talking about the node number and not the value in the nodes. You should try to do it in place. The program should run in O(1) space complexity",
+    "description": "Question Given an integer matrix, find the length of the longest increasing path. From each cell, you can either move to four directions: left, right, up or down. You may NOT move diagonally or move outside of the boundary (i.e. wrap-around is not allowed). Example 1: nums &#x3D; [   [9,9,",
     "mainEntityOfPage": {
         "@type": "WebPage",
         "@id": "http://localhost:2368/"
@@ -114,37 +114,55 @@ ghost.init({
     <article class="article_digitus">
 	
 		<header class="postheader_digitus">
-            <h1 class="posttitle_digitus">328. Odd Even Linked List</h1>
+            <h1 class="posttitle_digitus">329. Longest Increasing Path in a Matrix</h1>
             <span>by</span><h4 class="authorname_digitus"><a href="../author/duct.39">Duct Tape Programmer</a></h4>
             <hr class="pause">
 			<ul>
-				<li><i class="fa fa-calendar"></i><time class="date_digitus">Sunday 01 Oct 2017</time></li>
-                <li><i class="fa fa-comments"></i><a class="comments_digitus" href="index.html#disqus_thread" data-disqus-identifier="59d16a5beb9941586725f971">Comments</a></li>
+				<li><i class="fa fa-calendar"></i><time class="date_digitus">Thursday 09 Nov 2017</time></li>
+                <li><i class="fa fa-comments"></i><a class="comments_digitus" href="index.html#disqus_thread" data-disqus-identifier="5a047a1a4986af09851febab">Comments</a></li>
 				<li><i class="fa fa-tag"></i><span class="posttags_digitus"><a href="../tag/leetcode/">leetcode</a></span></li>
 			</ul>
 		</header>
 	
 		<div class="postcontent_digitus">
-			<div class="kg-card-markdown"><h3 id="question"><a href="https://leetcode.com/problems/odd-even-linked-list/description/">Question</a></h3>
-<p>Given a singly linked list, group all odd nodes together followed by the even nodes. Please note here we are talking about the node number and not the value in the nodes.</p>
-<p>You should try to do it in place. The program should run in O(1) space complexity and O(nodes) time complexity.</p>
-<p>Example:<br>
-Given 1-&gt;2-&gt;3-&gt;4-&gt;5-&gt;NULL,<br>
-return 1-&gt;3-&gt;5-&gt;2-&gt;4-&gt;NULL.</p>
-<p>Note:<br>
-The relative order inside both the even and odd groups should remain as it was in the input.<br>
-The first node is considered odd, the second node even and so on ...</p>
+			<div class="kg-card-markdown"><h3 id="question"><a href="https://leetcode.com/problems/longest-increasing-path-in-a-matrix/description/">Question</a></h3>
+<p>Given an integer matrix, find the length of the longest increasing path.</p>
+<p>From each cell, you can either move to four directions: left, right, up or down. You may NOT move diagonally or move outside of the boundary (i.e. wrap-around is not allowed).</p>
+<p>Example 1:</p>
+<pre><code>nums = [
+  [9,9,4],
+  [6,6,8],
+  [2,1,1]
+]
+</code></pre>
+<p>Return 4<br>
+The longest increasing path is [1, 2, 6, 9].</p>
+<p>Example 2:</p>
+<pre><code>nums = [
+  [3,4,5],
+  [3,2,6],
+  [2,2,1]
+]
+</code></pre>
+<p>Return 4<br>
+The longest increasing path is [3, 4, 5, 6]. Moving diagonally is not allowed.</p>
 <h3 id="quickhints">Quick Hints</h3>
 <ul>
-<li>Odd even pointer</li>
-<li><code>O(n)</code> time complexity</li>
+<li>Do a <code>DFS</code> from every cell of the matrix</li>
+<li>Direction array <code>{{0, 1}, {1, 0}, {0, -1}, {-1, 0}}</code></li>
+<li>Memorize the length in another matrix</li>
 </ul>
 <h3 id="solution">Solution</h3>
-<script src="https://gist-it.appspot.com/github/dtprogrammer/leetcode-solutions/blob/master/src/main/java/dtprogrammer/github/io/p328/Solution.java"></script>
+<script src="https://gist-it.appspot.com/github/dtprogrammer/leetcode-solutions/blob/master/src/main/java/dtprogrammer/github/io/p329/Solution.java"></script>
 <h3 id="timecomplexity">Time complexity</h3>
-<p><code>O (n)</code></p>
+<p>O(m * n)</p>
+<blockquote>
+<p>the DFS here is basically like DP with memorization. Every cell that has been computed will not be computed again, only a value look-up is performed. So this is <code>O(mn)</code>, m and n being the width and height of the matrix.<br>
+To be exact, each cell can be accessed 5 times at most: 4 times from the top, bottom, left and right and one time from the outermost double for loop. 4 of these 5 visits will be look-ups except for the first one. So the running time should be lowercase <code>o(5mn)</code>, which is of course <code>O(mm)</code>.</p>
+</blockquote>
+<p><a href="https://discuss.leetcode.com/topic/34835/15ms-concise-java-solution/16">Reference</a></p>
 <h3 id="spacecomplexity">Space complexity</h3>
-<p><code>O(1)</code> except the space on stack</p>
+<p>O(m * n)</p>
 <h3 id="notes">Notes</h3>
 </div>
 		</div>
@@ -153,9 +171,9 @@ The first node is considered odd, the second node even and so on ...</p>
             <li>
                 <span>Share:</span>
                 <ul class="share-ikons_digitus">
-                    <li><a class="fa fa-twitter-square" target="_blank" href="http://twitter.com/share?text=328.%20Odd%20Even%20Linked%20List&amp;url=http://localhost:2368/328-odd-even-linked-list/"><span class="hidden_digitus">Twitter</span></a></li>
-                    <li><a class="fa fa-facebook-square" target="_blank" href="http://www.facebook.com/sharer.php?u=http://localhost:2368/328-odd-even-linked-list/"><span class="hidden_digitus">Facebook</span></a></li>
-                    <li><a class="fa fa-google-plus-square" target="_blank" href="https://plus.google.com/share?url=http://localhost:2368/328-odd-even-linked-list/"><span class="hidden_digitus">Google+</span></a></li>
+                    <li><a class="fa fa-twitter-square" target="_blank" href="http://twitter.com/share?text=329.%20Longest%20Increasing%20Path%20in%20a%20Matrix&amp;url=http://localhost:2368/329-longest-increasing-path-in-a-matrix/"><span class="hidden_digitus">Twitter</span></a></li>
+                    <li><a class="fa fa-facebook-square" target="_blank" href="http://www.facebook.com/sharer.php?u=http://localhost:2368/329-longest-increasing-path-in-a-matrix/"><span class="hidden_digitus">Facebook</span></a></li>
+                    <li><a class="fa fa-google-plus-square" target="_blank" href="https://plus.google.com/share?url=http://localhost:2368/329-longest-increasing-path-in-a-matrix/"><span class="hidden_digitus">Google+</span></a></li>
                 </ul>
             </li>
             <li class="back_digitus"><a href="index.html"><i class="fa fa-level-up"></i><span>Back to top</span></a></li>
